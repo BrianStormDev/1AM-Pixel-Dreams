@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Tomato Splat Sound Effect-[AudioTrimmer.com].mp3-45915249c8b7ebf6d9ae26e2c6d2f7fb.mp3str"
+
+[deps]
+
+source_file="res://SFX_Imports/Tomato Splat Sound Effect-[AudioTrimmer.com].mp3"
+dest_files=[ "res://.import/Tomato Splat Sound Effect-[AudioTrimmer.com].mp3-45915249c8b7ebf6d9ae26e2c6d2f7fb.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

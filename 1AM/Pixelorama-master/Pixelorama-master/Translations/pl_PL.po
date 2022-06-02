@@ -1,0 +1,1865 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"X-Crowdin-Project: pixelorama\n"
+"X-Crowdin-Project-ID: 385497\n"
+"X-Crowdin-Language: pl\n"
+"X-Crowdin-File: /master/Translations/Translations.pot\n"
+"X-Crowdin-File-ID: 5\n"
+"Project-Id-Version: pixelorama\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Polish\n"
+"Language: pl_PL\n"
+"PO-Revision-Date: 2022-01-05 00:44\n"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Cancel"
+msgstr "Anuluj"
+
+msgid "Open"
+msgstr "Otwórz"
+
+msgid "Save"
+msgstr "Zapisz"
+
+msgid "Please Confirm..."
+msgstr "Proszę potwierdzić..."
+
+msgid "File Name:"
+msgstr "Nazwa pliku:"
+
+msgid "Project Name:"
+msgstr "Nazwa projektu:"
+
+msgid "Image Size"
+msgstr "Rozmiar obrazu"
+
+msgid "Canvas Size"
+msgstr "Rozmiar płótna"
+
+msgid "Frame Size"
+msgstr "Rozmiar klatki"
+
+msgid "Size:"
+msgstr "Rozmiar:"
+
+msgid "Width:"
+msgstr "Szerokość:"
+
+msgid "Height:"
+msgstr "Wysokość:"
+
+msgid "Center"
+msgstr "Środek"
+
+msgid "File"
+msgstr "Plik"
+
+msgid "Edit"
+msgstr "Edycja"
+
+msgid "Select"
+msgstr "Zaznacz"
+
+msgid "View"
+msgstr "Widok"
+
+msgid "Image"
+msgstr "Obraz"
+
+msgid "Effects"
+msgstr "Efekty"
+
+msgid "Help"
+msgstr "Pomoc"
+
+msgid "New"
+msgstr "Nowy"
+
+msgid "New..."
+msgstr "Nowy..."
+
+msgid "Open..."
+msgstr "Otwórz..."
+
+msgid "Save..."
+msgstr "Zapisz..."
+
+msgid "Save as..."
+msgstr "Zapisz jako..."
+
+msgid "Use ZSTD Compression"
+msgstr "Użyj kompresji ZSTD"
+
+msgid "Import"
+msgstr "Importowanie"
+
+msgid "Export"
+msgstr "Eksportuj"
+
+msgid "Export..."
+msgstr "Eksportuj..."
+
+msgid "Export as..."
+msgstr "Eksportuj jako..."
+
+msgid "Export PNG..."
+msgstr "Eksportuj PNG…"
+
+msgid "Export PNG as..."
+msgstr "Eksportuj PNG jako..."
+
+msgid "Quit"
+msgstr "Wyjdź"
+
+msgid "Undo"
+msgstr "Cofnij"
+
+msgid "Redo"
+msgstr "Przywróć zmiany"
+
+msgid "Copy"
+msgstr "Kopiuj"
+
+msgid "Cut"
+msgstr "Wytnij"
+
+msgid "Paste"
+msgstr "Wklej"
+
+msgid "Delete"
+msgstr "Usuń"
+
+msgid "New Brush"
+msgstr "Nowy pędzel"
+
+msgid "Scale Image"
+msgstr "Skaluj obraz"
+
+msgid "Pixels"
+msgstr "Piksele"
+
+msgid "Percentage"
+msgstr "Procentowo"
+
+msgid "Crop Image"
+msgstr "Przytnij obraz"
+
+msgid "Resize Canvas"
+msgstr "Zmień rozmiar płótna"
+
+msgid "Centralize Image"
+msgstr "Wyśrodkuj obraz"
+
+msgid "Rotate Image"
+msgstr "Obróć obraz"
+
+msgid "Clear"
+msgstr "Wyczyść"
+
+msgid "Invert"
+msgstr "Odwróć"
+
+msgid "Flip"
+msgstr "Odwróć"
+
+msgid "Flip Horizontal"
+msgstr "Odbij w poziomie"
+
+msgid "Flip Vertical"
+msgstr "Odbij w pionie"
+
+msgid "Preferences"
+msgstr "Ustawienia"
+
+msgid "Tile Mode"
+msgstr "Tryb kafelkowy"
+
+msgid "Window Opacity"
+msgstr "Przezroczystość okna"
+
+msgid "Panel Layout"
+msgstr "Układ panelu"
+
+msgid "Auto"
+msgstr "Automatyczny"
+
+msgid "Widescreen"
+msgstr "Szeroki ekran"
+
+msgid "Tallscreen"
+msgstr "Długi ekran"
+
+msgid "Mirror View"
+msgstr "Widok lustrzany"
+
+msgid "Show Grid"
+msgstr "Pokaż siatkę"
+
+msgid "Show Pixel Grid"
+msgstr "Pokaż siatkę pixeli"
+
+msgid "Show Rulers"
+msgstr "Pokaż linijki"
+
+msgid "Show Guides"
+msgstr "Pokaż prowadnice"
+
+msgid "Show Animation Timeline"
+msgstr "Pokaż linię czasu animacji"
+
+msgid "Zen Mode"
+msgstr "Tryb zen"
+
+msgid "Fullscreen Mode"
+msgstr "Tryb pełnoekranowy"
+
+msgid "Fill with color:"
+msgstr "Wypełnij kolorem:"
+
+msgid "Open a File"
+msgstr "Otwórz plik"
+
+msgid "Open File(s)"
+msgstr "Otwórz plik(i)"
+
+msgid "Import Options"
+msgstr "Opcje importowania"
+
+msgid "Import as:"
+msgstr "Importuj jako:"
+
+msgid "Recent projects"
+msgstr "Ostatnie projekty"
+
+msgid "New tab"
+msgstr "Nowa karta"
+
+msgid "Spritesheet (new tab)"
+msgstr "Spritesheet (nowa karta)"
+
+msgid "Spritesheet (new layer)"
+msgstr "Spritesheet (nowa warstwa)"
+
+msgid "New frame"
+msgstr "Nowa klatka"
+
+msgid "Replace frame"
+msgstr "Zamień klatkę"
+
+msgid "New layer"
+msgstr "Nowa warstwa"
+
+msgid "New palette"
+msgstr "Nowa paleta"
+
+msgid "New brush"
+msgstr "Nowy pędzel"
+
+msgid "New pattern"
+msgstr "Nowy wzorzec"
+
+msgid "Horizontal frames:"
+msgstr "Klatki poziome:"
+
+msgid "Vertical frames:"
+msgstr "Klatki pionowe:"
+
+msgid "Start frame:"
+msgstr "Klatka początkowa:"
+
+msgid "At frame:"
+msgstr "W klatce:"
+
+msgid "At layer:"
+msgstr "Na warstwie:"
+
+msgid "Brush type:"
+msgstr "Typ pędzla:"
+
+msgid "File brush"
+msgstr "Pędzel programu (File brush)"
+
+msgid "Project brush"
+msgstr "Pędzel projektu"
+
+msgid "Random brush"
+msgstr "Losowy pędzel"
+
+msgid "Save Sprite as .pxo"
+msgstr "Zapisz obraz jako .pxo"
+
+msgid "Export Sprite as .png"
+msgstr "Eksportuj obraz jako .png"
+
+msgid "Export Sprite"
+msgstr "Eksportuj obraz"
+
+msgid "File Exists, Overwrite?"
+msgstr "Plik istnieje! Nadpisać?"
+
+msgid "File %s already exists. Overwrite?"
+msgstr "Plik %s już istnieje. Nadpisać?"
+
+msgid "Directory path or file name is not valid!"
+msgstr "Ścieżka do katalogu lub nazwa pliku nie jest prawidłowa!"
+
+msgid "Exporting in progress..."
+msgstr "Eksportowanie w toku..."
+
+msgid "Can't load file '%s'.\n"
+"Error code: %s"
+msgstr "Nie można załadować pliku '%s'. Kod błędu: %s"
+
+msgid "Frame"
+msgstr "Klatka"
+
+msgid "Frames:"
+msgstr "Klatki:"
+
+msgid "All Frames"
+msgstr "Wszystkie klatki"
+
+msgid "Spritesheet"
+msgstr "Spritesheet"
+
+msgid "Animation"
+msgstr "Animacja"
+
+msgid "Preview:"
+msgstr "Podgląd:"
+
+msgid "Frame:"
+msgstr "Klatka:"
+
+msgid "Orientation:"
+msgstr "Orientacja:"
+
+msgid "Browse"
+msgstr "Przeglądaj"
+
+msgid "Resize:"
+msgstr "Zmień rozmiar:"
+
+msgid "Cancel Export"
+msgstr "Anuluj eksportowanie"
+
+msgid "Alert!"
+msgstr "Uwaga!"
+
+msgid "Select Current Folder"
+msgstr "Wybierz obecny folder"
+
+msgid "Open a Directory"
+msgstr "Otwórz katalog"
+
+msgid "All frames as multiple files"
+msgstr "Wszystkie klatki w animacji jako osobne pliki"
+
+msgid "All frames as a single file animation"
+msgstr "Wszystkie klatki w animacji jako jeden plik"
+
+msgid "Background:"
+msgstr "Tło:"
+
+msgid "Direction:"
+msgstr "Kierunek:"
+
+msgid "Forward"
+msgstr "Dalej"
+
+msgid "Backwards"
+msgstr "Wstecz"
+
+msgid "Ping-Pong"
+msgstr "Ping Pong"
+
+msgid "Columns"
+msgstr "Kolumny"
+
+msgid "Columns:"
+msgstr "Kolumny:"
+
+msgid "Rows"
+msgstr "Rzędy"
+
+msgid "Rows:"
+msgstr "Rzędy:"
+
+msgid "Path:"
+msgstr "Ścieżka:"
+
+msgid "Directories & Files:"
+msgstr "Pliki oraz katalogi:"
+
+msgid "Create Folder"
+msgstr "Utwórz folder"
+
+msgid "File:"
+msgstr "Plik:"
+
+msgid "Interpolation:"
+msgstr "Interpolacja:"
+
+msgid "Nearest"
+msgstr "Najbliższy sąsiad"
+
+msgid "Bilinear"
+msgstr "Dwuliniowa"
+
+msgid "Cubic"
+msgstr "Sześcienna"
+
+msgid "Trilinear"
+msgstr "Trójlinowa"
+
+msgid "General"
+msgstr "Ogólne"
+
+msgid "Startup"
+msgstr "Przy uruchomieniu"
+
+msgid "Language"
+msgstr "Język"
+
+msgid "Interface"
+msgstr "Interfejs"
+
+msgid "Themes"
+msgstr "Motywy"
+
+msgid "Canvas"
+msgstr "Płótno"
+
+msgid "Selection"
+msgstr "Zaznaczanie"
+
+msgid "Shortcuts"
+msgstr "Skróty klawiszowe"
+
+msgid "Backup"
+msgstr "Utwórz kopię zapasową"
+
+msgid "Performance"
+msgstr "Wydajność"
+
+msgid "Indicators"
+msgstr "Wskaźniki"
+
+msgid "On"
+msgstr "Włączone"
+
+msgid "Restore default value"
+msgstr "Przywróć domyślne wartości"
+
+msgid "Smooth Zoom"
+msgstr "Płynne przybliżanie"
+
+msgid "Adds a smoother transition when zooming in or out"
+msgstr "Dodaje płynniejsze przejścia, kiedy się przybliża lub oddala"
+
+msgid "Tablet pressure sensitivity:"
+msgstr "Czułość nacisku na tablecie:"
+
+msgid "None"
+msgstr "Brak"
+
+msgid "Affect Brush's Alpha"
+msgstr "Wpływa na przezroczystość pędzla"
+
+msgid "Color:"
+msgstr "Kolor:"
+
+msgid "Guide color:"
+msgstr "Kolor prowadnicy:"
+
+msgid "System Language"
+msgstr "Język systemowy"
+
+msgid "Display Scale"
+msgstr "Pokaż skalę"
+
+msgid "Dim interface on dialog popup"
+msgstr "Przyciemnij interfejs, kiedy pojawia się okno dialogowe"
+
+msgid "Dark"
+msgstr "Ciemny"
+
+msgid "Gray"
+msgstr "Szary"
+
+msgid "Blue"
+msgstr "Niebieski"
+
+msgid "Caramel"
+msgstr "Karmelowy"
+
+msgid "Light"
+msgstr "Jasny"
+
+msgid "Purple"
+msgstr "Fioletowy"
+
+msgid "Theme"
+msgstr "Motyw"
+
+msgid "Icon color from:"
+msgstr "Kolor ikony z:"
+
+msgid "Icon color:"
+msgstr "Kolor ikony:"
+
+msgid "Tool button size:"
+msgstr "Rozmiar przycisku narzędzi:"
+
+msgid "Small"
+msgstr "Mały"
+
+msgid "Big"
+msgstr "Duży"
+
+msgid "Only affect selection"
+msgstr "Wpływ tylko na zaznaczenie"
+
+msgid "Selected cels"
+msgstr "Wybrane komórki"
+
+msgid "Current cel"
+msgstr "Bieżąca komórka"
+
+msgid "Current frame"
+msgstr "Aktualna klatka"
+
+msgid "All frames"
+msgstr "Wszystkie klatki"
+
+msgid "All projects"
+msgstr "Wszystkie projekty"
+
+msgid "Invert Colors"
+msgstr "Odwróć kolory"
+
+msgid "Modify Red Channel"
+msgstr "Modyfikuj kanał czerwony"
+
+msgid "Modify Green Channel"
+msgstr "Modyfikuj kanał zielony"
+
+msgid "Modify Blue Channel"
+msgstr "Modyfikuj kanał niebieski"
+
+msgid "Modify Alpha Channel"
+msgstr "Modyfikuj kanał alfa"
+
+msgid "Desaturation"
+msgstr "Desaturacja (zmniejsz nasycenie)"
+
+msgid "Outline"
+msgstr "Krawędź"
+
+msgid "Adjust Hue/Saturation/Value"
+msgstr "Dostosuj Odcień/Nasycenie/Wartość"
+
+msgid "Gradient"
+msgstr "Gradient"
+
+msgid "Adjust HSV"
+msgstr "Dostosuj HSV"
+
+msgid "Type:"
+msgstr "Typ:"
+
+msgid "Angle:"
+msgstr "Kąt:"
+
+msgid "Hue:"
+msgstr "Odcień:"
+
+msgid "Saturation:"
+msgstr "Nasycenie:"
+
+msgid "Value:"
+msgstr "Wartość:"
+
+msgid "Apply"
+msgstr "Zastosuj"
+
+msgid "Diagonal"
+msgstr "Przekątna"
+
+msgid "Place inside image"
+msgstr "Umieść wewnątrz obrazu"
+
+msgid "Thickness:"
+msgstr "Grubość:"
+
+msgid "Colors:"
+msgstr "Kolory:"
+
+msgid "Steps:"
+msgstr "Kroki:"
+
+msgid "Top to Bottom"
+msgstr "Od góry do dołu"
+
+msgid "Bottom to Top"
+msgstr "Od dołu do góry"
+
+msgid "Left to Right"
+msgstr "Od lewej do prawej"
+
+msgid "Right to Left"
+msgstr "Od prawej do lewej"
+
+msgid "View Splash Screen"
+msgstr "Pokaż ekran powitalny"
+
+msgid "Online Docs"
+msgstr "Dokumentacja Online"
+
+msgid "Issue Tracker"
+msgstr "Zgłaszanie problemów"
+
+msgid "Open Logs Folder"
+msgstr "Otwórz folder logów"
+
+msgid "Changelog"
+msgstr "Lista zmian"
+
+msgid "About Pixelorama"
+msgstr "O Pixeloramie"
+
+msgid "Pixelorama - Pixelate your dreams!"
+msgstr "Pixelorama - Spikselizuj swoje marzenia!"
+
+msgid "Developed by Orama Interactive"
+msgstr "Tworzony przez: Orama Interactive"
+
+msgid "©2019-present by Orama Interactive and contributors"
+msgstr "©2019-teraz przez Oramę Interactive i współtwórców"
+
+msgid "Website"
+msgstr "Strona internetowa"
+
+msgid "GitHub Repo"
+msgstr "Repozytorium GitHub"
+
+msgid "Donate"
+msgstr "Wspomóż"
+
+msgid "Developers"
+msgstr "Autorzy"
+
+msgid "Contributors"
+msgstr "Wnieśli wkład"
+
+msgid "Donors"
+msgstr "Darczyńcy"
+
+msgid "Translators"
+msgstr "Tłumacze"
+
+msgid "Licenses"
+msgstr "Licencje"
+
+msgid "English"
+msgstr "Angielski"
+
+msgid "Greek"
+msgstr "Grecki"
+
+msgid "French"
+msgstr "Francuski"
+
+msgid "German"
+msgstr "Niemiecki"
+
+msgid "Polish"
+msgstr "Polski"
+
+msgid "Portuguese"
+msgstr "Portugalski"
+
+msgid "Brazilian Portuguese"
+msgstr "Portugalski - Brazylijski"
+
+msgid "Russian"
+msgstr "Rosyjski"
+
+msgid "Chinese Simplified"
+msgstr "Chiński (uproszczony)"
+
+msgid "Chinese Traditional"
+msgstr "Chiński (tradycyjny)"
+
+msgid "Italian"
+msgstr "Włoski"
+
+msgid "Latvian"
+msgstr "Łotewski"
+
+msgid "Spanish"
+msgstr "Hiszpański"
+
+msgid "Catalan"
+msgstr "Kataloński"
+
+msgid "Esperanto"
+msgstr "Esperanto"
+
+msgid "Indonesian"
+msgstr "Indonezyjski"
+
+msgid "Czech"
+msgstr "Czeski"
+
+msgid "Arabic"
+msgstr "Arabski"
+
+msgid "Turkish"
+msgstr "Turecki"
+
+msgid "Norwegian Bokmål"
+msgstr "Norweski (Bokmål)"
+
+msgid "Korean"
+msgstr "Koreański"
+
+msgid "Hungarian"
+msgstr "Węgierski"
+
+msgid "Romanian"
+msgstr "Rumuński"
+
+msgid "Japanese"
+msgstr "Japoński"
+
+msgid "Ukrainian"
+msgstr "Ukraiński"
+
+msgid "Development Team"
+msgstr "Zespół developerski"
+
+msgid "Lead Programmer"
+msgstr "Główny programista"
+
+msgid "UI Designer"
+msgstr "Projektant interfejsu użytkownika"
+
+msgid "GitHub Contributors"
+msgstr "Wnieśli wkład (GitHub)"
+
+msgid "Art by: %s"
+msgstr "Artysta: %s"
+
+msgid "untitled"
+msgstr "bez nazwy"
+
+msgid "imported"
+msgstr "zaimportowane"
+
+msgid "copy"
+msgstr "kopia"
+
+msgid "Are you sure you want to exit Pixelorama?"
+msgstr "Na pewno chcesz opuścić Pixeloramę?"
+
+msgid "Unsaved Image"
+msgstr "Niezapisany obraz"
+
+msgid "You have unsaved changes. If you proceed, the progress you have made will be lost."
+msgstr "Masz niezapisane zmiany. Jeśli kontynuujesz, postęp, który zrobiłeś/aś zostanie utracony."
+
+msgid "Save before exiting?"
+msgstr "Zapisać przed wyjściem?"
+
+msgid "You have unsaved progress. How do you wish to proceed?"
+msgstr "Masz niezapisany postęp. Jak chcesz kontynuować?"
+
+msgid "Save & Exit"
+msgstr "Zapisz i wyjdź"
+
+msgid "Exit without saving"
+msgstr "Wyjdź bez zapisywania"
+
+msgid "Rectangular Selection\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Okrągłe zaznaczanie\n\n"
+"%s na lewy przycisk myszy\n"
+"%s na prawy przycisk myszy"
+
+msgid "Elliptical Selection\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Zaznaczenie eliptyczne \n\n"
+"%s na lewy przycisk myszy\n"
+"%s na prawy przycisk myszy"
+
+msgid "Polygonal Selection\n"
+"Double-click to connect the last point to the starting point\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Zaznaczanie punktowe\n"
+"Wciśnij dwukrotnie aby połączyć ostatni punkt z początkowym\n\n"
+"%s na lewy przycisk myszy\n"
+"%s na prawy przycisk myszy"
+
+msgid "Select By Color\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Zaznacz poprzez kolor\n\n"
+"%s na lewy przycisk myszy\n"
+"%s na prawy przycisk myszy"
+
+msgid "Magic Wand\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Magiczna różczka\n\n"
+"%s na lewy przycisk myszy\n"
+"%s na prawy przycisk myszy"
+
+msgid "Lasso / Free Select Tool\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Lasso / narzędzie swobodnego zaznaczania\n\n"
+"%s na lewy przycisk myszy\n"
+"%s na prawy przycisk myszy"
+
+msgid "Move\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Przenieś \n\n"
+"%s na lewy przycisk myszy\n"
+"%s na prawy przycisk myszy"
+
+msgid "Zoom\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Przybliżenie\n\n"
+"%s dla lewego przycisku myszy\n"
+"%s dla prawego przycisku myszy"
+
+msgid "Pan\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Przesuń\n\n"
+"%s dla lewego przycisku myszy\n"
+"%s dla prawego przycisku myszy"
+
+msgid "Color Picker\n"
+"Select a color from a pixel of the sprite\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Próbnik\n"
+"Pobiera kolor wybranego piksela do wybranego narzędzia.\n\n"
+"%s dla lewego przycisku myszy\n"
+"%s dla prawego przycisku myszy"
+
+msgid "Pencil\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button\n\n"
+"Hold %s to make a line"
+msgstr "Ołówek\n\n"
+"%s dla lewego przycisku myszy\n"
+"%s dla prawego przycisku myszy\n\n"
+"Przytrzymaj %s aby narysować linię"
+
+msgid "Eraser\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button\n\n"
+"Hold %s to make a line"
+msgstr "Gumka\n\n"
+"%s na lewy przycisk myszy\n"
+"%s na prawy przycisk myszy\n\n"
+"Przytrzymaj %s aby użyć w linii prostej"
+
+msgid "Bucket\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Wiaderko\n\n"
+"%s na lewy przycisk myszy\n"
+"%s na prawy przycisk myszy"
+
+msgid "Shading Tool\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Narzędzie cieniowania\n\n"
+"%s na lewy przycisk myszy\n"
+"%s na prawy przycisk myszy"
+
+msgid "Line Tool\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button\n\n"
+"Hold %s to snap the angle of the line\n"
+"Hold %s to center the shape on the click origin\n"
+"Hold %s to displace the shape's origin"
+msgstr "Narzędzie linii\n\n"
+"%s na lewy przycisk myszy\n"
+"%s na prawy przycisk myszy\n\n"
+"Przytrzymaj %s aby zmieniać kąt stopniowo\n"
+"Przytrzymaj %s aby wyśrodkować kształt na miejscu kliknięcia\n"
+"Przytrzymaj %s aby zmienić pozycję źródła kształtu"
+
+msgid "Rectangle Tool\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button\n\n"
+"Hold %s to create a 1:1 shape\n"
+"Hold %s to center the shape on the click origin\n"
+"Hold %s to displace the shape's origin"
+msgstr "Prostokąt\n\n"
+"%s na lewy przycisk myszy\n"
+"%s na prawy przycisk myszy\n\n"
+"Przytrzymaj %s aby stworzyć kształt 1:1\n"
+"Przytrzymaj %s aby wyśrodkować kształt na miejscu kliknięcia\n"
+"Przytrzymaj %s aby przemieścić pozycję źródłową kształtu"
+
+msgid "Ellipse Tool\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button\n\n"
+"Hold %s to create a 1:1 shape\n"
+"Hold %s to center the shape on the click origin\n"
+"Hold %s to displace the shape's origin"
+msgstr "Elipsa\n\n"
+"%s na lewy przycisk myszy\n"
+"%s na prawy przycisk myszy\n\n"
+"Przytrzymaj %s aby stworzyć kształt 1:1\n"
+"Przytrzymaj %s aby wyśrodkować kształt na miejscu kliknięcia\n"
+"Przytrzymaj %s aby przemieścić pozycję źródłową kształtu"
+
+msgid "Rectangle"
+msgstr "Prostokąt"
+
+msgid "Ellipse"
+msgstr "Elipsa"
+
+msgid "Choose a color for the left tool"
+msgstr "Wybiera kolor dla lewego narzędzia"
+
+msgid "Choose a color for the right tool"
+msgstr "Wybiera kolor dla prawego narzędzia"
+
+msgid "Switch left and right colors\n"
+"(%s)"
+msgstr "Podmień lewy kolor z prawym kolorem\n"
+"(%s)"
+
+msgid "Reset the colors to their default state (black for left, white for right)"
+msgstr "Resetuje kolory do stanu domyślnego (czarny po lewej, biały po prawej)"
+
+msgid "Left tool"
+msgstr "Lewe narzędzie"
+
+msgid "Right tool"
+msgstr "Prawe narzędzie"
+
+msgid "Left pixel indicator"
+msgstr "Wskaźnik lewego pędzla"
+
+msgid "Show left mouse pixel indicator or brush on the canvas when drawing"
+msgstr "Wyświetl wskaźnik lewego narzędzia lub pędzla podczas rysowania"
+
+msgid "Right pixel indicator"
+msgstr "Wskaźnik prawego pędzla"
+
+msgid "Show right mouse pixel indicator or brush on the canvas when drawing"
+msgstr "Wyświetl wskaźnik prawego narzędzia lub pędzla podczas rysowania"
+
+msgid "Show left tool icon"
+msgstr "Pokaż ikonę lewego narzędzia"
+
+msgid "Displays an icon of the selected left tool next to the cursor on the canvas"
+msgstr "Wyświetla ikonę lewego wybranego narzędzia obok kursora na płótnie"
+
+msgid "Show right tool icon"
+msgstr "Pokaż ikonę prawego narzędzia"
+
+msgid "Displays an icon of the selected right tool next to the cursor on the canvas"
+msgstr "Wyświetla ikonę prawego wybranego narzędzia obok kursora na płótnie"
+
+msgid "Guides"
+msgstr "Poradniki"
+
+msgid "Guides color:"
+msgstr "Kolor prowadnic:"
+
+msgid "A color of ruler guides displayed on the canvas"
+msgstr "Kolor prowadnic wyświetlanych na płótnie"
+
+msgid "Grid"
+msgstr "Siatka"
+
+msgid "Grid type:"
+msgstr "Typ siatki:"
+
+msgid "Sets the type of the grid between rectangular, isometric or both"
+msgstr "Ustawia typ siatki pomiędzy prostokątną, izometryczną lub oba"
+
+msgid "Rectangular"
+msgstr "Prostokątna"
+
+msgid "Isometric"
+msgstr "Izometryczna"
+
+msgid "All"
+msgstr "Wszystkie"
+
+msgid "Rectangular grid width:"
+msgstr "Szerokość siatki:"
+
+msgid "Sets how far apart are vertical lines of the rectangular grid"
+msgstr "Ustawia jak daleko od siebie są pionowe linie siatki"
+
+msgid "Rectangular grid height:"
+msgstr "Długość siatki:"
+
+msgid "Sets how far apart are horizontal lines of the rectangular grid"
+msgstr "Ustawia jak daleko od siebie są pionowe linie siatki"
+
+msgid "Isometric cell bounds width:"
+msgstr "Szerokość granic komórki izometrycznej:"
+
+msgid "Sets the width of the isometric cell's axis aligned bounding box"
+msgstr "Ustawia szerokość osi komórki izometrycznej położonej na granicy pola"
+
+msgid "Isometric cell bounds height:"
+msgstr "Długość granic komórki izometrycznej:"
+
+msgid "Sets the height of the isometric cell's axis aligned bounding box"
+msgstr "Ustawia długość osi komórki izometrycznej położonej na granicy pola"
+
+msgid "Grid offset x:"
+msgstr "Przesunięcie siatki x:"
+
+msgid "Sets grid's x offset from the canvas origin (top left corner of the image)"
+msgstr "Ustawia przesunięcie siatki na osi x od pozycji płótna (lewy górny róg obrazu)"
+
+msgid "Grid offset y:"
+msgstr "Przesunięcie siatki y:"
+
+msgid "Sets grid's y offset from the canvas origin (top left corner of the image)"
+msgstr "Ustawia przesunięcie siatki na osi y od pozycji płótna (lewy górny róg obrazu)"
+
+msgid "Draw over Tile Mode:"
+msgstr "Rysuj nad trybem kafelkowym:"
+
+msgid "If disabled, the grid will be drawn only over the original image"
+msgstr "Jeśli wyłączone, siatka będzie rysowana tylko nad oryginalnym obrazem"
+
+msgid "Grid color:"
+msgstr "Kolor siatki:"
+
+msgid "A color of the grid"
+msgstr "Kolor siatki"
+
+msgid "Pixel Grid"
+msgstr "Siatka pikseli"
+
+msgid "Show at zoom:"
+msgstr "Pokaż w powiększeniu:"
+
+msgid "Sets the minimal zoom at which pixel grid will be shown"
+msgstr "Ustawia minimalne przybliżenie, przy którym siatka pixeli będzie wyświetlana"
+
+msgid "Pixel grid color:"
+msgstr "Kolor siatki pikseli:"
+
+msgid "A color of the pixel grid"
+msgstr "Kolor siatki pikseli"
+
+msgid "Transparency"
+msgstr "Przezroczystość"
+
+msgid "Checker size:"
+msgstr "Rozmiar komórek przezroczystej siatki:"
+
+msgid "Size of the transparent checker background"
+msgstr "Rozmiar tła przezroczystej siatki"
+
+msgid "Checker color 1:"
+msgstr "Kolor komórek przezroczystej siatki 1:"
+
+msgid "First color of the transparent checker background"
+msgstr "Pierwszy kolor komórek przezroczystej siatki"
+
+msgid "Checker color 2:"
+msgstr "Kolor komórek przezroczystej siatki 2:"
+
+msgid "Second color of the transparent checker background"
+msgstr "Drugi kolor komórek przezroczystej siatki"
+
+msgid "Follow Canvas Movement"
+msgstr "Śledź ruch płótna"
+
+msgid "The transparent checker follow the movement of canvas"
+msgstr "Przezroczysta siatka śledzi ruch płótna"
+
+msgid "Follow Canvas Zoom Level"
+msgstr "Śledź poziom przybliżenia płótna"
+
+msgid "The transparent checker follow the zoom level of canvas"
+msgstr "Przezroczysta siatka śledzi poziom przybliżenia płótna"
+
+msgid "Animated selection borders"
+msgstr "Animowana ramka obszaru zaznaczenia"
+
+msgid "Border color 1:"
+msgstr "Kolor obramowania 1:"
+
+msgid "Border color 2:"
+msgstr "Kolor obramowania 2:"
+
+msgid "Only custom preset can be modified"
+msgstr "Tylko niestandardowe ustawienia mogą być modyfikowane"
+
+msgid "Set application FPS limit:"
+msgstr "Ustaw limit FPS dla aplikacji:"
+
+msgid "Pause application when it loses focus"
+msgstr "Zapauzuj aplikację, gdy straci skupienie"
+
+msgid "Sets the limit of the application's frames per second. The lower the number, the lower the CPU usage, but the application gets slower, choppier and unresponsive. 0 means that there is no limit."
+msgstr "Ustawia limit klatek aplikacji na sekundę. Im niższa liczba, tym niższe zużycie procesora, ale aplikacja staje się wolniejsza. 0 oznacza, że nie ma limitu."
+
+msgid "If this is toggled on, when the application's window loses focus, it gets paused. This helps lower CPU usage when idle. The application gets unpaused when the mouse enters the application's window."
+msgstr "Jeśli ta opcja jest włączona i okno aplikacji traci skupienie, to program zostanie zapauzowany. To pomaga zmniejszyć użycie procesora, kiedy aplikacja działa w tle. Aplikacja zostaje odpauzowana, kiedy myszka pojawi się na oknie aplikacji."
+
+msgid "Brush:"
+msgstr "Pędzel:"
+
+msgid "Select a brush"
+msgstr "Wybierz pędzel"
+
+msgid "Pixel brush"
+msgstr "Pikselowy pędzel"
+
+msgid "Circle brush"
+msgstr "Okrągły pędzel"
+
+msgid "Filled circle brush"
+msgstr "Wypełniony okrągły pędzel"
+
+msgid "Custom brush"
+msgstr "Niestandardowy pędzel"
+
+msgid "Brush size:"
+msgstr "Rozmiar pędzla:"
+
+msgid "Overwrite Color"
+msgstr "Zastąp kolor"
+
+msgid "Overwrites color instead of blending it. This option is only relevant with colors that are not fully opaque"
+msgstr "Zastępuje kolor zamiast zmieszać się z nim. Ta opcja zadziała tylko dla kolorów, które nie są w pełni przezroczyste"
+
+msgid "Pixel Perfect"
+msgstr "Pixel Perfect"
+
+msgid "Fill inside"
+msgstr "Wypełnij wnętrze"
+
+msgid "Makes lines smooth by removing the extra pixels on the edges"
+msgstr "Sprawia, że linie są gładkie przez usunięcie dodatkowych pikseli na krawędziach"
+
+msgid "Fill Shape"
+msgstr "Wypełnij kształt"
+
+msgid "Fills the drawn shape with color, instead of drawing a hollow shape"
+msgstr "Wypełnia narysowany kształt kolorem, zamiast rysować same obramowanie"
+
+msgid "Brush color from"
+msgstr "Nadpisywanie koloru pędzla"
+
+msgid "0: Color from the brush itself, 100: the currently selected color"
+msgstr "0: Kolor pochodzący z samego pędzla, 100: Obecnie wybrany kolor rysowania"
+
+msgid "Fill area:"
+msgstr "Wypełnij przestrzeń:"
+
+msgid "Same color area"
+msgstr "Ten sam obszar koloru"
+
+msgid "Same color pixels"
+msgstr "Piksele tego samego koloru"
+
+msgid "Fill with:"
+msgstr "Wypełnij za pomocą:"
+
+msgid "Selected Color"
+msgstr "Wybrany kolor"
+
+msgid "Pattern"
+msgstr "Wzorzec"
+
+msgid "Offset"
+msgstr "Przesunięcie"
+
+msgid "Simple Shading"
+msgstr "Proste Cieniowanie"
+
+msgid "Hue Shifting"
+msgstr "Przesuwanie Hue"
+
+msgid "Lighten"
+msgstr "Rozjaśnianie"
+
+msgid "Darken"
+msgstr "Przyciemnianie"
+
+msgid "Amount:"
+msgstr "Siła:"
+
+msgid "Lighten/Darken amount"
+msgstr "Siła rozjaśnienia/przyciemnienia"
+
+msgid "Pick for:"
+msgstr "Wybierz dla:"
+
+msgid "Left Color"
+msgstr "Lewy kolor"
+
+msgid "Right Color"
+msgstr "Prawy kolor"
+
+msgid "Mode:"
+msgstr "Tryb:"
+
+msgid "Zoom in"
+msgstr "Przybliż"
+
+msgid "Zoom out"
+msgstr "Oddal"
+
+msgid "Options:"
+msgstr "Opcje:"
+
+msgid "Fit to frame"
+msgstr "Dopasuj do ramki"
+
+msgid "100% Zoom"
+msgstr "Przybliżenie 100%"
+
+msgid "Mirroring"
+msgstr "Lustrzane odbicie"
+
+msgid "Horizontal"
+msgstr "Poziome"
+
+msgid "Enable horizontal mirrored drawing"
+msgstr "Włącza lustrzane odbicie w poziomie podczas rysowania"
+
+msgid "Enable vertical mirrored drawing"
+msgstr "Włącza lustrzane odbicie w pionie podczas rysowania"
+
+msgid "Vertical"
+msgstr "Pionowe"
+
+msgid "Current frame:"
+msgstr "Obecna klatka:"
+
+msgid "Jump to the first frame\n"
+"(%s)"
+msgstr "Skocz do pierwszej klatki\n"
+"(%s)"
+
+msgid "Go to the previous frame\n"
+"(%s)"
+msgstr "Przejdź do poprzedniej klatki\n"
+"(%s)"
+
+msgid "Play the animation backwards (from end to beginning)\n"
+"(%s)"
+msgstr "Odtwórz animację od końca\n"
+"(%s)"
+
+msgid "Play the animation forward (from beginning to end)\n"
+"(%s)"
+msgstr "Odtwórz animację od początku\n"
+"(%s)"
+
+msgid "Go to the next frame\n"
+"(%s)"
+msgstr "Przejdź do następnej klatki\n"
+"(%s)"
+
+msgid "Jump to the last frame\n"
+"(%s)"
+msgstr "Skocz do ostatniej klatki\n"
+"(%s)"
+
+msgid "Onion Skinning settings"
+msgstr "Ustawienia Onion Skinning"
+
+msgid "Enable/disable Onion Skinning"
+msgstr "Włącz/wyłącz Onion Skinning"
+
+msgid "How many frames per second should the animation preview be?\n"
+"The more FPS, the faster the animation plays."
+msgstr "W ilu klatkach na sekundę odtwarzana ma być animacja?\n"
+"Większa ilość klatek na sekundę powoduje szybsze odtwarzanie."
+
+msgid "No loop"
+msgstr "Brak zapętlania"
+
+msgid "Cycle loop"
+msgstr "Zapętl odtwarzanie"
+
+msgid "Ping-pong loop"
+msgstr "Zapętlanie typu ping-pong"
+
+msgid "Onion Skinning:"
+msgstr "Kalkowanie klatek:"
+
+msgid "Past Frames"
+msgstr "Przeszłe klatki"
+
+msgid "Future Frames"
+msgstr "Przyszłe klatki"
+
+msgid "Manage frame tags"
+msgstr "Zarządzaj tagami klatek"
+
+msgid "Frame Tag Properties"
+msgstr "Właściwości tagu klatek"
+
+msgid "Add a new frame tag"
+msgstr "Dodaj nowy tag klatek"
+
+msgid "Name:"
+msgstr "Nazwa:"
+
+msgid "From:"
+msgstr "Od:"
+
+msgid "To:"
+msgstr "Do:"
+
+msgid "Animation plays only on frames of the same tag"
+msgstr "Animacja odtwarza się tylko na klatkach z tym samym tagiem"
+
+msgid "Tag %s (Frame %s)"
+msgstr "Tag %s (Klatka %s)"
+
+msgid "Tag %s (Frames %s-%s)"
+msgstr "Tag %s (Klatki %s-%s)"
+
+msgid "If it's selected, the animation plays only on the frames that have the same tag.\n"
+"If it's not, the animation will play for all frames, ignoring tags."
+msgstr "Jeśli jest zaznaczone, animacja odtwarza się tylko na klatkach z tym samym tagiem.\n"
+"W przeciwnym wypadku, animacja odtworzy się na wszystkich klatkach, ignorując tagi."
+
+msgid "Blue-Red Mode"
+msgstr "Niebiesko-czerwone prześwity"
+
+msgid "Show past frames:"
+msgstr "Pokaż poprzednie klatki:"
+
+msgid "Show future frames:"
+msgstr "Pokaż przyszłe klatki:"
+
+msgid "Above canvas"
+msgstr "Nad płótnem"
+
+msgid "Below canvas"
+msgstr "Pod płótnem"
+
+msgid "If you want a layer to ignore onion skinning simply add the \"_io\" suffix in its name."
+msgstr "Jeśli chcesz, aby onion skinning był ignorowany na warstwie, po prostu dodaj sufiks \"_io\" w jego nazwie."
+
+msgid "Add a new frame"
+msgstr "Dodaj nową klatkę"
+
+msgid "Remove Frame"
+msgstr "Usuń klatkę"
+
+msgid "Clone Frame"
+msgstr "Klonuj klatkę"
+
+msgid "Move Left"
+msgstr "Przesuń w lewo"
+
+msgid "Move Right"
+msgstr "Przesuń w prawo"
+
+msgid "Add Frame Tag"
+msgstr ""
+
+msgid "Link Cel"
+msgstr "Połącz komórkę"
+
+msgid "Unlink Cel"
+msgstr "Odłącz komórkę"
+
+msgid "Frame Properties"
+msgstr "Właściwości klatki"
+
+msgid "Frame properties"
+msgstr "Właściwości klatki"
+
+msgid "Layer"
+msgstr "Warstwa"
+
+msgid "Layers"
+msgstr "Warstwy"
+
+msgid "Create a new layer"
+msgstr "Stwórz nową warstwę"
+
+msgid "Remove current layer"
+msgstr "Usuń obecną warstwę"
+
+msgid "Move up the current layer"
+msgstr "Przesuń obecną warstwę do góry"
+
+msgid "Move down the current layer"
+msgstr "Przesuń obecną warstwę w dół"
+
+msgid "Clone current layer"
+msgstr "Duplikuj obecną warstwę"
+
+msgid "Merge current layer with the one below"
+msgstr "Połącz obecną warstwę z warstwą powyżej"
+
+msgid "Opacity:"
+msgstr "Przezroczystość:"
+
+msgid "Tile mode opacity:"
+msgstr "Przezroczystość w trybie kafelkowym:"
+
+msgid "Toggle layer's visibility"
+msgstr "Ukrywanie warstwy"
+
+msgid "Lock/unlock layer"
+msgstr "Zablokuj/odblokuj warstwę"
+
+msgid "Frame: %s, Layer: %s"
+msgstr "Klatka: %s, Warstwa: %s"
+
+msgid "Enable/disable cel linking\n\n"
+"Linked cels are being shared across multiple frames"
+msgstr "Włącz/wyłącz łączenie komórek\n\n"
+"Złączone komórki są współdzielone przez wiele komórek"
+
+msgid "Palette"
+msgstr "Paleta kolorów"
+
+msgid "Palettes"
+msgstr "Palety kolorów"
+
+msgid "Add a new palette"
+msgstr "Dodaj nową paletę kolorów"
+
+msgid "Edit currently selected palette"
+msgstr "Edytuj aktualnie wybraną paletę kolorów"
+
+msgid "Choose a palette"
+msgstr "Wybierz paletę kolorów"
+
+msgid "Undo: Draw"
+msgstr "Cofnij: Rysowanie"
+
+msgid "Redo: Draw"
+msgstr "Przywróć: Rysowanie"
+
+msgid "Undo: Select"
+msgstr "Cofnij: Zaznacz"
+
+msgid "Redo: Select"
+msgstr "Przywróć: Zaznacz"
+
+msgid "Undo: Scale"
+msgstr "Cofnij: Skalowanie"
+
+msgid "Redo: Scale"
+msgstr "Przywróć: Skalowanie"
+
+msgid "Undo: Add Layer"
+msgstr "Cofnij: Dodawanie warstwy"
+
+msgid "Redo: Add Layer"
+msgstr "Przywróć: Dodawanie warstwy"
+
+msgid "Undo: Remove Layer"
+msgstr "Cofnij: Usuwanie warstwy"
+
+msgid "Redo: Remove Layer"
+msgstr "Przywróć: Usuwanie warstwy"
+
+msgid "Undo: Merge Layer"
+msgstr "Cofnij: Scalanie warstw"
+
+msgid "Redo: Merge Layer"
+msgstr "Przywróć: Scalanie warstw"
+
+msgid "Undo: Change Layer Order"
+msgstr "Cofnij: Zmiana kolejności warstw"
+
+msgid "Redo: Change Layer Order"
+msgstr "Przywróć: Zmiana kolejności warstw"
+
+msgid "Undo: Add Frame"
+msgstr "Cofnij: Dodawanie klatki"
+
+msgid "Redo: Add Frame"
+msgstr "Przywróć: Dodawanie klatki"
+
+msgid "Undo: Remove Frame"
+msgstr "Cofnij: Usunięcie klatki"
+
+msgid "Redo: Remove Frame"
+msgstr "Przywróć: Usunięcie klatki"
+
+msgid "Undo: Change Frame Order"
+msgstr "Cofnij: Zmiana kolejności klatek"
+
+msgid "Redo: Change Frame Order"
+msgstr "Przywróć: Zmiana kolejności klatek"
+
+msgid "Undo: Delete Custom Brush"
+msgstr "Cofnij: Usuwanie niestandardowego pędzla"
+
+msgid "Redo: Delete Custom Brush"
+msgstr "Przywróć: Usuwanie niestandardowego pędzla"
+
+msgid "Undo: Modify Frame Tag"
+msgstr "Cofnij: Modyfikuj tag klatek"
+
+msgid "Redo: Modify Frame Tag"
+msgstr "Przywróć: Modyfikuj tag klatek"
+
+msgid "Undo: Delete Frame Tag"
+msgstr "Cofnij: Usuń tag klatek"
+
+msgid "Redo: Delete Frame Tag"
+msgstr "Przywróć: Usuń tag klatek"
+
+msgid "Undo: Change frame duration"
+msgstr "Cofnij: Zmień czas trwania klatki"
+
+msgid "Redo: Change frame duration"
+msgstr "Przywróć: Zmień czas trwania klatki"
+
+msgid "Move Guide"
+msgstr "Przesuń prowadnice"
+
+msgid "File saved"
+msgstr "Plik został zapisany"
+
+msgid "File autosaved"
+msgstr "Automatycznie zapisano plik"
+
+msgid "File failed to open. Error code %s"
+msgstr "Nie udało się otworzyć pliku. Kod błędu %s"
+
+msgid "File failed to save. Error code %s"
+msgstr "Nie udało się zapisać pliku. Kod błędu %s"
+
+msgid "File exported"
+msgstr "Plik został wyeksportowany"
+
+msgid "New Empty Palette"
+msgstr "Nowa pusta paleta kolorów"
+
+msgid "Import Palette"
+msgstr "Importuj paletę kolorów"
+
+msgid "Create Palette From Current Sprite"
+msgstr "Utwórz paletę z aktualnego Sprite'a"
+
+msgid "Palette Name:"
+msgstr "Nazwa palety kolorów:"
+
+msgid "Color Name:"
+msgstr "Nazwa koloru:"
+
+msgid "Use current left & right colors"
+msgstr "Użyj aktualnych kolorów lewego i prawego"
+
+msgid "Create a new empty palette?"
+msgstr "Utworzyć nową pustą paletę kolorów?"
+
+msgid "Error"
+msgstr "Błąd"
+
+msgid "Error: Palette must have a valid name."
+msgstr "Błąd: Paleta kolorów musi mieć poprawną nazwę."
+
+msgid "Invalid Palette file!"
+msgstr "Niepoprawny plik palety kolorów!"
+
+msgid "Edit Palette"
+msgstr "Edytuj paletę kolorów"
+
+msgid "Create colors with alpha component"
+msgstr "Utwórz kolory z kanałem alpha"
+
+msgid "Get colors only from selection"
+msgstr "Pobierz kolory tylko z zaznaczenia"
+
+msgid "Get colors from"
+msgstr "Pobierz kolory z"
+
+msgid "Patrons:"
+msgstr "Patroni:"
+
+msgid "Want your name or your company to be shown on the splash screen?"
+msgstr "Chcesz wyświetlać swoje imię lub nazwę swojej firmy na ekranie powitalnym?"
+
+msgid "Become a Platinum Sponsor"
+msgstr "Zostań Platynowym Sponsorem"
+
+msgid "Become a Gold Sponsor"
+msgstr "Zostań Złotym Sponsorem"
+
+msgid "Become a Patron"
+msgstr "Zostań patronem"
+
+msgid "Don't show again"
+msgstr "Nie pokazuj ponownie"
+
+msgid "Image Options"
+msgstr "Opcje obrazu"
+
+msgid "Default width:"
+msgstr "Domyślna szerokość:"
+
+msgid "A default width of a new image"
+msgstr "Domyślna szerokość nowego obrazu"
+
+msgid "Default height:"
+msgstr "Domyślna długość:"
+
+msgid "A default height of a new image"
+msgstr "Domyślna długość nowego obrazu"
+
+msgid "Default fill color:"
+msgstr "Domyślny kolor wypełnienia:"
+
+msgid "A default background color of a new image"
+msgstr "Domyślny kolor tła dla nowego obrazu"
+
+msgid "Lock aspect ratio"
+msgstr "Wymuś współczynnik proporcji"
+
+msgid "Portrait"
+msgstr "Orientacja pionowa"
+
+msgid "Landscape"
+msgstr "Orientacja pozioma"
+
+msgid "Templates:"
+msgstr "Szablony:"
+
+msgid "Preset"
+msgstr "Domyślnie"
+
+msgid "Preset:"
+msgstr "Domyślnie:"
+
+msgid "Default"
+msgstr "Podstawowy"
+
+msgid "Custom"
+msgstr "Niestandardowe"
+
+msgid "Rectangular Selection"
+msgstr "Zaznaczenie prostokątne"
+
+msgid "Elliptical Selection"
+msgstr "Zaznaczenie eliptyczne"
+
+msgid "Polygonal Selection"
+msgstr "Zaznaczenie poligonalne"
+
+msgid "Select By Color"
+msgstr "Wybierz według koloru"
+
+msgid "Magic Wand"
+msgstr "Magiczna Różdżka"
+
+msgid "Lasso / Free Select Tool"
+msgstr "Lasso / Narzędzie wolnego zaznacznia"
+
+msgid "Move"
+msgstr "Przenieś"
+
+msgid "Zoom"
+msgstr "Przybliżenie"
+
+msgid "Pan"
+msgstr "Przesunięcie"
+
+msgid "Color Picker"
+msgstr "Próbnik"
+
+msgid "Pencil"
+msgstr "Ołówek"
+
+msgid "Eraser"
+msgstr "Gumka"
+
+msgid "Bucket"
+msgstr "Wiaderko"
+
+msgid "Shading Tool"
+msgstr "Narzędzie cieniowania"
+
+msgid "Line Tool"
+msgstr "Linia"
+
+msgid "Rectangle Tool"
+msgstr "Prostokąt"
+
+msgid "Ellipse Tool"
+msgstr "Elipsa"
+
+msgid "Switch Colors"
+msgstr "Zmień kolory"
+
+msgid "Set the shortcut"
+msgstr "Ustaw skrót klawiszowy"
+
+msgid "Press a key or a key combination to set the shortcut"
+msgstr "Naciśnij klawisz lub kombinację klawiszy, aby ustawić skrót klawiszowy"
+
+msgid "Already assigned"
+msgstr "Już przypisano"
+
+msgid "Left Tool:"
+msgstr "Lewe narzędzie:"
+
+msgid "A tool assigned to the left mouse button"
+msgstr "Narzędzie przypisane do lewego przycisku myszy"
+
+msgid "Right Tool:"
+msgstr "Prawe narzędzie:"
+
+msgid "A tool assigned to the right mouse button"
+msgstr "Narzędzie przypisane do prawego przycisku myszy"
+
+msgid "Cannot find last project file."
+msgstr "Nie można znaleźć pliku ostatniego projektu."
+
+msgid "Cannot find project file."
+msgstr "Nie można znaleźć pliku projektu."
+
+msgid "You haven't saved or opened any project in Pixelorama yet!"
+msgstr "Nie zapisałeś lub nie otworzyłeś jeszcze żadnego projektu w Pixeloramie!"
+
+msgid "Open Last Project"
+msgstr "Otwórz ostatni projekt"
+
+msgid "Open last project..."
+msgstr "Otwórz ostatni projekt..."
+
+msgid "Open last project on startup"
+msgstr "Po uruchomieniu załaduj ostatni projekt"
+
+msgid "Opens last opened project on startup"
+msgstr "Po uruchomieniu, załaduje ostatni projekt"
+
+msgid "Quit confirmation"
+msgstr ""
+
+msgid "Enable autosave"
+msgstr "Włącz automatyczne zapisywanie"
+
+msgid "Autosave interval:"
+msgstr "Częstotliwość automatycznego zapisu:"
+
+msgid "minute(s)"
+msgstr "minuta(y)"
+
+msgid "Create new directory for each frame tag"
+msgstr "Utwórz nowy katalog dla każdego tagu klatek"
+
+msgid "Creates multiple files but every file is stored in different directory that corresponds to its frame tag"
+msgstr "Tworzy wiele plików, ale każdy plik jest przechowywany w innym katalogu, który odpowiada tagowi klatek"
+
+msgid "Close"
+msgstr "Zamknij"
+
+msgid "Delete"
+msgstr "Usuń"
+
+msgid "Autosaved project(s) from a crashed session were found.\n"
+"Do you want to recover the data?"
+msgstr "Znaleziono automatycznie wybrane projekty z uszkodzonej sesji.\n"
+"Czy chcesz odzyskać dane?"
+
+msgid "Backup reloaded"
+msgstr "Wczytano ponownię kopię zapasową"
+
+msgid "Remove currently selected palette"
+msgstr "Usuń aktualnie wybraną paletę"
+
+msgid "Are you sure you want to remove this palette? (Cannot be undone)"
+msgstr "Czy na pewno chcesz usunąć tą paletę? (Nie można cofnąć)"
+
+msgid "You can't remove more palettes!"
+msgstr "Nie możesz usunąć więcej palet!"
+
+msgid "Cannot remove the palette, because it doesn't exist!"
+msgstr "Nie można usunąć palety, ponieważ nie istnieje!"
+
+msgid "An error occured while removing the palette! Error code: %s"
+msgstr "Wystąpił błąd podczas usuwania palety! Kod błędu: %s"
+
+msgid "and"
+msgstr "i"
+
+msgid "Move the selected frame to the left."
+msgstr "Przenieś zaznaczoną klatkę w lewo."
+
+msgid "Move the selected frame to the right."
+msgstr "Przenieś zaznaczoną klatkę w prawo."
+
+msgid "Frame duration"
+msgstr "Czas trwania klatki"
+
+msgid "Tiled In Both Axis"
+msgstr "Kafelkowanie na obu osiach"
+
+msgid "Tiled In X Axis"
+msgstr "Kafelkowanie na osi X"
+
+msgid "Tiled In Y Axis"
+msgstr "Kafelkowanie na osi Y"
+
+msgid "Create a new palette"
+msgstr "Stwórz nową paletę"
+
+msgid "Comment:"
+msgstr "Komentarz:"
+
+msgid "Empty"
+msgstr "Pusta"
+
+msgid "From Current Palette"
+msgstr "Z bieżącej palety"
+
+msgid "From Current Sprite"
+msgstr "Z bieżącego obrazu"
+
+msgid "From Current Selection"
+msgstr "Z bieżącego zaznaczenia"
+
+msgid "Add a new color"
+msgstr "Dodaj nowy kolor"
+
+msgid "Remove a selected color"
+msgstr "Usuń wybrany kolor"
+
+msgid "Palette with the same name and path already exists!"
+msgstr "Paleta z tą nazwą i ścieżką już istnieje!"
+
+msgid "Palette name is required!"
+msgstr "Wymagana jest nazwa palety!"
+
+msgid "Reducing palette size will reset positions of colors. Colors that don't fit in new palette size will be lost!"
+msgstr "Zmniejszenie rozmiaru palety zresetuje pozycje kolorów. Kolory, które nie mieszczą się w nowym rozmiarze palety zostaną utracone!"
+
+msgid "Position:"
+msgstr "Pozycja:"
+

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/spear.mp3-7f5125378574aed87cbac25d33c7236f.mp3str"
+
+[deps]
+
+source_file="res://SFX_Imports/spear.mp3"
+dest_files=[ "res://.import/spear.mp3-7f5125378574aed87cbac25d33c7236f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

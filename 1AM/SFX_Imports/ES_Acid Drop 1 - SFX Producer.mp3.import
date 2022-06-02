@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ES_Acid Drop 1 - SFX Producer.mp3-dd6832088b94de01ac8316939357a9be.mp3str"
+
+[deps]
+
+source_file="res://SFX_Imports/ES_Acid Drop 1 - SFX Producer.mp3"
+dest_files=[ "res://.import/ES_Acid Drop 1 - SFX Producer.mp3-dd6832088b94de01ac8316939357a9be.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 2019-present Orama Interactive and contributors -->
+<component type="desktop">
+  <id>com.orama_interactive.Pixelorama.desktop</id>
+  <name>Pixelorama</name>
+  <summary>2D sprite editor with animation support</summary>
+  <description>
+    <p>
+      Pixelorama is a free and open source 2D sprite editor, made by Orama
+      Interactive in the Godot Engine using GDScript.
+    </p>
+  </description>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <developer_name>Orama Interactive</developer_name>
+  <url type="homepage">https://orama-interactive.itch.io/pixelorama</url>
+  <url type="bugtracker">https://github.com/Orama-Interactive/Pixelorama/issues</url>
+  <screenshots>
+    <screenshot type="default" width="1920" height="1080">
+      <image type="source">https://img.itch.zone/aW1hZ2UvNDcwMzY3LzcwMTE1NzEucG5n/original/CyAplX.png</image>
+      <caption>Art by Erevos</caption>
+    </screenshot>
+    <screenshot type="default" width="1920" height="1080">
+      <image type="source">https://img.itch.zone/aW1hZ2UvNDcwMzY3LzcwMTE1NzQucG5n/original/xNGUSf.png</image>
+      <caption>Art by Erevos</caption>
+    </screenshot>
+	  <screenshot type="default" width="1920" height="1080">
+      <image type="source">https://img.itch.zone/aW1hZ2UvNDcwMzY3LzcwMTE1NzUucG5n/original/7Ykr%2Fj.png</image>
+      <caption>Art by Erevos</caption>
+    </screenshot>
+  </screenshots>
+  <content_rating type="oars-1.1"/>
+  <releases>
+	<release version="0.9.2" date="2022-01-21"/>
+	<release version="0.9.1" date="2021-12-20"/>
+	<release version="0.9" date="2021-09-18"/>
+	<release version="0.8.3" date="2021-05-04"/>
+	<release version="0.8.2" date="2020-12-12"/>
+	<release version="0.8.1" date="2020-10-14"/>
+	<release version="0.8" date="2020-09-23"/>
+    <release version="0.7" date="2020-05-16"/>
+    <release version="0.6.2" date="2020-02-17"/>
+  </releases>
+  <update_contact>hugo.locurcio@hugo.pro</update_contact>
+</component>

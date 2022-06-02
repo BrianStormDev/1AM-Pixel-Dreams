@@ -1,0 +1,141 @@
+[gd_scene load_steps=68 format=2]
+
+[ext_resource path="res://Animations/Slime walk/Slime_Idle1.png" type="Texture" id=1]
+[ext_resource path="res://Animations/Slime walk/Slime_Idle4.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/Slime.gd" type="Script" id=3]
+[ext_resource path="res://Animations/Slime walk/Slime_Idle3.png" type="Texture" id=4]
+[ext_resource path="res://Animations/Slime walk/Slime_Idle2.png" type="Texture" id=5]
+[ext_resource path="res://Animations/Slime walk/SlimeBlue_Idle2.png" type="Texture" id=6]
+[ext_resource path="res://Animations/Slime walk/SlimeBlue_Idle4.png" type="Texture" id=7]
+[ext_resource path="res://Animations/Slime walk/SlimeBlue_Idle1.png" type="Texture" id=8]
+[ext_resource path="res://Animations/Slime walk/SlimeRed_Idle4.png" type="Texture" id=9]
+[ext_resource path="res://Animations/Slime walk/SlimeRed_Idle1.png" type="Texture" id=10]
+[ext_resource path="res://Animations/Slime walk/SlimeBlue_Idle3.png" type="Texture" id=11]
+[ext_resource path="res://Animations/Slime walk/SlimeRed_Idle3.png" type="Texture" id=12]
+[ext_resource path="res://Animations/Slime walk/SlimeRed_Idle2.png" type="Texture" id=13]
+[ext_resource path="res://Animations/Slime death/Slime_Death4.png" type="Texture" id=14]
+[ext_resource path="res://Animations/Slime death/SlimeBlue_Death1.png" type="Texture" id=15]
+[ext_resource path="res://Animations/Slime death/Slime_Death11.png" type="Texture" id=16]
+[ext_resource path="res://Animations/Slime death/Slime_Death10.png" type="Texture" id=17]
+[ext_resource path="res://Animations/Slime death/Slime_Death3.png" type="Texture" id=18]
+[ext_resource path="res://Animations/Slime death/Slime_Death5.png" type="Texture" id=19]
+[ext_resource path="res://Animations/Slime death/Slime_Death7.png" type="Texture" id=20]
+[ext_resource path="res://Animations/Slime death/SlimeBlue_Death5.png" type="Texture" id=21]
+[ext_resource path="res://Animations/Slime death/Slime_Death2.png" type="Texture" id=22]
+[ext_resource path="res://Animations/Slime death/Slime_Death1.png" type="Texture" id=23]
+[ext_resource path="res://Animations/Slime death/SlimeBlue_Death2.png" type="Texture" id=24]
+[ext_resource path="res://Animations/Slime death/SlimeBlue_Death3.png" type="Texture" id=25]
+[ext_resource path="res://Animations/Slime death/SlimeBlue_Death4.png" type="Texture" id=26]
+[ext_resource path="res://Animations/Slime death/SlimeBlue_Death8.png" type="Texture" id=27]
+[ext_resource path="res://Animations/Slime death/Slime_Death8.png" type="Texture" id=28]
+[ext_resource path="res://Animations/Slime death/Slime_Death9.png" type="Texture" id=29]
+[ext_resource path="res://Animations/Slime death/SlimeBlue_Death11.png" type="Texture" id=30]
+[ext_resource path="res://Animations/Slime death/SlimeBlue_Death6.png" type="Texture" id=31]
+[ext_resource path="res://Animations/Slime death/SlimeRed_Death2.png" type="Texture" id=32]
+[ext_resource path="res://Animations/Slime death/SlimeBlue_Death10.png" type="Texture" id=33]
+[ext_resource path="res://Animations/Slime death/SlimeBlue_Death7.png" type="Texture" id=34]
+[ext_resource path="res://Animations/Slime death/SlimeRed_Death3.png" type="Texture" id=35]
+[ext_resource path="res://Animations/Slime death/SlimeRed_Death4.png" type="Texture" id=36]
+[ext_resource path="res://Animations/Slime death/SlimeRed_Death5.png" type="Texture" id=37]
+[ext_resource path="res://Animations/Slime death/SlimeRed_Death6.png" type="Texture" id=38]
+[ext_resource path="res://Animations/Slime death/SlimeRed_Death1.png" type="Texture" id=39]
+[ext_resource path="res://Animations/Slime death/Slime_Death6.png" type="Texture" id=40]
+[ext_resource path="res://Animations/Slime death/SlimeBlue_Death9.png" type="Texture" id=41]
+[ext_resource path="res://Animations/Slime death/SlimeRed_Death7.png" type="Texture" id=42]
+[ext_resource path="res://Animations/Slime death/SlimeRed_Death8.png" type="Texture" id=43]
+[ext_resource path="res://Animations/Slime death/SlimeRed_Death9.png" type="Texture" id=44]
+[ext_resource path="res://Animations/Slime death/SlimeRed_Death10.png" type="Texture" id=45]
+[ext_resource path="res://Animations/Slime death/SlimeRed_Death11.png" type="Texture" id=46]
+[ext_resource path="res://Animations/Slime jump/Slime_Jump1.png" type="Texture" id=47]
+[ext_resource path="res://Animations/Slime jump/Slime_Jump11.png" type="Texture" id=48]
+[ext_resource path="res://Animations/Slime jump/Slime_Jump14.png" type="Texture" id=49]
+[ext_resource path="res://Animations/Slime jump/Slime_Jump13.png" type="Texture" id=50]
+[ext_resource path="res://Animations/Slime jump/Slime_Jump15.png" type="Texture" id=51]
+[ext_resource path="res://Animations/Slime jump/Slime_Jump4.png" type="Texture" id=52]
+[ext_resource path="res://Animations/Slime jump/Slime_Jump5.png" type="Texture" id=53]
+[ext_resource path="res://Animations/Slime jump/Slime_Jump16.png" type="Texture" id=54]
+[ext_resource path="res://Animations/Slime jump/Slime_Jump2.png" type="Texture" id=55]
+[ext_resource path="res://Animations/Slime jump/Slime_Jump8.png" type="Texture" id=56]
+[ext_resource path="res://Animations/Slime jump/Slime_Jump9.png" type="Texture" id=57]
+[ext_resource path="res://Animations/Slime jump/Slime_Jump10.png" type="Texture" id=58]
+[ext_resource path="res://Animations/Slime jump/Slime_Jump12.png" type="Texture" id=59]
+[ext_resource path="res://Animations/Slime jump/Slime_Jump17.png" type="Texture" id=60]
+[ext_resource path="res://Animations/Slime jump/Slime_Jump18.png" type="Texture" id=61]
+[ext_resource path="res://Animations/Slime jump/Slime_Jump3.png" type="Texture" id=62]
+[ext_resource path="res://Animations/Slime jump/Slime_Jump6.png" type="Texture" id=63]
+[ext_resource path="res://Animations/Slime jump/Slime_Jump7.png" type="Texture" id=64]
+
+[sub_resource type="CapsuleShape2D" id=4]
+radius = 7.5
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 23 ), ExtResource( 22 ), ExtResource( 18 ), ExtResource( 14 ), ExtResource( 19 ), ExtResource( 40 ), ExtResource( 20 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 17 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "GreenDeath",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "GreenWalk",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 47 ), ExtResource( 55 ), ExtResource( 62 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 48 ), ExtResource( 59 ), ExtResource( 50 ), ExtResource( 49 ), ExtResource( 51 ), ExtResource( 54 ), ExtResource( 60 ), ExtResource( 61 ) ],
+"loop": true,
+"name": "GreenJump",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 21 ), ExtResource( 31 ), ExtResource( 34 ), ExtResource( 27 ), ExtResource( 41 ), ExtResource( 33 ), ExtResource( 30 ) ],
+"loop": true,
+"name": "BlueDeath",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 39 ), ExtResource( 32 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ) ],
+"loop": true,
+"name": "RedDeath",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "RedWalk",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 11 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "BlueWalk",
+"speed": 11.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 10.5, 7 )
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+collision_layer = 4
+collision_mask = 8
+script = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -10 )
+shape = SubResource( 4 )
+
+[node name="SlimeSheet" type="AnimatedSprite" parent="."]
+position = Vector2( -1, -13 )
+frames = SubResource( 2 )
+animation = "GreenJump"
+frame = 15
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 3 )
+
+[node name="floor_checker" type="RayCast2D" parent="."]
+position = Vector2( 12, 0 )
+enabled = true
+cast_to = Vector2( 0, 20 )
+collision_mask = 8
+
+[connection signal="animation_finished" from="SlimeSheet" to="." method="_on_SlimeSheet_animation_finished"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

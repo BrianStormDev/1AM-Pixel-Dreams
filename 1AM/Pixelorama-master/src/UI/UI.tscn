@@ -1,0 +1,405 @@
+[gd_scene load_steps=47 format=2]
+
+[ext_resource path="res://src/UI/Tools.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/UI/Canvas/CanvasPreview.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/UI/Tabs.gd" type="Script" id=3]
+[ext_resource path="res://src/UI/Canvas/Rulers/VerticalRuler.gd" type="Script" id=4]
+[ext_resource path="res://src/UI/TransparentChecker.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/UI/Canvas/Rulers/HorizontalRuler.gd" type="Script" id=6]
+[ext_resource path="res://src/UI/Canvas/CameraMovement.gd" type="Script" id=7]
+[ext_resource path="res://src/Shaders/Greyscale.gdshader" type="Shader" id=8]
+[ext_resource path="res://src/Shaders/TransparentChecker.shader" type="Shader" id=9]
+[ext_resource path="res://src/UI/GlobalToolOptions.tscn" type="PackedScene" id=10]
+[ext_resource path="res://addons/dockable_container/layout.gd" type="Script" id=14]
+[ext_resource path="res://src/UI/CanvasPreviewContainer.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/UI/ColorPickers.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/UI/Timeline/AnimationTimeline.tscn" type="PackedScene" id=18]
+[ext_resource path="res://src/UI/Canvas/Canvas.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/Palette/PalettePanel.tscn" type="PackedScene" id=20]
+[ext_resource path="res://src/UI/ViewportContainer.gd" type="Script" id=23]
+[ext_resource path="res://addons/dockable_container/layout_split.gd" type="Script" id=27]
+[ext_resource path="res://addons/dockable_container/dockable_container.gd" type="Script" id=35]
+[ext_resource path="res://addons/dockable_container/layout_panel.gd" type="Script" id=36]
+[ext_resource path="res://src/UI/UI.gd" type="Script" id=37]
+[ext_resource path="res://src/Shaders/UITransparency.gdshader" type="Shader" id=38]
+
+[sub_resource type="ShaderMaterial" id=26]
+shader = ExtResource( 38 )
+shader_param/alpha = 0.0
+shader_param/screen_resolution = Vector2( 1280, 720 )
+shader_param/position = Vector2( 100, 100 )
+shader_param/size = Vector2( 100, 100 )
+
+[sub_resource type="Resource" id=1]
+resource_name = "Tabs"
+script = ExtResource( 36 )
+names = PoolStringArray( "Tools" )
+current_tab = 0
+
+[sub_resource type="Resource" id=8]
+resource_name = "Tabs"
+script = ExtResource( 36 )
+names = PoolStringArray( "Main Canvas" )
+current_tab = 0
+
+[sub_resource type="Resource" id=28]
+resource_name = "Tabs"
+script = ExtResource( 36 )
+names = PoolStringArray( "Second Canvas" )
+current_tab = 0
+
+[sub_resource type="Resource" id=29]
+resource_name = "Split"
+script = ExtResource( 27 )
+direction = 0
+percent = 0.980952
+first = SubResource( 8 )
+second = SubResource( 28 )
+
+[sub_resource type="Resource" id=9]
+resource_name = "Tabs"
+script = ExtResource( 36 )
+names = PoolStringArray( "Animation Timeline" )
+current_tab = 0
+
+[sub_resource type="Resource" id=10]
+resource_name = "Split"
+script = ExtResource( 27 )
+direction = 1
+percent = 0.90625
+first = SubResource( 29 )
+second = SubResource( 9 )
+
+[sub_resource type="Resource" id=11]
+resource_name = "Tabs"
+script = ExtResource( 36 )
+names = PoolStringArray( "Canvas Preview" )
+current_tab = 0
+
+[sub_resource type="Resource" id=20]
+resource_name = "Tabs"
+script = ExtResource( 36 )
+names = PoolStringArray( "Color Pickers" )
+current_tab = 0
+
+[sub_resource type="Resource" id=30]
+resource_name = "Tabs"
+script = ExtResource( 36 )
+names = PoolStringArray( "Global Tool Options" )
+current_tab = 0
+
+[sub_resource type="Resource" id=31]
+resource_name = "Split"
+script = ExtResource( 27 )
+direction = 1
+percent = 0.5
+first = SubResource( 20 )
+second = SubResource( 30 )
+
+[sub_resource type="Resource" id=21]
+resource_name = "Split"
+script = ExtResource( 27 )
+direction = 1
+percent = 0.911765
+first = SubResource( 11 )
+second = SubResource( 31 )
+
+[sub_resource type="Resource" id=22]
+resource_name = "Tabs"
+script = ExtResource( 36 )
+names = PoolStringArray( "Left Tool Options" )
+current_tab = 0
+
+[sub_resource type="Resource" id=23]
+resource_name = "Tabs"
+script = ExtResource( 36 )
+names = PoolStringArray( "Right Tool Options" )
+current_tab = 0
+
+[sub_resource type="Resource" id=24]
+resource_name = "Split"
+script = ExtResource( 27 )
+direction = 0
+percent = 0.5
+first = SubResource( 22 )
+second = SubResource( 23 )
+
+[sub_resource type="Resource" id=13]
+resource_name = "Tabs"
+script = ExtResource( 36 )
+names = PoolStringArray( "Palette Panel" )
+current_tab = 0
+
+[sub_resource type="Resource" id=14]
+resource_name = "Split"
+script = ExtResource( 27 )
+direction = 1
+percent = 0.754808
+first = SubResource( 24 )
+second = SubResource( 13 )
+
+[sub_resource type="Resource" id=15]
+resource_name = "Split"
+script = ExtResource( 27 )
+direction = 1
+percent = 0.332031
+first = SubResource( 21 )
+second = SubResource( 14 )
+
+[sub_resource type="Resource" id=16]
+resource_name = "Split"
+script = ExtResource( 27 )
+direction = 0
+percent = 0.962785
+first = SubResource( 10 )
+second = SubResource( 15 )
+
+[sub_resource type="Resource" id=5]
+resource_name = "Split"
+script = ExtResource( 27 )
+direction = 0
+percent = 0.0
+first = SubResource( 1 )
+second = SubResource( 16 )
+
+[sub_resource type="Resource" id=32]
+resource_name = "Layout"
+script = ExtResource( 14 )
+root = SubResource( 5 )
+hidden_tabs = {
+"Second Canvas": true
+}
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = ExtResource( 9 )
+shader_param/size = 10.0
+shader_param/alpha = 1.0
+shader_param/color1 = Color( 0.7, 0.7, 0.7, 1 )
+shader_param/color2 = Color( 1, 1, 1, 1 )
+shader_param/offset = Vector2( 0, 0 )
+shader_param/scale = Vector2( 0, 0 )
+shader_param/rect_size = Vector2( 0, 0 )
+shader_param/follow_movement = false
+shader_param/follow_scale = false
+
+[sub_resource type="ShaderMaterial" id=27]
+shader = ExtResource( 8 )
+
+[sub_resource type="ShaderMaterial" id=3]
+shader = ExtResource( 9 )
+shader_param/size = 10.0
+shader_param/alpha = 1.0
+shader_param/color1 = Color( 0.7, 0.7, 0.7, 1 )
+shader_param/color2 = Color( 1, 1, 1, 1 )
+shader_param/offset = Vector2( 0, 0 )
+shader_param/scale = Vector2( 0, 0 )
+shader_param/rect_size = Vector2( 0, 0 )
+shader_param/follow_movement = false
+shader_param/follow_scale = false
+
+[node name="UI" type="Panel"]
+material = SubResource( 26 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 37 )
+
+[node name="DockableContainer" type="Container" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 35 )
+tabs_visible = false
+layout = SubResource( 32 )
+
+[node name="Tools" parent="DockableContainer" instance=ExtResource( 1 )]
+margin_left = 4.0
+margin_top = 8.0
+margin_right = -1240.0
+margin_bottom = -4.0
+
+[node name="Main Canvas" type="VBoxContainer" parent="DockableContainer"]
+margin_left = 60.0
+margin_top = 8.0
+margin_right = 938.0
+margin_bottom = 532.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+
+[node name="TabsContainer" type="PanelContainer" parent="DockableContainer/Main Canvas"]
+margin_right = 878.0
+margin_bottom = 38.0
+
+[node name="Tabs" type="Tabs" parent="DockableContainer/Main Canvas/TabsContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 871.0
+margin_bottom = 31.0
+tab_align = 0
+tab_close_display_policy = 2
+drag_to_rearrange_enabled = true
+script = ExtResource( 3 )
+
+[node name="HorizontalRuler" type="Button" parent="DockableContainer/Main Canvas"]
+margin_top = 38.0
+margin_right = 878.0
+margin_bottom = 58.0
+rect_min_size = Vector2( 0, 16 )
+focus_mode = 0
+mouse_default_cursor_shape = 14
+action_mode = 0
+script = ExtResource( 6 )
+
+[node name="ViewportandVerticalRuler" type="HBoxContainer" parent="DockableContainer/Main Canvas"]
+margin_top = 58.0
+margin_right = 878.0
+margin_bottom = 524.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+
+[node name="VerticalRuler" type="Button" parent="DockableContainer/Main Canvas/ViewportandVerticalRuler"]
+margin_right = 16.0
+margin_bottom = 466.0
+rect_min_size = Vector2( 16, 0 )
+focus_mode = 0
+mouse_default_cursor_shape = 15
+size_flags_horizontal = 0
+size_flags_vertical = 3
+action_mode = 0
+script = ExtResource( 4 )
+
+[node name="ViewportContainer" type="ViewportContainer" parent="DockableContainer/Main Canvas/ViewportandVerticalRuler"]
+margin_left = 16.0
+margin_right = 878.0
+margin_bottom = 466.0
+focus_mode = 2
+mouse_default_cursor_shape = 3
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stretch = true
+script = ExtResource( 23 )
+
+[node name="Viewport" type="Viewport" parent="DockableContainer/Main Canvas/ViewportandVerticalRuler/ViewportContainer"]
+size = Vector2( 862, 466 )
+handle_input_locally = false
+usage = 0
+render_target_update_mode = 3
+
+[node name="TransparentChecker" parent="DockableContainer/Main Canvas/ViewportandVerticalRuler/ViewportContainer/Viewport" instance=ExtResource( 5 )]
+material = SubResource( 2 )
+
+[node name="Canvas" parent="DockableContainer/Main Canvas/ViewportandVerticalRuler/ViewportContainer/Viewport" instance=ExtResource( 19 )]
+
+[node name="Camera2D" type="Camera2D" parent="DockableContainer/Main Canvas/ViewportandVerticalRuler/ViewportContainer/Viewport"]
+current = true
+zoom = Vector2( 0.15, 0.15 )
+script = ExtResource( 7 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="DockableContainer/Main Canvas/ViewportandVerticalRuler/ViewportContainer/Viewport"]
+
+[node name="GreyscaleVision" type="ColorRect" parent="DockableContainer/Main Canvas/ViewportandVerticalRuler/ViewportContainer/Viewport/CanvasLayer"]
+material = SubResource( 27 )
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+
+[node name="Second Canvas" type="ViewportContainer" parent="DockableContainer"]
+visible = false
+margin_left = 1274.0
+margin_top = 8.0
+margin_right = 1276.0
+margin_bottom = 350.0
+size_flags_vertical = 3
+stretch = true
+script = ExtResource( 23 )
+
+[node name="Viewport" type="Viewport" parent="DockableContainer/Second Canvas"]
+size = Vector2( 2, 342 )
+handle_input_locally = false
+render_target_update_mode = 0
+
+[node name="TransparentChecker" parent="DockableContainer/Second Canvas/Viewport" instance=ExtResource( 5 )]
+material = SubResource( 3 )
+
+[node name="CanvasPreview" parent="DockableContainer/Second Canvas/Viewport" instance=ExtResource( 2 )]
+
+[node name="Camera2D2" type="Camera2D" parent="DockableContainer/Second Canvas/Viewport"]
+current = true
+zoom = Vector2( 0.15, 0.15 )
+script = ExtResource( 7 )
+
+[node name="Animation Timeline" parent="DockableContainer" instance=ExtResource( 18 )]
+margin_left = 60.0
+margin_top = 556.0
+margin_right = 938.0
+margin_bottom = 716.0
+
+[node name="Canvas Preview" parent="DockableContainer" instance=ExtResource( 16 )]
+margin_left = 958.0
+margin_top = 8.0
+margin_right = 1276.0
+margin_bottom = 98.0
+
+[node name="Color Pickers" parent="DockableContainer" instance=ExtResource( 17 )]
+margin_top = 122.0
+margin_bottom = 168.0
+
+[node name="Global Tool Options" parent="DockableContainer" instance=ExtResource( 10 )]
+margin_left = 958.0
+margin_top = 192.0
+margin_right = 1276.0
+margin_bottom = 242.0
+
+[node name="Left Tool Options" type="ScrollContainer" parent="DockableContainer"]
+margin_left = 958.0
+margin_top = 266.0
+margin_right = 1107.0
+margin_bottom = 574.0
+rect_min_size = Vector2( 72, 72 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LeftPanelContainer" type="PanelContainer" parent="DockableContainer/Left Tool Options"]
+margin_right = 149.0
+margin_bottom = 308.0
+rect_min_size = Vector2( 130, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Right Tool Options" type="ScrollContainer" parent="DockableContainer"]
+margin_left = 1127.0
+margin_top = 266.0
+margin_right = 1276.0
+margin_bottom = 574.0
+rect_min_size = Vector2( 72, 72 )
+
+[node name="RightPanelContainer" type="PanelContainer" parent="DockableContainer/Right Tool Options"]
+margin_right = 149.0
+margin_bottom = 308.0
+rect_min_size = Vector2( 130, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Palette Panel" parent="DockableContainer" instance=ExtResource( 20 )]
+margin_left = 958.0
+margin_top = 598.0
+margin_right = 1276.0
+margin_bottom = 716.0
+
+[connection signal="item_rect_changed" from="DockableContainer/Main Canvas" to="." method="_on_main_canvas_item_rect_changed"]
+[connection signal="visibility_changed" from="DockableContainer/Main Canvas" to="." method="_on_main_canvas_visibility_changed"]
+[connection signal="reposition_active_tab_request" from="DockableContainer/Main Canvas/TabsContainer/Tabs" to="DockableContainer/Main Canvas/TabsContainer/Tabs" method="_on_Tabs_reposition_active_tab_request"]
+[connection signal="tab_changed" from="DockableContainer/Main Canvas/TabsContainer/Tabs" to="DockableContainer/Main Canvas/TabsContainer/Tabs" method="_on_Tabs_tab_changed"]
+[connection signal="tab_close" from="DockableContainer/Main Canvas/TabsContainer/Tabs" to="DockableContainer/Main Canvas/TabsContainer/Tabs" method="_on_Tabs_tab_close"]
+[connection signal="mouse_entered" from="DockableContainer/Main Canvas/HorizontalRuler" to="DockableContainer/Main Canvas/HorizontalRuler" method="_on_HorizontalRuler_mouse_entered"]
+[connection signal="pressed" from="DockableContainer/Main Canvas/HorizontalRuler" to="DockableContainer/Main Canvas/HorizontalRuler" method="_on_HorizontalRuler_pressed"]
+[connection signal="pressed" from="DockableContainer/Main Canvas/ViewportandVerticalRuler/VerticalRuler" to="DockableContainer/Main Canvas/ViewportandVerticalRuler/VerticalRuler" method="_on_VerticalRuler_pressed"]
+[connection signal="mouse_entered" from="DockableContainer/Main Canvas/ViewportandVerticalRuler/ViewportContainer" to="DockableContainer/Main Canvas/ViewportandVerticalRuler/ViewportContainer" method="_on_ViewportContainer_mouse_entered"]
+[connection signal="mouse_exited" from="DockableContainer/Main Canvas/ViewportandVerticalRuler/ViewportContainer" to="DockableContainer/Main Canvas/ViewportandVerticalRuler/ViewportContainer" method="_on_ViewportContainer_mouse_exited"]
+[connection signal="mouse_entered" from="DockableContainer/Second Canvas" to="DockableContainer/Second Canvas" method="_on_ViewportContainer_mouse_entered"]
+[connection signal="mouse_exited" from="DockableContainer/Second Canvas" to="DockableContainer/Second Canvas" method="_on_ViewportContainer_mouse_exited"]

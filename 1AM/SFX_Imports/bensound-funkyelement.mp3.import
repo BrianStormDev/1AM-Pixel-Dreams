@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bensound-funkyelement.mp3-63acba5f8b5f9e42b452dca459dd9ee7.mp3str"
+
+[deps]
+
+source_file="res://SFX_Imports/bensound-funkyelement.mp3"
+dest_files=[ "res://.import/bensound-funkyelement.mp3-63acba5f8b5f9e42b452dca459dd9ee7.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

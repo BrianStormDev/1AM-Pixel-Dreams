@@ -1,0 +1,63 @@
+[gd_resource type="Resource" load_steps=11 format=2]
+
+[ext_resource path="res://src/Palette/Palette.gd" type="Script" id=1]
+[ext_resource path="res://src/Palette/PaletteColor.gd" type="Script" id=2]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+color = Color( 1, 0.0627451, 0.941176, 1 )
+index = 0
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 2 )
+color = Color( 0.0196078, 0.976471, 0.933333, 1 )
+index = 1
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 2 )
+color = Color( 0.698039, 0.0196078, 0.976471, 1 )
+index = 2
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 2 )
+color = Color( 0.976471, 0.0627451, 0.0196078, 1 )
+index = 3
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 2 )
+color = Color( 0.945098, 0.976471, 0.0196078, 1 )
+index = 4
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 2 )
+color = Color( 0.027451, 0.0196078, 0.976471, 1 )
+index = 5
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 2 )
+color = Color( 0.0705882, 0.976471, 0.0196078, 1 )
+index = 6
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 2 )
+color = Color( 1, 0.647059, 0, 1 )
+index = 7
+
+[resource]
+resource_name = "Paintball"
+script = ExtResource( 1 )
+name = "Paintball"
+comment = ""
+width = 8
+height = 8
+colors = {
+0: SubResource( 1 ),
+1: SubResource( 2 ),
+2: SubResource( 3 ),
+3: SubResource( 4 ),
+4: SubResource( 5 ),
+5: SubResource( 6 ),
+6: SubResource( 7 ),
+7: SubResource( 8 )
+}
+colors_max = 64

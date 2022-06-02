@@ -1,0 +1,98 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://ShootingPlayer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Environments/MathCity/MathLevel.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Enemies/Angle Biter.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Enemies/mafia.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scripts/Tutorial.gd" type="Script" id=5]
+[ext_resource path="res://Enemies/MultMan.tscn" type="PackedScene" id=6]
+[ext_resource path="res://UI/main menu.tscn" type="PackedScene" id=7]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 1758.5, 179 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 130.5, 486 )
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 0, 230 )
+script = ExtResource( 5 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 27, 843 )
+scale = Vector2( 2, 2 )
+GRAVITY = 30
+JUMPFORCE = 700
+top_limit = 230
+right_limit = 3200
+bgmusic = null
+
+[node name="EnvLevel" parent="." instance=ExtResource( 2 )]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Angle Biter" parent="Node2D" instance=ExtResource( 3 )]
+position = Vector2( 443, 719 )
+
+[node name="mafia1" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 1030, 428 )
+
+[node name="MultMan" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 2334, 578 )
+
+[node name="MultMan2" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 912, 602 )
+
+[node name="Angle Biter2" parent="Node2D" instance=ExtResource( 3 )]
+position = Vector2( 389, 192 )
+direction = -1
+
+[node name="mafia2" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 1481, 152 )
+
+[node name="Angle Biter3" parent="Node2D" instance=ExtResource( 3 )]
+position = Vector2( 2969, 42 )
+
+[node name="Angle Biter4" parent="Node2D" instance=ExtResource( 3 )]
+position = Vector2( 2099, 339 )
+
+[node name="Angle Biter5" parent="Node2D" instance=ExtResource( 3 )]
+position = Vector2( 1924, 642 )
+direction = -1
+
+[node name="mafia3" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 2219, 666 )
+
+[node name="MultMan3" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1476, 548 )
+switch_time = 2
+
+[node name="Angle Biter6" parent="Node2D" instance=ExtResource( 3 )]
+position = Vector2( 2585, 102 )
+
+[node name="MultMan4" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 2828, 740 )
+switch_time = 1
+
+[node name="mafia4" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 2471, 424 )
+
+[node name="CanvasLayer" parent="." instance=ExtResource( 7 )]
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 1750.5, 1116 )
+shape = SubResource( 1 )
+
+[node name="Finish" type="Area2D" parent="."]
+collision_layer = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Finish"]
+position = Vector2( 3325.5, 410 )
+shape = SubResource( 2 )
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Finish" to="." method="_on_Finish_body_entered"]

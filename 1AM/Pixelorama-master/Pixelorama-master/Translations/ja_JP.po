@@ -1,0 +1,1866 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: pixelorama\n"
+"X-Crowdin-Project-ID: 385497\n"
+"X-Crowdin-Language: ja\n"
+"X-Crowdin-File: /master/Translations/Translations.pot\n"
+"X-Crowdin-File-ID: 5\n"
+"Project-Id-Version: pixelorama\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
+"PO-Revision-Date: 2022-01-05 19:26\n"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Open"
+msgstr "開く"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Please Confirm..."
+msgstr "確認して下さい"
+
+msgid "File Name:"
+msgstr "ファイル名:"
+
+msgid "Project Name:"
+msgstr "プロジェクト名:"
+
+msgid "Image Size"
+msgstr "画像サイズ"
+
+msgid "Canvas Size"
+msgstr "キャンバス サイズ"
+
+msgid "Frame Size"
+msgstr "フレームサイズ"
+
+msgid "Size:"
+msgstr "サイズ:"
+
+msgid "Width:"
+msgstr "幅:"
+
+msgid "Height:"
+msgstr "高さ:"
+
+msgid "Center"
+msgstr "中央揃え"
+
+msgid "File"
+msgstr "ファイル"
+
+msgid "Edit"
+msgstr "編集"
+
+msgid "Select"
+msgstr "選択"
+
+msgid "View"
+msgstr "表示"
+
+msgid "Image"
+msgstr "画像"
+
+msgid "Effects"
+msgstr "エフェクト"
+
+msgid "Help"
+msgstr "ヘルプ"
+
+msgid "New"
+msgstr "新規"
+
+msgid "New..."
+msgstr "新規..."
+
+msgid "Open..."
+msgstr "開く..."
+
+msgid "Save..."
+msgstr "保存..."
+
+msgid "Save as..."
+msgstr "名前をつけて保存"
+
+msgid "Use ZSTD Compression"
+msgstr "ZSTD圧縮を使用する"
+
+msgid "Import"
+msgstr "インポート"
+
+msgid "Export"
+msgstr "エクスポート"
+
+msgid "Export..."
+msgstr "エクスポート..."
+
+msgid "Export as..."
+msgstr "書式を指定してエクスポート…"
+
+msgid "Export PNG..."
+msgstr "PNGでエクスポート..."
+
+msgid "Export PNG as..."
+msgstr "PNGに名前をつけてエクスポート..."
+
+msgid "Quit"
+msgstr "終了"
+
+msgid "Undo"
+msgstr "元に戻す"
+
+msgid "Redo"
+msgstr "やり直し"
+
+msgid "Copy"
+msgstr "コピー"
+
+msgid "Cut"
+msgstr "カット"
+
+msgid "Paste"
+msgstr "ペースト"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "New Brush"
+msgstr "新しいブラシ"
+
+msgid "Scale Image"
+msgstr "画像の拡大縮小"
+
+msgid "Pixels"
+msgstr "ピクセル"
+
+msgid "Percentage"
+msgstr "割合"
+
+msgid "Crop Image"
+msgstr "画像のトリミング"
+
+msgid "Resize Canvas"
+msgstr "キャンバスサイズを変更"
+
+msgid "Centralize Image"
+msgstr "画像を中央に"
+
+msgid "Rotate Image"
+msgstr "画像を回転"
+
+msgid "Clear"
+msgstr "削除"
+
+msgid "Invert"
+msgstr "反転"
+
+msgid "Flip"
+msgstr "反転"
+
+msgid "Flip Horizontal"
+msgstr "水平方向に反転"
+
+msgid "Flip Vertical"
+msgstr "垂直方向に反転"
+
+msgid "Preferences"
+msgstr "設定"
+
+msgid "Tile Mode"
+msgstr "タイルモード"
+
+msgid "Window Opacity"
+msgstr "ウィンドウ不透明度"
+
+msgid "Panel Layout"
+msgstr "パネルのレイアウト"
+
+msgid "Auto"
+msgstr "オート"
+
+msgid "Widescreen"
+msgstr "ワイドスクリーン"
+
+msgid "Tallscreen"
+msgstr "トールスクリーン"
+
+msgid "Mirror View"
+msgstr "ミラービュー"
+
+msgid "Show Grid"
+msgstr "グリッドを表示"
+
+msgid "Show Pixel Grid"
+msgstr "ピクセルグリッドを表示"
+
+msgid "Show Rulers"
+msgstr "ルーラーを表示"
+
+msgid "Show Guides"
+msgstr "ガイドを表示"
+
+msgid "Show Animation Timeline"
+msgstr "アニメーションのタイムラインを表示"
+
+msgid "Zen Mode"
+msgstr "Zenモード"
+
+msgid "Fullscreen Mode"
+msgstr "フルスクリーンモード"
+
+msgid "Fill with color:"
+msgstr "塗りつぶし"
+
+msgid "Open a File"
+msgstr "ファイルを開く"
+
+msgid "Open File(s)"
+msgstr "ファイルを開く"
+
+msgid "Import Options"
+msgstr "インポートオプション"
+
+msgid "Import as:"
+msgstr "形式を指定してインポート"
+
+msgid "Recent projects"
+msgstr "最近のプロジェクト"
+
+msgid "New tab"
+msgstr "新しいタブ"
+
+msgid "Spritesheet (new tab)"
+msgstr "スプライトシート（新規タブ）"
+
+msgid "Spritesheet (new layer)"
+msgstr "スプライトシート (新規レイヤー)"
+
+msgid "New frame"
+msgstr "新しいフレーム"
+
+msgid "Replace frame"
+msgstr "フレームを置換"
+
+msgid "New layer"
+msgstr "新規レイヤー"
+
+msgid "New palette"
+msgstr "新しいパレット"
+
+msgid "New brush"
+msgstr "新しいブラシ"
+
+msgid "New pattern"
+msgstr "新しいパターン"
+
+msgid "Horizontal frames:"
+msgstr "水平フレーム:"
+
+msgid "Vertical frames:"
+msgstr "垂直フレーム"
+
+msgid "Start frame:"
+msgstr "開始フレーム:"
+
+msgid "At frame:"
+msgstr "すべてのフレーム:"
+
+msgid "At layer:"
+msgstr "レイヤーで:"
+
+msgid "Brush type:"
+msgstr "ブラシタイプ:"
+
+msgid "File brush"
+msgstr "ファイルブラシ"
+
+msgid "Project brush"
+msgstr "プロジェクトブラシ"
+
+msgid "Random brush"
+msgstr "ランダムブラシ"
+
+msgid "Save Sprite as .pxo"
+msgstr "スプライトを .pxo として保存"
+
+msgid "Export Sprite as .png"
+msgstr ".png としてエクスポート"
+
+msgid "Export Sprite"
+msgstr "スプライトをエクスポート"
+
+msgid "File Exists, Overwrite?"
+msgstr "ファイルが存在します。上書きしますか？"
+
+msgid "File %s already exists. Overwrite?"
+msgstr "ファイル %s は既に存在しています。上書きしますか？"
+
+msgid "Directory path or file name is not valid!"
+msgstr "ディレクトリパスまたはファイル名が無効です！"
+
+msgid "Exporting in progress..."
+msgstr "エクスポート中..."
+
+msgid "Can't load file '%s'.\n"
+"Error code: %s"
+msgstr "ファイル '%s' を読み込むことができません。\n"
+"エラーコード: %s"
+
+msgid "Frame"
+msgstr "フレーム"
+
+msgid "Frames:"
+msgstr "フレーム:"
+
+msgid "All Frames"
+msgstr "すべてのフレーム"
+
+msgid "Spritesheet"
+msgstr "Spritesheet"
+
+msgid "Animation"
+msgstr "アニメーション"
+
+msgid "Preview:"
+msgstr "プレビュー:"
+
+msgid "Frame:"
+msgstr "フレーム："
+
+msgid "Orientation:"
+msgstr "向き:"
+
+msgid "Browse"
+msgstr "参照"
+
+msgid "Resize:"
+msgstr "サイズを変更"
+
+msgid "Cancel Export"
+msgstr "エクスポートをキャンセル"
+
+msgid "Alert!"
+msgstr "警告！"
+
+msgid "Select Current Folder"
+msgstr "現在のフォルダを選択"
+
+msgid "Open a Directory"
+msgstr "ディレクトリを開く"
+
+msgid "All frames as multiple files"
+msgstr "すべてのフレームを複数のファイルとしてエクスポート"
+
+msgid "All frames as a single file animation"
+msgstr "すべてのフレームを単一のアニメーションファイルとしてエクスポート"
+
+msgid "Background:"
+msgstr "バックグラウンド:"
+
+msgid "Direction:"
+msgstr "方向:"
+
+msgid "Forward"
+msgstr "前方から"
+
+msgid "Backwards"
+msgstr "後方から"
+
+msgid "Ping-Pong"
+msgstr "Ping-Pong"
+
+msgid "Columns"
+msgstr "列"
+
+msgid "Columns:"
+msgstr "列:"
+
+msgid "Rows"
+msgstr "行"
+
+msgid "Rows:"
+msgstr "行:"
+
+msgid "Path:"
+msgstr "パス:"
+
+msgid "Directories & Files:"
+msgstr "ディレクトリとファイル:"
+
+msgid "Create Folder"
+msgstr "フォルダーを作成"
+
+msgid "File:"
+msgstr "ファイル:"
+
+msgid "Interpolation:"
+msgstr "補間:"
+
+msgid "Nearest"
+msgstr "ニアレスト"
+
+msgid "Bilinear"
+msgstr "バイリニア"
+
+msgid "Cubic"
+msgstr "キュービック"
+
+msgid "Trilinear"
+msgstr "トライリニア"
+
+msgid "General"
+msgstr "一般"
+
+msgid "Startup"
+msgstr "スタートアップ"
+
+msgid "Language"
+msgstr "言語"
+
+msgid "Interface"
+msgstr "インターフェース"
+
+msgid "Themes"
+msgstr "テーマ"
+
+msgid "Canvas"
+msgstr "キャンバス"
+
+msgid "Selection"
+msgstr "選択範囲"
+
+msgid "Shortcuts"
+msgstr "ショートカット"
+
+msgid "Backup"
+msgstr "バックアップ"
+
+msgid "Performance"
+msgstr "パフォーマンス"
+
+msgid "Indicators"
+msgstr "インジケーター"
+
+msgid "On"
+msgstr "オン"
+
+msgid "Restore default value"
+msgstr "既定値へ戻す"
+
+msgid "Smooth Zoom"
+msgstr "スムーズズーム"
+
+msgid "Adds a smoother transition when zooming in or out"
+msgstr "ズームインまたはズームアウト時にスムーズなトランジションを追加します"
+
+msgid "Tablet pressure sensitivity:"
+msgstr "タブレットの圧力感度:"
+
+msgid "None"
+msgstr "無し"
+
+msgid "Affect Brush's Alpha"
+msgstr "ブラシのアルファに影響"
+
+msgid "Color:"
+msgstr "色:"
+
+msgid "Guide color:"
+msgstr "ガイドの色:"
+
+msgid "System Language"
+msgstr "システム言語"
+
+msgid "Display Scale"
+msgstr "表示スケール"
+
+msgid "Dim interface on dialog popup"
+msgstr "ダイアログポップアップ時にインターフェースを薄暗くする"
+
+msgid "Dark"
+msgstr "ダーク"
+
+msgid "Gray"
+msgstr "グレー"
+
+msgid "Blue"
+msgstr "青"
+
+msgid "Caramel"
+msgstr "キャラメル"
+
+msgid "Light"
+msgstr "ライト"
+
+msgid "Purple"
+msgstr "紫"
+
+msgid "Theme"
+msgstr "テーマ"
+
+msgid "Icon color from:"
+msgstr "次のもののアイコンの色:"
+
+msgid "Icon color:"
+msgstr "アイコンの色:"
+
+msgid "Tool button size:"
+msgstr "ツールボタンのサイズ:"
+
+msgid "Small"
+msgstr "小"
+
+msgid "Big"
+msgstr "大"
+
+msgid "Only affect selection"
+msgstr "選択範囲のみに影響"
+
+msgid "Selected cels"
+msgstr "選択中のセル"
+
+msgid "Current cel"
+msgstr "現在のセル"
+
+msgid "Current frame"
+msgstr "現在のフレーム"
+
+msgid "All frames"
+msgstr "すべてのフレーム"
+
+msgid "All projects"
+msgstr "すべてのプロジェクト"
+
+msgid "Invert Colors"
+msgstr "色を反転"
+
+msgid "Modify Red Channel"
+msgstr "赤チャンネルを変更"
+
+msgid "Modify Green Channel"
+msgstr "緑チャンネルを変更"
+
+msgid "Modify Blue Channel"
+msgstr "青チャンネルを変更"
+
+msgid "Modify Alpha Channel"
+msgstr "アルファチャンネルを変更"
+
+msgid "Desaturation"
+msgstr "彩度を下げる"
+
+msgid "Outline"
+msgstr "アウトライン"
+
+msgid "Adjust Hue/Saturation/Value"
+msgstr "色相/彩度/値を調整"
+
+msgid "Gradient"
+msgstr "グラディエーション"
+
+msgid "Adjust HSV"
+msgstr "HSVを調整"
+
+msgid "Type:"
+msgstr "タイプ:"
+
+msgid "Angle:"
+msgstr "角度:"
+
+msgid "Hue:"
+msgstr "色相:"
+
+msgid "Saturation:"
+msgstr "彩度:"
+
+msgid "Value:"
+msgstr "値:"
+
+msgid "Apply"
+msgstr "適用"
+
+msgid "Diagonal"
+msgstr "対角線"
+
+msgid "Place inside image"
+msgstr "画像内に配置"
+
+msgid "Thickness:"
+msgstr "厚さ:"
+
+msgid "Colors:"
+msgstr "色:"
+
+msgid "Steps:"
+msgstr "手順:"
+
+msgid "Top to Bottom"
+msgstr "上から下"
+
+msgid "Bottom to Top"
+msgstr "下から上へ"
+
+msgid "Left to Right"
+msgstr "左から右"
+
+msgid "Right to Left"
+msgstr "右から左"
+
+msgid "View Splash Screen"
+msgstr "スプラッシュ スクリーンを表示"
+
+msgid "Online Docs"
+msgstr "Online Docs"
+
+msgid "Issue Tracker"
+msgstr "課題管理"
+
+msgid "Open Logs Folder"
+msgstr "ログフォルダーを開く"
+
+msgid "Changelog"
+msgstr "更新履歴"
+
+msgid "About Pixelorama"
+msgstr "Pixelorama について"
+
+msgid "Pixelorama - Pixelate your dreams!"
+msgstr "Pixelorama - 夢をピクセル化しよう!"
+
+msgid "Developed by Orama Interactive"
+msgstr "Developed by Orama Interactive"
+
+msgid "©2019-present by Orama Interactive and contributors"
+msgstr "©2019-present by Orama Interactive and contributors"
+
+msgid "Website"
+msgstr "ウェブサイト"
+
+msgid "GitHub Repo"
+msgstr "GitHub Repo"
+
+msgid "Donate"
+msgstr "Donate"
+
+msgid "Developers"
+msgstr "開発者"
+
+msgid "Contributors"
+msgstr "Contributors"
+
+msgid "Donors"
+msgstr "Donors"
+
+msgid "Translators"
+msgstr "翻訳者"
+
+msgid "Licenses"
+msgstr "ライセンス"
+
+msgid "English"
+msgstr "英語"
+
+msgid "Greek"
+msgstr "ギリシャ語"
+
+msgid "French"
+msgstr "フランス語"
+
+msgid "German"
+msgstr "ドイツ語"
+
+msgid "Polish"
+msgstr "ポーランド語"
+
+msgid "Portuguese"
+msgstr "ポルトガル語"
+
+msgid "Brazilian Portuguese"
+msgstr "ポルトガル語 (ブラジル)"
+
+msgid "Russian"
+msgstr "ロシア語"
+
+msgid "Chinese Simplified"
+msgstr "中国語（簡体)"
+
+msgid "Chinese Traditional"
+msgstr "中国語 (繁体)"
+
+msgid "Italian"
+msgstr "イタリア語"
+
+msgid "Latvian"
+msgstr "ラトビア語"
+
+msgid "Spanish"
+msgstr "スペイン語"
+
+msgid "Catalan"
+msgstr "カタロニア語"
+
+msgid "Esperanto"
+msgstr "エスペラント語"
+
+msgid "Indonesian"
+msgstr "インドネシア語"
+
+msgid "Czech"
+msgstr "チェコ語"
+
+msgid "Arabic"
+msgstr "アラビア語"
+
+msgid "Turkish"
+msgstr "トルコ語"
+
+msgid "Norwegian Bokmål"
+msgstr "ノルウェー語・ボークモール"
+
+msgid "Korean"
+msgstr "韓国語"
+
+msgid "Hungarian"
+msgstr "ハンガリー語"
+
+msgid "Romanian"
+msgstr "ルーマニア語"
+
+msgid "Japanese"
+msgstr "日本語"
+
+msgid "Ukrainian"
+msgstr "ウクライナ語"
+
+msgid "Development Team"
+msgstr "Development Team"
+
+msgid "Lead Programmer"
+msgstr "Lead Programmer"
+
+msgid "UI Designer"
+msgstr "UI Designer"
+
+msgid "GitHub Contributors"
+msgstr "GitHub Contributors"
+
+msgid "Art by: %s"
+msgstr "Art by: %s"
+
+msgid "untitled"
+msgstr "無題"
+
+msgid "imported"
+msgstr "インポート済み"
+
+msgid "copy"
+msgstr "コピー"
+
+msgid "Are you sure you want to exit Pixelorama?"
+msgstr "Pixeloramaを終了してもよろしいですか？"
+
+msgid "Unsaved Image"
+msgstr "保存されていない画像"
+
+msgid "You have unsaved changes. If you proceed, the progress you have made will be lost."
+msgstr "保存されていない変更があります。続行すると、進行状況は失われます。"
+
+msgid "Save before exiting?"
+msgstr "終了する前に保存しますか？"
+
+msgid "You have unsaved progress. How do you wish to proceed?"
+msgstr "保存されていない進行状況があります。どのように進めますか？"
+
+msgid "Save & Exit"
+msgstr "セーブして終了"
+
+msgid "Exit without saving"
+msgstr "保存せずに終了"
+
+msgid "Rectangular Selection\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "矩形選択\n\n"
+"%sでマウスの左ボタンを 矩形選択 に変更\n"
+"%sでマウスの右ボタンを 矩形選択 に変更"
+
+msgid "Elliptical Selection\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "楕円形選択\n\n"
+"%sでマウスの左ボタンを 楕円形選択 に変更\n"
+"%sでマウスの右ボタンを 楕円形選択 に変更"
+
+msgid "Polygonal Selection\n"
+"Double-click to connect the last point to the starting point\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "多角形選択\n"
+"最後の点を開始点に接続するにはダブルクリック\n\n"
+"%sでマウスの左ボタンを 多角形選択 に変更\n"
+"%sでマウスの右ボタンを 多角形選択 に変更"
+
+msgid "Select By Color\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "色選択\n\n"
+"%sでマウスの左ボタンを 色選択 に変更\n"
+"%sでマウスの右ボタンを 色選択 に変更"
+
+msgid "Magic Wand\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "自動選択\n\n"
+"%sでマウスの左ボタンを 自動選択 に変更\n"
+"%sでマウスの右ボタンを 自動選択 に変更"
+
+msgid "Lasso / Free Select Tool\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "なげなわ/自由選択\n\n"
+"%sでマウスの左ボタンを なげなわ/自由選択 に変更\n"
+"%sでマウスの右ボタンを なげなわ/自由選択 に変更"
+
+msgid "Move\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "移動\n\n"
+"%sでマウスの左ボタンを 移動 に変更\n"
+"%sでマウスの右ボタンを 移動 に変更"
+
+msgid "Zoom\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "ズーム\n\n"
+"%sでマウスの左ボタンを ズーム に変更\n"
+"%sでマウスの右ボタンを ズーム に変更"
+
+msgid "Pan\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "パン\n\n"
+"%sでマウスの左ボタンを パン に変更\n"
+"%sでマウスの右ボタンを パン に変更"
+
+msgid "Color Picker\n"
+"Select a color from a pixel of the sprite\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "カラーピッカー\n"
+"スプライトのピクセルから色を選択してください。\n\n"
+"%sでマウスの左ボタンを カラーピッカー に変更\n"
+"%sでマウスの右ボタンを カラーピッカー に変更"
+
+msgid "Pencil\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button\n\n"
+"Hold %s to make a line"
+msgstr "鉛筆\n\n"
+"%sでマウスの左ボタンを 鉛筆 に変更\n"
+"%sでマウスの右ボタンを 鉛筆 に変更\n\n"
+" %s を長押しすると直線を引けます"
+
+msgid "Eraser\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button\n\n"
+"Hold %s to make a line"
+msgstr "消しゴム\n\n"
+"%sでマウスの左ボタンを 消しゴム に変更\n"
+"%sでマウスの右ボタンを 消しゴム に変更\n\n"
+" %s を長押しすると直線を消せます"
+
+msgid "Bucket\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "バケツ\n"
+"%sでマウスの左ボタンを バケツ に変更\n"
+"%sでマウスの右ボタンを バケツ に変更"
+
+msgid "Shading Tool\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "シューディングツール\n\n"
+"%sでマウスの左ボタンを シューディングツール に変更\n"
+"%sでマウスの右ボタンを シューディングツール に変更"
+
+msgid "Line Tool\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button\n\n"
+"Hold %s to snap the angle of the line\n"
+"Hold %s to center the shape on the click origin\n"
+"Hold %s to displace the shape's origin"
+msgstr "直線ツール\n\n"
+"%sでマウスの左ボタンを 直線ツール に変更\n"
+"%sでマウスの右ボタンを 直線ツール に変更\n\n"
+" %s を長押しして線の角度をスナップ\n"
+" %s を長押ししてクリックした原点を図形の中心に配置\n"
+" %s を長押しして図形の原点を変更します"
+
+msgid "Rectangle Tool\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button\n\n"
+"Hold %s to create a 1:1 shape\n"
+"Hold %s to center the shape on the click origin\n"
+"Hold %s to displace the shape's origin"
+msgstr "矩形ツール\n\n"
+"%sでマウスの左ボタンを 矩形ツール に変更\n"
+"%sでマウスの右ボタンを 矩形ツール に変更\n\n"
+"%sを長押しして正方形を作成\n"
+"%s を長押ししてクリックした原点を図形の中心に配置\n"
+"%sを長押しして図形の原点を変更"
+
+msgid "Ellipse Tool\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button\n\n"
+"Hold %s to create a 1:1 shape\n"
+"Hold %s to center the shape on the click origin\n"
+"Hold %s to displace the shape's origin"
+msgstr "楕円形ツール\n\n"
+"%sでマウスの左ボタンを 楕円形ツール に変更\n"
+"%sでマウスの右ボタンを 楕円形ツール に変更\n\n"
+"%sを長押しして真円を作成\n"
+"%s を長押ししてクリックした原点を図形の中心に配置\n"
+"%sを長押しして図形の原点を変更"
+
+msgid "Rectangle"
+msgstr "矩形"
+
+msgid "Ellipse"
+msgstr "楕円形"
+
+msgid "Choose a color for the left tool"
+msgstr "左ツールの色を選択してくだ"
+
+msgid "Choose a color for the right tool"
+msgstr "右のツールの色を選択してください"
+
+msgid "Switch left and right colors\n"
+"(%s)"
+msgstr "左右の色を切り替える\n"
+"(%s)"
+
+msgid "Reset the colors to their default state (black for left, white for right)"
+msgstr "色を既定の状態にリセットします (左は黒、右は白)"
+
+msgid "Left tool"
+msgstr "左のツール"
+
+msgid "Right tool"
+msgstr "右のツール"
+
+msgid "Left pixel indicator"
+msgstr "マウスの左ボタンのピクセルインジケーター"
+
+msgid "Show left mouse pixel indicator or brush on the canvas when drawing"
+msgstr "描画時にマウスの左ボタンのピクセルインジケーターまたはブラシをキャンバスに表示する"
+
+msgid "Right pixel indicator"
+msgstr "マウスの右ボタンのピクセルインジケーター"
+
+msgid "Show right mouse pixel indicator or brush on the canvas when drawing"
+msgstr "描画時にマウスの右ボタンのピクセルインジケーターまたはブラシをキャンバスに表示する"
+
+msgid "Show left tool icon"
+msgstr "マウスの左ボタンのツールのアイコンを表示"
+
+msgid "Displays an icon of the selected left tool next to the cursor on the canvas"
+msgstr "キャンバス上のカーソルの隣に選択したマウスの左ボタンのツールのアイコンを表示します"
+
+msgid "Show right tool icon"
+msgstr "マウスの右ボタンのツールのアイコンを表示"
+
+msgid "Displays an icon of the selected right tool next to the cursor on the canvas"
+msgstr "キャンバス上のカーソルの隣に選択したマウスの右ボタンのツールのアイコンを表示します"
+
+msgid "Guides"
+msgstr "ガイド"
+
+msgid "Guides color:"
+msgstr "ガイドの色:"
+
+msgid "A color of ruler guides displayed on the canvas"
+msgstr "キャンバスに表示されるルーラーガイドの色"
+
+msgid "Grid"
+msgstr "グリッド"
+
+msgid "Grid type:"
+msgstr "グリッドタイプ:"
+
+msgid "Sets the type of the grid between rectangular, isometric or both"
+msgstr "長方形、等角または両方からグリッドのタイプを設定します"
+
+msgid "Rectangular"
+msgstr "長方形"
+
+msgid "Isometric"
+msgstr "アイソメトリック"
+
+msgid "All"
+msgstr "すべて"
+
+msgid "Rectangular grid width:"
+msgstr "矩形グリッドの幅:"
+
+msgid "Sets how far apart are vertical lines of the rectangular grid"
+msgstr "矩形グリッドの垂直方向の線の間隔を設定します"
+
+msgid "Rectangular grid height:"
+msgstr "矩形グリッドの高さ:"
+
+msgid "Sets how far apart are horizontal lines of the rectangular grid"
+msgstr "矩形グリッドの水平方向の線の間隔を設定します"
+
+msgid "Isometric cell bounds width:"
+msgstr "等角セルの境界の幅:"
+
+msgid "Sets the width of the isometric cell's axis aligned bounding box"
+msgstr "等角セルの軸揃えの境界ボックスの幅を設定します"
+
+msgid "Isometric cell bounds height:"
+msgstr "等角セルの境界の高さ:"
+
+msgid "Sets the height of the isometric cell's axis aligned bounding box"
+msgstr "等角セルの軸揃えの境界ボックスの高さを設定します"
+
+msgid "Grid offset x:"
+msgstr "グリッドオフセット x:"
+
+msgid "Sets grid's x offset from the canvas origin (top left corner of the image)"
+msgstr "キャンバスの原点 (画像の左上隅) からのグリッドの x オフセットを設定します。"
+
+msgid "Grid offset y:"
+msgstr "グリッドオフセット y:"
+
+msgid "Sets grid's y offset from the canvas origin (top left corner of the image)"
+msgstr "キャンバスの原点 (画像の左上隅) からのグリッドの y オフセットを設定します。"
+
+msgid "Draw over Tile Mode:"
+msgstr "タイルモードの上に表示:"
+
+msgid "If disabled, the grid will be drawn only over the original image"
+msgstr "無効にすると、グリッドは元の画像の上にのみ描画されます"
+
+msgid "Grid color:"
+msgstr "グリッドの色:"
+
+msgid "A color of the grid"
+msgstr "グリッドの色"
+
+msgid "Pixel Grid"
+msgstr "ピクセルグリッド"
+
+msgid "Show at zoom:"
+msgstr "ズームで表示:"
+
+msgid "Sets the minimal zoom at which pixel grid will be shown"
+msgstr "ピクセルが表示される最小のズームを設定します。"
+
+msgid "Pixel grid color:"
+msgstr "ピクセルグリッドの色:"
+
+msgid "A color of the pixel grid"
+msgstr "ピクセルグリッドの色"
+
+msgid "Transparency"
+msgstr "透明度"
+
+msgid "Checker size:"
+msgstr "チェッカーのサイズ:"
+
+msgid "Size of the transparent checker background"
+msgstr "透明なチェッカーの背景のサイズ"
+
+msgid "Checker color 1:"
+msgstr "チェッカーの色 1:"
+
+msgid "First color of the transparent checker background"
+msgstr "透明なチェッカーの背景の最初の色"
+
+msgid "Checker color 2:"
+msgstr "チェッカーの色 2:"
+
+msgid "Second color of the transparent checker background"
+msgstr "透明なチェッカーの背景の2番目の色"
+
+msgid "Follow Canvas Movement"
+msgstr "キャンバスの動きをフォロー"
+
+msgid "The transparent checker follow the movement of canvas"
+msgstr "透明なチェッカーはキャンバスの動きに従います"
+
+msgid "Follow Canvas Zoom Level"
+msgstr "キャンバスのズームレベルをフォロー"
+
+msgid "The transparent checker follow the zoom level of canvas"
+msgstr "透明なチェッカーはキャンバスのズームレベルに従います"
+
+msgid "Animated selection borders"
+msgstr "アニメーション化された範囲"
+
+msgid "Border color 1:"
+msgstr "境界色 1:"
+
+msgid "Border color 2:"
+msgstr "境界色 2:"
+
+msgid "Only custom preset can be modified"
+msgstr "カスタムプリセットのみ変更できます"
+
+msgid "Set application FPS limit:"
+msgstr "アプリのFPS上限を設定:"
+
+msgid "Pause application when it loses focus"
+msgstr "フォーカスを失ったときにアプリケーションを一時停止する"
+
+msgid "Sets the limit of the application's frames per second. The lower the number, the lower the CPU usage, but the application gets slower, choppier and unresponsive. 0 means that there is no limit."
+msgstr "アプリケーションのフレーム/秒の制限を設定します。 数値が低いほどCPU使用率が低くなりますが、アプリケーションが遅く、粗く、応答がなくなります。0は制限がないことを意味します。"
+
+msgid "If this is toggled on, when the application's window loses focus, it gets paused. This helps lower CPU usage when idle. The application gets unpaused when the mouse enters the application's window."
+msgstr "これをオンにすると、アプリケーションのウィンドウがフォーカスを失ったときに一時停止します。 これはアイドル時のCPU使用率を低下させるのに役立ちます。マウスがアプリケーションのウィンドウに入ったとき、アプリケーションは一時停止を解除します。"
+
+msgid "Brush:"
+msgstr "ブラシ："
+
+msgid "Select a brush"
+msgstr "ブラシを選択"
+
+msgid "Pixel brush"
+msgstr "ピクセルブラシ"
+
+msgid "Circle brush"
+msgstr "円のブラシ"
+
+msgid "Filled circle brush"
+msgstr "塗りつぶされた円ブラシ"
+
+msgid "Custom brush"
+msgstr "カスタムブラシ"
+
+msgid "Brush size:"
+msgstr "ブラシのサイズ:"
+
+msgid "Overwrite Color"
+msgstr "色を上書き"
+
+msgid "Overwrites color instead of blending it. This option is only relevant with colors that are not fully opaque"
+msgstr "ブレンドの代わりに色を上書きします。このオプションは完全に不透明ではない色にのみ関係します。"
+
+msgid "Pixel Perfect"
+msgstr "ピクセルパーフェクト"
+
+msgid "Fill inside"
+msgstr "中を塗りつぶす"
+
+msgid "Makes lines smooth by removing the extra pixels on the edges"
+msgstr "エッジの余分なピクセルを削除することで線を滑らかにします"
+
+msgid "Fill Shape"
+msgstr "図形の塗りつぶし"
+
+msgid "Fills the drawn shape with color, instead of drawing a hollow shape"
+msgstr "中が空の図形を描くのではなく、描画した図形を色で塗りつぶします"
+
+msgid "Brush color from"
+msgstr "ブラシの色"
+
+msgid "0: Color from the brush itself, 100: the currently selected color"
+msgstr "0: ブラシ自体の色、100: 現在選択されている色"
+
+msgid "Fill area:"
+msgstr "塗りつぶし範囲:"
+
+msgid "Same color area"
+msgstr "同じ色の範囲"
+
+msgid "Same color pixels"
+msgstr "同じ色のピクセル"
+
+msgid "Fill with:"
+msgstr "次で塗りつぶし:"
+
+msgid "Selected Color"
+msgstr "選択中の色"
+
+msgid "Pattern"
+msgstr "パターン"
+
+msgid "Offset"
+msgstr "オフセット"
+
+msgid "Simple Shading"
+msgstr "シンプルシェーディング"
+
+msgid "Hue Shifting"
+msgstr "色相シフト"
+
+msgid "Lighten"
+msgstr "明るく"
+
+msgid "Darken"
+msgstr "暗く"
+
+msgid "Amount:"
+msgstr "量:"
+
+msgid "Lighten/Darken amount"
+msgstr "明るく/暗くする量"
+
+msgid "Pick for:"
+msgstr "選択対象:"
+
+msgid "Left Color"
+msgstr "左の色"
+
+msgid "Right Color"
+msgstr "右の色"
+
+msgid "Mode:"
+msgstr "モード:"
+
+msgid "Zoom in"
+msgstr "ズームイン"
+
+msgid "Zoom out"
+msgstr "ズームアウト"
+
+msgid "Options:"
+msgstr "オプション："
+
+msgid "Fit to frame"
+msgstr "フレームに合わせる"
+
+msgid "100% Zoom"
+msgstr "100% ズーム"
+
+msgid "Mirroring"
+msgstr "ミラーリング"
+
+msgid "Horizontal"
+msgstr "水平"
+
+msgid "Enable horizontal mirrored drawing"
+msgstr "左右対称描画を有効化"
+
+msgid "Enable vertical mirrored drawing"
+msgstr "上下対称描画を有効化"
+
+msgid "Vertical"
+msgstr "垂直方向"
+
+msgid "Current frame:"
+msgstr "現在のフレーム:"
+
+msgid "Jump to the first frame\n"
+"(%s)"
+msgstr "最初のフレームにジャンプ\n"
+"(%s)"
+
+msgid "Go to the previous frame\n"
+"(%s)"
+msgstr "前のフレームに移動\n"
+"(%s)"
+
+msgid "Play the animation backwards (from end to beginning)\n"
+"(%s)"
+msgstr "アニメーションを逆方向に再生する (終了から始めまで)\n"
+"(%s)"
+
+msgid "Play the animation forward (from beginning to end)\n"
+"(%s)"
+msgstr "アニメーションを前方に再生する(開始から終了まで)\n"
+"(%s)"
+
+msgid "Go to the next frame\n"
+"(%s)"
+msgstr "次のフレームに移動\n"
+"(%s)"
+
+msgid "Jump to the last frame\n"
+"(%s)"
+msgstr "最後のフレームにジャンプ\n"
+"(%s)"
+
+msgid "Onion Skinning settings"
+msgstr "オニオンスキン設定"
+
+msgid "Enable/disable Onion Skinning"
+msgstr "オニオンスキンを有効/無効にする"
+
+msgid "How many frames per second should the animation preview be?\n"
+"The more FPS, the faster the animation plays."
+msgstr "アニメーションフレームは1秒あたり何フレームにする必要がありますか？\n"
+"FPSが高いほど、アニメーションの再生が速くなります。"
+
+msgid "No loop"
+msgstr "ループなし"
+
+msgid "Cycle loop"
+msgstr "周期ループ"
+
+msgid "Ping-pong loop"
+msgstr "ピンポンループ"
+
+msgid "Onion Skinning:"
+msgstr "オニオンスキン:"
+
+msgid "Past Frames"
+msgstr "過去のフレーム"
+
+msgid "Future Frames"
+msgstr "今後のフレーム"
+
+msgid "Manage frame tags"
+msgstr "フレームタグを管理"
+
+msgid "Frame Tag Properties"
+msgstr "フレームタグのプロパティ"
+
+msgid "Add a new frame tag"
+msgstr "新しいフレームタグを追加"
+
+msgid "Name:"
+msgstr "名前:"
+
+msgid "From:"
+msgstr "開始："
+
+msgid "To:"
+msgstr "終了:"
+
+msgid "Animation plays only on frames of the same tag"
+msgstr "アニメーションは同じタグのフレームでのみ再生されます"
+
+msgid "Tag %s (Frame %s)"
+msgstr "タグ %s (フレーム %s)"
+
+msgid "Tag %s (Frames %s-%s)"
+msgstr "タグ %s (フレーム %s-%s)"
+
+msgid "If it's selected, the animation plays only on the frames that have the same tag.\n"
+"If it's not, the animation will play for all frames, ignoring tags."
+msgstr "選択した場合、同じタグを持つフレームでのみのアニメーションが再生されます。\n"
+"そうでない場合、タグを無視してすべてのフレームでのアニメーションが再生されます。"
+
+msgid "Blue-Red Mode"
+msgstr "青-赤モード"
+
+msgid "Show past frames:"
+msgstr "過去のフレームを表示:"
+
+msgid "Show future frames:"
+msgstr "今後のフレームを表示:"
+
+msgid "Above canvas"
+msgstr "キャンバスの上"
+
+msgid "Below canvas"
+msgstr "キャンバスの下"
+
+msgid "If you want a layer to ignore onion skinning simply add the \"_io\" suffix in its name."
+msgstr "レイヤーにオニオンスキンを無視させたい場合は、その名前の末尾に \"_io\" を追加してください。"
+
+msgid "Add a new frame"
+msgstr "新しいフレームを追加"
+
+msgid "Remove Frame"
+msgstr "フレームを削除"
+
+msgid "Clone Frame"
+msgstr "フレームを複製"
+
+msgid "Move Left"
+msgstr "左へ移動"
+
+msgid "Move Right"
+msgstr "右へ移動"
+
+msgid "Add Frame Tag"
+msgstr ""
+
+msgid "Link Cel"
+msgstr "セルをリンク"
+
+msgid "Unlink Cel"
+msgstr "セルのリンクを解除"
+
+msgid "Frame Properties"
+msgstr "フレームのプロパティ"
+
+msgid "Frame properties"
+msgstr "フレームのプロパティ"
+
+msgid "Layer"
+msgstr "レイヤー"
+
+msgid "Layers"
+msgstr "レイヤー"
+
+msgid "Create a new layer"
+msgstr "新しいレイヤーを作成"
+
+msgid "Remove current layer"
+msgstr "現在のレイヤーを削除"
+
+msgid "Move up the current layer"
+msgstr "現在のレイヤーを上に移動"
+
+msgid "Move down the current layer"
+msgstr "現在のレイヤーを下に移動"
+
+msgid "Clone current layer"
+msgstr "現在のレイヤーを複製"
+
+msgid "Merge current layer with the one below"
+msgstr "現在のレイヤーと下のレイヤーを結合"
+
+msgid "Opacity:"
+msgstr "不透明度:"
+
+msgid "Tile mode opacity:"
+msgstr "タイルモードの不透明度:"
+
+msgid "Toggle layer's visibility"
+msgstr "レイヤーの表示を切り替える"
+
+msgid "Lock/unlock layer"
+msgstr "レイヤーのロック/ロック解除"
+
+msgid "Frame: %s, Layer: %s"
+msgstr "フレーム: %s, レイヤー: %s"
+
+msgid "Enable/disable cel linking\n\n"
+"Linked cels are being shared across multiple frames"
+msgstr "セルリンクを有効/無効にする\n\n"
+"リンクされたセルは複数のフレームで共有されています"
+
+msgid "Palette"
+msgstr "パレット"
+
+msgid "Palettes"
+msgstr "パレット"
+
+msgid "Add a new palette"
+msgstr "新しいパレットを追加"
+
+msgid "Edit currently selected palette"
+msgstr "現在選択されているパレットを編集"
+
+msgid "Choose a palette"
+msgstr "パレットを選択"
+
+msgid "Undo: Draw"
+msgstr "元に戻す: 描画"
+
+msgid "Redo: Draw"
+msgstr "やり直し: 描画"
+
+msgid "Undo: Select"
+msgstr "元に戻す: 選択"
+
+msgid "Redo: Select"
+msgstr "やり直し: 選択"
+
+msgid "Undo: Scale"
+msgstr "元に戻す: スケール"
+
+msgid "Redo: Scale"
+msgstr "やり直し: スケール"
+
+msgid "Undo: Add Layer"
+msgstr "元に戻す: レイヤーを追加"
+
+msgid "Redo: Add Layer"
+msgstr "やり直し: レイヤーを追加"
+
+msgid "Undo: Remove Layer"
+msgstr "元に戻す: レイヤーを削除"
+
+msgid "Redo: Remove Layer"
+msgstr "やり直し: レイヤーを削除"
+
+msgid "Undo: Merge Layer"
+msgstr "元に戻す: レイヤーの結合"
+
+msgid "Redo: Merge Layer"
+msgstr "やり直し: レイヤーの結合"
+
+msgid "Undo: Change Layer Order"
+msgstr "元に戻す: レイヤーの順番を変更"
+
+msgid "Redo: Change Layer Order"
+msgstr "やり直し: レイヤーの順番を変更"
+
+msgid "Undo: Add Frame"
+msgstr "元に戻す: フレームを追加"
+
+msgid "Redo: Add Frame"
+msgstr "やり直し: フレームを追加"
+
+msgid "Undo: Remove Frame"
+msgstr "元に戻す: フレームを削除"
+
+msgid "Redo: Remove Frame"
+msgstr "やり直し: フレームを削除"
+
+msgid "Undo: Change Frame Order"
+msgstr "元に戻す: フレームの順番を変更"
+
+msgid "Redo: Change Frame Order"
+msgstr "やり直し: フレームの順番を変更"
+
+msgid "Undo: Delete Custom Brush"
+msgstr "元に戻す: カスタムブラシの削除"
+
+msgid "Redo: Delete Custom Brush"
+msgstr "やり直し: カスタムブラシの削除"
+
+msgid "Undo: Modify Frame Tag"
+msgstr "元に戻す: フレームタグの変更"
+
+msgid "Redo: Modify Frame Tag"
+msgstr "やり直し: フレームタグの変更"
+
+msgid "Undo: Delete Frame Tag"
+msgstr "元に戻す: フレームタグの削除"
+
+msgid "Redo: Delete Frame Tag"
+msgstr "やり直し: フレームタグの削除"
+
+msgid "Undo: Change frame duration"
+msgstr "元に戻す: フレームの長さを変更"
+
+msgid "Redo: Change frame duration"
+msgstr "やり直し: フレームの長さを変更"
+
+msgid "Move Guide"
+msgstr "ガイドを移動"
+
+msgid "File saved"
+msgstr "ファイルが保存されました"
+
+msgid "File autosaved"
+msgstr "ファイルが自動保存されました"
+
+msgid "File failed to open. Error code %s"
+msgstr "ファイルを開けませんでした。エラーコード %s"
+
+msgid "File failed to save. Error code %s"
+msgstr "ファイルを保存できませんでした。エラーコード %s"
+
+msgid "File exported"
+msgstr "ファイルをエクスポートしました"
+
+msgid "New Empty Palette"
+msgstr "新しい空のパレット"
+
+msgid "Import Palette"
+msgstr "パレットをインポート"
+
+msgid "Create Palette From Current Sprite"
+msgstr "現在のスプライトからパレットを作成"
+
+msgid "Palette Name:"
+msgstr "パレット名:"
+
+msgid "Color Name:"
+msgstr "色の名前"
+
+msgid "Use current left & right colors"
+msgstr "現在の左右の色を使用"
+
+msgid "Create a new empty palette?"
+msgstr "新しい空のパレットを作成しますか？"
+
+msgid "Error"
+msgstr "エラー"
+
+msgid "Error: Palette must have a valid name."
+msgstr "エラー: パレットには有効な名前が必要です。"
+
+msgid "Invalid Palette file!"
+msgstr "無効なパレットファイルです！"
+
+msgid "Edit Palette"
+msgstr "パレットを編集"
+
+msgid "Create colors with alpha component"
+msgstr "アルファコンポーネントを使用して色を作成"
+
+msgid "Get colors only from selection"
+msgstr "選択した色のみを取得します"
+
+msgid "Get colors from"
+msgstr "色を取得"
+
+msgid "Patrons:"
+msgstr "Patrons:"
+
+msgid "Want your name or your company to be shown on the splash screen?"
+msgstr "スプラッシュ画面にあなたの名前または会社を表示したいですか？"
+
+msgid "Become a Platinum Sponsor"
+msgstr "プラチナスポンサーになる"
+
+msgid "Become a Gold Sponsor"
+msgstr "ゴールドスポンサーになる"
+
+msgid "Become a Patron"
+msgstr "パトロンになる"
+
+msgid "Don't show again"
+msgstr "今後表示しない"
+
+msgid "Image Options"
+msgstr "画像オプション"
+
+msgid "Default width:"
+msgstr "デフォルトの幅:"
+
+msgid "A default width of a new image"
+msgstr "新しい画像のデフォルトの幅"
+
+msgid "Default height:"
+msgstr "デフォルトの高さ:"
+
+msgid "A default height of a new image"
+msgstr "新しい画像のデフォルトの高さ"
+
+msgid "Default fill color:"
+msgstr "既定の塗りつぶしの色:"
+
+msgid "A default background color of a new image"
+msgstr "新しい画像の既定の背景色"
+
+msgid "Lock aspect ratio"
+msgstr "アスペクト比をロック"
+
+msgid "Portrait"
+msgstr "縦"
+
+msgid "Landscape"
+msgstr "横"
+
+msgid "Templates:"
+msgstr "テンプレート:"
+
+msgid "Preset"
+msgstr "プリセット"
+
+msgid "Preset:"
+msgstr "プリセット:"
+
+msgid "Default"
+msgstr "既定"
+
+msgid "Custom"
+msgstr "カスタム"
+
+msgid "Rectangular Selection"
+msgstr "矩形選択"
+
+msgid "Elliptical Selection"
+msgstr "楕円形選択"
+
+msgid "Polygonal Selection"
+msgstr "多角形選択"
+
+msgid "Select By Color"
+msgstr "色選択"
+
+msgid "Magic Wand"
+msgstr "自動選択"
+
+msgid "Lasso / Free Select Tool"
+msgstr "なげなわ/自由選択"
+
+msgid "Move"
+msgstr "移動"
+
+msgid "Zoom"
+msgstr "ズーム"
+
+msgid "Pan"
+msgstr "パン"
+
+msgid "Color Picker"
+msgstr "カラーピッカー"
+
+msgid "Pencil"
+msgstr "ペン/鉛筆"
+
+msgid "Eraser"
+msgstr "消しゴム"
+
+msgid "Bucket"
+msgstr "バケット"
+
+msgid "Shading Tool"
+msgstr "シェーディングツール"
+
+msgid "Line Tool"
+msgstr "直線ツール"
+
+msgid "Rectangle Tool"
+msgstr "矩形ツール"
+
+msgid "Ellipse Tool"
+msgstr "楕円形ツール"
+
+msgid "Switch Colors"
+msgstr "色の切り替え"
+
+msgid "Set the shortcut"
+msgstr "ショートカットを設定"
+
+msgid "Press a key or a key combination to set the shortcut"
+msgstr "キーまたはキーの組み合わせを押してショートカットを設定します"
+
+msgid "Already assigned"
+msgstr "割り当て済みです"
+
+msgid "Left Tool:"
+msgstr "左のツール:"
+
+msgid "A tool assigned to the left mouse button"
+msgstr "マウスの左ボタンに割り当てられたツール"
+
+msgid "Right Tool:"
+msgstr "右のツール:"
+
+msgid "A tool assigned to the right mouse button"
+msgstr "マウスの右ボタンに割り当てられたツール"
+
+msgid "Cannot find last project file."
+msgstr "最後のプロジェクトファイルが見つかりません。"
+
+msgid "Cannot find project file."
+msgstr "プロジェクトファイルが見つかりません。"
+
+msgid "You haven't saved or opened any project in Pixelorama yet!"
+msgstr "Pixeloramaでプロジェクトを保存または開いていません！"
+
+msgid "Open Last Project"
+msgstr "最後のプロジェクトを開く"
+
+msgid "Open last project..."
+msgstr "前回のプロジェクトを開く..."
+
+msgid "Open last project on startup"
+msgstr "起動時に最後のプロジェクトを開く"
+
+msgid "Opens last opened project on startup"
+msgstr "起動時に最後に開いたプロジェクトを開く"
+
+msgid "Quit confirmation"
+msgstr "終了の確認"
+
+msgid "Enable autosave"
+msgstr "自動保存を有効化"
+
+msgid "Autosave interval:"
+msgstr "自動保存の間隔:"
+
+msgid "minute(s)"
+msgstr "分"
+
+msgid "Create new directory for each frame tag"
+msgstr "フレームタグごとに新しいディレクトリを作成"
+
+msgid "Creates multiple files but every file is stored in different directory that corresponds to its frame tag"
+msgstr "複数のファイルを作成しますが、各ファイルはフレームタグに対応する異なるディレクトリに保存されます。"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Autosaved project(s) from a crashed session were found.\n"
+"Do you want to recover the data?"
+msgstr "クラッシュしたセッションから自動保存されたプロジェクトが見つかりました。\n"
+"データを復元しますか？"
+
+msgid "Backup reloaded"
+msgstr "バックアップを再読み込みしました"
+
+msgid "Remove currently selected palette"
+msgstr "現在選択されているパレットを削除"
+
+msgid "Are you sure you want to remove this palette? (Cannot be undone)"
+msgstr "このパレットを削除してもよろしいですか？ (元に戻すことはできません)"
+
+msgid "You can't remove more palettes!"
+msgstr "これ以上のパレットは削除できません！"
+
+msgid "Cannot remove the palette, because it doesn't exist!"
+msgstr "パレットが存在しないため、削除できません！"
+
+msgid "An error occured while removing the palette! Error code: %s"
+msgstr "パレットの削除中にエラーが発生しました！エラーコード: %s"
+
+msgid "and"
+msgstr "と"
+
+msgid "Move the selected frame to the left."
+msgstr "選択したフレームを左に移動します。"
+
+msgid "Move the selected frame to the right."
+msgstr "選択したフレームを右に移動します。"
+
+msgid "Frame duration"
+msgstr "フレームの長さ"
+
+msgid "Tiled In Both Axis"
+msgstr "両方の軸にタイルされています"
+
+msgid "Tiled In X Axis"
+msgstr "X軸にタイルされています"
+
+msgid "Tiled In Y Axis"
+msgstr "Y軸にタイルされています"
+
+msgid "Create a new palette"
+msgstr "新しいパレットを作成"
+
+msgid "Comment:"
+msgstr "コメント:"
+
+msgid "Empty"
+msgstr "空"
+
+msgid "From Current Palette"
+msgstr "現在のパレットから"
+
+msgid "From Current Sprite"
+msgstr "現在のスプライトから"
+
+msgid "From Current Selection"
+msgstr "現在の選択範囲から"
+
+msgid "Add a new color"
+msgstr "新しい色を追加"
+
+msgid "Remove a selected color"
+msgstr "選択した色を削除"
+
+msgid "Palette with the same name and path already exists!"
+msgstr "同じ名前とパスを持つパレットが既に存在します！"
+
+msgid "Palette name is required!"
+msgstr "パレット名が必要です！"
+
+msgid "Reducing palette size will reset positions of colors. Colors that don't fit in new palette size will be lost!"
+msgstr "パレットサイズを小さくすると、色の位置がリセットされます。新しいパレットサイズに合わない色は失われます！"
+
+msgid "Position:"
+msgstr "ポジション:"
+

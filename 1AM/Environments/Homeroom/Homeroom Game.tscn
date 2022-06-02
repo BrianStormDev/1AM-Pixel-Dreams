@@ -1,0 +1,495 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Environments/Homeroom/Homeroom Long.png" type="Texture" id=3]
+[ext_resource path="res://Environments/Homeroom/Books.png" type="Texture" id=4]
+[ext_resource path="res://Environments/Homeroom/Table.png" type="Texture" id=5]
+[ext_resource path="res://Environments/Homeroom/shelf.png" type="Texture" id=6]
+[ext_resource path="res://Environments/Homeroom/Bar.png" type="Texture" id=7]
+[ext_resource path="res://Environments/Homeroom/Long Table.png" type="Texture" id=8]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 31, 39 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 70.5, 25 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 11, 28.5 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 37.5, 25 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 145.5, 7.25 )
+
+[node name="Game" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 1325, 90 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+margin_right = 2650.0
+margin_bottom = 180.0
+texture = ExtResource( 3 )
+
+[node name="Shelf" type="RigidBody2D" parent="."]
+position = Vector2( 591, 10 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Shelf"]
+position = Vector2( 62, 140 )
+texture = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Shelf"]
+position = Vector2( 62, 140 )
+shape = SubResource( 2 )
+
+[node name="Long Table" type="RigidBody2D" parent="."]
+position = Vector2( 394, 209 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Long Table"]
+position = Vector2( -20, -47 )
+texture = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Long Table"]
+position = Vector2( -18.5, -47 )
+shape = SubResource( 3 )
+
+[node name="Books3" type="RigidBody2D" parent="."]
+position = Vector2( 455, 227 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Books3"]
+position = Vector2( 65, -61 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Books3"]
+position = Vector2( 66, -61.5 )
+shape = SubResource( 4 )
+
+[node name="Books2" type="RigidBody2D" parent="."]
+position = Vector2( 427, 219 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Books2"]
+position = Vector2( 65, -61 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Books2"]
+position = Vector2( 66, -61.5 )
+shape = SubResource( 4 )
+
+[node name="Books" type="RigidBody2D" parent="."]
+position = Vector2( 398, 227 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Books"]
+position = Vector2( 65, -61 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Books"]
+position = Vector2( 66, -61.5 )
+shape = SubResource( 4 )
+
+[node name="Table" type="RigidBody2D" parent="."]
+position = Vector2( 518, 208 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Table"]
+position = Vector2( 55, -48 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Table"]
+position = Vector2( 56.5, -46 )
+shape = SubResource( 5 )
+
+[node name="Background" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Background"]
+visible = false
+
+[node name="Sprite" type="Sprite" parent="Background/ParallaxLayer"]
+visible = false
+position = Vector2( 1325, 90 )
+texture = ExtResource( 3 )
+
+[node name="Bar3" type="RigidBody2D" parent="."]
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Chalkboard Bar" type="CollisionShape2D" parent="Bar3"]
+position = Vector2( 151, 168 )
+shape = SubResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="Bar3"]
+position = Vector2( 150, 168 )
+texture = ExtResource( 7 )
+
+[node name="Bar2" type="RigidBody2D" parent="."]
+position = Vector2( 1588, 0 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Chalkboard Bar" type="CollisionShape2D" parent="Bar2"]
+position = Vector2( 151, 168 )
+shape = SubResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="Bar2"]
+position = Vector2( 150, 168 )
+texture = ExtResource( 7 )
+
+[node name="Bar" type="RigidBody2D" parent="."]
+position = Vector2( 793, 0 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Chalkboard Bar" type="CollisionShape2D" parent="Bar"]
+position = Vector2( 151, 168 )
+shape = SubResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="Bar"]
+position = Vector2( 150, 168 )
+texture = ExtResource( 7 )
+
+[node name="Books6" type="RigidBody2D" parent="."]
+position = Vector2( 678, 219 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Books6"]
+position = Vector2( 65, -61 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Books6"]
+position = Vector2( 66, -61.5 )
+shape = SubResource( 4 )
+
+[node name="Shelf2" type="RigidBody2D" parent="."]
+position = Vector2( 1073, 10 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Shelf2"]
+position = Vector2( 62, 140 )
+texture = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Shelf2"]
+position = Vector2( 62, 140 )
+shape = SubResource( 2 )
+
+[node name="Long Table2" type="RigidBody2D" parent="."]
+position = Vector2( 1265, 209 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Long Table2"]
+position = Vector2( -20, -47 )
+texture = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Long Table2"]
+position = Vector2( -18.5, -47 )
+shape = SubResource( 3 )
+
+[node name="Long Table3" type="RigidBody2D" parent="."]
+position = Vector2( 2279, 209 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Long Table3"]
+position = Vector2( -20, -47 )
+texture = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Long Table3"]
+position = Vector2( -18.5, -47 )
+shape = SubResource( 3 )
+
+[node name="Shelf3" type="RigidBody2D" parent="."]
+position = Vector2( 2321, 11 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Shelf3"]
+position = Vector2( 62, 140 )
+texture = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Shelf3"]
+position = Vector2( 62, 140 )
+shape = SubResource( 2 )
+
+[node name="Shelf4" type="RigidBody2D" parent="."]
+position = Vector2( 1297, 9 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Shelf4"]
+position = Vector2( 62, 140 )
+texture = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Shelf4"]
+position = Vector2( 62, 140 )
+shape = SubResource( 2 )
+
+[node name="Table2" type="RigidBody2D" parent="."]
+position = Vector2( 1380, 207 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Table2"]
+position = Vector2( 55, -48 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Table2"]
+position = Vector2( 56.5, -46 )
+shape = SubResource( 5 )
+
+[node name="Books7" type="RigidBody2D" parent="."]
+position = Vector2( 1439, 217 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Books7"]
+position = Vector2( 65, -61 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Books7"]
+position = Vector2( 66, -61.5 )
+shape = SubResource( 4 )
+
+[node name="Books8" type="RigidBody2D" parent="."]
+position = Vector2( 1469, 217 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Books8"]
+position = Vector2( 65, -61 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Books8"]
+position = Vector2( 66, -61.5 )
+shape = SubResource( 4 )
+
+[node name="Books9" type="RigidBody2D" parent="."]
+position = Vector2( 1501, 217 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Books9"]
+position = Vector2( 65, -61 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Books9"]
+position = Vector2( 66, -61.5 )
+shape = SubResource( 4 )
+
+[node name="Books10" type="RigidBody2D" parent="."]
+position = Vector2( 2029, 217 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Books10"]
+position = Vector2( 65, -61 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Books10"]
+position = Vector2( 66, -61.5 )
+shape = SubResource( 4 )
+
+[node name="Books11" type="RigidBody2D" parent="."]
+position = Vector2( 2059, 217 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Books11"]
+position = Vector2( 65, -61 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Books11"]
+position = Vector2( 66, -61.5 )
+shape = SubResource( 4 )
+
+[node name="Books12" type="RigidBody2D" parent="."]
+position = Vector2( 2091, 217 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Books12"]
+position = Vector2( 65, -61 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Books12"]
+position = Vector2( 66, -61.5 )
+shape = SubResource( 4 )
+
+[node name="Table3" type="RigidBody2D" parent="."]
+position = Vector2( 1876, 208 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Table3"]
+position = Vector2( 55, -48 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Table3"]
+position = Vector2( 56.5, -46 )
+shape = SubResource( 5 )
+
+[node name="Shelf5" type="RigidBody2D" parent="."]
+position = Vector2( 1966, 10 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Shelf5"]
+position = Vector2( 62, 140 )
+texture = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Shelf5"]
+position = Vector2( 62, 140 )
+shape = SubResource( 2 )
+
+[node name="Long Table4" type="RigidBody2D" parent="."]
+position = Vector2( 2523, 210 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Long Table4"]
+position = Vector2( -20, -47 )
+texture = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Long Table4"]
+position = Vector2( -18.5, -47 )
+shape = SubResource( 3 )
+
+[node name="Books13" type="RigidBody2D" parent="."]
+position = Vector2( 2536, 217 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Books13"]
+position = Vector2( 65, -61 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Books13"]
+position = Vector2( 66, -61.5 )
+shape = SubResource( 4 )
+
+[node name="Books14" type="RigidBody2D" parent="."]
+position = Vector2( 2567, 217 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Books14"]
+position = Vector2( 65, -61 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Books14"]
+position = Vector2( 66, -61.5 )
+shape = SubResource( 4 )
+
+[node name="Books15" type="RigidBody2D" parent="."]
+visible = false
+position = Vector2( -77, 304 )
+scale = Vector2( 1, 3.5 )
+collision_layer = 8
+mode = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Books15"]
+position = Vector2( 65, -61 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Books15"]
+position = Vector2( 66, -61.5 )
+shape = SubResource( 4 )

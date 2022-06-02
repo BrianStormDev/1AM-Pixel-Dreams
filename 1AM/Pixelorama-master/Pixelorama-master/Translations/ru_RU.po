@@ -1,0 +1,1866 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Crowdin-Project: pixelorama\n"
+"X-Crowdin-Project-ID: 385497\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /master/Translations/Translations.pot\n"
+"X-Crowdin-File-ID: 5\n"
+"Project-Id-Version: pixelorama\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Russian\n"
+"Language: ru_RU\n"
+"PO-Revision-Date: 2022-01-05 15:16\n"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Cancel"
+msgstr "Отмена"
+
+msgid "Open"
+msgstr "Открыть"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Please Confirm..."
+msgstr "Пожалуйста подтвердите..."
+
+msgid "File Name:"
+msgstr "Имя файла:"
+
+msgid "Project Name:"
+msgstr "Название проекта:"
+
+msgid "Image Size"
+msgstr "Размер изображения"
+
+msgid "Canvas Size"
+msgstr "Размер холста"
+
+msgid "Frame Size"
+msgstr "Размер кадра"
+
+msgid "Size:"
+msgstr "Размер:"
+
+msgid "Width:"
+msgstr "Ширина:"
+
+msgid "Height:"
+msgstr "Высота:"
+
+msgid "Center"
+msgstr "По центру"
+
+msgid "File"
+msgstr "Файл"
+
+msgid "Edit"
+msgstr "Редактировать"
+
+msgid "Select"
+msgstr "Выделить"
+
+msgid "View"
+msgstr "Просмотр"
+
+msgid "Image"
+msgstr "Изображение"
+
+msgid "Effects"
+msgstr "Эффекты"
+
+msgid "Help"
+msgstr "Помощь"
+
+msgid "New"
+msgstr "Новый"
+
+msgid "New..."
+msgstr "Создать..."
+
+msgid "Open..."
+msgstr "Открыть..."
+
+msgid "Save..."
+msgstr "Сохранить..."
+
+msgid "Save as..."
+msgstr "Сохранить как..."
+
+msgid "Use ZSTD Compression"
+msgstr "Использовать сжатие ZSTD"
+
+msgid "Import"
+msgstr "Импортировать"
+
+msgid "Export"
+msgstr "Экспорт"
+
+msgid "Export..."
+msgstr "Экспортировать..."
+
+msgid "Export as..."
+msgstr "Экспортировать как..."
+
+msgid "Export PNG..."
+msgstr "Экспорт PNG..."
+
+msgid "Export PNG as..."
+msgstr "Экспорт PNG как..."
+
+msgid "Quit"
+msgstr "Выйти"
+
+msgid "Undo"
+msgstr "Отменить"
+
+msgid "Redo"
+msgstr "Повторить"
+
+msgid "Copy"
+msgstr "Копировать"
+
+msgid "Cut"
+msgstr "Вырезать"
+
+msgid "Paste"
+msgstr "Вставить"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "New Brush"
+msgstr "Новая кисть"
+
+msgid "Scale Image"
+msgstr "Изменить размер изображения"
+
+msgid "Pixels"
+msgstr "Пиксели"
+
+msgid "Percentage"
+msgstr "Процент"
+
+msgid "Crop Image"
+msgstr "Обрезать изображение"
+
+msgid "Resize Canvas"
+msgstr "Изменить размер холста"
+
+msgid "Centralize Image"
+msgstr "Централизовать изображение"
+
+msgid "Rotate Image"
+msgstr "Повернуть изображение"
+
+msgid "Clear"
+msgstr "Очистить"
+
+msgid "Invert"
+msgstr "Инвертировать"
+
+msgid "Flip"
+msgstr "Перевернуть"
+
+msgid "Flip Horizontal"
+msgstr "Отразить по горизонтали"
+
+msgid "Flip Vertical"
+msgstr "Отразить по вертикали"
+
+msgid "Preferences"
+msgstr "Настройки"
+
+msgid "Tile Mode"
+msgstr "Бесшовный режим"
+
+msgid "Window Opacity"
+msgstr "Непрозрачность окна"
+
+msgid "Panel Layout"
+msgstr "Расположение панелей"
+
+msgid "Auto"
+msgstr "Автоматически"
+
+msgid "Widescreen"
+msgstr "Широкий экран"
+
+msgid "Tallscreen"
+msgstr "Высокий экран"
+
+msgid "Mirror View"
+msgstr "Зеркальный вид"
+
+msgid "Show Grid"
+msgstr "Показывать сетку"
+
+msgid "Show Pixel Grid"
+msgstr "Показать пиксельную сетку"
+
+msgid "Show Rulers"
+msgstr "Показывать линейки"
+
+msgid "Show Guides"
+msgstr "Показывать направляющие"
+
+msgid "Show Animation Timeline"
+msgstr "Показать таймлайн анимации"
+
+msgid "Zen Mode"
+msgstr "Режим «Дзен»"
+
+msgid "Fullscreen Mode"
+msgstr "Во весь экран"
+
+msgid "Fill with color:"
+msgstr "Заливка цветом:"
+
+msgid "Open a File"
+msgstr "Октрыть файл"
+
+msgid "Open File(s)"
+msgstr "Открыть файл(ы)"
+
+msgid "Import Options"
+msgstr "Настройки импорта"
+
+msgid "Import as:"
+msgstr "Импортировать как:"
+
+msgid "Recent projects"
+msgstr "Недавние проекты"
+
+msgid "New tab"
+msgstr "Новая вкладка"
+
+msgid "Spritesheet (new tab)"
+msgstr "Таблица спрайтов (новая вкладка)"
+
+msgid "Spritesheet (new layer)"
+msgstr "Таблица спрайтов (новый слой)"
+
+msgid "New frame"
+msgstr "Новый кадр"
+
+msgid "Replace frame"
+msgstr "Заменить кадр"
+
+msgid "New layer"
+msgstr "Новый слой"
+
+msgid "New palette"
+msgstr "Новая палитра"
+
+msgid "New brush"
+msgstr "Новая кисть"
+
+msgid "New pattern"
+msgstr "Новый узор"
+
+msgid "Horizontal frames:"
+msgstr "Кадров по горизонтали:"
+
+msgid "Vertical frames:"
+msgstr "Кадров по вертикали:"
+
+msgid "Start frame:"
+msgstr "Начальный кадр:"
+
+msgid "At frame:"
+msgstr "В кадре:"
+
+msgid "At layer:"
+msgstr "На слое:"
+
+msgid "Brush type:"
+msgstr "Тип кисти:"
+
+msgid "File brush"
+msgstr "Кисть файла"
+
+msgid "Project brush"
+msgstr "Кисть проекта"
+
+msgid "Random brush"
+msgstr "Случайная кисть"
+
+msgid "Save Sprite as .pxo"
+msgstr "Сохранить спрайт как .pxo"
+
+msgid "Export Sprite as .png"
+msgstr "Экспортировать спрайт как .png"
+
+msgid "Export Sprite"
+msgstr "Экспортировать спрайт"
+
+msgid "File Exists, Overwrite?"
+msgstr "Файл существует, перезаписать?"
+
+msgid "File %s already exists. Overwrite?"
+msgstr "Файл %s уже существует. Перезаписать?"
+
+msgid "Directory path or file name is not valid!"
+msgstr "Недопустимый путь к папке или имя файла!"
+
+msgid "Exporting in progress..."
+msgstr "Выполняется экспорт..."
+
+msgid "Can't load file '%s'.\n"
+"Error code: %s"
+msgstr "Не удалось загрузить файл '%s'.\n"
+"Код ошибки: %s"
+
+msgid "Frame"
+msgstr "Кадр"
+
+msgid "Frames:"
+msgstr "Кадры:"
+
+msgid "All Frames"
+msgstr "Все кадры"
+
+msgid "Spritesheet"
+msgstr "Таблица спрайтов"
+
+msgid "Animation"
+msgstr "Анимация"
+
+msgid "Preview:"
+msgstr "Предпросмотр:"
+
+msgid "Frame:"
+msgstr "Кадр:"
+
+msgid "Orientation:"
+msgstr "Ориентация:"
+
+msgid "Browse"
+msgstr "Обзор"
+
+msgid "Resize:"
+msgstr "Изменить размер:"
+
+msgid "Cancel Export"
+msgstr "Отменить экспорт"
+
+msgid "Alert!"
+msgstr "Внимание!"
+
+msgid "Select Current Folder"
+msgstr "Выбрать текущую папку"
+
+msgid "Open a Directory"
+msgstr "Открыть папку"
+
+msgid "All frames as multiple files"
+msgstr "Все кадры как несколько файлов"
+
+msgid "All frames as a single file animation"
+msgstr "Все кадры как один файл анимации"
+
+msgid "Background:"
+msgstr "Фон:"
+
+msgid "Direction:"
+msgstr "Направление:"
+
+msgid "Forward"
+msgstr "Вперед"
+
+msgid "Backwards"
+msgstr "Назад"
+
+msgid "Ping-Pong"
+msgstr "Туда-сюда"
+
+msgid "Columns"
+msgstr "Столбцы"
+
+msgid "Columns:"
+msgstr "Столбцы:"
+
+msgid "Rows"
+msgstr "Строки"
+
+msgid "Rows:"
+msgstr "Строки:"
+
+msgid "Path:"
+msgstr "Путь:"
+
+msgid "Directories & Files:"
+msgstr "Папки и файлы:"
+
+msgid "Create Folder"
+msgstr "Создать папку"
+
+msgid "File:"
+msgstr "Файл:"
+
+msgid "Interpolation:"
+msgstr "Интерполяция:"
+
+msgid "Nearest"
+msgstr "Ближайший"
+
+msgid "Bilinear"
+msgstr "Бинарный"
+
+msgid "Cubic"
+msgstr "Кубический"
+
+msgid "Trilinear"
+msgstr "Трилинейный"
+
+msgid "General"
+msgstr "Общие"
+
+msgid "Startup"
+msgstr "Запуск"
+
+msgid "Language"
+msgstr "Язык"
+
+msgid "Interface"
+msgstr "Интерфейс"
+
+msgid "Themes"
+msgstr "Темы оформления"
+
+msgid "Canvas"
+msgstr "Холст"
+
+msgid "Selection"
+msgstr "Выделение"
+
+msgid "Shortcuts"
+msgstr "Горячие клавишы"
+
+msgid "Backup"
+msgstr "Резервная копия"
+
+msgid "Performance"
+msgstr "Производительность"
+
+msgid "Indicators"
+msgstr "Индикатор"
+
+msgid "On"
+msgstr "Вкл"
+
+msgid "Restore default value"
+msgstr "Восстановить по умолчанию"
+
+msgid "Smooth Zoom"
+msgstr "Плавное масштабирование"
+
+msgid "Adds a smoother transition when zooming in or out"
+msgstr "Добавляет более плавный переход при увеличении или уменьшении масштаба изображения"
+
+msgid "Tablet pressure sensitivity:"
+msgstr "Чувствительность к нажатию на планшет:"
+
+msgid "None"
+msgstr "Ничего"
+
+msgid "Affect Brush's Alpha"
+msgstr "Влияние на альфу кисти"
+
+msgid "Color:"
+msgstr "Цвет:"
+
+msgid "Guide color:"
+msgstr "Цвет направляющих:"
+
+msgid "System Language"
+msgstr "Системный язык"
+
+msgid "Display Scale"
+msgstr "Масштаб экрана"
+
+msgid "Dim interface on dialog popup"
+msgstr "Затемнять интерфейс при появлении диалога"
+
+msgid "Dark"
+msgstr "Тёмная"
+
+msgid "Gray"
+msgstr "Серая"
+
+msgid "Blue"
+msgstr "Синий"
+
+msgid "Caramel"
+msgstr "Карамель"
+
+msgid "Light"
+msgstr "Светлая"
+
+msgid "Purple"
+msgstr "Фиолетовый"
+
+msgid "Theme"
+msgstr "Тема"
+
+msgid "Icon color from:"
+msgstr "Цвет значка из:"
+
+msgid "Icon color:"
+msgstr "Цвет значка:"
+
+msgid "Tool button size:"
+msgstr "Размер кнопок инструментов:"
+
+msgid "Small"
+msgstr "Маленький"
+
+msgid "Big"
+msgstr "Большой"
+
+msgid "Only affect selection"
+msgstr "Менять только выделенное"
+
+msgid "Selected cels"
+msgstr "Выбранные ячейки"
+
+msgid "Current cel"
+msgstr "Текущая ячейка"
+
+msgid "Current frame"
+msgstr "Текущий кадр"
+
+msgid "All frames"
+msgstr "Все кадры"
+
+msgid "All projects"
+msgstr "Все проекты"
+
+msgid "Invert Colors"
+msgstr "Инвертировать цвета"
+
+msgid "Modify Red Channel"
+msgstr "Изменять красный канал"
+
+msgid "Modify Green Channel"
+msgstr "Изменять зеленый канал"
+
+msgid "Modify Blue Channel"
+msgstr "Изменять синий канал"
+
+msgid "Modify Alpha Channel"
+msgstr "Изменять альфа-канал"
+
+msgid "Desaturation"
+msgstr "Обесцвечивание"
+
+msgid "Outline"
+msgstr "Обводка"
+
+msgid "Adjust Hue/Saturation/Value"
+msgstr "Изменить Оттенок/Насыщенность/Яркость"
+
+msgid "Gradient"
+msgstr "Градиент"
+
+msgid "Adjust HSV"
+msgstr "Настройка цвета"
+
+msgid "Type:"
+msgstr "Тип:"
+
+msgid "Angle:"
+msgstr "Угол:"
+
+msgid "Hue:"
+msgstr "Оттенок:"
+
+msgid "Saturation:"
+msgstr "Насыщенность:"
+
+msgid "Value:"
+msgstr "Яркость:"
+
+msgid "Apply"
+msgstr "Применить"
+
+msgid "Diagonal"
+msgstr "Диагональ"
+
+msgid "Place inside image"
+msgstr "Поместить внутри изображения"
+
+msgid "Thickness:"
+msgstr "Толщина:"
+
+msgid "Colors:"
+msgstr "Цвета:"
+
+msgid "Steps:"
+msgstr "Шаги:"
+
+msgid "Top to Bottom"
+msgstr "Сверху вниз"
+
+msgid "Bottom to Top"
+msgstr "Снизу вверх"
+
+msgid "Left to Right"
+msgstr "Слева направо"
+
+msgid "Right to Left"
+msgstr "Справа налево"
+
+msgid "View Splash Screen"
+msgstr "Экран приветствия"
+
+msgid "Online Docs"
+msgstr "Онлайн-документация"
+
+msgid "Issue Tracker"
+msgstr "Баг-трекер"
+
+msgid "Open Logs Folder"
+msgstr "Открыть папку журналов"
+
+msgid "Changelog"
+msgstr "Список изменений"
+
+msgid "About Pixelorama"
+msgstr "О Pixeloram'е"
+
+msgid "Pixelorama - Pixelate your dreams!"
+msgstr "Pixelorama - пикселизуйте свои мечты!"
+
+msgid "Developed by Orama Interactive"
+msgstr "Разработано Orama Interactive"
+
+msgid "©2019-present by Orama Interactive and contributors"
+msgstr "©2019-настоящее время Orama Interactive и участники"
+
+msgid "Website"
+msgstr "Сайт"
+
+msgid "GitHub Repo"
+msgstr "Репозиторий на GitHub"
+
+msgid "Donate"
+msgstr "Пожертвовать"
+
+msgid "Developers"
+msgstr "Разработчики"
+
+msgid "Contributors"
+msgstr "Участники"
+
+msgid "Donors"
+msgstr "Спонсоры"
+
+msgid "Translators"
+msgstr "Переводчики"
+
+msgid "Licenses"
+msgstr "Лицензии"
+
+msgid "English"
+msgstr "Английский"
+
+msgid "Greek"
+msgstr "Греческий"
+
+msgid "French"
+msgstr "Французский"
+
+msgid "German"
+msgstr "Немецкий"
+
+msgid "Polish"
+msgstr "Польский"
+
+msgid "Portuguese"
+msgstr "Португальский"
+
+msgid "Brazilian Portuguese"
+msgstr "Бразильский португальский"
+
+msgid "Russian"
+msgstr "Русский"
+
+msgid "Chinese Simplified"
+msgstr "Китайский (упрощенный)"
+
+msgid "Chinese Traditional"
+msgstr "Китайский (Традиционный)"
+
+msgid "Italian"
+msgstr "Итальянский"
+
+msgid "Latvian"
+msgstr "Латышский"
+
+msgid "Spanish"
+msgstr "Испанский"
+
+msgid "Catalan"
+msgstr "Каталонский"
+
+msgid "Esperanto"
+msgstr "Esperanto"
+
+msgid "Indonesian"
+msgstr "Индонезийский"
+
+msgid "Czech"
+msgstr "Чешский"
+
+msgid "Arabic"
+msgstr "Арабский"
+
+msgid "Turkish"
+msgstr "Турецкий"
+
+msgid "Norwegian Bokmål"
+msgstr "Норвежский (букмол)"
+
+msgid "Korean"
+msgstr "Корейский"
+
+msgid "Hungarian"
+msgstr "Венгерский"
+
+msgid "Romanian"
+msgstr "Румынский"
+
+msgid "Japanese"
+msgstr "Японский"
+
+msgid "Ukrainian"
+msgstr "Украинский"
+
+msgid "Development Team"
+msgstr "Команда разработчиков"
+
+msgid "Lead Programmer"
+msgstr "Главный программист"
+
+msgid "UI Designer"
+msgstr "Дизайнер интерфейса"
+
+msgid "GitHub Contributors"
+msgstr "GitHub участники"
+
+msgid "Art by: %s"
+msgstr "Художник: %s"
+
+msgid "untitled"
+msgstr "безымянный"
+
+msgid "imported"
+msgstr "импортировано"
+
+msgid "copy"
+msgstr "копия"
+
+msgid "Are you sure you want to exit Pixelorama?"
+msgstr "Вы действительно хотите выйти из Pixeloram'ы?"
+
+msgid "Unsaved Image"
+msgstr "Несохраненное изображение"
+
+msgid "You have unsaved changes. If you proceed, the progress you have made will be lost."
+msgstr "У вас есть несохраненные изменения. Если вы продолжите, прогресс будет утерян."
+
+msgid "Save before exiting?"
+msgstr "Сохранить перед выходом?"
+
+msgid "You have unsaved progress. How do you wish to proceed?"
+msgstr "У вас есть несохраненный прогресс. Как продолжить?"
+
+msgid "Save & Exit"
+msgstr "Сохранить и выйти"
+
+msgid "Exit without saving"
+msgstr "Выйти без сохранения"
+
+msgid "Rectangular Selection\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Прямоугольное выделение\n\n"
+"%s левой кнопкой мыши\n"
+"%s для правой кнопки мыши"
+
+msgid "Elliptical Selection\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Эллиптическое выделение\n\n"
+"%s левой кнопкой мыши\n"
+"%s для правой кнопки мыши"
+
+msgid "Polygonal Selection\n"
+"Double-click to connect the last point to the starting point\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Многоугольное выделение\n"
+"Дважды щёлкните по последней точке, чтобы соединить её с начальной\n\n"
+"%s левой кнопкой мыши\n"
+"%s для правой кнопки мыши"
+
+msgid "Select By Color\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Выбор по цвету\n\n"
+"%s левой кнопкой мыши\n"
+"%s для правой кнопки мыши"
+
+msgid "Magic Wand\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Волшебная палочка\n\n"
+"%s левой кнопкой мыши\n"
+"%s для правой кнопки мыши"
+
+msgid "Lasso / Free Select Tool\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Лассо / свободное выделение\n\n"
+"%s левой кнопкой мыши\n"
+"%s для правой кнопки мыши"
+
+msgid "Move\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Перемещение\n\n"
+"%s для левой кнопки мыши\n"
+"%s для правой кнопки мыши"
+
+msgid "Zoom\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Масштаб\n\n"
+"%s левой кнопкой мыши\n"
+"%s для правой кнопки мыши"
+
+msgid "Pan\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Сдвиг\n\n"
+"%s левой кнопкой мыши\n"
+"%s для правой кнопки мыши"
+
+msgid "Color Picker\n"
+"Select a color from a pixel of the sprite\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Выбор цвета\n"
+"Выбрать цвет из пикселя спрайта\n\n"
+"%s для левой кнопки мыши\n"
+"%s для правой кнопки мыши"
+
+msgid "Pencil\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button\n\n"
+"Hold %s to make a line"
+msgstr "Карандаш\n\n"
+"%s для левой кнопки мыши\n"
+"%s для правой кнопки мыши\n\n"
+"Зажать %s для рисования прямой"
+
+msgid "Eraser\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button\n\n"
+"Hold %s to make a line"
+msgstr "Ластик\n\n"
+"%s для левой кнопки мыши\n"
+"%s для правой кнопки мыши\n\n"
+"Зажать %s для очистки прямой линией"
+
+msgid "Bucket\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Заливка\n\n"
+"%s для левой кнопки мыши\n"
+"%s для правой кнопки мыши"
+
+msgid "Shading Tool\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Затенение\n\n"
+"%s для левой кнопки мыши\n"
+"%s для правой кнопки мыши"
+
+msgid "Line Tool\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button\n\n"
+"Hold %s to snap the angle of the line\n"
+"Hold %s to center the shape on the click origin\n"
+"Hold %s to displace the shape's origin"
+msgstr "Прямая\n\n"
+"%s для левой кнопки мыши\n"
+"%s для правой кнопки мыши\n\n"
+"Зажать %s для фиксации угла\n"
+"Зажать %s для размещения центра в месте начала нажатия\n"
+"Зажать %s для изменения исходной точки фигуры"
+
+msgid "Rectangle Tool\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button\n\n"
+"Hold %s to create a 1:1 shape\n"
+"Hold %s to center the shape on the click origin\n"
+"Hold %s to displace the shape's origin"
+msgstr "Прямоугольник\n\n"
+"%s для левой кнопки мыши\n"
+"%s для правой кнопки мыши\n\n"
+"Зажать %s для создания фигуры 1:1\n"
+"Зажать %s для размещения центра в месте начала нажатия\n"
+"Зажать %s для изменения исходной точки фигуры"
+
+msgid "Ellipse Tool\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button\n\n"
+"Hold %s to create a 1:1 shape\n"
+"Hold %s to center the shape on the click origin\n"
+"Hold %s to displace the shape's origin"
+msgstr "Эллипс\n\n"
+"%s для левой кнопки мыши\n"
+"%s для правой кнопки мыши\n\n"
+"Зажать %s для создания фигуры 1:1\n"
+"Зажать %s для размещения центра в месте начала нажатия\n"
+"Зажать %s для изменения исходной точки фигуры"
+
+msgid "Rectangle"
+msgstr "Прямоугольник"
+
+msgid "Ellipse"
+msgstr "Эллипс"
+
+msgid "Choose a color for the left tool"
+msgstr "Выбор цвета для левого инструмента"
+
+msgid "Choose a color for the right tool"
+msgstr "Выбор цвета для правого инструмента"
+
+msgid "Switch left and right colors\n"
+"(%s)"
+msgstr "Поменять левый и правый цвета местами\n"
+"(%s)"
+
+msgid "Reset the colors to their default state (black for left, white for right)"
+msgstr "Сбросить цвета по умолчанию (слева черный, справа белый)"
+
+msgid "Left tool"
+msgstr "Левый инструмент"
+
+msgid "Right tool"
+msgstr "Правый инструмент"
+
+msgid "Left pixel indicator"
+msgstr "Цвет для ЛКМ"
+
+msgid "Show left mouse pixel indicator or brush on the canvas when drawing"
+msgstr "Отображать цвет кисти для ЛКМ во время рисования"
+
+msgid "Right pixel indicator"
+msgstr "Цвет для ПКМ"
+
+msgid "Show right mouse pixel indicator or brush on the canvas when drawing"
+msgstr "Отображать цвет кисти для ПКМ во время рисования"
+
+msgid "Show left tool icon"
+msgstr "Показать левый значок инструмента"
+
+msgid "Displays an icon of the selected left tool next to the cursor on the canvas"
+msgstr "Отображает иконку выбранного левого инструмента рядом с курсором на холсте"
+
+msgid "Show right tool icon"
+msgstr "Показать правый значок инструмента"
+
+msgid "Displays an icon of the selected right tool next to the cursor on the canvas"
+msgstr "Отображает значок выбранного правого инструмента рядом с курсором на холсте"
+
+msgid "Guides"
+msgstr "Направляющие"
+
+msgid "Guides color:"
+msgstr "Цвет направляющих:"
+
+msgid "A color of ruler guides displayed on the canvas"
+msgstr "Цвет направляющих линейки, отображаемых на холсте"
+
+msgid "Grid"
+msgstr "Сетка"
+
+msgid "Grid type:"
+msgstr "Тип сетки:"
+
+msgid "Sets the type of the grid between rectangular, isometric or both"
+msgstr "Переключает тип сетки между прямоугольной, изометрической или обеими сразу"
+
+msgid "Rectangular"
+msgstr "Прямоугольная"
+
+msgid "Isometric"
+msgstr "Изометрическая"
+
+msgid "All"
+msgstr "Обе"
+
+msgid "Rectangular grid width:"
+msgstr "Ширина прямоугольной сетки:"
+
+msgid "Sets how far apart are vertical lines of the rectangular grid"
+msgstr "Устанавливает расстояние между вертикальными линиями прямоугольной сетки"
+
+msgid "Rectangular grid height:"
+msgstr "Высота прямоугольной сетки:"
+
+msgid "Sets how far apart are horizontal lines of the rectangular grid"
+msgstr "Устанавливает расстояние между горизонтальными линиями сетки"
+
+msgid "Isometric cell bounds width:"
+msgstr "Ширина границ изометрической клетки:"
+
+msgid "Sets the width of the isometric cell's axis aligned bounding box"
+msgstr "Устанавливает ширину границ, в которые вписывается изометрическая клетка"
+
+msgid "Isometric cell bounds height:"
+msgstr "Высота границ изометрической клетки:"
+
+msgid "Sets the height of the isometric cell's axis aligned bounding box"
+msgstr "Устанавливает высоту границ, в которые вписывается изометрическая клетка"
+
+msgid "Grid offset x:"
+msgstr "Сдвиг сетки по X:"
+
+msgid "Sets grid's x offset from the canvas origin (top left corner of the image)"
+msgstr "Устанавливает смещение сетки по X от начала координат холста (верхнего левого угла изображения)"
+
+msgid "Grid offset y:"
+msgstr "Сдвиг сетки по Y:"
+
+msgid "Sets grid's y offset from the canvas origin (top left corner of the image)"
+msgstr "Устанавливает смещение сетки по Y от начала координат холста (верхнего левого угла изображения)"
+
+msgid "Draw over Tile Mode:"
+msgstr "Показывать в бесшовном режиме:"
+
+msgid "If disabled, the grid will be drawn only over the original image"
+msgstr "Если отключено, сетка будет рисоваться только поверх исходного изображения"
+
+msgid "Grid color:"
+msgstr "Цвет сетки:"
+
+msgid "A color of the grid"
+msgstr "Цвет сетки"
+
+msgid "Pixel Grid"
+msgstr "Пиксельная сетка"
+
+msgid "Show at zoom:"
+msgstr "Показать при масштабе:"
+
+msgid "Sets the minimal zoom at which pixel grid will be shown"
+msgstr "Минимальный масштаб, при котором отображается пиксельная сетка"
+
+msgid "Pixel grid color:"
+msgstr "Цвет пиксельной сетки:"
+
+msgid "A color of the pixel grid"
+msgstr "Цвет пиксельной сетки"
+
+msgid "Transparency"
+msgstr "Прозрачность"
+
+msgid "Checker size:"
+msgstr "Размер клеток:"
+
+msgid "Size of the transparent checker background"
+msgstr "Размер клеток прозрачного фона"
+
+msgid "Checker color 1:"
+msgstr "Цвет клеток 1:"
+
+msgid "First color of the transparent checker background"
+msgstr "Первый цвет клеток прозрачного фона"
+
+msgid "Checker color 2:"
+msgstr "Цвет клеток 2:"
+
+msgid "Second color of the transparent checker background"
+msgstr "Второй цвет клеток прозрачного фона"
+
+msgid "Follow Canvas Movement"
+msgstr "Следовать движению холста"
+
+msgid "The transparent checker follow the movement of canvas"
+msgstr "Клеточки прозрачности следуют движению холста"
+
+msgid "Follow Canvas Zoom Level"
+msgstr "Следовать масштабу холста"
+
+msgid "The transparent checker follow the zoom level of canvas"
+msgstr "Клеточки прозрачности следуют увеличению/уменьшению холста"
+
+msgid "Animated selection borders"
+msgstr "Анимированные границы выделения"
+
+msgid "Border color 1:"
+msgstr "Цвет границы 1:"
+
+msgid "Border color 2:"
+msgstr "Цвет границы 2:"
+
+msgid "Only custom preset can be modified"
+msgstr "Только пользовательские предустановки могут быть изменены"
+
+msgid "Set application FPS limit:"
+msgstr "Ограничение кадров в секунду:"
+
+msgid "Pause application when it loses focus"
+msgstr "Приостановить приложение при потере фокуса"
+
+msgid "Sets the limit of the application's frames per second. The lower the number, the lower the CPU usage, but the application gets slower, choppier and unresponsive. 0 means that there is no limit."
+msgstr "Устанавливает лимит на количество кадров в секунду для программы. Чем ниже это число, тем меньше используется процессор, но приложение становится медленнее, дольше реагирует на действия, а движения будут менее плавными. 0 значит отсутствие лимита."
+
+msgid "If this is toggled on, when the application's window loses focus, it gets paused. This helps lower CPU usage when idle. The application gets unpaused when the mouse enters the application's window."
+msgstr "Если этот параметр включен, то, когда окно приложения теряет фокус, оно приостанавливается. Это помогает снизить загрузку процессора в режиме бездействие. Приложение продолжит работать, когда мышь попадет в окно приложения."
+
+msgid "Brush:"
+msgstr "Кисть:"
+
+msgid "Select a brush"
+msgstr "Выбрать кисть"
+
+msgid "Pixel brush"
+msgstr "Кисть-пиксель"
+
+msgid "Circle brush"
+msgstr "Круглая кисть"
+
+msgid "Filled circle brush"
+msgstr "Заполненная круглая кисть"
+
+msgid "Custom brush"
+msgstr "Своя кисть"
+
+msgid "Brush size:"
+msgstr "Размер кисти:"
+
+msgid "Overwrite Color"
+msgstr "Заменить цвет"
+
+msgid "Overwrites color instead of blending it. This option is only relevant with colors that are not fully opaque"
+msgstr "Перезаписывает цвет вместо смешивания. Этот параметр применим только к цветам, которые не являются полностью непрозрачными"
+
+msgid "Pixel Perfect"
+msgstr "Пиксельная точность"
+
+msgid "Fill inside"
+msgstr "Залить внутри"
+
+msgid "Makes lines smooth by removing the extra pixels on the edges"
+msgstr "Делает линии плавными, удаляя лишние пиксели на краях"
+
+msgid "Fill Shape"
+msgstr "Заполнить фигуру"
+
+msgid "Fills the drawn shape with color, instead of drawing a hollow shape"
+msgstr "Заполняет нарисованную фигуру цветом, вместо того, чтобы нарисовать пустую фигуру"
+
+msgid "Brush color from"
+msgstr "Цвет кисти из"
+
+msgid "0: Color from the brush itself, 100: the currently selected color"
+msgstr "0: Собственный цвет кисти, 100: Выбранный цвет"
+
+msgid "Fill area:"
+msgstr "Залить область:"
+
+msgid "Same color area"
+msgstr "Область того же цвета"
+
+msgid "Same color pixels"
+msgstr "Пиксели того же цвета"
+
+msgid "Fill with:"
+msgstr "Заполнить:"
+
+msgid "Selected Color"
+msgstr "Выбранным цветом"
+
+msgid "Pattern"
+msgstr "Узором"
+
+msgid "Offset"
+msgstr "Смещение"
+
+msgid "Simple Shading"
+msgstr "Простое затенение"
+
+msgid "Hue Shifting"
+msgstr "Сдвиг оттенка"
+
+msgid "Lighten"
+msgstr "Осветлить"
+
+msgid "Darken"
+msgstr "Затемнить"
+
+msgid "Amount:"
+msgstr "Кол-во:"
+
+msgid "Lighten/Darken amount"
+msgstr "Интенсивность осветления/затемнения"
+
+msgid "Pick for:"
+msgstr "Выбрать для:"
+
+msgid "Left Color"
+msgstr "Цвет слева"
+
+msgid "Right Color"
+msgstr "Цвет справа"
+
+msgid "Mode:"
+msgstr "Режим:"
+
+msgid "Zoom in"
+msgstr "Увеличить"
+
+msgid "Zoom out"
+msgstr "Уменьшить"
+
+msgid "Options:"
+msgstr "Опции:"
+
+msgid "Fit to frame"
+msgstr "По размеру кадра"
+
+msgid "100% Zoom"
+msgstr "100% масштаб"
+
+msgid "Mirroring"
+msgstr "Зеркало"
+
+msgid "Horizontal"
+msgstr "Горизонально"
+
+msgid "Enable horizontal mirrored drawing"
+msgstr "Режим рисования с горизонтальным зеркалированием"
+
+msgid "Enable vertical mirrored drawing"
+msgstr "Режим рисования с вертикальным зеркалированием"
+
+msgid "Vertical"
+msgstr "Вертикально"
+
+msgid "Current frame:"
+msgstr "Текущий кадр:"
+
+msgid "Jump to the first frame\n"
+"(%s)"
+msgstr "Перейти к первому кадру\n"
+"(%s)"
+
+msgid "Go to the previous frame\n"
+"(%s)"
+msgstr "На предыдущий кадр\n"
+"(%s)"
+
+msgid "Play the animation backwards (from end to beginning)\n"
+"(%s)"
+msgstr "Проиграть анимацию задом наперед (с конца в начало)\n"
+"(%s)"
+
+msgid "Play the animation forward (from beginning to end)\n"
+"(%s)"
+msgstr "Проиграть анимацию по умолчанию (с начала в конец)\n"
+"(%s)"
+
+msgid "Go to the next frame\n"
+"(%s)"
+msgstr "На следующий кадр\n"
+"(%s)"
+
+msgid "Jump to the last frame\n"
+"(%s)"
+msgstr "Перейти на последний кадр\n"
+"(%s)"
+
+msgid "Onion Skinning settings"
+msgstr "Настройки шлейфа соседних кадров"
+
+msgid "Enable/disable Onion Skinning"
+msgstr "Включить/выключить шлейф кадров"
+
+msgid "How many frames per second should the animation preview be?\n"
+"The more FPS, the faster the animation plays."
+msgstr "Сколько кадров в секунду для просмотра анимации?\n"
+"Большее число кадров в секунду ускорит анимацию."
+
+msgid "No loop"
+msgstr "Не зацикливать"
+
+msgid "Cycle loop"
+msgstr "Зациклить"
+
+msgid "Ping-pong loop"
+msgstr "Туда-сюда"
+
+msgid "Onion Skinning:"
+msgstr "Шлейф смежных кадров:"
+
+msgid "Past Frames"
+msgstr "Предыдущие кадры"
+
+msgid "Future Frames"
+msgstr "Последующие кадры"
+
+msgid "Manage frame tags"
+msgstr "Управление метками кадров"
+
+msgid "Frame Tag Properties"
+msgstr "Свойства метки кадров"
+
+msgid "Add a new frame tag"
+msgstr "Добавить новую метку"
+
+msgid "Name:"
+msgstr "Название:"
+
+msgid "From:"
+msgstr "От:"
+
+msgid "To:"
+msgstr "До:"
+
+msgid "Animation plays only on frames of the same tag"
+msgstr "Анимация воспроизводится только на фреймах одной и той же метки"
+
+msgid "Tag %s (Frame %s)"
+msgstr "Метка %s (Кадр %s)"
+
+msgid "Tag %s (Frames %s-%s)"
+msgstr "Метка %s (Кадры %s-%s)"
+
+msgid "If it's selected, the animation plays only on the frames that have the same tag.\n"
+"If it's not, the animation will play for all frames, ignoring tags."
+msgstr "Если этот параметр включён, при анимации будут проигрываться только кадры с той же меткой.\n"
+"Если выключен, анимация будет включать все кадры, независимо от меток."
+
+msgid "Blue-Red Mode"
+msgstr "Сине-красный режим"
+
+msgid "Show past frames:"
+msgstr "Показывать прошлые кадры:"
+
+msgid "Show future frames:"
+msgstr "Показывать следующие кадры:"
+
+msgid "Above canvas"
+msgstr "Над холстом"
+
+msgid "Below canvas"
+msgstr "Под холстом"
+
+msgid "If you want a layer to ignore onion skinning simply add the \"_io\" suffix in its name."
+msgstr "Если вы хотите, чтобы слой игнорировал скин лука, просто добавьте суффикс \"_io\" в его имя."
+
+msgid "Add a new frame"
+msgstr "Добавить новый кадр"
+
+msgid "Remove Frame"
+msgstr "Удалить кадр"
+
+msgid "Clone Frame"
+msgstr "Дублировать кадр"
+
+msgid "Move Left"
+msgstr "Сместить влево"
+
+msgid "Move Right"
+msgstr "Сместить вправо"
+
+msgid "Add Frame Tag"
+msgstr "Добавить тег кадра"
+
+msgid "Link Cel"
+msgstr "Соединить ячейки"
+
+msgid "Unlink Cel"
+msgstr "Разъединить ячейки"
+
+msgid "Frame Properties"
+msgstr "Свойства кадра"
+
+msgid "Frame properties"
+msgstr "Свойства кадра"
+
+msgid "Layer"
+msgstr "Слой"
+
+msgid "Layers"
+msgstr "Слои"
+
+msgid "Create a new layer"
+msgstr "Создать новый слой"
+
+msgid "Remove current layer"
+msgstr "Удалить текущий слой"
+
+msgid "Move up the current layer"
+msgstr "Поднять текущий слой выше"
+
+msgid "Move down the current layer"
+msgstr "Опустить текущий слой ниже"
+
+msgid "Clone current layer"
+msgstr "Клонировать текущий слой"
+
+msgid "Merge current layer with the one below"
+msgstr "Объединить слой ниже с текущим"
+
+msgid "Opacity:"
+msgstr "Непрозрачность:"
+
+msgid "Tile mode opacity:"
+msgstr "Прозрачность режима тайла:"
+
+msgid "Toggle layer's visibility"
+msgstr "Переключить видимость слоя"
+
+msgid "Lock/unlock layer"
+msgstr "Блокировать/разблокировать слой"
+
+msgid "Frame: %s, Layer: %s"
+msgstr "Кадр: %s, слой: %s"
+
+msgid "Enable/disable cel linking\n\n"
+"Linked cels are being shared across multiple frames"
+msgstr "Включить/выключить соединение ячеек\n\n"
+"Соединённые ячейки используются в нескольких кадрах"
+
+msgid "Palette"
+msgstr "Палитра"
+
+msgid "Palettes"
+msgstr "Палитры"
+
+msgid "Add a new palette"
+msgstr "Добавить новую палитру"
+
+msgid "Edit currently selected palette"
+msgstr "Редактировать выбранную палитру"
+
+msgid "Choose a palette"
+msgstr "Выберите палитру"
+
+msgid "Undo: Draw"
+msgstr "Отменить: Рисование"
+
+msgid "Redo: Draw"
+msgstr "Повторить: Рисование"
+
+msgid "Undo: Select"
+msgstr "Отменить: Выбрать"
+
+msgid "Redo: Select"
+msgstr "Повторить: Выбрать"
+
+msgid "Undo: Scale"
+msgstr "Отменить: Масштабирование"
+
+msgid "Redo: Scale"
+msgstr "Повторить: Масштабирование"
+
+msgid "Undo: Add Layer"
+msgstr "Отменить: Добавление слоя"
+
+msgid "Redo: Add Layer"
+msgstr "Повторить: Добавление слоя"
+
+msgid "Undo: Remove Layer"
+msgstr "Отменить: Удаление слоя"
+
+msgid "Redo: Remove Layer"
+msgstr "Повторить: Удаление слоя"
+
+msgid "Undo: Merge Layer"
+msgstr "Отменить: Объединение слоев"
+
+msgid "Redo: Merge Layer"
+msgstr "Повторить: Объединение слоев"
+
+msgid "Undo: Change Layer Order"
+msgstr "Отменить: Смена порядка слоев"
+
+msgid "Redo: Change Layer Order"
+msgstr "Повторить: Смена порядка слоев"
+
+msgid "Undo: Add Frame"
+msgstr "Отменить: Добавление кадра"
+
+msgid "Redo: Add Frame"
+msgstr "Повторить: Добавление кадра"
+
+msgid "Undo: Remove Frame"
+msgstr "Отменить: Удаление кадра"
+
+msgid "Redo: Remove Frame"
+msgstr "Повторить: Удаление кадра"
+
+msgid "Undo: Change Frame Order"
+msgstr "Отменить: Смена последовательности кадров"
+
+msgid "Redo: Change Frame Order"
+msgstr "Повторить: Смена последовательности кадров"
+
+msgid "Undo: Delete Custom Brush"
+msgstr "Отменить: Удаление своей кисти"
+
+msgid "Redo: Delete Custom Brush"
+msgstr "Повторить: Удаление своей кисти"
+
+msgid "Undo: Modify Frame Tag"
+msgstr "Отменить: Изменить метку кадра"
+
+msgid "Redo: Modify Frame Tag"
+msgstr "Повтор: Изменить метку кадра"
+
+msgid "Undo: Delete Frame Tag"
+msgstr "Отменить: Удалить метку кадра"
+
+msgid "Redo: Delete Frame Tag"
+msgstr "Повторить: Удалить метку кадра"
+
+msgid "Undo: Change frame duration"
+msgstr "Отменить: Изменить длительность кадра"
+
+msgid "Redo: Change frame duration"
+msgstr "Повторить: Изменить длительность кадра"
+
+msgid "Move Guide"
+msgstr "Сдвинуть направляющие"
+
+msgid "File saved"
+msgstr "Файл сохранен"
+
+msgid "File autosaved"
+msgstr "Выполнено автосохранение"
+
+msgid "File failed to open. Error code %s"
+msgstr "Не удалось открыть файл. Код ошибки %s"
+
+msgid "File failed to save. Error code %s"
+msgstr "Не удалось сохранить файл. Код ошибки %s"
+
+msgid "File exported"
+msgstr "Файл экспортирован"
+
+msgid "New Empty Palette"
+msgstr "Создать пустую палитру"
+
+msgid "Import Palette"
+msgstr "Импорт Палитры"
+
+msgid "Create Palette From Current Sprite"
+msgstr "Создать палитру из текущего спрайта"
+
+msgid "Palette Name:"
+msgstr "Название палитры:"
+
+msgid "Color Name:"
+msgstr "Название цвета:"
+
+msgid "Use current left & right colors"
+msgstr "Использовать текущие левый и правый цвета"
+
+msgid "Create a new empty palette?"
+msgstr "Создать пустую палитру?"
+
+msgid "Error"
+msgstr "Ошибка"
+
+msgid "Error: Palette must have a valid name."
+msgstr "Ошибка: Палитра должна иметь корректное имя."
+
+msgid "Invalid Palette file!"
+msgstr "Недопустимый файл палитры!"
+
+msgid "Edit Palette"
+msgstr "Изменить палитру"
+
+msgid "Create colors with alpha component"
+msgstr "Создание цветов с помощью альфа-компонента"
+
+msgid "Get colors only from selection"
+msgstr "Получить цвета только из выделенного"
+
+msgid "Get colors from"
+msgstr "Получить цвета от"
+
+msgid "Patrons:"
+msgstr "Меценаты:"
+
+msgid "Want your name or your company to be shown on the splash screen?"
+msgstr "Хотите, чтобы ваше имя или компания были показаны на заставке?"
+
+msgid "Become a Platinum Sponsor"
+msgstr "Стать Платиновым Спонсором"
+
+msgid "Become a Gold Sponsor"
+msgstr "Стать Золотым Спонсором"
+
+msgid "Become a Patron"
+msgstr "Стать спонсором"
+
+msgid "Don't show again"
+msgstr "Не показывать снова"
+
+msgid "Image Options"
+msgstr "Параметры изображения"
+
+msgid "Default width:"
+msgstr "Ширина по умолчанию:"
+
+msgid "A default width of a new image"
+msgstr "Ширина нового изображения по умолчанию"
+
+msgid "Default height:"
+msgstr "Высота по умолчанию:"
+
+msgid "A default height of a new image"
+msgstr "Высота нового изображения по умолчанию"
+
+msgid "Default fill color:"
+msgstr "Цвет заливки по умолчанию:"
+
+msgid "A default background color of a new image"
+msgstr "Цвет фона по умолчанию для нового изображения"
+
+msgid "Lock aspect ratio"
+msgstr "Заблокировать соотношение сторон"
+
+msgid "Portrait"
+msgstr "Портретная"
+
+msgid "Landscape"
+msgstr "Горизонтальное"
+
+msgid "Templates:"
+msgstr "Шаблоны:"
+
+msgid "Preset"
+msgstr "Предустановка"
+
+msgid "Preset:"
+msgstr "Предустановка:"
+
+msgid "Default"
+msgstr "По умолчанию"
+
+msgid "Custom"
+msgstr "Другой"
+
+msgid "Rectangular Selection"
+msgstr "Прямоугольное выделение"
+
+msgid "Elliptical Selection"
+msgstr "Эллиптическое выделение"
+
+msgid "Polygonal Selection"
+msgstr "Многоугольное выделение"
+
+msgid "Select By Color"
+msgstr "Выделение по цвету"
+
+msgid "Magic Wand"
+msgstr "Волшебная палочка"
+
+msgid "Lasso / Free Select Tool"
+msgstr "Лассо / произвольное выделение"
+
+msgid "Move"
+msgstr "Перемещение"
+
+msgid "Zoom"
+msgstr "Масштаб"
+
+msgid "Pan"
+msgstr "Сдвиг"
+
+msgid "Color Picker"
+msgstr "Выбор цвета (пипетка)"
+
+msgid "Pencil"
+msgstr "Карандаш"
+
+msgid "Eraser"
+msgstr "Ластик"
+
+msgid "Bucket"
+msgstr "Заливка"
+
+msgid "Shading Tool"
+msgstr "Затенение"
+
+msgid "Line Tool"
+msgstr "Рисование линий"
+
+msgid "Rectangle Tool"
+msgstr "Рисование прямоугольников"
+
+msgid "Ellipse Tool"
+msgstr "Рисование эллипсов"
+
+msgid "Switch Colors"
+msgstr "Сменить цвета"
+
+msgid "Set the shortcut"
+msgstr "Выставить горячую(ие) клавишу(и)"
+
+msgid "Press a key or a key combination to set the shortcut"
+msgstr "Нажмите клавишу или комбинацию клавиш"
+
+msgid "Already assigned"
+msgstr "Уже назначено"
+
+msgid "Left Tool:"
+msgstr "Левый инструмент:"
+
+msgid "A tool assigned to the left mouse button"
+msgstr "Инструмент, присвоенный левой кнопке мыши"
+
+msgid "Right Tool:"
+msgstr "Правый инструмент:"
+
+msgid "A tool assigned to the right mouse button"
+msgstr "Инструмент, присвоенный правой кнопкой мыши"
+
+msgid "Cannot find last project file."
+msgstr "Не могу найти файл последнего проекта."
+
+msgid "Cannot find project file."
+msgstr "Не могу найти файл проекта."
+
+msgid "You haven't saved or opened any project in Pixelorama yet!"
+msgstr "Вы еще не сохранили и не открыли ни одного проекта в Pixelorama!"
+
+msgid "Open Last Project"
+msgstr "Открыть последний проект"
+
+msgid "Open last project..."
+msgstr "Открыть последний проект..."
+
+msgid "Open last project on startup"
+msgstr "Открывать последний проект при запуске"
+
+msgid "Opens last opened project on startup"
+msgstr "Открывает последний открытый проект при запуске"
+
+msgid "Quit confirmation"
+msgstr "Подтверждение выхода"
+
+msgid "Enable autosave"
+msgstr "Включить автосохранение"
+
+msgid "Autosave interval:"
+msgstr "Интервал автосохранения:"
+
+msgid "minute(s)"
+msgstr "мин."
+
+msgid "Create new directory for each frame tag"
+msgstr "Создать новый каталог для каждой метки кадра"
+
+msgid "Creates multiple files but every file is stored in different directory that corresponds to its frame tag"
+msgstr "Создает несколько файлов, но каждый файл хранится в разных каталогах, соответствующих метке кадра"
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Autosaved project(s) from a crashed session were found.\n"
+"Do you want to recover the data?"
+msgstr "Найдены автоматически сохранённые проекты (проект) из аварийно завершённой сессии.\n"
+"Восстановить данные?"
+
+msgid "Backup reloaded"
+msgstr "Резервная копия восстановлена"
+
+msgid "Remove currently selected palette"
+msgstr "Удалить выбранную на данный момент палитру"
+
+msgid "Are you sure you want to remove this palette? (Cannot be undone)"
+msgstr "Вы уверены, что хотите удалить эту палитру? (Действие необратимо)"
+
+msgid "You can't remove more palettes!"
+msgstr "Нельзя удалить больше палитр!"
+
+msgid "Cannot remove the palette, because it doesn't exist!"
+msgstr "Невозможно удалить палитру, потому что она не существует!"
+
+msgid "An error occured while removing the palette! Error code: %s"
+msgstr "Произошла ошибка при удалении палитры! Код ошибки: %s"
+
+msgid "and"
+msgstr "и"
+
+msgid "Move the selected frame to the left."
+msgstr "Переместить выделенный кадр влево."
+
+msgid "Move the selected frame to the right."
+msgstr "Переместить выделенный кадр вправо."
+
+msgid "Frame duration"
+msgstr "Длительность кадра"
+
+msgid "Tiled In Both Axis"
+msgstr "Повторять по обеим осям"
+
+msgid "Tiled In X Axis"
+msgstr "Повторять по оси X"
+
+msgid "Tiled In Y Axis"
+msgstr "Повторять по оси Y"
+
+msgid "Create a new palette"
+msgstr "Создать новую палитру"
+
+msgid "Comment:"
+msgstr "Комментарий:"
+
+msgid "Empty"
+msgstr "Пустой"
+
+msgid "From Current Palette"
+msgstr "Из текущей палитры"
+
+msgid "From Current Sprite"
+msgstr "Из текущего спрайта"
+
+msgid "From Current Selection"
+msgstr "Из выделенного"
+
+msgid "Add a new color"
+msgstr "Добавить новый цвет"
+
+msgid "Remove a selected color"
+msgstr "Удалить выбранный цвет"
+
+msgid "Palette with the same name and path already exists!"
+msgstr "Палитра с таким названием по такому пути уже существует!"
+
+msgid "Palette name is required!"
+msgstr "Необходимо указать имя палитры!"
+
+msgid "Reducing palette size will reset positions of colors. Colors that don't fit in new palette size will be lost!"
+msgstr "Уменьшение размера палитры сбросит позиции цветов. Цвета, которые не поместятся в новую палитру, будут потеряны!"
+
+msgid "Position:"
+msgstr "Положение:"
+

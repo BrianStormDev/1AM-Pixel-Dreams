@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/warfare_weapon_shuriken_flying_star_throw_kung_fu_001.mp3-126afc096d746f1e70507711a2ccab59.mp3str"
+
+[deps]
+
+source_file="res://SFX_Imports/warfare_weapon_shuriken_flying_star_throw_kung_fu_001.mp3"
+dest_files=[ "res://.import/warfare_weapon_shuriken_flying_star_throw_kung_fu_001.mp3-126afc096d746f1e70507711a2ccab59.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

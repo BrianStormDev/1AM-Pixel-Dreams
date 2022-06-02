@@ -1,0 +1,366 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://ShootingPlayer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Environments/Homeroom/Homeroom Game.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Enemies/Swan.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Fonts/ARCADECLASSIC.TTF" type="DynamicFontData" id=4]
+[ext_resource path="res://Enemies/PaperPlane.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Image_Imports/right.png" type="Texture" id=6]
+[ext_resource path="res://Scripts/Tutorial.gd" type="Script" id=7]
+[ext_resource path="res://UI/main menu.tscn" type="PackedScene" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 4 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 7240, 289 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 130.5, 509.5 )
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 0, 230 )
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 175, 189 )
+scale = Vector2( 2, 2 )
+GRAVITY = 30
+JUMPFORCE = 700
+top_limit = 230
+bgmusic = null
+
+[node name="Enemies" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Swan2" parent="Enemies" instance=ExtResource( 3 )]
+position = Vector2( 4775, 744 )
+scale = Vector2( 2, 2 )
+speed = 200
+
+[node name="Swan3" parent="Enemies" instance=ExtResource( 3 )]
+position = Vector2( 6396, 636 )
+scale = Vector2( 2, 2 )
+direction = -1
+speed = 200
+
+[node name="Plane1" parent="Enemies" instance=ExtResource( 5 )]
+position = Vector2( 9296, 751 )
+scale = Vector2( 2, 2 )
+switch_time = 7
+
+[node name="Plane2" parent="Enemies" instance=ExtResource( 5 )]
+position = Vector2( 8443, 468 )
+scale = Vector2( 2, 2 )
+switch_time = 4
+
+[node name="Plane4" parent="Enemies" instance=ExtResource( 5 )]
+position = Vector2( 8657, 583 )
+scale = Vector2( 2, 2 )
+direction = 1
+switch_time = 4
+
+[node name="Plane5" parent="Enemies" instance=ExtResource( 5 )]
+position = Vector2( 8278, 323 )
+scale = Vector2( 2, 2 )
+direction = 1
+switch_time = 3
+
+[node name="Plane6" parent="Enemies" instance=ExtResource( 5 )]
+position = Vector2( 9079, 617 )
+scale = Vector2( 2, 2 )
+switch_time = 4
+
+[node name="Plane7" parent="Enemies" instance=ExtResource( 5 )]
+position = Vector2( 8570, 323 )
+scale = Vector2( 2, 2 )
+direction = 1
+switch_time = 3
+
+[node name="Plane8" parent="Enemies" instance=ExtResource( 5 )]
+position = Vector2( 8858, 326 )
+scale = Vector2( 2, 2 )
+direction = 1
+switch_time = 3
+
+[node name="Plane3" parent="Enemies" instance=ExtResource( 5 )]
+position = Vector2( 8955, 466 )
+scale = Vector2( 2, 2 )
+direction = 1
+switch_time = 4
+
+[node name="Plane9" parent="Enemies" instance=ExtResource( 5 )]
+position = Vector2( 9079, 617 )
+scale = Vector2( 2, 2 )
+switch_time = 4
+
+[node name="Swan4" parent="Enemies" instance=ExtResource( 3 )]
+position = Vector2( 11131, 634 )
+scale = Vector2( 2, 2 )
+direction = -1
+speed = 200
+
+[node name="Swan5" parent="Enemies" instance=ExtResource( 3 )]
+position = Vector2( 11421, 637 )
+scale = Vector2( 2, 2 )
+speed = 200
+
+[node name="Control" type="Control" parent="."]
+show_behind_parent = true
+margin_left = -7.0
+margin_top = -203.0
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="Label6" type="Label" parent="Control"]
+margin_left = 3021.0
+margin_top = 569.0
+margin_right = 3310.0
+margin_bottom = 742.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "avoid  falling  
+off  the  edge
+it hurts
+"
+
+[node name="Label7" type="Label" parent="Control"]
+margin_left = 4077.0
+margin_top = 646.0
+margin_right = 4787.0
+margin_bottom = 731.0
+rect_pivot_offset = Vector2( 981, -132 )
+custom_colors/font_color = Color( 0, 1, 0.882353, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Press  the  spacebar  to  shoot  enemies
+"
+
+[node name="Label8" type="Label" parent="Control"]
+margin_left = 4121.0
+margin_top = 698.0
+margin_right = 4831.0
+margin_bottom = 783.0
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "but  be  careful  not  to  touch  them!!
+"
+
+[node name="Label9" type="Label" parent="Control"]
+margin_left = 4175.0
+margin_top = 753.0
+margin_right = 4903.0
+margin_bottom = 882.0
+rect_pivot_offset = Vector2( 981, -132 )
+custom_colors/font_color = Color( 0.988235, 1, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Defeat  a  certain  number  of  
+enemies  before  reaching  the  finish
+to  complete  the  level
+"
+
+[node name="Label10" type="Label" parent="Control"]
+margin_left = 7409.0
+margin_top = 603.0
+margin_right = 7801.0
+margin_bottom = 776.0
+rect_pivot_offset = Vector2( 981, -132 )
+custom_colors/font_color = Color( 0.12549, 0, 1, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Good  luck  with  
+this  next  part
+It's  only  a  tutorial...
+"
+
+[node name="Label11" type="Label" parent="Control"]
+margin_left = 8203.0
+margin_top = 788.0
+margin_right = 8577.0
+margin_bottom = 961.0
+rect_pivot_offset = Vector2( 981, -132 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Remember
+you  only  need  a
+certain  number  of
+mobs  to  pass"
+
+[node name="Label12" type="Label" parent="Control"]
+margin_left = 12273.0
+margin_top = 569.0
+margin_right = 12809.0
+margin_bottom = 874.0
+rect_pivot_offset = Vector2( 591, 95 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "congrats!
+You  have  reached the  end!
+jump  past  the  books  on  
+the  right  to  move on
+if  you  got  enough  mobs
+otherwise  go  back!
+"
+
+[node name="Box1" type="Control" parent="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="Control/Box1"]
+margin_left = 177.0
+margin_top = 634.0
+margin_right = 690.0
+margin_bottom = 763.0
+custom_fonts/font = SubResource( 1 )
+text = "Welcome   to  the    tutorial!
+
+"
+
+[node name="TextureRect2" type="TextureRect" parent="Control/Box1"]
+margin_left = 441.0
+margin_top = 688.0
+margin_right = 512.0
+margin_bottom = 761.0
+texture = ExtResource( 6 )
+expand = true
+
+[node name="TextureRect3" type="TextureRect" parent="Control/Box1"]
+margin_left = 315.0
+margin_top = 688.0
+margin_right = 386.0
+margin_bottom = 761.0
+texture = ExtResource( 6 )
+expand = true
+flip_h = true
+
+[node name="Label2" type="Label" parent="Control/Box1"]
+margin_left = 180.0
+margin_top = 698.0
+margin_right = 308.0
+margin_bottom = 783.0
+custom_fonts/font = SubResource( 1 )
+text = "Press
+"
+
+[node name="Label3" type="Label" parent="Control/Box1"]
+margin_left = 541.0
+margin_top = 698.0
+margin_right = 683.0
+margin_bottom = 783.0
+custom_fonts/font = SubResource( 1 )
+text = "To  Move
+"
+
+[node name="Box2" type="Control" parent="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Label5" type="Label" parent="Control/Box2"]
+margin_left = 1044.0
+margin_top = 852.0
+margin_right = 1186.0
+margin_bottom = 937.0
+custom_fonts/font = SubResource( 1 )
+text = "Press
+"
+
+[node name="Label4" type="Label" parent="Control/Box2"]
+margin_left = 1266.0
+margin_top = 852.0
+margin_right = 1408.0
+margin_bottom = 937.0
+custom_fonts/font = SubResource( 1 )
+text = "To  Jump
+"
+
+[node name="TextureRect4" type="TextureRect" parent="Control/Box2"]
+margin_left = 1248.0
+margin_top = 828.0
+margin_right = 1319.0
+margin_bottom = 901.0
+rect_rotation = 90.0
+texture = ExtResource( 6 )
+expand = true
+flip_h = true
+
+[node name="Box3" type="Control" parent="Control"]
+margin_left = 3980.0
+margin_top = -44.0
+margin_right = 4020.0
+margin_bottom = -4.0
+
+[node name="Label5" type="Label" parent="Control/Box3"]
+margin_left = 1020.0
+margin_top = 909.0
+margin_right = 1162.0
+margin_bottom = 994.0
+custom_fonts/font = SubResource( 1 )
+text = "Press
+"
+
+[node name="Label4" type="Label" parent="Control/Box3"]
+margin_left = 1235.0
+margin_top = 850.0
+margin_right = 1421.0
+margin_bottom = 1023.0
+custom_fonts/font = SubResource( 1 )
+text = "Twice
+To  double
+Jump
+"
+
+[node name="TextureRect4" type="TextureRect" parent="Control/Box3"]
+margin_left = 1214.0
+margin_top = 897.0
+margin_right = 1285.0
+margin_bottom = 970.0
+rect_rotation = 90.0
+texture = ExtResource( 6 )
+expand = true
+flip_h = true
+
+[node name="Label13" type="Label" parent="Control"]
+margin_left = 3544.0
+margin_top = 661.0
+margin_right = 3833.0
+margin_bottom = 878.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "If you  do  fall
+you  have  one
+recovery
+jump
+"
+
+[node name="Game" parent="." instance=ExtResource( 2 )]
+scale = Vector2( 5, 5 )
+
+[node name="Area2D" type="Area2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 6063, 1302 )
+shape = SubResource( 2 )
+
+[node name="CanvasLayer" parent="." instance=ExtResource( 9 )]
+
+[node name="Finish" type="Area2D" parent="."]
+position = Vector2( 10056, 44 )
+collision_layer = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Finish"]
+position = Vector2( 3325.5, 386.5 )
+shape = SubResource( 3 )
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Finish" to="." method="_on_Finish_body_entered"]

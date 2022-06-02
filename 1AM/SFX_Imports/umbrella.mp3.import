@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/umbrella.mp3-4419f92600b6dc66ef1b0ce1716aa1ab.mp3str"
+
+[deps]
+
+source_file="res://SFX_Imports/umbrella.mp3"
+dest_files=[ "res://.import/umbrella.mp3-4419f92600b6dc66ef1b0ce1716aa1ab.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0.3

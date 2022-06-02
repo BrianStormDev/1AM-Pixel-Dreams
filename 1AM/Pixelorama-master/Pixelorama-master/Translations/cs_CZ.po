@@ -1,0 +1,1866 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 3;\n"
+"X-Crowdin-Project: pixelorama\n"
+"X-Crowdin-Project-ID: 385497\n"
+"X-Crowdin-Language: cs\n"
+"X-Crowdin-File: /master/Translations/Translations.pot\n"
+"X-Crowdin-File-ID: 5\n"
+"Project-Id-Version: pixelorama\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Czech\n"
+"Language: cs_CZ\n"
+"PO-Revision-Date: 2022-01-05 00:44\n"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Cancel"
+msgstr "Zrušit"
+
+msgid "Open"
+msgstr "Otevřít"
+
+msgid "Save"
+msgstr "Uložit"
+
+msgid "Please Confirm..."
+msgstr "Prosím, potvrďte..."
+
+msgid "File Name:"
+msgstr "Název souboru:"
+
+msgid "Project Name:"
+msgstr "Název projektu:"
+
+msgid "Image Size"
+msgstr "Velikost obrázku"
+
+msgid "Canvas Size"
+msgstr "Velikost plátna"
+
+msgid "Frame Size"
+msgstr "Velikost snímku"
+
+msgid "Size:"
+msgstr "Velikost:"
+
+msgid "Width:"
+msgstr "Šířka:"
+
+msgid "Height:"
+msgstr "Výška:"
+
+msgid "Center"
+msgstr "Na střed"
+
+msgid "File"
+msgstr "Soubor"
+
+msgid "Edit"
+msgstr "Upravit"
+
+msgid "Select"
+msgstr "Výběr"
+
+msgid "View"
+msgstr "Zobrazení"
+
+msgid "Image"
+msgstr "Obrázek"
+
+msgid "Effects"
+msgstr "Efekty"
+
+msgid "Help"
+msgstr "Nápověda"
+
+msgid "New"
+msgstr "Nový"
+
+msgid "New..."
+msgstr "Nový..."
+
+msgid "Open..."
+msgstr "Otevřít..."
+
+msgid "Save..."
+msgstr "Uložit..."
+
+msgid "Save as..."
+msgstr "Uložit jako..."
+
+msgid "Use ZSTD Compression"
+msgstr "Použít ZSTD kompresi"
+
+msgid "Import"
+msgstr "Importovat"
+
+msgid "Export"
+msgstr "Exportovat"
+
+msgid "Export..."
+msgstr "Exportovat..."
+
+msgid "Export as..."
+msgstr "Exportovat jako..."
+
+msgid "Export PNG..."
+msgstr "Exportovat PNG..."
+
+msgid "Export PNG as..."
+msgstr "Exportovat PNG jako..."
+
+msgid "Quit"
+msgstr "Ukončit"
+
+msgid "Undo"
+msgstr "Zpět"
+
+msgid "Redo"
+msgstr "Znovu"
+
+msgid "Copy"
+msgstr "Kopírovat"
+
+msgid "Cut"
+msgstr "Vyjmout"
+
+msgid "Paste"
+msgstr "Vložit"
+
+msgid "Delete"
+msgstr "Smazat"
+
+msgid "New Brush"
+msgstr "Nový štětec"
+
+msgid "Scale Image"
+msgstr "Škálovat obrázek"
+
+msgid "Pixels"
+msgstr "Pixely"
+
+msgid "Percentage"
+msgstr "Procenta"
+
+msgid "Crop Image"
+msgstr "Oříznout obrázek"
+
+msgid "Resize Canvas"
+msgstr "Upravit velikost plátna"
+
+msgid "Centralize Image"
+msgstr "Vycentrovat obrázek"
+
+msgid "Rotate Image"
+msgstr "Otočit obrázek"
+
+msgid "Clear"
+msgstr "Zrušit"
+
+msgid "Invert"
+msgstr "Invertovat"
+
+msgid "Flip"
+msgstr "Převrátit obrázek"
+
+msgid "Flip Horizontal"
+msgstr "Převrátit vodorovně"
+
+msgid "Flip Vertical"
+msgstr "Převrátit svisle"
+
+msgid "Preferences"
+msgstr "Nastavení"
+
+msgid "Tile Mode"
+msgstr "Dlaždicový režim"
+
+msgid "Window Opacity"
+msgstr "Průhlednost okna"
+
+msgid "Panel Layout"
+msgstr "Rozložení panelů"
+
+msgid "Auto"
+msgstr "Automaticky"
+
+msgid "Widescreen"
+msgstr "Širokoúhlá obrazovka"
+
+msgid "Tallscreen"
+msgstr "Vysoká obrazovka"
+
+msgid "Mirror View"
+msgstr "Převrátit plátno"
+
+msgid "Show Grid"
+msgstr "Zobrazit mřížku"
+
+msgid "Show Pixel Grid"
+msgstr "Zobrazit pixelovou mřížku"
+
+msgid "Show Rulers"
+msgstr "Zobrazit pravítka"
+
+msgid "Show Guides"
+msgstr "Zobrazit vodítka"
+
+msgid "Show Animation Timeline"
+msgstr "Zobrazit animační panel"
+
+msgid "Zen Mode"
+msgstr "Zen režim"
+
+msgid "Fullscreen Mode"
+msgstr "Celá obrazovka"
+
+msgid "Fill with color:"
+msgstr "Vyplnit barvou:"
+
+msgid "Open a File"
+msgstr "Otevřít soubor"
+
+msgid "Open File(s)"
+msgstr "Otevřít soubor(y)"
+
+msgid "Import Options"
+msgstr "Nastavení importu"
+
+msgid "Import as:"
+msgstr "Importovat jako:"
+
+msgid "Recent projects"
+msgstr "Nedávné projekty"
+
+msgid "New tab"
+msgstr "Nová záložka"
+
+msgid "Spritesheet (new tab)"
+msgstr "Spritesheet (nová záložka)"
+
+msgid "Spritesheet (new layer)"
+msgstr "Spritesheet (nová vrstva)"
+
+msgid "New frame"
+msgstr "Nový snímek"
+
+msgid "Replace frame"
+msgstr "Nahradit snímek"
+
+msgid "New layer"
+msgstr "Nová vrstva"
+
+msgid "New palette"
+msgstr "Nová paleta"
+
+msgid "New brush"
+msgstr "Nový štětec"
+
+msgid "New pattern"
+msgstr "Nový vzor"
+
+msgid "Horizontal frames:"
+msgstr "Vodorovné snímky:"
+
+msgid "Vertical frames:"
+msgstr "Svislé snímky:"
+
+msgid "Start frame:"
+msgstr "První snímek:"
+
+msgid "At frame:"
+msgstr "Na snímku:"
+
+msgid "At layer:"
+msgstr "Na vrstvě:"
+
+msgid "Brush type:"
+msgstr "Druh štětce:"
+
+msgid "File brush"
+msgstr "Štětec ze souboru"
+
+msgid "Project brush"
+msgstr "Štětec z projektu"
+
+msgid "Random brush"
+msgstr "Náhodný štětec"
+
+msgid "Save Sprite as .pxo"
+msgstr "Uložit obrázek jako .pxo"
+
+msgid "Export Sprite as .png"
+msgstr "Exportovat obrázek jako .png"
+
+msgid "Export Sprite"
+msgstr "Exportovat obrázek"
+
+msgid "File Exists, Overwrite?"
+msgstr "Soubor existuje, přepsat?"
+
+msgid "File %s already exists. Overwrite?"
+msgstr "Soubor %s již existuje. Přepsat?"
+
+msgid "Directory path or file name is not valid!"
+msgstr "Cesta složky nebo název souboru je neplatný!"
+
+msgid "Exporting in progress..."
+msgstr "Probíhá export..."
+
+msgid "Can't load file '%s'.\n"
+"Error code: %s"
+msgstr "Nelze načíst soubor '%s'.\n"
+"Kód chyby: %s"
+
+msgid "Frame"
+msgstr "Snímek"
+
+msgid "Frames:"
+msgstr "Snímky:"
+
+msgid "All Frames"
+msgstr "Všechny snímky"
+
+msgid "Spritesheet"
+msgstr "Spritesheet"
+
+msgid "Animation"
+msgstr "Animace"
+
+msgid "Preview:"
+msgstr "Náhled:"
+
+msgid "Frame:"
+msgstr "Snímek:"
+
+msgid "Orientation:"
+msgstr "Orientace:"
+
+msgid "Browse"
+msgstr "Procházet"
+
+msgid "Resize:"
+msgstr "Změnit velikost:"
+
+msgid "Cancel Export"
+msgstr "Zrušit export"
+
+msgid "Alert!"
+msgstr "Upozornění!"
+
+msgid "Select Current Folder"
+msgstr "Vybrat aktuální složku"
+
+msgid "Open a Directory"
+msgstr "Otevřít složku"
+
+msgid "All frames as multiple files"
+msgstr "Všechny snímky jako více souborů"
+
+msgid "All frames as a single file animation"
+msgstr "Všechny snímky jako jeden soubor animace"
+
+msgid "Background:"
+msgstr "Pozadí:"
+
+msgid "Direction:"
+msgstr "Směr:"
+
+msgid "Forward"
+msgstr "Vpřed"
+
+msgid "Backwards"
+msgstr "Pozpátku"
+
+msgid "Ping-Pong"
+msgstr "Ping-Pong"
+
+msgid "Columns"
+msgstr "Sloupce"
+
+msgid "Columns:"
+msgstr "Sloupce:"
+
+msgid "Rows"
+msgstr "Řádky"
+
+msgid "Rows:"
+msgstr "Řádky:"
+
+msgid "Path:"
+msgstr "Cesta:"
+
+msgid "Directories & Files:"
+msgstr "Složky a soubory:"
+
+msgid "Create Folder"
+msgstr "Vytvořit složku"
+
+msgid "File:"
+msgstr "Soubor:"
+
+msgid "Interpolation:"
+msgstr "Interpolace:"
+
+msgid "Nearest"
+msgstr "Nejbližší"
+
+msgid "Bilinear"
+msgstr "Bilineární"
+
+msgid "Cubic"
+msgstr "Kubická"
+
+msgid "Trilinear"
+msgstr "Trilineární"
+
+msgid "General"
+msgstr "Obecné"
+
+msgid "Startup"
+msgstr "Po spuštění"
+
+msgid "Language"
+msgstr "Jazyk"
+
+msgid "Interface"
+msgstr "Rozhraní"
+
+msgid "Themes"
+msgstr "Motivy"
+
+msgid "Canvas"
+msgstr "Plátno"
+
+msgid "Selection"
+msgstr "Výběr"
+
+msgid "Shortcuts"
+msgstr "Zkratky"
+
+msgid "Backup"
+msgstr "Zálohování"
+
+msgid "Performance"
+msgstr "Výkon"
+
+msgid "Indicators"
+msgstr "Indikátory"
+
+msgid "On"
+msgstr "Zapnuto"
+
+msgid "Restore default value"
+msgstr "Obnovit výchozí hodnotu"
+
+msgid "Smooth Zoom"
+msgstr "Vyhlazení přiblížení/oddálení"
+
+msgid "Adds a smoother transition when zooming in or out"
+msgstr "Hladší přechod při přiblížení nebo přiblížení"
+
+msgid "Tablet pressure sensitivity:"
+msgstr "Citlivost tlaku na tabletu:"
+
+msgid "None"
+msgstr "Žádný"
+
+msgid "Affect Brush's Alpha"
+msgstr "Ovlivnit alfa vrstvu štětce"
+
+msgid "Color:"
+msgstr "Barva:"
+
+msgid "Guide color:"
+msgstr "Barva vodítka:"
+
+msgid "System Language"
+msgstr "Systémový jazyk"
+
+msgid "Display Scale"
+msgstr "Měřítko rozhraní"
+
+msgid "Dim interface on dialog popup"
+msgstr "Ztmavit rozhraní při vyskakovacím okně"
+
+msgid "Dark"
+msgstr "Tmavý"
+
+msgid "Gray"
+msgstr "Šedý"
+
+msgid "Blue"
+msgstr "Modrá"
+
+msgid "Caramel"
+msgstr "Karamel"
+
+msgid "Light"
+msgstr "Světlý"
+
+msgid "Purple"
+msgstr "Fialová"
+
+msgid "Theme"
+msgstr "Motiv"
+
+msgid "Icon color from:"
+msgstr "Barvy ikon z:"
+
+msgid "Icon color:"
+msgstr "Barva ikon:"
+
+msgid "Tool button size:"
+msgstr "Velkost tlačítek nástrojů:"
+
+msgid "Small"
+msgstr "Malá"
+
+msgid "Big"
+msgstr "Velká"
+
+msgid "Only affect selection"
+msgstr "Ovlivnit pouze výběr"
+
+msgid "Selected cels"
+msgstr "Vybrané buňky"
+
+msgid "Current cel"
+msgstr "Současná buňka"
+
+msgid "Current frame"
+msgstr "Současný snímek"
+
+msgid "All frames"
+msgstr "Všechny snímky"
+
+msgid "All projects"
+msgstr "Všechny projekty"
+
+msgid "Invert Colors"
+msgstr "Invertovat barvy"
+
+msgid "Modify Red Channel"
+msgstr "Upravit červený kanál"
+
+msgid "Modify Green Channel"
+msgstr "Upravit zelený kanál"
+
+msgid "Modify Blue Channel"
+msgstr "Upravit modrý kanál"
+
+msgid "Modify Alpha Channel"
+msgstr "Upravit alfa kanál"
+
+msgid "Desaturation"
+msgstr "Odstíny šedi"
+
+msgid "Outline"
+msgstr "Obrys"
+
+msgid "Adjust Hue/Saturation/Value"
+msgstr "Upravit odstín/sytost/hodnotu"
+
+msgid "Gradient"
+msgstr "Gradient"
+
+msgid "Adjust HSV"
+msgstr "Upravit odstín/sytost/hodnotu"
+
+msgid "Type:"
+msgstr "Typ:"
+
+msgid "Angle:"
+msgstr "Úhel:"
+
+msgid "Hue:"
+msgstr "Odstín:"
+
+msgid "Saturation:"
+msgstr "Sytost:"
+
+msgid "Value:"
+msgstr "Hodnota:"
+
+msgid "Apply"
+msgstr "Použít"
+
+msgid "Diagonal"
+msgstr "Úhlopříčně"
+
+msgid "Place inside image"
+msgstr "Umístit uvnitř obrázku"
+
+msgid "Thickness:"
+msgstr "Tloušťka:"
+
+msgid "Colors:"
+msgstr "Barvy:"
+
+msgid "Steps:"
+msgstr "Kroky:"
+
+msgid "Top to Bottom"
+msgstr "Od shora dolů"
+
+msgid "Bottom to Top"
+msgstr "Ze spoda nahoru"
+
+msgid "Left to Right"
+msgstr "Zleva doprava"
+
+msgid "Right to Left"
+msgstr "Zprava doleva"
+
+msgid "View Splash Screen"
+msgstr "Zobrazit úvodní okno"
+
+msgid "Online Docs"
+msgstr "Online dokumentace"
+
+msgid "Issue Tracker"
+msgstr "Nahlásit potíže"
+
+msgid "Open Logs Folder"
+msgstr "Otevřít složku s logy"
+
+msgid "Changelog"
+msgstr "Seznam změn"
+
+msgid "About Pixelorama"
+msgstr "O Pixeloramě"
+
+msgid "Pixelorama - Pixelate your dreams!"
+msgstr "Pixelorama - Zpixelujte své sny!"
+
+msgid "Developed by Orama Interactive"
+msgstr "Vyvinuto Orama Interactive"
+
+msgid "©2019-present by Orama Interactive and contributors"
+msgstr "©2019-současnost Orama Interactive a přispěvatelé"
+
+msgid "Website"
+msgstr "Webové stránky"
+
+msgid "GitHub Repo"
+msgstr "GitHub repozitář"
+
+msgid "Donate"
+msgstr "Podpořit"
+
+msgid "Developers"
+msgstr "Vývojáři"
+
+msgid "Contributors"
+msgstr "Přispěvatelé"
+
+msgid "Donors"
+msgstr "Dárci"
+
+msgid "Translators"
+msgstr "Překladatelé"
+
+msgid "Licenses"
+msgstr "Licence"
+
+msgid "English"
+msgstr "Angličtina"
+
+msgid "Greek"
+msgstr "Řečtina"
+
+msgid "French"
+msgstr "Francouzština"
+
+msgid "German"
+msgstr "Němčina"
+
+msgid "Polish"
+msgstr "Polština"
+
+msgid "Portuguese"
+msgstr "Portugalština"
+
+msgid "Brazilian Portuguese"
+msgstr "Brazilská portugalština"
+
+msgid "Russian"
+msgstr "Ruština"
+
+msgid "Chinese Simplified"
+msgstr "Čínština (zjednodušená)"
+
+msgid "Chinese Traditional"
+msgstr "Čínština (tradiční)"
+
+msgid "Italian"
+msgstr "Italština"
+
+msgid "Latvian"
+msgstr "Lotyština"
+
+msgid "Spanish"
+msgstr "Španělština"
+
+msgid "Catalan"
+msgstr "Katalánština"
+
+msgid "Esperanto"
+msgstr "Esperanto"
+
+msgid "Indonesian"
+msgstr "Indonéština"
+
+msgid "Czech"
+msgstr "Čeština"
+
+msgid "Arabic"
+msgstr "Arabština"
+
+msgid "Turkish"
+msgstr "Turečtina"
+
+msgid "Norwegian Bokmål"
+msgstr "Norština Bokmål"
+
+msgid "Korean"
+msgstr "Korejština"
+
+msgid "Hungarian"
+msgstr "Maďarština"
+
+msgid "Romanian"
+msgstr "Rumunština"
+
+msgid "Japanese"
+msgstr "Japonština"
+
+msgid "Ukrainian"
+msgstr "Ukrajinština"
+
+msgid "Development Team"
+msgstr "Vývojářský tým"
+
+msgid "Lead Programmer"
+msgstr "Vedoucí programátor"
+
+msgid "UI Designer"
+msgstr "Návrhář UI"
+
+msgid "GitHub Contributors"
+msgstr "Github přispěvatelé"
+
+msgid "Art by: %s"
+msgstr "Obrázek od: %s"
+
+msgid "untitled"
+msgstr "bez názvu"
+
+msgid "imported"
+msgstr "importováno"
+
+msgid "copy"
+msgstr "kopie"
+
+msgid "Are you sure you want to exit Pixelorama?"
+msgstr "Opravdu chcete ukončit Pixeloramu?"
+
+msgid "Unsaved Image"
+msgstr "Neuložený obrázek"
+
+msgid "You have unsaved changes. If you proceed, the progress you have made will be lost."
+msgstr "Máte neuložené změny. Pokud budete pokračovat, pokrok, kterého jste dosáhli, bude ztracen."
+
+msgid "Save before exiting?"
+msgstr "Uložit před ukončením?"
+
+msgid "You have unsaved progress. How do you wish to proceed?"
+msgstr "Máte neuložené změny. Jak si přejete pokračovat?"
+
+msgid "Save & Exit"
+msgstr "Uložit a ukončit"
+
+msgid "Exit without saving"
+msgstr "Ukončit bez uložení"
+
+msgid "Rectangular Selection\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Obdelníkový výber\n\n"
+"%s pro levé tlačítko myši\n"
+"%s pro pravé tlačítko myši"
+
+msgid "Elliptical Selection\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Elipsový výběr\n\n"
+"%s pro levé tlačítko myši\n"
+"%s pro pravé tlačítko myši"
+
+msgid "Polygonal Selection\n"
+"Double-click to connect the last point to the starting point\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Polygonální výběr\n\n"
+"%s pro levé tlačítko myši\n"
+"%s pro pravé tlačítko myši"
+
+msgid "Select By Color\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Výběr podle barvy\n\n"
+"%s pro levé tlačítko myši\n"
+"%s pro pravé tlačítko myši"
+
+msgid "Magic Wand\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Kouzelná hůlka\n\n"
+"%s pro levé tlačítko myši\n"
+"%s pro pravé tlačítko myši"
+
+msgid "Lasso / Free Select Tool\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Laso/volný výběr\n\n"
+"%s pro levé tlačítko myši\n"
+"%s pro pravé tlačítko myši"
+
+msgid "Move\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Přesun obrázku\n\n"
+"%s pro levé tlačítko myši\n"
+"%s pro pravé tlačítko myši"
+
+msgid "Zoom\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Přiblížit/oddálit\n\n"
+"%s pro levé tlačítko myši\n"
+"%s pro pravé tlačítko myši"
+
+msgid "Pan\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Posun plátna\n\n"
+"%s pro levé tlačítko myši\n"
+"%s pro pravé tlačítko myši"
+
+msgid "Color Picker\n"
+"Select a color from a pixel of the sprite\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Výběr barvy\n"
+"Vyberte barvu z pixelu obrázku\n\n"
+"%s pro levé tlačítko myši\n"
+"%s pro pravé tlačítko myši"
+
+msgid "Pencil\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button\n\n"
+"Hold %s to make a line"
+msgstr "Tužka\n\n"
+"%s pro levé tlačítko myši\n"
+"%s pro pravé tlačítko myši\n\n"
+"Podrž %s pro vytvoření čáry"
+
+msgid "Eraser\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button\n\n"
+"Hold %s to make a line"
+msgstr "Guma\n\n"
+"%s pro levé tlačítko myši\n"
+"%s pro pravé tlačítko myši\n\n"
+"Podrž %s pro vytvoření čáry"
+
+msgid "Bucket\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Kbelík\n\n"
+"%s pro levé tlačítko myši\n"
+"%s pro pravé tlačítko myši"
+
+msgid "Shading Tool\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button"
+msgstr "Stínovací nástroj\n\n"
+"%s pro levé tlačítko myši\n"
+"%s pro pravé tlačítko myši"
+
+msgid "Line Tool\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button\n\n"
+"Hold %s to snap the angle of the line\n"
+"Hold %s to center the shape on the click origin\n"
+"Hold %s to displace the shape's origin"
+msgstr "Čára\n\n"
+"%s pro levé tlačítko myši\n"
+"%s pro pravé tlačítko myši\n\n"
+"Podrž %s pro zaokrouhlení úhlu čáry\n"
+"Podrž %s pro vycentrování tvaru na místo kliku\n"
+"Podrž %s pro přesunutí počátku tvaru"
+
+msgid "Rectangle Tool\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button\n\n"
+"Hold %s to create a 1:1 shape\n"
+"Hold %s to center the shape on the click origin\n"
+"Hold %s to displace the shape's origin"
+msgstr "Obdélník\n\n"
+"%s pro levé tlačítko myši\n"
+"%s pro pravé tlačítko myši\n\n"
+"Podrž %s pro vytvoření 1:1 tvaru\n"
+"Podrž %s pro vycentrování tvaru na místo kliku\n"
+"Podrž %s pro přesunutí počátku tvaru"
+
+msgid "Ellipse Tool\n\n"
+"%s for left mouse button\n"
+"%s for right mouse button\n\n"
+"Hold %s to create a 1:1 shape\n"
+"Hold %s to center the shape on the click origin\n"
+"Hold %s to displace the shape's origin"
+msgstr "Elipsa\n\n"
+"%s pro levé tlačítko myši\n"
+"%s pro pravé tlačítko myši\n\n"
+"Podrž %s pro vytvoření 1:1 tvaru\n"
+"Podrž %s pro vycentrování tvaru na místo kliku\n"
+"Podrž %s pro přesunutí počátku tvaru"
+
+msgid "Rectangle"
+msgstr "Obdélník"
+
+msgid "Ellipse"
+msgstr "Elipsa"
+
+msgid "Choose a color for the left tool"
+msgstr "Vyberte barvu pro levý nástroj"
+
+msgid "Choose a color for the right tool"
+msgstr "Vyberte barvu pro pravý nástroj"
+
+msgid "Switch left and right colors\n"
+"(%s)"
+msgstr "Prohodit levou a pravou barvu\n"
+"(%s)"
+
+msgid "Reset the colors to their default state (black for left, white for right)"
+msgstr "Obnovit výchozí barvy (černá vlevo, bílá vpravo)"
+
+msgid "Left tool"
+msgstr "Levý nástroj"
+
+msgid "Right tool"
+msgstr "Pravý nástroj"
+
+msgid "Left pixel indicator"
+msgstr "Indikátor levého pixelu"
+
+msgid "Show left mouse pixel indicator or brush on the canvas when drawing"
+msgstr "Zobrazit ukazatel pixelu nebo štětce pro levé tlačítko myši při kreslení"
+
+msgid "Right pixel indicator"
+msgstr "Indikátor pravého pixelu"
+
+msgid "Show right mouse pixel indicator or brush on the canvas when drawing"
+msgstr "Zobrazit ukazatel pixelu nebo štětce pro pravé tlačítko myši při kreslení"
+
+msgid "Show left tool icon"
+msgstr "Zobrazit ikonu levého nástroje"
+
+msgid "Displays an icon of the selected left tool next to the cursor on the canvas"
+msgstr "Zobrazí ikonu vybraného levého nástroje vedle kurzoru na plátně"
+
+msgid "Show right tool icon"
+msgstr "Zobrazit ikonu pravého nástroje"
+
+msgid "Displays an icon of the selected right tool next to the cursor on the canvas"
+msgstr "Zobrazí ikonu vybraného pravého nástroje vedle kurzoru na plátně"
+
+msgid "Guides"
+msgstr "Vodítka"
+
+msgid "Guides color:"
+msgstr "Barva vodítek:"
+
+msgid "A color of ruler guides displayed on the canvas"
+msgstr "Barva vodítkových čar zobrazených přes plátno"
+
+msgid "Grid"
+msgstr "Mřížka"
+
+msgid "Grid type:"
+msgstr "Druh mřížky:"
+
+msgid "Sets the type of the grid between rectangular, isometric or both"
+msgstr "Druh pomocné mřížky zobrazené přes plátno"
+
+msgid "Rectangular"
+msgstr "Obdélníková"
+
+msgid "Isometric"
+msgstr "Isometrická"
+
+msgid "All"
+msgstr "Vše"
+
+msgid "Rectangular grid width:"
+msgstr "Šířka obdélníkové mřížky:"
+
+msgid "Sets how far apart are vertical lines of the rectangular grid"
+msgstr "Jak daleko od sebe jsou svislé čáry obdélníkové mřížky"
+
+msgid "Rectangular grid height:"
+msgstr "Výška obdélníkové mřížky:"
+
+msgid "Sets how far apart are horizontal lines of the rectangular grid"
+msgstr "Jak daleko od sebe jsou vodorovné čáry obdélníkové mřížky"
+
+msgid "Isometric cell bounds width:"
+msgstr "Šířka isometrických buněk:"
+
+msgid "Sets the width of the isometric cell's axis aligned bounding box"
+msgstr "Šířka boxu který ohraničuje isometrickou buňku"
+
+msgid "Isometric cell bounds height:"
+msgstr "Výška isometrických buněk:"
+
+msgid "Sets the height of the isometric cell's axis aligned bounding box"
+msgstr "Výška boxu který ohraničuje isometrickou buňku"
+
+msgid "Grid offset x:"
+msgstr "Odsazení mřížky x:"
+
+msgid "Sets grid's x offset from the canvas origin (top left corner of the image)"
+msgstr "Odsazení mřížky na ose x od počátku plátna (levý horní roh obrázku)"
+
+msgid "Grid offset y:"
+msgstr "Odsazení mřížky y:"
+
+msgid "Sets grid's y offset from the canvas origin (top left corner of the image)"
+msgstr "Odsazení mřížky na ose y od počátku plátna (levý horní roh obrázku)"
+
+msgid "Draw over Tile Mode:"
+msgstr "Vykreslit přes dlaždicový režim:"
+
+msgid "If disabled, the grid will be drawn only over the original image"
+msgstr "Pokud vypnuto, tak bude mřížka vykreslena pouze přes původní obrázek"
+
+msgid "Grid color:"
+msgstr "Barva mřížky:"
+
+msgid "A color of the grid"
+msgstr "Barva mřížky"
+
+msgid "Pixel Grid"
+msgstr "Pixelová mřížka"
+
+msgid "Show at zoom:"
+msgstr "Zobrazit při přiblížení:"
+
+msgid "Sets the minimal zoom at which pixel grid will be shown"
+msgstr "Minimální přiblížení pro zobrazení pixelové mřížky"
+
+msgid "Pixel grid color:"
+msgstr "Barva pixelové mřížky:"
+
+msgid "A color of the pixel grid"
+msgstr "Barva, kterou se vykreslí čáry pixelové mřížky"
+
+msgid "Transparency"
+msgstr "Průhlednost"
+
+msgid "Checker size:"
+msgstr "Rozměry šachovnice:"
+
+msgid "Size of the transparent checker background"
+msgstr "Rozměry průhledného šachovnicového pozadí"
+
+msgid "Checker color 1:"
+msgstr "Barva šachovnice 1:"
+
+msgid "First color of the transparent checker background"
+msgstr "První barva průhledného šachovnicového pozadí"
+
+msgid "Checker color 2:"
+msgstr "Barva šachovnice 2:"
+
+msgid "Second color of the transparent checker background"
+msgstr "Druhá barva průhledného šachovnicového pozadí"
+
+msgid "Follow Canvas Movement"
+msgstr "Sledovat pohyb plátna"
+
+msgid "The transparent checker follow the movement of canvas"
+msgstr "Průhledná šachovnice následuje pohyb plátna"
+
+msgid "Follow Canvas Zoom Level"
+msgstr "Sledovat přiblížení plátna"
+
+msgid "The transparent checker follow the zoom level of canvas"
+msgstr "Průhledná šachovnice následuje úroveň přiblížení plátna"
+
+msgid "Animated selection borders"
+msgstr "Animovat okraje rámečku"
+
+msgid "Border color 1:"
+msgstr "První barva rámečku:"
+
+msgid "Border color 2:"
+msgstr "Druhá barva rámečku:"
+
+msgid "Only custom preset can be modified"
+msgstr "Lze upravit pouze vlastní předvolbu"
+
+msgid "Set application FPS limit:"
+msgstr "Limit snímků za vteřinu:"
+
+msgid "Pause application when it loses focus"
+msgstr "Pozastavit aplikaci, když je okno v pozadí"
+
+msgid "Sets the limit of the application's frames per second. The lower the number, the lower the CPU usage, but the application gets slower, choppier and unresponsive. 0 means that there is no limit."
+msgstr "Nastaví limit snímků za vteřinu aplikace. Čím nižší číslo, tím menší bude zatížení procesoru,\n"
+"ale může dojít ke snížení odezvy a zasekávání aplikace. 0 značí žádný limit."
+
+msgid "If this is toggled on, when the application's window loses focus, it gets paused. This helps lower CPU usage when idle. The application gets unpaused when the mouse enters the application's window."
+msgstr "Pokud je tato možnost vybrána, tak je aplikace pozastavena, když je okno aplikace v pozadí. Dojde tak ke snížení využití procesoru při nečinnosti. Aplikace se automaticky obnoví, když kurzor myši vstoupí zpět do okna aplikace."
+
+msgid "Brush:"
+msgstr "Štětec:"
+
+msgid "Select a brush"
+msgstr "Vybrat štětec"
+
+msgid "Pixel brush"
+msgstr "Pixelový štětec"
+
+msgid "Circle brush"
+msgstr "Kruhový štětec"
+
+msgid "Filled circle brush"
+msgstr "Vyplněný kruhový štětec"
+
+msgid "Custom brush"
+msgstr "Vlastní štětec"
+
+msgid "Brush size:"
+msgstr "Velikost štětce:"
+
+msgid "Overwrite Color"
+msgstr "Přepsat barvu"
+
+msgid "Overwrites color instead of blending it. This option is only relevant with colors that are not fully opaque"
+msgstr "Přepíše barvu namísto smíchání. Tato možnost je relevantní pouze pro barvy, které jsou průhledné."
+
+msgid "Pixel Perfect"
+msgstr "Pixel perfekt"
+
+msgid "Fill inside"
+msgstr "Vyplnit uvnitř"
+
+msgid "Makes lines smooth by removing the extra pixels on the edges"
+msgstr "Vyhladí čáry odstraněním pixelů navíc na okrajích"
+
+msgid "Fill Shape"
+msgstr "Vyplnit tvar"
+
+msgid "Fills the drawn shape with color, instead of drawing a hollow shape"
+msgstr "Vyplní nakreslený tvar barvou, jinak zůstane tvar dutý"
+
+msgid "Brush color from"
+msgstr "Barva štětce z"
+
+msgid "0: Color from the brush itself, 100: the currently selected color"
+msgstr "0: Barva ze štětce, 100: aktuálně vybraná barva"
+
+msgid "Fill area:"
+msgstr "Vyplnit oblast:"
+
+msgid "Same color area"
+msgstr "Oblast stejné barvy"
+
+msgid "Same color pixels"
+msgstr "Pixely stejné barvy"
+
+msgid "Fill with:"
+msgstr "Vyplnit pomocí:"
+
+msgid "Selected Color"
+msgstr "Vybraná barva"
+
+msgid "Pattern"
+msgstr "Šablona"
+
+msgid "Offset"
+msgstr "Odsazení"
+
+msgid "Simple Shading"
+msgstr "Jednoduché stínování"
+
+msgid "Hue Shifting"
+msgstr "Posun odstínu"
+
+msgid "Lighten"
+msgstr "Zesvětlení"
+
+msgid "Darken"
+msgstr "Ztmavení"
+
+msgid "Amount:"
+msgstr "Množství:"
+
+msgid "Lighten/Darken amount"
+msgstr "Intenzita zesvětlení/ztmavení"
+
+msgid "Pick for:"
+msgstr "Vybrat pro:"
+
+msgid "Left Color"
+msgstr "Levá barva"
+
+msgid "Right Color"
+msgstr "Pravá barva"
+
+msgid "Mode:"
+msgstr "Režim:"
+
+msgid "Zoom in"
+msgstr "Přiblížit"
+
+msgid "Zoom out"
+msgstr "Oddálit"
+
+msgid "Options:"
+msgstr "Možnosti:"
+
+msgid "Fit to frame"
+msgstr "Přizpůsobit snímku"
+
+msgid "100% Zoom"
+msgstr "100% přiblížení"
+
+msgid "Mirroring"
+msgstr "Zrcadlení"
+
+msgid "Horizontal"
+msgstr "Vodorovně"
+
+msgid "Enable horizontal mirrored drawing"
+msgstr "Povolit kreslení ve vodorovném zrcadlení"
+
+msgid "Enable vertical mirrored drawing"
+msgstr "Povolit kreslení ve svislém zrcadlení"
+
+msgid "Vertical"
+msgstr "Svisle"
+
+msgid "Current frame:"
+msgstr "Aktuální snímek:"
+
+msgid "Jump to the first frame\n"
+"(%s)"
+msgstr "Přeskočit na první snímek\n"
+"(%s)"
+
+msgid "Go to the previous frame\n"
+"(%s)"
+msgstr "Přejít na předchozí snímek\n"
+"(%s)"
+
+msgid "Play the animation backwards (from end to beginning)\n"
+"(%s)"
+msgstr "Přehrát animaci pozpátku (od konce do začátku)\n"
+"(%s)"
+
+msgid "Play the animation forward (from beginning to end)\n"
+"(%s)"
+msgstr "Přehrát animaci dopředu (od začátku do konce)\n"
+"(%s)"
+
+msgid "Go to the next frame\n"
+"(%s)"
+msgstr "Přejít na další snímek\n"
+"(%s)"
+
+msgid "Jump to the last frame\n"
+"(%s)"
+msgstr "Přeskočit na poslední snímek\n"
+"(%s)"
+
+msgid "Onion Skinning settings"
+msgstr "Nastavení onion skinningu"
+
+msgid "Enable/disable Onion Skinning"
+msgstr "Povolit/zakázat onion skinning"
+
+msgid "How many frames per second should the animation preview be?\n"
+"The more FPS, the faster the animation plays."
+msgstr "Kolik snímků za vteřinu by měl mít náhled animace?\n"
+"Čím více FPS, tím rychleji je animace přehrávána."
+
+msgid "No loop"
+msgstr "Bez smyčky"
+
+msgid "Cycle loop"
+msgstr "Cyklická smyčka"
+
+msgid "Ping-pong loop"
+msgstr "Ping pong smyčka"
+
+msgid "Onion Skinning:"
+msgstr "Onion skinning:"
+
+msgid "Past Frames"
+msgstr "Předchozí snímky"
+
+msgid "Future Frames"
+msgstr "Budoucí snímky"
+
+msgid "Manage frame tags"
+msgstr "Spravovat snímkové štítky"
+
+msgid "Frame Tag Properties"
+msgstr "Vlastnosti snímkového štítku"
+
+msgid "Add a new frame tag"
+msgstr "Přidat nový snímkový štítek"
+
+msgid "Name:"
+msgstr "Název:"
+
+msgid "From:"
+msgstr "Od:"
+
+msgid "To:"
+msgstr "Do:"
+
+msgid "Animation plays only on frames of the same tag"
+msgstr "Animace se přehrává pouze na snímcích se stejným štítkem"
+
+msgid "Tag %s (Frame %s)"
+msgstr "Štítek %s (Snímek %s)"
+
+msgid "Tag %s (Frames %s-%s)"
+msgstr "Štítek %s (Snímky %s-%s)"
+
+msgid "If it's selected, the animation plays only on the frames that have the same tag.\n"
+"If it's not, the animation will play for all frames, ignoring tags."
+msgstr "Pokud je vybráno, animace se přehrává pouze na snímcích, které mají stejný štítek.\n"
+"Pokud ne, animace bude přehrávána pro všechny snímky a ignoruje štítky."
+
+msgid "Blue-Red Mode"
+msgstr "Modro-červený režim"
+
+msgid "Show past frames:"
+msgstr "Zobrazit předchozí snímky:"
+
+msgid "Show future frames:"
+msgstr "Zobrazit následující snímky:"
+
+msgid "Above canvas"
+msgstr "Nad plátnem"
+
+msgid "Below canvas"
+msgstr "Pod plátnem"
+
+msgid "If you want a layer to ignore onion skinning simply add the \"_io\" suffix in its name."
+msgstr "Pokud chcete, aby byla vrstva ignorována v onion skinningu, tak přidejte \"_io\" koncovku do jména vrstvy."
+
+msgid "Add a new frame"
+msgstr "Přidat nový snímek"
+
+msgid "Remove Frame"
+msgstr "Odebrat snímek"
+
+msgid "Clone Frame"
+msgstr "Klonovat snímek"
+
+msgid "Move Left"
+msgstr "Přesunout doleva"
+
+msgid "Move Right"
+msgstr "Přesunout doprava"
+
+msgid "Add Frame Tag"
+msgstr ""
+
+msgid "Link Cel"
+msgstr "Připojit buňku"
+
+msgid "Unlink Cel"
+msgstr "Odpojit buňku"
+
+msgid "Frame Properties"
+msgstr "Vlastnosti snímku"
+
+msgid "Frame properties"
+msgstr "Vlastnosti snímku"
+
+msgid "Layer"
+msgstr "Vrstva"
+
+msgid "Layers"
+msgstr "Vrstvy"
+
+msgid "Create a new layer"
+msgstr "Vytvořit novou vrstvu"
+
+msgid "Remove current layer"
+msgstr "Odstranit aktuální vrstvu"
+
+msgid "Move up the current layer"
+msgstr "Přesunout aktuální vrstvu nahoru"
+
+msgid "Move down the current layer"
+msgstr "Přesunout aktuální vrstvu dolů"
+
+msgid "Clone current layer"
+msgstr "Naklonovat aktuální vrstvu"
+
+msgid "Merge current layer with the one below"
+msgstr "Sloučit aktuální vrstvu s vrstvou níže"
+
+msgid "Opacity:"
+msgstr "Průhlednost:"
+
+msgid "Tile mode opacity:"
+msgstr "Průhlednost dlaždicového režimu:"
+
+msgid "Toggle layer's visibility"
+msgstr "Přepnout viditelnost vrstvy"
+
+msgid "Lock/unlock layer"
+msgstr "Zamknout/odemknout vrstvu"
+
+msgid "Frame: %s, Layer: %s"
+msgstr "Snímek: %s, Vrstva: %s"
+
+msgid "Enable/disable cel linking\n\n"
+"Linked cels are being shared across multiple frames"
+msgstr "Povolit/zakázat propojení buněk\n\n"
+"Propojené buňky jsou sdíleny přes vícero snímků"
+
+msgid "Palette"
+msgstr "Paleta"
+
+msgid "Palettes"
+msgstr "Palety"
+
+msgid "Add a new palette"
+msgstr "Přidat novou paletu"
+
+msgid "Edit currently selected palette"
+msgstr "Upravit aktuálně vybranou paletu"
+
+msgid "Choose a palette"
+msgstr "Vyberte paletu"
+
+msgid "Undo: Draw"
+msgstr "Zpět: Nakreslit"
+
+msgid "Redo: Draw"
+msgstr "Znovu: Nakreslit"
+
+msgid "Undo: Select"
+msgstr "Zpět: Výběr"
+
+msgid "Redo: Select"
+msgstr "Znovu: Výběr"
+
+msgid "Undo: Scale"
+msgstr "Zpět: Škálování"
+
+msgid "Redo: Scale"
+msgstr "Znovu: Škálování"
+
+msgid "Undo: Add Layer"
+msgstr "Zpět: Přidat vrstvu"
+
+msgid "Redo: Add Layer"
+msgstr "Znovu: Přidat vrstvu"
+
+msgid "Undo: Remove Layer"
+msgstr "Zpět: Odebrat vrstvu"
+
+msgid "Redo: Remove Layer"
+msgstr "Znovu: Odebrat vrstvu"
+
+msgid "Undo: Merge Layer"
+msgstr "Zpět: Sloučit vrstvu"
+
+msgid "Redo: Merge Layer"
+msgstr "Znovu: Sloučit vrstvu"
+
+msgid "Undo: Change Layer Order"
+msgstr "Zpět: Změnit pořadí vrstev"
+
+msgid "Redo: Change Layer Order"
+msgstr "Znovu: Změnit pořadí vrstev"
+
+msgid "Undo: Add Frame"
+msgstr "Zpět: Přidat snímek"
+
+msgid "Redo: Add Frame"
+msgstr "Znovu: Přidat snímek"
+
+msgid "Undo: Remove Frame"
+msgstr "Zpět: Odebrat snímek"
+
+msgid "Redo: Remove Frame"
+msgstr "Znovu: Odebrat snímek"
+
+msgid "Undo: Change Frame Order"
+msgstr "Zpět: Změnit pořadí snímků"
+
+msgid "Redo: Change Frame Order"
+msgstr "Znovu: Změnit pořadí snímků"
+
+msgid "Undo: Delete Custom Brush"
+msgstr "Zpět: Smazat vlastní štětec"
+
+msgid "Redo: Delete Custom Brush"
+msgstr "Znovu: Smazat vlastní štětec"
+
+msgid "Undo: Modify Frame Tag"
+msgstr "Zpět: Upravit snímkový štítek"
+
+msgid "Redo: Modify Frame Tag"
+msgstr "Znovu: Upravit snímkový štítek"
+
+msgid "Undo: Delete Frame Tag"
+msgstr "Zpět: Odstranit snímkový štítek"
+
+msgid "Redo: Delete Frame Tag"
+msgstr "Vpřed: Odstranit snímkový štítek"
+
+msgid "Undo: Change frame duration"
+msgstr "Zpět: Upravit délku snímku"
+
+msgid "Redo: Change frame duration"
+msgstr "Znovu: Upravit délku snímku"
+
+msgid "Move Guide"
+msgstr "Přesunout vodítko"
+
+msgid "File saved"
+msgstr "Soubor uložen"
+
+msgid "File autosaved"
+msgstr "Soubor automaticky uložen"
+
+msgid "File failed to open. Error code %s"
+msgstr "Otevření souboru se nezdařilo. Chybový kód %s"
+
+msgid "File failed to save. Error code %s"
+msgstr "Soubor se nepodařilo uložit. Kód chyby %s"
+
+msgid "File exported"
+msgstr "Soubor exportován"
+
+msgid "New Empty Palette"
+msgstr "Nová prázdná paleta"
+
+msgid "Import Palette"
+msgstr "Importovat paletu"
+
+msgid "Create Palette From Current Sprite"
+msgstr "Vytvořit paletu z aktuálního spritu"
+
+msgid "Palette Name:"
+msgstr "Název palety:"
+
+msgid "Color Name:"
+msgstr "Název barvy:"
+
+msgid "Use current left & right colors"
+msgstr "Použít aktuální barvy vlevo a vpravo"
+
+msgid "Create a new empty palette?"
+msgstr "Vytvořit novou prázdnou paletu?"
+
+msgid "Error"
+msgstr "Chyba"
+
+msgid "Error: Palette must have a valid name."
+msgstr "Chyba: Paleta musí mít platný název."
+
+msgid "Invalid Palette file!"
+msgstr "Neplatný soubor palety!"
+
+msgid "Edit Palette"
+msgstr "Upravit paletu"
+
+msgid "Create colors with alpha component"
+msgstr "Vytvořit barvy s alfa komponentou"
+
+msgid "Get colors only from selection"
+msgstr "Získat barvy pouze z výběru"
+
+msgid "Get colors from"
+msgstr "Získat barvy z"
+
+msgid "Patrons:"
+msgstr "Patroni:"
+
+msgid "Want your name or your company to be shown on the splash screen?"
+msgstr "Chcete, aby vaše jméno nebo firma, byly zobrazeny na úvodní obrazovce?"
+
+msgid "Become a Platinum Sponsor"
+msgstr "Staňte se platinovým sponzorem"
+
+msgid "Become a Gold Sponsor"
+msgstr "Staňte se zlatým sponzorem"
+
+msgid "Become a Patron"
+msgstr "Staňte se patronem"
+
+msgid "Don't show again"
+msgstr "Příště již nezobrazovat"
+
+msgid "Image Options"
+msgstr "Možnosti obrázku"
+
+msgid "Default width:"
+msgstr "Výchozí šířka:"
+
+msgid "A default width of a new image"
+msgstr "Výchozí šířka nového obrázku"
+
+msgid "Default height:"
+msgstr "Výchozí výška:"
+
+msgid "A default height of a new image"
+msgstr "Výchozí výška nového obrázku"
+
+msgid "Default fill color:"
+msgstr "Výchozí barva výplně:"
+
+msgid "A default background color of a new image"
+msgstr "Výchozí barva pozadí nového obrázku"
+
+msgid "Lock aspect ratio"
+msgstr "Uzamknout poměr stran"
+
+msgid "Portrait"
+msgstr "Na výšku"
+
+msgid "Landscape"
+msgstr "Na šířku"
+
+msgid "Templates:"
+msgstr "Šablony:"
+
+msgid "Preset"
+msgstr "Předvolba"
+
+msgid "Preset:"
+msgstr "Předvolba:"
+
+msgid "Default"
+msgstr "Výchozí"
+
+msgid "Custom"
+msgstr "Vlastní"
+
+msgid "Rectangular Selection"
+msgstr "Obdélníkový výběr"
+
+msgid "Elliptical Selection"
+msgstr "Eliptický výber"
+
+msgid "Polygonal Selection"
+msgstr "Polygonální výběr"
+
+msgid "Select By Color"
+msgstr "Výběr podle barvy"
+
+msgid "Magic Wand"
+msgstr "Kouzelná hůlka"
+
+msgid "Lasso / Free Select Tool"
+msgstr "Laso/volný výběr"
+
+msgid "Move"
+msgstr "Přesun obrázku"
+
+msgid "Zoom"
+msgstr "Přiblížení/oddálení"
+
+msgid "Pan"
+msgstr "Posun plátna"
+
+msgid "Color Picker"
+msgstr "Kapátko"
+
+msgid "Pencil"
+msgstr "Tužka"
+
+msgid "Eraser"
+msgstr "Guma"
+
+msgid "Bucket"
+msgstr "Kbelík"
+
+msgid "Shading Tool"
+msgstr "Stínování"
+
+msgid "Line Tool"
+msgstr "Čára"
+
+msgid "Rectangle Tool"
+msgstr "Obdélník"
+
+msgid "Ellipse Tool"
+msgstr "Elipsa"
+
+msgid "Switch Colors"
+msgstr "Prohodit barvy"
+
+msgid "Set the shortcut"
+msgstr "Nastavit zkratku"
+
+msgid "Press a key or a key combination to set the shortcut"
+msgstr "Stiskněte klávesu nebo kombinaci kláves pro nastavení zkratky"
+
+msgid "Already assigned"
+msgstr "Již přiřazeno"
+
+msgid "Left Tool:"
+msgstr "Levý nástroj:"
+
+msgid "A tool assigned to the left mouse button"
+msgstr "Nástroj přiřazený k levému tlačítku myši"
+
+msgid "Right Tool:"
+msgstr "Pravý nástroj:"
+
+msgid "A tool assigned to the right mouse button"
+msgstr "Nástroj přiřazený k pravému tlačítku myši"
+
+msgid "Cannot find last project file."
+msgstr "Nelze nalézt soubor posledního projektu."
+
+msgid "Cannot find project file."
+msgstr "Soubor projektu nebyl nalezen."
+
+msgid "You haven't saved or opened any project in Pixelorama yet!"
+msgstr "Zatím jste neuložili ani neotevřeli žádný projekt v Pixeloramě!"
+
+msgid "Open Last Project"
+msgstr "Otevřít poslední projekt"
+
+msgid "Open last project..."
+msgstr "Otevřít poslední projekt..."
+
+msgid "Open last project on startup"
+msgstr "Po spuštění otevřít poslední projekt"
+
+msgid "Opens last opened project on startup"
+msgstr "Otevřít po spuštění naposledy otevřený projekt"
+
+msgid "Quit confirmation"
+msgstr ""
+
+msgid "Enable autosave"
+msgstr "Povolit automatické ukládání"
+
+msgid "Autosave interval:"
+msgstr "Interval automatického ukládání:"
+
+msgid "minute(s)"
+msgstr "minuta(y)"
+
+msgid "Create new directory for each frame tag"
+msgstr "Vytvořit novou složku pro každý snímkový štítek"
+
+msgid "Creates multiple files but every file is stored in different directory that corresponds to its frame tag"
+msgstr "Vytvoří více souborů, ale každý soubor je uložen v jiném adresáři, který odpovídá snímkovému štítku"
+
+msgid "Close"
+msgstr "Zavřít"
+
+msgid "Delete"
+msgstr "Smazat"
+
+msgid "Autosaved project(s) from a crashed session were found.\n"
+"Do you want to recover the data?"
+msgstr "Byly nalezeny automaticky uložené projekt(y) z havarované relace.\n"
+"Přejete si obnovit data?"
+
+msgid "Backup reloaded"
+msgstr "Záloha znovu načtena"
+
+msgid "Remove currently selected palette"
+msgstr "Odstranit aktuálně vybranou paletu"
+
+msgid "Are you sure you want to remove this palette? (Cannot be undone)"
+msgstr "Jste si jisti, že chcete odstranit tuto paletu? (Nevratná změna)"
+
+msgid "You can't remove more palettes!"
+msgstr "Nelze odstranit více palet!"
+
+msgid "Cannot remove the palette, because it doesn't exist!"
+msgstr "Nelze odstranit paletu, protože neexistuje!"
+
+msgid "An error occured while removing the palette! Error code: %s"
+msgstr "Při odstraňování palety došlo k chybě! Kód chyby: %s"
+
+msgid "and"
+msgstr "a"
+
+msgid "Move the selected frame to the left."
+msgstr "Přesunout vybraný snímek doleva."
+
+msgid "Move the selected frame to the right."
+msgstr "Přesunout vybraný snímek doprava."
+
+msgid "Frame duration"
+msgstr "Délka snímku"
+
+msgid "Tiled In Both Axis"
+msgstr "Obě osy"
+
+msgid "Tiled In X Axis"
+msgstr "Osa X"
+
+msgid "Tiled In Y Axis"
+msgstr "Osa Y"
+
+msgid "Create a new palette"
+msgstr "Vytvořit novou paletu"
+
+msgid "Comment:"
+msgstr "Komentář:"
+
+msgid "Empty"
+msgstr "Prázdná"
+
+msgid "From Current Palette"
+msgstr "Z aktuální palety"
+
+msgid "From Current Sprite"
+msgstr "Z aktuálního obrázku"
+
+msgid "From Current Selection"
+msgstr "Z aktuálního výběru"
+
+msgid "Add a new color"
+msgstr "Přidat novou barvu"
+
+msgid "Remove a selected color"
+msgstr "Odstranit vybranou barvu"
+
+msgid "Palette with the same name and path already exists!"
+msgstr "Paleta s totožným jménem již existuje!"
+
+msgid "Palette name is required!"
+msgstr "Název palety je povinný!"
+
+msgid "Reducing palette size will reset positions of colors. Colors that don't fit in new palette size will be lost!"
+msgstr "Zmenšení velikosti palety resetuje pozice barev. Barvy, které se nevejdou do nové velikosti palety budou ztraceny!"
+
+msgid "Position:"
+msgstr "Pozice:"
+

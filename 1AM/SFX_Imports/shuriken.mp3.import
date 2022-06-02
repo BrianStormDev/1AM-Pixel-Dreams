@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/shuriken.mp3-7f7266616a3688939c9cba320d42c259.mp3str"
+
+[deps]
+
+source_file="res://SFX_Imports/shuriken.mp3"
+dest_files=[ "res://.import/shuriken.mp3-7f7266616a3688939c9cba320d42c259.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

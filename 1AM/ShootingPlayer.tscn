@@ -1,0 +1,109 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://Animations/Throwing/Player_throwing_animation_3.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
+[ext_resource path="res://Animations/Throwing/Player_throwing_animation_1.png" type="Texture" id=3]
+[ext_resource path="res://Animations/Running/Player_Student_Sprite_Running_4.png" type="Texture" id=4]
+[ext_resource path="res://Animations/Running/Player_Student_Sprite_Running_3.png" type="Texture" id=5]
+[ext_resource path="res://Animations/Running/Player_Student_Sprite_Running_2.png" type="Texture" id=6]
+[ext_resource path="res://Animations/Running/Player_Student_Sprite_Running_1.png" type="Texture" id=8]
+[ext_resource path="res://Animations/Falling/Falling.png" type="Texture" id=9]
+[ext_resource path="res://Image_Imports/Run and Throw.png" type="Texture" id=10]
+[ext_resource path="res://SFX_Imports/umbrella.mp3" type="AudioStream" id=11]
+[ext_resource path="res://SFX_Imports/bensound-funkyelement.mp3" type="AudioStream" id=12]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 10.4
+height = 17.2
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 0, 0, 32, 37 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 32, 0, 32, 37 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 64, 0, 32, 37 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 96, 0, 32, 37 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "RUN",
+"speed": 10.0
+}, {
+"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
+"loop": true,
+"name": "RUN&THROW",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "THROW",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "FALL",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "IDLE",
+"speed": 5.0
+} ]
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( 2, -3 )
+scale = Vector2( 5, 5 )
+collision_mask = 8
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.2, -1.8 )
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+animation = "RUN&THROW"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+limit_left = 0
+limit_top = 7
+limit_right = 13248
+limit_bottom = 1130
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+drag_margin_top = 0.5
+
+[node name="Rest" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="Reload" type="Timer" parent="."]
+wait_time = 0.05
+one_shot = true
+
+[node name="Hurt" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 11 )
+
+[node name="BGMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 12 )
+volume_db = -20.0
+autoplay = true
+area_mask = 0
+
+[connection signal="timeout" from="Rest" to="." method="_on_Rest_timeout"]

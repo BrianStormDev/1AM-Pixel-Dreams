@@ -1,0 +1,136 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Math Mobs/Angle Bitter.png" type="Texture" id=1]
+[ext_resource path="res://Math Mobs/Angle Biter.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Angle Bitter Idle"
+
+[sub_resource type="Animation" id=2]
+resource_name = "Attack"
+length = 1.4
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("SpriteAngle:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 4, 2, 3 ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("SpriteAngle:hframes")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 5 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("SpriteAngle:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "Walk"
+length = 1.33333
+loop = true
+step = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("SpriteAngle:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 4, 8, 7 ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "dead"
+tracks/0/type = "value"
+tracks/0/path = NodePath("SpriteAngle:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 8 ]
+}
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 9, 14 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 10, 14.25 )
+
+[node name="Angle Biter" type="KinematicBody2D"]
+scale = Vector2( 3, 3 )
+collision_layer = 4
+collision_mask = 8
+script = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+reset_on_save = false
+"anims/Angle Bitter Idle" = SubResource( 1 )
+anims/Attack = SubResource( 2 )
+anims/RESET = SubResource( 3 )
+anims/Walk = SubResource( 4 )
+anims/dead = SubResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 0
+position = Vector2( 4, 0 )
+shape = SubResource( 6 )
+
+[node name="SpriteAngle" type="Sprite" parent="."]
+position = Vector2( 4, 0 )
+scale = Vector2( 0.840625, 0.9375 )
+texture = ExtResource( 1 )
+hframes = 5
+vframes = 2
+frame = 4
+
+[node name="floor_checker" type="RayCast2D" parent="."]
+position = Vector2( 12, -5 )
+enabled = true
+cast_to = Vector2( 0, 20 )
+collision_mask = 8
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 40, 0 )
+collision_layer = 4
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -35, 1.25 )
+shape = SubResource( 7 )
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

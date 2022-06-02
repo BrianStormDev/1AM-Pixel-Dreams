@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://ShootingPlayer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Environments/ArtGallery/ArtLevel.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Weapons/PaintBall.tscn" type="PackedScene" id=3]
+[ext_resource path="res://UI/main menu.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scripts/Tutorial.gd" type="Script" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 130.5, 509.5 )
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 0, 230 )
+script = ExtResource( 5 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 3156, 626 )
+scale = Vector2( 2, 2 )
+weapon = ExtResource( 3 )
+GRAVITY = 30
+JUMPFORCE = 800
+top_limit = 230
+right_limit = 3200
+bgmusic = null
+
+[node name="Node2D" parent="." instance=ExtResource( 2 )]
+
+[node name="Finish" type="Area2D" parent="."]
+position = Vector2( 3308, 393 )
+collision_layer = 8
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Finish"]
+shape = SubResource( 1 )
+
+[node name="CanvasLayer" parent="." instance=ExtResource( 4 )]
+
+[connection signal="body_entered" from="Finish" to="." method="_on_Finish_body_entered"]

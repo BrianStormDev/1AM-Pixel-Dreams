@@ -1,0 +1,153 @@
+name: "dev-desktop-builds"
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+    paths-ignore: 
+    - "Translations/*"
+    - "installer/*.pot"
+    - "installer/po/*"
+
+env:
+  GODOT_VERSION: 3.4.2
+  GODOT_VERSION_MAC: 3.4.2
+  EXPORT_NAME: Pixelorama
+
+jobs:
+  export-windows:
+    name: Windows Export 🗔
+    runs-on: ubuntu-latest
+    container:
+      image: docker://barichello/godot-ci:3.4.2
+    steps:
+      - name: Setup WINE and rcedit 🍷
+        run: |
+          dpkg --add-architecture i386 && apt-get update && apt-get install -y wine-stable && apt-get install -y wine32
+          chown root:root -R ~
+          wget https://github.com/electron/rcedit/releases/download/v1.1.1/rcedit-x64.exe
+          mkdir -v -p ~/.local/share/rcedit
+          mv rcedit-x64.exe ~/.local/share/rcedit
+          godot -q
+          echo 'export/windows/wine = "/usr/bin/wine"' >> ~/.config/godot/editor_settings-3.tres
+          echo 'export/windows/rcedit = "/github/home/.local/share/rcedit/rcedit-x64.exe"' >> ~/.config/godot/editor_settings-3.tres
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Setup 💻
+        run: |
+          mkdir -v -p build/windows-64bit  ~/.local/share/godot/templates
+          mv /root/.local/share/godot/templates/${GODOT_VERSION}.stable ~/.local/share/godot/templates/${GODOT_VERSION}.stable
+      - name: Windows Build 🔧
+        run: godot -v --export "Windows Desktop 64-bit" ./build/windows-64bit/$EXPORT_NAME.exe
+      - name: Copy pixelorama_data folder 📁
+        run: |
+          cp -R ./pixelorama_data ./build/windows-64bit
+          rm ./build/windows-64bit/pixelorama_data/.gdignore
+      - name: Upload Artifact 🚀
+        uses: actions/upload-artifact@v2
+        with:
+          name: Windows-64bit
+          path: ./build/windows-64bit/
+          retention-days: 14
+
+  export-linux:
+    name: Linux Export 🐧
+    runs-on: ubuntu-latest
+    container:
+      image: docker://barichello/godot-ci:3.4.2
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Setup 💻
+        run: |
+          mkdir -v -p build/linux-64bit build/linux-rpi4 ~/.local/share/godot/templates
+          mv /root/.local/share/godot/templates/${GODOT_VERSION}.stable ~/.local/share/godot/templates/${GODOT_VERSION}.stable
+      - name: Download Unofficial Godot Raspberry Pi 4 Builds 🍇
+        run: |
+          wget https://github.com/hiulit/Unofficial-Godot-Engine-Raspberry-Pi/releases/download/v1.9.0/godot_${GODOT_VERSION}-stable_rpi4.zip
+          unzip -a godot_${GODOT_VERSION}-stable_rpi4.zip
+      - name: Linux Build 🔧
+        run: |
+          godot -v --export "Linux/X11 64-bit" ./build/linux-64bit/$EXPORT_NAME.x86_64
+          godot -v --export "Raspberry Pi 4" ./build/linux-rpi4/$EXPORT_NAME.rpi4
+      - name: Give execute permission ☑️
+        run: |
+          chmod +x ./build/linux-64bit/$EXPORT_NAME.x86_64
+          chmod +x ./build/linux-rpi4/$EXPORT_NAME.rpi4
+      - name: Copy pixelorama_data folder 📁
+        run: |
+          cp -R ./pixelorama_data ./build/linux-64bit
+          rm ./build/linux-64bit/pixelorama_data/.gdignore
+      - name: Create tar.gz archive 🗜️
+        run: |
+          cd build
+          tar zcvf linux-64bit.tar.gz linux-64bit
+          tar zcvf linux-rpi4.tar.gz linux-rpi4
+      - name: Upload Artifact 🚀
+        uses: actions/upload-artifact@v2
+        with:
+          name: Linux-64bit
+          path: ./build/linux-64bit.tar.gz
+          retention-days: 14
+      - name: Upload Raspberry Pi 4 Artifact 🚀
+        uses: actions/upload-artifact@v2
+        with:
+          name: Linux-rpi4
+          path: ./build/linux-rpi4.tar.gz
+          retention-days: 14
+
+  export-mac:
+    name: Mac Export 🍎
+    runs-on: macos-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Setup environment 🔧
+        run: |
+          export GODOT_VERSION=${GODOT_VERSION_MAC}
+          export EXPORT_NAME=Pixelorama
+      - name: Download and extract export templates 💾
+        run: |
+          mkdir -v -p ~/.local/share/godot/templates/${GODOT_VERSION_MAC}.stable
+          curl -O https://downloads.tuxfamily.org/godotengine/${GODOT_VERSION_MAC}/Godot_v${GODOT_VERSION_MAC}-stable_export_templates.tpz
+          unzip -a Godot_v${GODOT_VERSION_MAC}-stable_export_templates.tpz
+          mv ./templates/* ~/.local/share/godot/templates/${GODOT_VERSION_MAC}.stable
+      - name: Download Godot headless binary 🤖
+        run: |
+          wget https://github.com/huskeee/godot-headless-mac/releases/download/${GODOT_VERSION_MAC}-stable/Godot_v${GODOT_VERSION_MAC}-stable_mac_headless.64.zip
+          unzip -a Godot_v${GODOT_VERSION_MAC}-stable_mac_headless.64.zip  
+      - name: Setup 💻
+        run: mkdir -v -p ./build/mac
+      - name: Mac Build 🔧
+        run: |
+          chown runner ./bin/Godot
+          chmod +x ./bin/Godot
+          ./bin/Godot -v --export "Mac OSX" ./build/mac/Pixelorama.zip
+      - name: Make application executable 🔧
+        run: |
+          unzip -a ./build/mac/Pixelorama.zip -d ./build/mac
+          chmod +x ./build/mac/Pixelorama.app/Contents/MacOS/Pixelorama
+          rm ./build/mac/Pixelorama.zip
+      - name: Fix application icon 🖼
+        run: sips -s format icns ./build/mac/Pixelorama.app/Contents/Resources/icon.icns --out ./build/mac/Pixelorama.app/Contents/Resources/icon.icns
+      - name: Copy pixelorama_data folder 📁
+        run: |
+          cp -R ./pixelorama_data ./build/mac/Pixelorama.app/Contents/Resources
+          rm ./build/mac/Pixelorama.app/Contents/Resources/pixelorama_data/.gdignore
+      - name: Ad-hoc signing ✍️
+        run: codesign -s - --force --deep ./build/mac/Pixelorama.app
+      - name: Create DMG archive 🔧
+        run: hdiutil create -srcfolder ./build/mac -fs HFS+ -volname Pixelorama ./build/mac/Pixelorama.dmg
+      - name: Upload Artifact 🚀
+        uses: actions/upload-artifact@v2
+        with:
+          name: Mac
+          path: ./build/mac/Pixelorama.dmg
+          retention-days: 14

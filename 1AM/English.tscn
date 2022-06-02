@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://ShootingPlayer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Environments/English/Game Eng.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Weapons/Trident.tscn" type="PackedScene" id=3]
+[ext_resource path="res://UI/main menu.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scripts/Tutorial.gd" type="Script" id=6]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 6697, 122.5 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 130.5, 509.5 )
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 0, 230 )
+script = ExtResource( 6 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 252, 302 )
+scale = Vector2( 2, 2 )
+weapon = ExtResource( 3 )
+GRAVITY = 30
+MAXSPEED = 300
+JUMPFORCE = 750
+top_limit = 235
+bgmusic = null
+
+[node name="Game Eng" parent="." instance=ExtResource( 2 )]
+z_index = -1
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 6694, 1117 )
+shape = SubResource( 1 )
+
+[node name="Finish" type="Area2D" parent="."]
+position = Vector2( 13379, 495 )
+collision_layer = 8
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Finish"]
+shape = SubResource( 2 )
+
+[node name="CanvasLayer2" parent="." instance=ExtResource( 4 )]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Finish" to="." method="_on_Finish_body_entered"]
