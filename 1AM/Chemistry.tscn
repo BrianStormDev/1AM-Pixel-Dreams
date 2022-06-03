@@ -45,58 +45,50 @@ position = Vector2( 11154, 596 )
 
 [node name="Green1" parent="Enemies" instance=ExtResource( 6 )]
 position = Vector2( 3276, 457 )
-scale = Vector2( 4, 4 )
 
 [node name="Green2" parent="Enemies" instance=ExtResource( 6 )]
 position = Vector2( 4053, 131 )
-scale = Vector2( 4, 4 )
 direction = -1
 
 [node name="Green3" parent="Enemies" instance=ExtResource( 6 )]
 position = Vector2( 9219, 285 )
-scale = Vector2( 4, 4 )
+
+[node name="Green4" parent="Enemies" instance=ExtResource( 6 )]
+position = Vector2( 519, 590 )
 
 [node name="Blue1" parent="Enemies" instance=ExtResource( 6 )]
 position = Vector2( 4383, 128 )
-scale = Vector2( 4, 4 )
-color = "blue"
+color_index = 1
 
 [node name="Blue2" parent="Enemies" instance=ExtResource( 6 )]
 position = Vector2( 5762, 301 )
-scale = Vector2( 4, 4 )
 direction = -1
-color = "blue"
+color_index = 1
 
 [node name="Blue3" parent="Enemies" instance=ExtResource( 6 )]
 position = Vector2( 5347, 301 )
-scale = Vector2( 4, 4 )
-color = "blue"
+color_index = 1
 
 [node name="Blue4" parent="Enemies" instance=ExtResource( 6 )]
 position = Vector2( 9651, 289 )
-scale = Vector2( 4, 4 )
-color = "blue"
+color_index = 1
 
 [node name="Red1" parent="Enemies" instance=ExtResource( 6 )]
 position = Vector2( 5067, 296 )
-scale = Vector2( 4, 4 )
-color = "red"
+color_index = 2
 
 [node name="Red2" parent="Enemies" instance=ExtResource( 6 )]
 position = Vector2( 7753, 448 )
-scale = Vector2( 4, 4 )
-color = "red"
+color_index = 2
 
 [node name="Red3" parent="Enemies" instance=ExtResource( 6 )]
 position = Vector2( 10624, 432 )
-scale = Vector2( 4, 4 )
 direction = -1
-color = "red"
+color_index = 2
 
 [node name="Red4" parent="Enemies" instance=ExtResource( 6 )]
 position = Vector2( 11785, 438 )
-scale = Vector2( 4, 4 )
-color = "red"
+color_index = 2
 
 [node name="Area2D" type="Area2D" parent="."]
 __meta__ = {

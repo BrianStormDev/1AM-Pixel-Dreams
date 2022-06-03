@@ -9,19 +9,25 @@ const JUMPFORCE = 50
 export var health = 100
 export var direction = 1
 export var speed = 50
-export var color = "green"
+export var color_index = 0
+var color = ["green", "blue", "red", "purple"]
+var split = false
 
 func _ready():
 	if direction == -1:
 		scale.x = -scale.x
-	if color == "red":
+	if color[color_index] == "red":
 		walk = "RedWalk"
 		death = "RedDeath"
 		speed = 400
-	elif color == "blue":
+	else:
 		walk = "BlueWalk"
 		death = "BlueDeath"
-		speed = 200
+		if color[color_index] == "purple":
+			speed = 600
+			self.set_modulate(Color("a900ff"))
+		elif color[color_index] == "blue":
+			speed = 200
 
 func _process(_delta):
 	if is_on_wall() or not $floor_checker.is_colliding() and is_on_floor():
@@ -37,7 +43,6 @@ func _process(_delta):
 		set_collision_layer_bit(4, false)
 		$Area2D.set_monitoring(false)
 		speed = 0
-		animation = death
 		$SlimeSheet.play(death)
 
 func _on_Area2D_body_entered(body):
@@ -50,7 +55,16 @@ func _on_Area2D_body_entered(body):
 		set_modulate(Color("ffffff"))
 
 func _on_SlimeSheet_animation_finished():
-	if animation == death:
+	if health<= 0:
+		if split == false:
+			var slime = load("res://Enemies/Slime.tscn") as PackedScene
+			var Slime1 = slime.instance()
+			Slime1.position.x = position.x + 10
+			Slime1.position.y = position.y
+			Slime1.direction = 1
+			Slime1.color_index = color_index + 1
+			print (color_index)
+			Slime1.split = true
+			get_parent().add_child(Slime1)
+			#Need to add slime2
 		queue_free()
-
-#hello I am going to be wokring on this part of the project today 6/2

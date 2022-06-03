@@ -7,7 +7,7 @@ var rotSpeed = 10
 var hasGone = false
 var gravity = 20
 var color
-var damage = 20
+var damage = 100 #is 20 but will make 100 for testing
 const floorSplash = preload("res://Image_Imports/Splash0.png")
 const wallSplash = preload("res://Image_Imports/Splash01.png")
 
