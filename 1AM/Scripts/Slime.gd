@@ -20,14 +20,16 @@ func _ready():
 		walk = "RedWalk"
 		death = "RedDeath"
 		speed = 400
-	else:
+	elif color[color_index] == "blue":
 		walk = "BlueWalk"
 		death = "BlueDeath"
-		if color[color_index] == "purple":
-			speed = 600
-			self.set_modulate(Color("a900ff"))
-		elif color[color_index] == "blue":
-			speed = 200
+		speed = 200
+	elif color[color_index] == "purple":
+		walk = "BlueWalk"
+		death = "BlueDeath"
+		speed = 600
+		$SlimeSheet.set_modulate(Color("a900ff"))
+		
 
 func _process(_delta):
 	if is_on_wall() or not $floor_checker.is_colliding() and is_on_floor():
@@ -63,8 +65,13 @@ func _on_SlimeSheet_animation_finished():
 			Slime1.position.y = position.y
 			Slime1.direction = 1
 			Slime1.color_index = color_index + 1
-			print (color_index)
 			Slime1.split = true
 			get_parent().add_child(Slime1)
-			#Need to add slime2
+			var Slime2 = slime.instance()
+			Slime2.position.x = position.x - 10
+			Slime2.position.y = position.y
+			Slime2.direction = -1
+			Slime2.color_index = color_index + 1
+			Slime2.split = true
+			get_parent().add_child(Slime2)
 		queue_free()

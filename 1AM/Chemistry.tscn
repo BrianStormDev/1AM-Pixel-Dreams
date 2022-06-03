@@ -53,9 +53,6 @@ direction = -1
 [node name="Green3" parent="Enemies" instance=ExtResource( 6 )]
 position = Vector2( 9219, 285 )
 
-[node name="Green4" parent="Enemies" instance=ExtResource( 6 )]
-position = Vector2( 519, 590 )
-
 [node name="Blue1" parent="Enemies" instance=ExtResource( 6 )]
 position = Vector2( 4383, 128 )
 color_index = 1

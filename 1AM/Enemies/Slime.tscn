@@ -70,10 +70,20 @@ radius = 7.5
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 11 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "BlueWalk",
+"speed": 11.0
+}, {
 "frames": [ ExtResource( 10 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "RedWalk",
 "speed": 15.0
+}, {
+"frames": [ ExtResource( 39 ), ExtResource( 32 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ) ],
+"loop": true,
+"name": "RedDeath",
+"speed": 7.0
 }, {
 "frames": [ ExtResource( 47 ), ExtResource( 55 ), ExtResource( 62 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 48 ), ExtResource( 59 ), ExtResource( 50 ), ExtResource( 49 ), ExtResource( 51 ), ExtResource( 54 ), ExtResource( 60 ), ExtResource( 61 ) ],
 "loop": true,
@@ -85,25 +95,15 @@ animations = [ {
 "name": "GreenDeath",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 39 ), ExtResource( 32 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ) ],
+"frames": [ ExtResource( 15 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 21 ), ExtResource( 31 ), ExtResource( 34 ), ExtResource( 27 ), ExtResource( 41 ), ExtResource( 33 ), ExtResource( 30 ) ],
 "loop": true,
-"name": "RedDeath",
+"name": "BlueDeath",
 "speed": 7.0
 }, {
 "frames": [ ExtResource( 1 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "GreenWalk",
 "speed": 7.0
-}, {
-"frames": [ ExtResource( 15 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 21 ), ExtResource( 31 ), ExtResource( 34 ), ExtResource( 27 ), ExtResource( 41 ), ExtResource( 33 ), ExtResource( 30 ) ],
-"loop": true,
-"name": "BlueDeath",
-"speed": 7.0
-}, {
-"frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 11 ), ExtResource( 7 ) ],
-"loop": true,
-"name": "BlueWalk",
-"speed": 11.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=3]
