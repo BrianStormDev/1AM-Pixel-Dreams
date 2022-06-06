@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://ShootingPlayer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environments/English/Game Eng.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Weapons/Trident.tscn" type="PackedScene" id=3]
 [ext_resource path="res://UI/main menu.tscn" type="PackedScene" id=4]
