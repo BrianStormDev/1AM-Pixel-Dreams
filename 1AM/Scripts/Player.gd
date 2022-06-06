@@ -62,40 +62,45 @@ func _physics_process(_delta):
 		$AnimatedSprite.scale.x = -1
 	motion.x = clamp(motion.x, -MAXSPEED,MAXSPEED)
 	
-	if not reload.is_stopped():
-		$AnimatedSprite.play("THROW")
+	if Input.is_action_pressed("right"):
+		motion.x += ACCEL
+		facing_right = true
+		$AnimatedSprite.play("RUN")
+		if not reload.is_stopped():
+			$AnimatedSprite.play("THROW")
+	elif Input.is_action_pressed("left"):
+		motion.x -=ACCEL
+		facing_right = false
+		$AnimatedSprite.play("RUN")
+		if not reload.is_stopped():
+			$AnimatedSprite.play("THROW")
 	else:
-		if Input.is_action_pressed("right"):
-			motion.x += ACCEL
-			facing_right = true
-			$AnimatedSprite.play("RUN")
-		elif Input.is_action_pressed("left"):
-			motion.x -=ACCEL
-			facing_right = false
-			$AnimatedSprite.play("RUN")
-		else:
-			$AnimatedSprite.play("IDLE")
-			motion.x = lerp(motion.x,0,0.2)
+		$AnimatedSprite.play("IDLE")
+		motion.x = lerp(motion.x,0,0.2)
+		
 	
-		if Input.is_action_just_pressed("jump"):
-			if jump_count < 2:
-				jump_count += 1
-				motion.y = -JUMPFORCE
-				on_ground = false
+	if Input.is_action_just_pressed("jump"):
+		if jump_count < 2:
+			jump_count += 1
+			motion.y = -JUMPFORCE
+			on_ground = false
 	
-		if is_on_floor():
-			if on_ground == false:
-				on_ground = true
-				jump_count = 0
-		else:
-			$AnimatedSprite.play("FALL")
-			if on_ground == true:
-				on_ground = false
-				jump_count = 1
-		if motion.y < 0:
-			pass
-		elif motion.y > 0:
-			motion.y += ACCEL
+	if is_on_floor():
+		if on_ground == false:
+			on_ground = true
+			jump_count = 0
+	else:
+		$AnimatedSprite.play("FALL")
+		if not reload.is_stopped():
+			$AnimatedSprite.play("THROW")
+		if on_ground == true:
+			on_ground = false
+			jump_count = 1
+	if motion.y < 0:
+		pass
+	elif motion.y > 0:
+		motion.y += ACCEL
+		
 	
 	motion = move_and_slide(motion,Vector2.UP)
 	
@@ -130,4 +135,3 @@ func _on_Rest_timeout():
 func die():
 	set_collision_layer_bit(1, true)
 	get_tree().change_scene("res://UI/GameOver.tscn")
-
