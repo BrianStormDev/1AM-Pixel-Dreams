@@ -84,7 +84,7 @@ position = Vector2( 66, -61.5 )
 shape = SubResource( 4 )
 
 [node name="Books2" type="RigidBody2D" parent="."]
-position = Vector2( 427, 219 )
+position = Vector2( 429, 218 )
 collision_layer = 8
 mode = 1
 __meta__ = {
@@ -100,7 +100,7 @@ position = Vector2( 66, -61.5 )
 shape = SubResource( 4 )
 
 [node name="Books" type="RigidBody2D" parent="."]
-position = Vector2( 398, 227 )
+position = Vector2( 394, 228 )
 collision_layer = 8
 mode = 1
 __meta__ = {

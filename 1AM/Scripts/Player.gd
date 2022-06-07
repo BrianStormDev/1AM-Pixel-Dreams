@@ -1,20 +1,25 @@
 extends KinematicBody2D
 
+enum States {AIR, FLOOR}
+var state = States.AIR
+
 #Weapon variables
 export var weapon = preload("res://Weapons//Paper Shuriken.tscn")
 
 #Movement variables
 export var GRAVITY = 20
 export var MAXFALLSPEED = 200
+export var MAXSPEED = 250
+export var JUMPFORCE = 650
 var ACCEL = 10
 var motion = Vector2()
 var facing_right = true
 var jump_count = 0
 var on_ground = false
 var health = 100
-export var MAXSPEED = 250
-export var JUMPFORCE = 650
 
+
+#camera Variables
 export var top_limit = 0
 export var bottom_limit = 1130
 export var right_limit = 13248
@@ -47,65 +52,74 @@ func shoot():
 
 func _physics_process(_delta):
 	
+	match state:
+		States.AIR:
+			if is_on_floor():
+				state = States.FLOOR
+				jump_count = 0
+				continue
+			$AnimatedSprite.play("FALL")
+			if Input.is_action_pressed("right"):
+				motion.x += ACCEL
+				facing_right = true
+			elif Input.is_action_pressed("left"):
+				motion.x -=ACCEL
+				facing_right = false
+			else:
+				motion.x = lerp(motion.x,0,0.2)
+			move_and_fall()
+		States.FLOOR:
+			if not is_on_floor():
+				state = States.AIR
+				jump_count = 1
+				continue
+			if Input.is_action_pressed("right"):
+				motion.x += ACCEL
+				facing_right = true
+				$AnimatedSprite.play("RUN")
+			elif Input.is_action_pressed("left"):
+				motion.x -=ACCEL
+				facing_right = false
+				$AnimatedSprite.play("RUN")
+			else:
+				$AnimatedSprite.play("IDLE")
+				motion.x = lerp(motion.x,0,0.2)
+			move_and_fall()
+	
 	if (Input.is_action_just_pressed("shoot") and reload.is_stopped()):
 		reload.start(reload_time)
 		$AnimatedSprite.play("THROW")
 		shoot()
 	
-	motion.y += GRAVITY
-	if motion.y > MAXFALLSPEED:
-		motion.y = MAXFALLSPEED
+	if not reload.is_stopped():
+		$AnimatedSprite.play("THROW")
 		
 	if facing_right == true:
 		$AnimatedSprite.scale.x = 1
 	else:
 		$AnimatedSprite.scale.x = -1
-	motion.x = clamp(motion.x, -MAXSPEED,MAXSPEED)
-	
-	if Input.is_action_pressed("right"):
-		motion.x += ACCEL
-		facing_right = true
-		$AnimatedSprite.play("RUN")
-		if not reload.is_stopped():
-			$AnimatedSprite.play("THROW")
-	elif Input.is_action_pressed("left"):
-		motion.x -=ACCEL
-		facing_right = false
-		$AnimatedSprite.play("RUN")
-		if not reload.is_stopped():
-			$AnimatedSprite.play("THROW")
-	else:
-		$AnimatedSprite.play("IDLE")
-		motion.x = lerp(motion.x,0,0.2)
-		
 	
 	if Input.is_action_just_pressed("jump"):
 		if jump_count < 2:
 			jump_count += 1
 			motion.y = -JUMPFORCE
-			on_ground = false
-	
-	if is_on_floor():
-		if on_ground == false:
-			on_ground = true
-			jump_count = 0
-	else:
-		$AnimatedSprite.play("FALL")
-		if not reload.is_stopped():
-			$AnimatedSprite.play("THROW")
-		if on_ground == true:
-			on_ground = false
-			jump_count = 1
-	if motion.y < 0:
-		pass
-	elif motion.y > 0:
-		motion.y += ACCEL
-		
-	
-	motion = move_and_slide(motion,Vector2.UP)
 	
 	if health <= 0:
 		die()
+	
+	motion.x = clamp(motion.x, -MAXSPEED,MAXSPEED)
+func _on_Rest_timeout():
+	set_collision_layer_bit(1, false)
+
+func die():
+	set_collision_layer_bit(1, true)
+	get_tree().change_scene("res://UI/GameOver.tscn")
+
+func move_and_fall():
+	motion.y += GRAVITY
+	if motion.y > MAXFALLSPEED:
+		motion.y = MAXFALLSPEED
+	motion = move_and_slide(motion,Vector2.UP)
 
 func ouch(var enemyposx, var damage):
 	$Hurt.play()
@@ -114,12 +128,11 @@ func ouch(var enemyposx, var damage):
 	set_modulate(Color(1,0.3,0.3,0.3))
 	motion.y = -500
 	if position.x < enemyposx:
-		motion.x = -8000
+		motion.x = -800
 	elif position.x > enemyposx:
-		motion.x = 8000
+		motion.x = 800
 	Input.action_release("left")
 	Input.action_release("right")
-	Input.action_release("shoot")
 	set_collision_layer_bit(1, true)
 	$Rest.start()
 	for i in 4:
@@ -128,10 +141,3 @@ func ouch(var enemyposx, var damage):
 		set_modulate(Color("#65ffffff"))
 		yield(get_tree().create_timer(0.25), "timeout")
 	set_modulate(Color("ffffff"))
-	
-func _on_Rest_timeout():
-	set_collision_layer_bit(1, false)
-
-func die():
-	set_collision_layer_bit(1, true)
-	get_tree().change_scene("res://UI/GameOver.tscn")
