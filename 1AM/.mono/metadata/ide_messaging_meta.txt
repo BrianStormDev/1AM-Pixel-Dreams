@@ -1,2 +1,2 @@
-﻿63194
-/private/var/folders/dh/hg5rtkj17ts04m3t6s9tjl8m0000gn/T/AppTranslocation/BA664768-A44F-41C1-B4F4-81DFC846B002/d/Godot_mono.app/Contents/MacOS/Godot
+﻿57962
+/private/var/folders/dh/hg5rtkj17ts04m3t6s9tjl8m0000gn/T/AppTranslocation/A18A3D84-89E9-4693-A4A5-596137C6F20F/d/Godot_mono.app/Contents/MacOS/Godot

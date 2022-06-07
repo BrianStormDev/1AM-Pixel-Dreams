@@ -88,7 +88,7 @@ func _physics_process(_delta):
 	
 	if (Input.is_action_just_pressed("shoot") and reload.is_stopped()):
 		reload.start(reload_time)
-		$AnimatedSprite.play("THROW")
+		#$AnimatedSprite.play("THROW")
 		shoot()
 	
 	if not reload.is_stopped():

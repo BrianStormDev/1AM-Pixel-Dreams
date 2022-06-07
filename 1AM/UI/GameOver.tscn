@@ -29,13 +29,13 @@ scale = Vector2( 1.24667, 1.24667 )
 texture = ExtResource( 3 )
 
 [node name="MainMenuButton" type="Button" parent="."]
-margin_left = 398.0
-margin_top = 374.0
-margin_right = 652.0
-margin_bottom = 446.0
+margin_left = 283.0
+margin_top = 348.0
+margin_right = 751.0
+margin_bottom = 420.0
 theme = SubResource( 4 )
 custom_colors/font_color_hover = Color( 1, 0, 0.188235, 1 )
-text = "Main   Menu"
+text = "Go  to  level  select"
 flat = true
 
 [connection signal="pressed" from="MainMenuButton" to="." method="_on_MainMenuButton_pressed"]
