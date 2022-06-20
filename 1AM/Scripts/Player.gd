@@ -88,7 +88,6 @@ func _physics_process(_delta):
 	
 	if (Input.is_action_just_pressed("shoot") and reload.is_stopped()):
 		reload.start(reload_time)
-		#$AnimatedSprite.play("THROW")
 		shoot()
 	
 	if not reload.is_stopped():
@@ -108,6 +107,7 @@ func _physics_process(_delta):
 		die()
 	
 	motion.x = clamp(motion.x, -MAXSPEED,MAXSPEED)
+
 func _on_Rest_timeout():
 	set_collision_layer_bit(1, false)
 
@@ -124,7 +124,6 @@ func move_and_fall():
 func ouch(var enemyposx, var damage):
 	$Hurt.play()
 	health = health - damage
-	print (health)
 	set_modulate(Color(1,0.3,0.3,0.3))
 	motion.y = -500
 	if position.x < enemyposx:

@@ -28,6 +28,7 @@ func _on_Reload_timeout():
 	$AnimationPlayer.play("Mshootg")
 	var bullet = Spit.instance()
 	get_parent().add_child(bullet)
+	bullet.set_modulate(Color("29ff04"))
 	bullet.position.x = position.x -10
 	bullet.position.y = position.y + 10
 

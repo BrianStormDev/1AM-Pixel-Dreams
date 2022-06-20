@@ -27,7 +27,6 @@ func _on_Reload_timeout():
 	$AnimationPlayer.play("shoot")
 	var bullet = Bullet.instance()
 	bullet.direction = direction
-	bullet.color = "fffb00"
 	bullet.SPEED = 200
 	bullet.wait_time = 5
 	get_parent().add_child(bullet)

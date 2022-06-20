@@ -4,8 +4,8 @@ var SPEED = 100
 var velocity = Vector2()
 var direction = -1
 var damage = 10
-var color = "3e00ff"
-var wait_time = 10
+var color = "ffffff"
+var wait_time = 3
 
 func _ready():
 	$Timer.start(wait_time)

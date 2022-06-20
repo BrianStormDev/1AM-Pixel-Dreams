@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Cyclops_Walking_Sprite_Sheet_Blue.png-9854149a2514e161064d6efa91e2d9f3.stex"
+path="res://.import/Bullet.png-429766ef880b69e64fad181f50be6ee4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Cyclops_Walking_Sprite_Sheet_Blue.png"
-dest_files=[ "res://.import/Cyclops_Walking_Sprite_Sheet_Blue.png-9854149a2514e161064d6efa91e2d9f3.stex" ]
+source_file="res://Image_Imports/Bullet.png"
+dest_files=[ "res://.import/Bullet.png-429766ef880b69e64fad181f50be6ee4.stex" ]
 
 [params]
 
