@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environments/MathCity/MathLevel.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Scripts/Tutorial.gd" type="Script" id=5]
 [ext_resource path="res://Enemies/MultMan.tscn" type="PackedScene" id=6]
 [ext_resource path="res://UI/main menu.tscn" type="PackedScene" id=7]
+[ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1758.5, 179 )
@@ -25,7 +26,6 @@ GRAVITY = 30
 JUMPFORCE = 700
 top_limit = 230
 right_limit = 3200
-bgmusic = null
 
 [node name="EnvLevel" parent="." instance=ExtResource( 2 )]
 
@@ -93,6 +93,8 @@ collision_layer = 8
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Finish"]
 position = Vector2( 3325.5, 410 )
 shape = SubResource( 2 )
+
+[node name="HUD" parent="." instance=ExtResource( 8 )]
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Finish" to="." method="_on_Finish_body_entered"]

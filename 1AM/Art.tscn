@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environments/ArtGallery/ArtLevel.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Weapons/PaintBall.tscn" type="PackedScene" id=3]
 [ext_resource path="res://UI/main menu.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scripts/Tutorial.gd" type="Script" id=5]
+[ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 130.5, 509.5 )
@@ -21,7 +22,6 @@ GRAVITY = 30
 JUMPFORCE = 800
 top_limit = 230
 right_limit = 3200
-bgmusic = null
 
 [node name="Node2D" parent="." instance=ExtResource( 2 )]
 
@@ -36,5 +36,7 @@ __meta__ = {
 shape = SubResource( 1 )
 
 [node name="CanvasLayer" parent="." instance=ExtResource( 4 )]
+
+[node name="Control" parent="." instance=ExtResource( 6 )]
 
 [connection signal="body_entered" from="Finish" to="." method="_on_Finish_body_entered"]

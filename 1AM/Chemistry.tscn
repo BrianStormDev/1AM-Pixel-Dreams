@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environments/Chemistry/Chemistry Game.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Scripts/Tutorial.gd" type="Script" id=5]
 [ext_resource path="res://Enemies/Slime.tscn" type="PackedScene" id=6]
 [ext_resource path="res://UI/main menu.tscn" type="PackedScene" id=7]
+[ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 7279.5, 289 )
@@ -97,5 +98,7 @@ position = Vector2( 6102.5, 1302 )
 shape = SubResource( 1 )
 
 [node name="CanvasLayer" parent="." instance=ExtResource( 7 )]
+
+[node name="HUD" parent="." instance=ExtResource( 8 )]
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

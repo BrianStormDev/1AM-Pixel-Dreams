@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environments/Homeroom/Homeroom Game.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Enemies/PaperPlane.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Image_Imports/right.png" type="Texture" id=6]
 [ext_resource path="res://Scripts/Tutorial.gd" type="Script" id=7]
+[ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=8]
 [ext_resource path="res://UI/main menu.tscn" type="PackedScene" id=9]
 
 [sub_resource type="DynamicFont" id=1]
@@ -361,6 +362,8 @@ collision_layer = 8
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Finish"]
 position = Vector2( 3325.5, 386.5 )
 shape = SubResource( 3 )
+
+[node name="HUD" parent="." instance=ExtResource( 8 )]
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Finish" to="." method="_on_Finish_body_entered"]
