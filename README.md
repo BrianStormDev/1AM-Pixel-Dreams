@@ -1,5 +1,5 @@
 # 1AM-Pixel-Dreams
-DVC Project for Spring 2022 @ Project Bracket
+DVC Project for Spring 2022 @ Project Bracket (A CS club)
 
 
 Intro:
