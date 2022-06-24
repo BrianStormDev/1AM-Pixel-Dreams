@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environments/Homeroom/Homeroom Game.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Scripts/Tutorial.gd" type="Script" id=7]
 [ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=8]
 [ext_resource path="res://UI/main menu.tscn" type="PackedScene" id=9]
+[ext_resource path="res://SFX_Imports/Fluffing-a-Duck.mp3" type="AudioStream" id=10]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -28,12 +29,12 @@ __meta__ = {
 }
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 175, 189 )
+position = Vector2( 174, 189 )
 scale = Vector2( 2, 2 )
 GRAVITY = 30
 JUMPFORCE = 700
 top_limit = 230
-bgmusic = null
+bgmusic = ExtResource( 10 )
 
 [node name="Enemies" type="Node2D" parent="."]
 __meta__ = {

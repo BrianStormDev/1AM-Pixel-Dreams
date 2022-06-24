@@ -33,6 +33,7 @@ func _on_Area2D_body_entered(body):
 	if body.get_collision_layer() == 1:
 		body.ouch(position.x, damage)
 	elif body.get_collision_layer() == 2:
+		body.queue_free()
 		health = health - body.damage
 		set_modulate(Color(1,0.3,0.3,0.9))
 		yield(get_tree().create_timer(0.25), "timeout")

@@ -10,7 +10,6 @@ func _physics_process(_delta):
 	if is_on_floor():
 		$Sprite.visible = false
 		$AnimatedSprite.play("BOOM")
-		$Hitbox.monitoring = false
 
 func _on_AnimatedSprite_animation_finished():
 	queue_free()

@@ -105,6 +105,7 @@ func _physics_process(_delta):
 		if jump_count < 2:
 			jump_count += 1
 			motion.y = -JUMPFORCE
+			$Jump.play()
 	
 	if health <= 0:
 		die()
