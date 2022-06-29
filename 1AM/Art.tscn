@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environments/ArtGallery/ArtLevel.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://UI/main menu.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scripts/Tutorial.gd" type="Script" id=5]
 [ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Enemies/Statue.tscn" type="PackedScene" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 130.5, 509.5 )
@@ -15,7 +16,7 @@ position = Vector2( 0, 230 )
 script = ExtResource( 5 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 3156, 626 )
+position = Vector2( 78, 826 )
 scale = Vector2( 2, 2 )
 weapon = ExtResource( 3 )
 GRAVITY = 30
@@ -29,14 +30,26 @@ right_limit = 3200
 position = Vector2( 3308, 393 )
 collision_layer = 8
 __meta__ = {
-"_edit_group_": true
+"_edit_lock_": true
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Finish"]
 shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="CanvasLayer" parent="." instance=ExtResource( 4 )]
 
 [node name="Control" parent="." instance=ExtResource( 6 )]
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Statue" parent="Enemies" instance=ExtResource( 7 )]
+position = Vector2( 625, 538 )
+scale = Vector2( 1.75, 1.75 )
+direction = -1
+
+[node name="HUD" parent="." instance=ExtResource( 6 )]
 
 [connection signal="body_entered" from="Finish" to="." method="_on_Finish_body_entered"]

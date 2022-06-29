@@ -3,7 +3,7 @@ extends KinematicBody2D
 var velocity = Vector2()
 var aim_direction = Vector2.RIGHT
 var direction = 1
-var damage = 0
+var damage = 10
 const SPEED = 400
 const DROP = preload("res://Weapons//Drop.tscn")
 
