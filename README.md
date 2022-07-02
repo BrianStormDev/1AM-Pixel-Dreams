@@ -1,5 +1,5 @@
 # 1AM-Pixel-Dreams
-DVC Project for Spring 2022 @ Project Bracket
+DVC Project for Spring 2022 @ Project Bracket (A CS club)
 
 
 Intro:
@@ -11,7 +11,7 @@ However, college and personal deals got in the way of many members from being ab
 to the project, as a matter of fact, some members just dissappeared during our beginning phases.
 For about 16 weeks, me and the other Project Manager were able to work with about 8 people to get this project together.
 As of recently, many of our members have had summer classes, so progress is slowing further with only about
-2 people working on the project.
+4 people working on the project.
 Nevertheless, we have all put in a lot of work in this project, and will still continue to do so to try to come up with
 a complete project. I think at this point we all have a lot of learning we want to do outside of this project, so
 we'll see where things go.
