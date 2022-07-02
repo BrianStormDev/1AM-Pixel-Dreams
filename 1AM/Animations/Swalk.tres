@@ -1,0 +1,30 @@
+[gd_resource type="Animation" format=2]
+
+[resource]
+resource_name = "Swalk"
+length = 0.7
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.181818, 0.363636, 0.545455, 0.727273, 0.909091 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 9, 8, 11, 12, 14, 15 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../Area2D/CollisionPolygon2D:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ PoolVector2Array( -1220.71, 33.8055, -1259.26, 17.8418, -1310.66, 18.7808, -1381.33, 45.074, -1336.36, 52.5863, -1355.63, 74.1843, -1227.13, 73.2453, -1207.86, 65.7329, -1137.19, 52.5863, -1207.86, 46.013 ) ]
+}
