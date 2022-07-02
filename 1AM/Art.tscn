@@ -46,7 +46,7 @@ __meta__ = {
 [node name="Enemies" type="Node2D" parent="."]
 
 [node name="Statue" parent="Enemies" instance=ExtResource( 7 )]
-position = Vector2( 625, 538 )
+position = Vector2( 424, 662 )
 scale = Vector2( 1.75, 1.75 )
 direction = -1
 

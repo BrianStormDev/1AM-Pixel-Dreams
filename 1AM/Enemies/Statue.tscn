@@ -37,7 +37,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="CapsuleShape2D" id=4]
-radius = 25.0
+radius = 24.0
 height = 34.0
 
 [node name="Statue" type="KinematicBody2D"]
@@ -71,9 +71,8 @@ collision_layer = 4
 collision_mask = 3
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
-position = Vector2( 106.755, -30.6961 )
-scale = Vector2( 0.0855593, 0.81818 )
-build_mode = 1
+position = Vector2( 200, -47 )
+scale = Vector2( 0.155647, 1.06492 )
 polygon = PoolVector2Array( -1271.1, 4.51749, -1352.92, 11.8508, -1329.54, 21.6286, -1399.67, 30.1842, -1329.54, 39.962, -1352.92, 77.851, -1142.54, 76.6287, -1119.16, 33.8509, -1037.35, 0.850815, -1154.23, 0.850815 )
 
 [node name="AttackRadius" type="Area2D" parent="."]
