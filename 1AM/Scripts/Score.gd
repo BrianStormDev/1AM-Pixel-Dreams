@@ -24,3 +24,11 @@ func _on_MultMan_dead(value):
 
 #EnglishMobs
 
+
+#Chemistry Mobs
+func _on_Crab_dead(value):
+	points += value
+	_ready()
+func _on_Slime_dead(value):
+	points += value
+	_ready()

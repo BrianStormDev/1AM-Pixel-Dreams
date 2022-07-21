@@ -7,6 +7,8 @@ export var direction = 1
 export var speed = 500
 onready var animatedSprite = $CrabSheet
 onready var timer = $Timer
+const value = 750
+signal dead
 
 func _ready():
 	if direction == -1:
@@ -28,6 +30,7 @@ func _process(_delta):
 		velocity.y += 20
 		velocity = move_and_slide(velocity, Vector2.UP)
 	elif health <= 0:
+		emit_signal("dead", value)
 		queue_free()
 
 func _on_Area2D_body_entered(body):
