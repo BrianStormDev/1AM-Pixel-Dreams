@@ -7,7 +7,7 @@ var rotSpeed = 10
 var hasGone = false
 var gravity = 20
 var color
-var damage = 100 #is 20 but will make 100 for testing
+var damage = 20
 const floorSplash = preload("res://Image_Imports/Splash0.png")
 const wallSplash = preload("res://Image_Imports/Splash01.png")
 
@@ -41,8 +41,7 @@ func _physics_process(_delta):
 
 func splash(splash):
 	set_modulate(color)
-	
-	$CollisionShape2D.set_disabled(true)  # so physical collision is off
+	damage = 5
 	$Sprite.set_texture(splash)
 	var flipn = randi() % 2  # randomizes splash orientation
 	var flip = true if flipn==1 else false

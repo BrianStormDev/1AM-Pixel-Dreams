@@ -49,11 +49,6 @@ animations = [ {
 "name": "IDLE",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
-"loop": true,
-"name": "RUN&THROW",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 1 ) ],
 "loop": true,
 "name": "THROW",
@@ -63,6 +58,11 @@ animations = [ {
 "loop": true,
 "name": "RUN",
 "speed": 10.0
+}, {
+"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
+"loop": true,
+"name": "RUN&THROW",
+"speed": 5.0
 } ]
 
 [node name="Player" type="KinematicBody2D"]
