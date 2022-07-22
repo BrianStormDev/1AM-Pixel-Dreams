@@ -3,7 +3,7 @@ extends KinematicBody2D
 var velocity = Vector2()
 var aim_direction = Vector2.RIGHT
 var direction = 1
-var damage = 10
+var damage = 5
 const SPEED = 400
 const DROP = preload("res://Weapons//Drop.tscn")
 
@@ -20,7 +20,7 @@ func _physics_process(_delta):
 
 func _on_Timer_timeout():
 	queue_free()
-	for angle in [-25, -10, 0, 10, 25]:
+	for angle in [-45, -20, 0, 20, 45]:
 		var droplet = DROP.instance()
 		var radians = deg2rad(angle)
 		droplet.direction = direction
