@@ -345,7 +345,7 @@ rect_pivot_offset = Vector2( 981, -132 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "Fruit gives you 
-health and points
+health  and  points
 "
 
 [node name="Label15" type="Label" parent="Control"]
