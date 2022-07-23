@@ -1,8 +1,12 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Scripts/Levels.gd" type="Script" id=1]
 [ext_resource path="res://Fonts/SpaceMono-Bold.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Image_Imports/Screen Shot 2022-06-05 at 5.31.09 PM.png" type="Texture" id=3]
+[ext_resource path="res://Image_Imports/Screen Shot 2022-07-23 at 4.38.47 PM.png" type="Texture" id=4]
+[ext_resource path="res://Image_Imports/Screen Shot 2022-07-23 at 4.41.16 PM.png" type="Texture" id=5]
+[ext_resource path="res://Image_Imports/Screen Shot 2022-07-23 at 4.43.43 PM.png" type="Texture" id=6]
+[ext_resource path="res://Image_Imports/Screen Shot 2022-07-23 at 4.45.02 PM.png" type="Texture" id=7]
 
 [sub_resource type="Theme" id=1]
 
@@ -48,10 +52,11 @@ margin_left = 86.0
 margin_top = 9.0
 margin_right = 910.0
 margin_bottom = 54.0
-custom_colors/font_color = Color( 0.796078, 0, 0.992157, 1 )
-custom_colors/font_color_shadow = Color( 0, 0.203922, 1, 1 )
+custom_colors/font_color = Color( 0.552941, 0.0392157, 0.976471, 1 )
+custom_colors/font_color_shadow = Color( 0, 0.121569, 1, 1 )
 custom_constants/shadow_offset_x = 2
-custom_constants/shadow_offset_y = 2
+custom_constants/shadow_offset_y = 3
+custom_constants/shadow_as_outline = 0
 custom_fonts/font = SubResource( 2 )
 text = "Pixel Dreams Level Select"
 align = 1
@@ -79,9 +84,9 @@ text = "Level 1: Mathematic Mayhem"
 [node name="L2" type="Button" parent="Levels/Background"]
 modulate = Color( 0, 0.835938, 1, 1 )
 margin_left = 650.0
-margin_top = 97.0
+margin_top = 99.0
 margin_right = 1012.0
-margin_bottom = 127.0
+margin_bottom = 129.0
 rect_min_size = Vector2( 85, 0 )
 custom_fonts/font = SubResource( 5 )
 text = "Level 2: Mountains Beyond Mountains"
@@ -99,9 +104,9 @@ text = "Level 3: The Art of Imagination"
 [node name="L4" type="Button" parent="Levels/Background"]
 modulate = Color( 0.933333, 1, 0, 1 )
 margin_left = 611.0
-margin_top = 307.0
-margin_right = 893.0
-margin_bottom = 337.0
+margin_top = 303.0
+margin_right = 933.0
+margin_bottom = 333.0
 rect_min_size = Vector2( 85, 0 )
 custom_fonts/font = SubResource( 7 )
 text = "Level 4: Chemical Wasteland"
@@ -119,6 +124,38 @@ text = "Quit"
 [node name="VBoxContainer" type="VBoxContainer" parent="Levels/Background"]
 margin_right = 40.0
 margin_bottom = 40.0
+
+[node name="L0 Thumb" type="TextureRect" parent="Levels/Background"]
+margin_left = 9.0
+margin_top = 130.0
+margin_right = 311.0
+margin_bottom = 287.0
+texture = ExtResource( 4 )
+expand = true
+
+[node name="L1 Thumb" type="TextureRect" parent="Levels/Background"]
+margin_left = 345.0
+margin_top = 129.0
+margin_right = 617.0
+margin_bottom = 287.0
+texture = ExtResource( 5 )
+expand = true
+
+[node name="L3 Thumb" type="TextureRect" parent="Levels/Background"]
+margin_left = 96.0
+margin_top = 335.0
+margin_right = 418.0
+margin_bottom = 505.0
+texture = ExtResource( 6 )
+expand = true
+
+[node name="L4 Thumb" type="TextureRect" parent="Levels/Background"]
+margin_left = 611.0
+margin_top = 333.0
+margin_right = 933.0
+margin_bottom = 503.0
+texture = ExtResource( 7 )
+expand = true
 
 [connection signal="pressed" from="Levels/Background/L0" to="Levels" method="_on_L0_pressed"]
 [connection signal="pressed" from="Levels/Background/L1" to="Levels" method="_on_L1_pressed"]

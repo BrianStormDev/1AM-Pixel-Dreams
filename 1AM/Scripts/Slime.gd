@@ -6,7 +6,7 @@ var death = "GreenDeath"
 var animation
 var damage = 20
 const JUMPFORCE = 50
-const value = 500
+var value = 500
 export var health = 100
 export var direction = 1
 export var speed = 50
@@ -48,7 +48,6 @@ func _process(_delta):
 		$Area2D.set_monitoring(false)
 		speed = 0
 		$SlimeSheet.play(death)
-		emit_signal("dead", value)
 
 func _on_Area2D_body_entered(body):
 	if body.get_collision_layer() == 1:
@@ -62,6 +61,7 @@ func _on_Area2D_body_entered(body):
 
 func _on_SlimeSheet_animation_finished():
 	if health<= 0:
+		emit_signal("dead", value)
 		if split == false:
 			var slime = load("res://Enemies/Slime.tscn") as PackedScene
 			var Slime1 = slime.instance()
@@ -79,5 +79,7 @@ func _on_SlimeSheet_animation_finished():
 			Slime2.color_index = color_index + 1
 			Slime2.split = true
 			Slime2.value = value/2
+			print (Slime2.value)
 			get_parent().add_child(Slime2)
 		queue_free()
+#Small slimes are not giving points...

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environments/ArtGallery/ArtLevel.tscn" type="PackedScene" id=2]
@@ -9,9 +9,14 @@
 [ext_resource path="res://Enemies/Statue.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Enemies/Weeping Angel.tscn" type="PackedScene" id=8]
 [ext_resource path="res://UI/Score.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Fonts/ARCADECLASSIC.TTF" type="DynamicFontData" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 130.5, 509.5 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 10 )
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 0, 230 )
@@ -58,6 +63,18 @@ position = Vector2( 2068, 687 )
 [node name="HUD" parent="." instance=ExtResource( 6 )]
 
 [node name="Score" parent="." instance=ExtResource( 9 )]
+
+[node name="Label16" type="Label" parent="."]
+show_behind_parent = true
+margin_left = 216.0
+margin_top = 647.0
+margin_right = 837.0
+margin_bottom = 732.0
+rect_pivot_offset = Vector2( 981, -132 )
+custom_colors/font_color = Color( 1, 0.678431, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Score  10000 Points 
+before  Finishing  the  Level!"
 
 [connection signal="body_entered" from="Finish" to="." method="_on_Finish_body_entered"]
 [connection signal="dead" from="Statues/Statue" to="Score" method="_on_Statue_dead"]

@@ -19,7 +19,7 @@ var on_ground = false
 
 #UI Variables
 var health = 100
-onready var health_bar = get_node("../HUD/HealthBar")
+onready var health_bar = get_node("../HealthBar/HealthBar")
 
 
 #camera Variables
