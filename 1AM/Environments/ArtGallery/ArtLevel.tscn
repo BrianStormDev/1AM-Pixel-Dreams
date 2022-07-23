@@ -296,7 +296,7 @@ points = PoolVector2Array( 2.31813, 146.17, 2.51193, 140.162, 11.8147, 139.968, 
 [node name="Node2D" type="Node2D"]
 
 [node name="Platforms" type="TileMap" parent="."]
-position = Vector2( 0, -35 )
+position = Vector2( 13, -45 )
 scale = Vector2( 2, 2 )
 z_index = 1
 tile_set = SubResource( 6 )

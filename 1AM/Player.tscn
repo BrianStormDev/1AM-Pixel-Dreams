@@ -39,9 +39,9 @@ region = Rect2( 96, 0, 32, 37 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 3 ) ],
+"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
 "loop": true,
-"name": "IDLE",
+"name": "RUN&THROW",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 4 ) ],
@@ -49,9 +49,9 @@ animations = [ {
 "name": "RUN",
 "speed": 10.0
 }, {
-"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
+"frames": [ ExtResource( 3 ) ],
 "loop": true,
-"name": "RUN&THROW",
+"name": "IDLE",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 1 ) ],

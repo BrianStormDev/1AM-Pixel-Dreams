@@ -32,3 +32,15 @@ func _on_Crab_dead(value):
 func _on_Slime_dead(value):
 	points += value
 	_ready()
+
+#ArtMobs
+func _on_Statue_dead(value):
+	points += value
+	_ready()
+func _on_Weeping_Angel_dead(value):
+	points += value
+	_ready()
+
+
+
+
