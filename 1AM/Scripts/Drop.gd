@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 var aim_direction = Vector2.RIGHT
 var direction = 1
-var damage = 8
+var damage = 5
 
 const splat1 = preload("res://Image_Imports/Splat1.png")
 const splat2 = preload("res://Image_Imports/Splat2.png")

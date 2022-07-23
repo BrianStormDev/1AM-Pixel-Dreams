@@ -6,12 +6,14 @@ var death = "GreenDeath"
 var animation
 var damage = 20
 const JUMPFORCE = 50
+const value = 500
 export var health = 100
 export var direction = 1
 export var speed = 50
 export var color_index = 0
 var color = ["green", "blue", "red", "purple"]
 var split = false
+signal dead
 
 func _ready():
 	if direction == -1:
@@ -46,6 +48,7 @@ func _process(_delta):
 		$Area2D.set_monitoring(false)
 		speed = 0
 		$SlimeSheet.play(death)
+		emit_signal("dead", value)
 
 func _on_Area2D_body_entered(body):
 	if body.get_collision_layer() == 1:
@@ -67,6 +70,7 @@ func _on_SlimeSheet_animation_finished():
 			Slime1.direction = 1
 			Slime1.color_index = color_index + 1
 			Slime1.split = true
+			Slime1.value = value/2
 			get_parent().add_child(Slime1)
 			var Slime2 = slime.instance()
 			Slime2.position.x = position.x - 10
@@ -74,5 +78,6 @@ func _on_SlimeSheet_animation_finished():
 			Slime2.direction = -1
 			Slime2.color_index = color_index + 1
 			Slime2.split = true
+			Slime2.value = value/2
 			get_parent().add_child(Slime2)
 		queue_free()
