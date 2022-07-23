@@ -48,7 +48,7 @@ direction = -1
 position = Vector2( 2976, 37 )
 
 [node name="Angle Biter4" parent="Angle Biters" instance=ExtResource( 3 )]
-position = Vector2( 1760, 453 )
+position = Vector2( 2072, 345 )
 
 [node name="Angle Biter5" parent="Angle Biters" instance=ExtResource( 3 )]
 position = Vector2( 1920, 632 )
