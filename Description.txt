@@ -1,0 +1,11 @@
+Project Managers: Brian Leong and Angie Le
+Developers: CJ Stamp, Bryant Oliver, Safia Boutaleb, Wilson Zhu, Brian Chung, Sherwin Lapid
+
+Pixel Dreams is a platformer game that takes players on a journey through various college class
+themed levels each with unique enemies, platforms, and player weapons with the goal of scoring enough points
+to make it to the finish line. All our developers worked hard to make sure that all components ranging from enemies, 
+weapons, physics interactions, and environments were up to par. The game is still undergoing further development, 
+but upon completion, there are plans to upload the code to itch.io with HTML5 compatibility so that 
+everyone can see what just a few college students can do :)
+
+Software Used: Godot 3.4 Game Engine, GD Scripting, Pixelorama

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environments/Chemistry/Chemistry Game.tscn" type="PackedScene" id=2]
@@ -8,9 +8,15 @@
 [ext_resource path="res://Enemies/Slime.tscn" type="PackedScene" id=6]
 [ext_resource path="res://UI/main menu.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=8]
+[ext_resource path="res://UI/Score.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Fonts/ARCADECLASSIC.TTF" type="DynamicFontData" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 7279.5, 289 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 10 )
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 0, 230 )
@@ -28,64 +34,62 @@ bgmusic = null
 
 [node name="Game" parent="." instance=ExtResource( 2 )]
 
-[node name="Enemies" type="Node2D" parent="."]
+[node name="Crabs" type="Node2D" parent="."]
 
-[node name="Crab" parent="Enemies" instance=ExtResource( 3 )]
+[node name="Crab" parent="Crabs" instance=ExtResource( 3 )]
 position = Vector2( 1132, 444 )
 
-[node name="Crab2" parent="Enemies" instance=ExtResource( 3 )]
-position = Vector2( 1800, 447 )
+[node name="Crab2" parent="Crabs" instance=ExtResource( 3 )]
+position = Vector2( 1625, 437 )
 direction = -1
 
-[node name="Crab3" parent="Enemies" instance=ExtResource( 3 )]
-position = Vector2( 7942, 609 )
-direction = -1
+[node name="Crab3" parent="Crabs" instance=ExtResource( 3 )]
+position = Vector2( 7930, 600 )
 
-[node name="Crab4" parent="Enemies" instance=ExtResource( 3 )]
-position = Vector2( 11154, 596 )
+[node name="Crab4" parent="Crabs" instance=ExtResource( 3 )]
+position = Vector2( 11155, 600 )
 
-[node name="Green1" parent="Enemies" instance=ExtResource( 6 )]
+[node name="Slimes" type="Node2D" parent="."]
+
+[node name="Green1" parent="Slimes" instance=ExtResource( 6 )]
 position = Vector2( 3276, 457 )
 
-[node name="Green2" parent="Enemies" instance=ExtResource( 6 )]
-position = Vector2( 4053, 131 )
-direction = -1
+[node name="Green2" parent="Slimes" instance=ExtResource( 6 )]
+position = Vector2( 4023, 129 )
 
-[node name="Green3" parent="Enemies" instance=ExtResource( 6 )]
-position = Vector2( 9219, 285 )
+[node name="Green3" parent="Slimes" instance=ExtResource( 6 )]
+position = Vector2( 9238, 287 )
 
-[node name="Blue1" parent="Enemies" instance=ExtResource( 6 )]
-position = Vector2( 4383, 128 )
+[node name="Blue1" parent="Slimes" instance=ExtResource( 6 )]
+position = Vector2( 4363, 129 )
 color_index = 1
 
-[node name="Blue2" parent="Enemies" instance=ExtResource( 6 )]
-position = Vector2( 5762, 301 )
-direction = -1
+[node name="Blue2" parent="Slimes" instance=ExtResource( 6 )]
+position = Vector2( 5755, 287 )
 color_index = 1
 
-[node name="Blue3" parent="Enemies" instance=ExtResource( 6 )]
-position = Vector2( 5347, 301 )
+[node name="Blue3" parent="Slimes" instance=ExtResource( 6 )]
+position = Vector2( 5388, 283 )
 color_index = 1
 
-[node name="Blue4" parent="Enemies" instance=ExtResource( 6 )]
-position = Vector2( 9651, 289 )
+[node name="Blue4" parent="Slimes" instance=ExtResource( 6 )]
+position = Vector2( 9611, 287 )
 color_index = 1
 
-[node name="Red1" parent="Enemies" instance=ExtResource( 6 )]
-position = Vector2( 5067, 296 )
+[node name="Red1" parent="Slimes" instance=ExtResource( 6 )]
+position = Vector2( 5068, 271 )
 color_index = 2
 
-[node name="Red2" parent="Enemies" instance=ExtResource( 6 )]
-position = Vector2( 7753, 448 )
+[node name="Red2" parent="Slimes" instance=ExtResource( 6 )]
+position = Vector2( 7761, 438 )
 color_index = 2
 
-[node name="Red3" parent="Enemies" instance=ExtResource( 6 )]
-position = Vector2( 10624, 432 )
-direction = -1
+[node name="Red3" parent="Slimes" instance=ExtResource( 6 )]
+position = Vector2( 10643, 434 )
 color_index = 2
 
-[node name="Red4" parent="Enemies" instance=ExtResource( 6 )]
-position = Vector2( 11785, 438 )
+[node name="Red4" parent="Slimes" instance=ExtResource( 6 )]
+position = Vector2( 11788, 430 )
 color_index = 2
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -101,4 +105,33 @@ shape = SubResource( 1 )
 
 [node name="HUD" parent="." instance=ExtResource( 8 )]
 
+[node name="Score" parent="." instance=ExtResource( 9 )]
+
+[node name="Label16" type="Label" parent="."]
+show_behind_parent = true
+margin_left = 31.0
+margin_top = 552.0
+margin_right = 652.0
+margin_bottom = 637.0
+rect_pivot_offset = Vector2( 981, -132 )
+custom_colors/font_color = Color( 1, 0.678431, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Score  15000 Points 
+before  Finishing  the  Level!"
+
+[connection signal="dead" from="Crabs/Crab" to="Score" method="_on_Crab_dead"]
+[connection signal="dead" from="Crabs/Crab2" to="Score" method="_on_Crab_dead"]
+[connection signal="dead" from="Crabs/Crab3" to="Score" method="_on_Crab_dead"]
+[connection signal="dead" from="Crabs/Crab4" to="Score" method="_on_Crab_dead"]
+[connection signal="dead" from="Slimes/Green1" to="Score" method="_on_Slime_dead"]
+[connection signal="dead" from="Slimes/Green2" to="Score" method="_on_Slime_dead"]
+[connection signal="dead" from="Slimes/Green3" to="Score" method="_on_Slime_dead"]
+[connection signal="dead" from="Slimes/Blue1" to="Score" method="_on_Slime_dead"]
+[connection signal="dead" from="Slimes/Blue2" to="Score" method="_on_Slime_dead"]
+[connection signal="dead" from="Slimes/Blue3" to="Score" method="_on_Slime_dead"]
+[connection signal="dead" from="Slimes/Blue4" to="Score" method="_on_Slime_dead"]
+[connection signal="dead" from="Slimes/Red1" to="Score" method="_on_Slime_dead"]
+[connection signal="dead" from="Slimes/Red2" to="Score" method="_on_Slime_dead"]
+[connection signal="dead" from="Slimes/Red3" to="Score" method="_on_Slime_dead"]
+[connection signal="dead" from="Slimes/Red4" to="Score" method="_on_Slime_dead"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
