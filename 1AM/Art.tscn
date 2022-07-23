@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environments/ArtGallery/ArtLevel.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Scripts/Tutorial.gd" type="Script" id=5]
 [ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Enemies/Statue.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Enemies/Weeping Angel.tscn" type="PackedScene" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 130.5, 509.5 )
@@ -24,7 +25,22 @@ JUMPFORCE = 800
 top_limit = 230
 right_limit = 3200
 
-[node name="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Environment" parent="." instance=ExtResource( 2 )]
+
+[node name="Angels" type="Node2D" parent="."]
+
+[node name="Weeping Angel" parent="Angels" instance=ExtResource( 8 )]
+position = Vector2( 653, 689 )
+
+[node name="Statues" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Statue" parent="Statues" instance=ExtResource( 7 )]
+position = Vector2( 623, 545 )
+scale = Vector2( 1.75, 1.75 )
+direction = -1
 
 [node name="Finish" type="Area2D" parent="."]
 position = Vector2( 3308, 393 )
@@ -39,17 +55,8 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CanvasLayer" parent="." instance=ExtResource( 4 )]
+[node name="Pause" parent="." instance=ExtResource( 4 )]
 
-[node name="Control" parent="." instance=ExtResource( 6 )]
-
-[node name="Enemies" type="Node2D" parent="."]
-
-[node name="Statue" parent="Enemies" instance=ExtResource( 7 )]
-position = Vector2( 424, 662 )
-scale = Vector2( 1.75, 1.75 )
-direction = -1
-
-[node name="HUD" parent="." instance=ExtResource( 6 )]
+[node name="HealthBar" parent="." instance=ExtResource( 6 )]
 
 [connection signal="body_entered" from="Finish" to="." method="_on_Finish_body_entered"]

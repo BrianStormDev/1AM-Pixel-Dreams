@@ -128,7 +128,6 @@ func move_and_fall():
 func ouch(var enemyposx, var damage):
 	$Hurt.play()
 	health = health - damage
-	health_bar.set_value(health)
 	set_modulate(Color(1,0.3,0.3,0.3))
 	motion.y = -500
 	if position.x < enemyposx:

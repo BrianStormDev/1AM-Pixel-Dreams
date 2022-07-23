@@ -39,7 +39,6 @@ func _on_Area2D_body_entered(body): #A kinematic body enters a collision box
 		body.ouch(position.x, damage)
 	if body.get_collision_layer() == 2: #Deal damage to enemy 
 		health = health - body.damage 
-		body.queue_free() #projectile disappears on impact
 		#Enemy blinks red when taking damage
 		set_modulate(Color(1,0.3,0.3,0.9))
 		yield(get_tree().create_timer(0.25), "timeout")
