@@ -62,51 +62,51 @@ position = Vector2( 11445, 629 )
 scale = Vector2( 2, 2 )
 speed = 200
 
-[node name="Enemies" type="Node2D" parent="."]
+[node name="Planes" type="Node2D" parent="."]
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Plane1" parent="Enemies" instance=ExtResource( 5 )]
+[node name="Plane1" parent="Planes" instance=ExtResource( 5 )]
 position = Vector2( 9296, 751 )
 scale = Vector2( 2, 2 )
 switch_time = 7
 
-[node name="Plane2" parent="Enemies" instance=ExtResource( 5 )]
+[node name="Plane2" parent="Planes" instance=ExtResource( 5 )]
 position = Vector2( 8582, 464 )
 scale = Vector2( 2, 2 )
 switch_time = 4
 
-[node name="Plane3" parent="Enemies" instance=ExtResource( 5 )]
+[node name="Plane3" parent="Planes" instance=ExtResource( 5 )]
 position = Vector2( 8907, 486 )
 scale = Vector2( 2, 2 )
 direction = 1
 switch_time = 4
 
-[node name="Plane4" parent="Enemies" instance=ExtResource( 5 )]
+[node name="Plane4" parent="Planes" instance=ExtResource( 5 )]
 position = Vector2( 8692, 591 )
 scale = Vector2( 2, 2 )
 direction = 1
 switch_time = 4
 
-[node name="Plane5" parent="Enemies" instance=ExtResource( 5 )]
+[node name="Plane5" parent="Planes" instance=ExtResource( 5 )]
 position = Vector2( 8295, 328 )
 scale = Vector2( 2, 2 )
 direction = 1
 switch_time = 3
 
-[node name="Plane6" parent="Enemies" instance=ExtResource( 5 )]
+[node name="Plane6" parent="Planes" instance=ExtResource( 5 )]
 position = Vector2( 9049, 614 )
 scale = Vector2( 2, 2 )
 switch_time = 4
 
-[node name="Plane7" parent="Enemies" instance=ExtResource( 5 )]
+[node name="Plane7" parent="Planes" instance=ExtResource( 5 )]
 position = Vector2( 8558, 326 )
 scale = Vector2( 2, 2 )
 direction = 1
 switch_time = 3
 
-[node name="Plane8" parent="Enemies" instance=ExtResource( 5 )]
+[node name="Plane8" parent="Planes" instance=ExtResource( 5 )]
 position = Vector2( 8831, 338 )
 scale = Vector2( 2, 2 )
 direction = 1
@@ -403,13 +403,13 @@ before  Finishing  the  Level!"
 [connection signal="dead" from="Swans/Swan2" to="Score" method="_on_Swan_dead"]
 [connection signal="dead" from="Swans/Swan3" to="Score" method="_on_Swan_dead"]
 [connection signal="dead" from="Swans/Swan4" to="Score" method="_on_Swan_dead"]
-[connection signal="dead" from="Enemies/Plane1" to="Score" method="_on_Plane_dead"]
-[connection signal="dead" from="Enemies/Plane2" to="Score" method="_on_Plane_dead"]
-[connection signal="dead" from="Enemies/Plane3" to="Score" method="_on_Plane_dead"]
-[connection signal="dead" from="Enemies/Plane4" to="Score" method="_on_Plane_dead"]
-[connection signal="dead" from="Enemies/Plane5" to="Score" method="_on_Plane_dead"]
-[connection signal="dead" from="Enemies/Plane6" to="Score" method="_on_Plane_dead"]
-[connection signal="dead" from="Enemies/Plane7" to="Score" method="_on_Plane_dead"]
-[connection signal="dead" from="Enemies/Plane8" to="Score" method="_on_Plane_dead"]
+[connection signal="dead" from="Planes/Plane1" to="Score" method="_on_Plane_dead"]
+[connection signal="dead" from="Planes/Plane2" to="Score" method="_on_Plane_dead"]
+[connection signal="dead" from="Planes/Plane3" to="Score" method="_on_Plane_dead"]
+[connection signal="dead" from="Planes/Plane4" to="Score" method="_on_Plane_dead"]
+[connection signal="dead" from="Planes/Plane5" to="Score" method="_on_Plane_dead"]
+[connection signal="dead" from="Planes/Plane6" to="Score" method="_on_Plane_dead"]
+[connection signal="dead" from="Planes/Plane7" to="Score" method="_on_Plane_dead"]
+[connection signal="dead" from="Planes/Plane8" to="Score" method="_on_Plane_dead"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Finish" to="." method="_on_Finish_body_entered"]
