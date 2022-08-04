@@ -7,11 +7,11 @@ var state = States.AIR
 export var weapon = preload("res://Weapons//Paper Shuriken.tscn")
 
 #Movement variables
-export var GRAVITY = 20
-export var MAXFALLSPEED = 200
+export var GRAVITY = 100
+export var MAXFALLSPEED = 400
 export var MAXSPEED = 250
-export var JUMPFORCE = 650
-var ACCEL = 10
+export var JUMPFORCE = 600
+var ACCEL = 50
 var motion = Vector2()
 var facing_right = true
 var jump_count = 0

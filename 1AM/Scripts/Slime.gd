@@ -61,8 +61,11 @@ func _on_Area2D_body_entered(body):
 
 func _on_SlimeSheet_animation_finished():
 	if health<= 0:
+		print("I sent a signal")
 		emit_signal("dead", value)
-		if split == false:
+		print(value)
+		if not split:
+			#set-up first slime
 			var slime = load("res://Enemies/Slime.tscn") as PackedScene
 			var Slime1 = slime.instance()
 			Slime1.position.x = position.x + 10
@@ -72,6 +75,8 @@ func _on_SlimeSheet_animation_finished():
 			Slime1.split = true
 			Slime1.value = value/2
 			get_parent().add_child(Slime1)
+			Slime1.connect("dead", self, "_on_Slime_dead", [Slime1.value])
+			#set-up second slime
 			var Slime2 = slime.instance()
 			Slime2.position.x = position.x - 10
 			Slime2.position.y = position.y
@@ -79,7 +84,7 @@ func _on_SlimeSheet_animation_finished():
 			Slime2.color_index = color_index + 1
 			Slime2.split = true
 			Slime2.value = value/2
-			print (Slime2.value)
 			get_parent().add_child(Slime2)
+			Slime2.connect("dead", self, "_on_Slime_dead", [Slime2.value])
 		queue_free()
 #Small slimes are not giving points...

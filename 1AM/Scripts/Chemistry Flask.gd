@@ -7,7 +7,7 @@ var rotSpeed = 10
 var hasGone = false
 var gravity = 20
 var color
-var damage = 20
+var damage = 25
 const floorSplash = preload("res://Image_Imports/Splash0.png")
 const wallSplash = preload("res://Image_Imports/Splash01.png")
 
@@ -62,10 +62,6 @@ func splash(splash):
 
 func _on_AudioStreamPlayer2D_finished():
 	queue_free()
-
-
-#We need some way to detect when the flask goes into the fall-zone (that will queue_free)
-
 
 func _on_Area2D_body_entered(body):
 	if body.get_collision_layer() == 4:

@@ -21,7 +21,6 @@ font_data = ExtResource( 10 )
 [node name="Node2D" type="Node2D"]
 position = Vector2( 0, 230 )
 script = ExtResource( 5 )
-OBJPTS = 15000
 SPAWNY = 600
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
@@ -117,7 +116,7 @@ margin_bottom = 637.0
 rect_pivot_offset = Vector2( 981, -132 )
 custom_colors/font_color = Color( 1, 0.678431, 0, 1 )
 custom_fonts/font = SubResource( 2 )
-text = "Score  15000 Points 
+text = "Score  10000 Points 
 before  Finishing  the  Level!"
 
 [connection signal="dead" from="Crabs/Crab" to="Score" method="_on_Crab_dead"]
