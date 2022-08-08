@@ -23,7 +23,12 @@ func _on_MultMan_dead(value):
 	_ready()
 
 #EnglishMobs
-
+func _on_Golem_dead(value):
+	points += value
+	_ready()
+#func _on_Minotaur_dead(value):
+#	points += value
+#	_ready()
 #ArtMobs
 func _on_Statue_dead(value):
 	points += value
@@ -38,8 +43,3 @@ func _on_Crab_dead(value):
 func _on_Slime_dead(value):
 	points += value
 	_ready()
-
-
-
-
-
