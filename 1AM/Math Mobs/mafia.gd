@@ -2,11 +2,13 @@ extends KinematicBody2D
 
 const GRAVITY = 110
 const SPEED = 100
+const value = 500
 const Bullet = preload ("res://Enemies//Spit.tscn")
 var health = 100
 var velocity = Vector2()
 var direction = -1
 var damage = 10
+signal dead
 
 func _ready():
 	$Reload.start()
@@ -20,6 +22,7 @@ func _physics_process(_delta):
 			direction = direction * -1
 		velocity = move_and_slide(velocity, Vector2.UP)
 	elif health <= 0:
+		emit_signal("dead", value)
 		queue_free()
 
 

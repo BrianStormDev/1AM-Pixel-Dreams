@@ -19,7 +19,7 @@ var on_ground = false
 
 #UI Variables
 var health = 100
-onready var health_bar = get_node("../HUD/HealthBar")
+onready var health_bar = get_node("../HealthBar/HealthBar")
 
 
 #camera Variables
@@ -114,6 +114,7 @@ func _physics_process(_delta):
 
 func _on_Rest_timeout():
 	set_collision_layer_bit(1, false)
+	set_collision_mask_bit(3, false)
 
 func die():
 	set_collision_layer_bit(1, true)
@@ -138,6 +139,7 @@ func ouch(var enemyposx, var damage):
 	Input.action_release("left")
 	Input.action_release("right")
 	set_collision_layer_bit(1, true)
+	set_collision_mask_bit(3, true)
 	$Rest.start()
 	for i in 4:
 		set_modulate(Color(1,0.3,0.3,0.3))

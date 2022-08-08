@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environments/ArtGallery/ArtLevel.tscn" type="PackedScene" id=2]
@@ -7,9 +7,16 @@
 [ext_resource path="res://Scripts/Tutorial.gd" type="Script" id=5]
 [ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Enemies/Statue.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Enemies/Weeping Angel.tscn" type="PackedScene" id=8]
+[ext_resource path="res://UI/Score.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Fonts/ARCADECLASSIC.TTF" type="DynamicFontData" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 130.5, 509.5 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 10 )
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 0, 230 )
@@ -39,17 +46,106 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CanvasLayer" parent="." instance=ExtResource( 4 )]
+[node name="Statues" type="Node2D" parent="."]
 
-[node name="Control" parent="." instance=ExtResource( 6 )]
-
-[node name="Enemies" type="Node2D" parent="."]
-
-[node name="Statue" parent="Enemies" instance=ExtResource( 7 )]
-position = Vector2( 424, 662 )
+[node name="Statue1" parent="Statues" instance=ExtResource( 7 )]
+position = Vector2( 606, 548 )
 scale = Vector2( 1.75, 1.75 )
 direction = -1
 
-[node name="HUD" parent="." instance=ExtResource( 6 )]
+[node name="Statue2" parent="Statues" instance=ExtResource( 7 )]
+position = Vector2( 240, 308 )
+scale = Vector2( 1.75, 1.75 )
+direction = -1
+
+[node name="Statue3" parent="Statues" instance=ExtResource( 7 )]
+position = Vector2( 116, 529 )
+scale = Vector2( 1.75, 1.75 )
+direction = -1
+
+[node name="Statue4" parent="Statues" instance=ExtResource( 7 )]
+position = Vector2( 1185, 172 )
+scale = Vector2( 1.75, 1.75 )
+direction = -1
+
+[node name="Statue5" parent="Statues" instance=ExtResource( 7 )]
+position = Vector2( 871, 75 )
+scale = Vector2( 1.75, 1.75 )
+direction = -1
+
+[node name="Statue6" parent="Statues" instance=ExtResource( 7 )]
+position = Vector2( 1694, 495 )
+scale = Vector2( 1.75, 1.75 )
+direction = -1
+
+[node name="Statue7" parent="Statues" instance=ExtResource( 7 )]
+position = Vector2( 2118, 268 )
+scale = Vector2( 1.75, 1.75 )
+direction = -1
+
+[node name="Statue8" parent="Statues" instance=ExtResource( 7 )]
+position = Vector2( 2656, 611 )
+scale = Vector2( 1.75, 1.75 )
+direction = -1
+
+[node name="Angels" type="Node2D" parent="."]
+
+[node name="Angel1" parent="Angels" instance=ExtResource( 8 )]
+position = Vector2( 1872, 683 )
+scale = Vector2( 2.5, 2.5 )
+direction = -1
+
+[node name="Angel2" parent="Angels" instance=ExtResource( 8 )]
+position = Vector2( 1260, 49 )
+scale = Vector2( 2.5, 2.5 )
+
+[node name="Angel3" parent="Angels" instance=ExtResource( 8 )]
+position = Vector2( 2217, 685 )
+scale = Vector2( 2.5, 2.5 )
+
+[node name="Angel4" parent="Angels" instance=ExtResource( 8 )]
+position = Vector2( 2932, 286 )
+scale = Vector2( 2.5, 2.5 )
+
+[node name="Angel5" parent="Angels" instance=ExtResource( 8 )]
+position = Vector2( 1212, 780 )
+scale = Vector2( 2.5, 2.5 )
+direction = -1
+
+[node name="Angel6" parent="Angels" instance=ExtResource( 8 )]
+position = Vector2( 2645, -7.99994 )
+scale = Vector2( 2.5, 2.5 )
+
+[node name="PauseMenu" parent="." instance=ExtResource( 4 )]
+
+[node name="HealthBar" parent="." instance=ExtResource( 6 )]
+
+[node name="Score" parent="." instance=ExtResource( 9 )]
+
+[node name="Label16" type="Label" parent="."]
+show_behind_parent = true
+margin_left = 216.0
+margin_top = 647.0
+margin_right = 837.0
+margin_bottom = 732.0
+rect_pivot_offset = Vector2( 981, -132 )
+custom_colors/font_color = Color( 1, 0.678431, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Score  10000 Points 
+before  Finishing  the  Level!"
 
 [connection signal="body_entered" from="Finish" to="." method="_on_Finish_body_entered"]
+[connection signal="dead" from="Statues/Statue1" to="Score" method="_on_Statue_dead"]
+[connection signal="dead" from="Statues/Statue2" to="Score" method="_on_Statue_dead"]
+[connection signal="dead" from="Statues/Statue3" to="Score" method="_on_Statue_dead"]
+[connection signal="dead" from="Statues/Statue4" to="Score" method="_on_Statue_dead"]
+[connection signal="dead" from="Statues/Statue5" to="Score" method="_on_Statue_dead"]
+[connection signal="dead" from="Statues/Statue6" to="Score" method="_on_Statue_dead"]
+[connection signal="dead" from="Statues/Statue7" to="Score" method="_on_Statue_dead"]
+[connection signal="dead" from="Statues/Statue8" to="Score" method="_on_Statue_dead"]
+[connection signal="dead" from="Angels/Angel1" to="Score" method="_on_Weeping_Angel_dead"]
+[connection signal="dead" from="Angels/Angel2" to="Score" method="_on_Weeping_Angel_dead"]
+[connection signal="dead" from="Angels/Angel3" to="Score" method="_on_Weeping_Angel_dead"]
+[connection signal="dead" from="Angels/Angel4" to="Score" method="_on_Weeping_Angel_dead"]
+[connection signal="dead" from="Angels/Angel5" to="Score" method="_on_Weeping_Angel_dead"]
+[connection signal="dead" from="Angels/Angel6" to="Score" method="_on_Weeping_Angel_dead"]
