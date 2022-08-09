@@ -24,7 +24,6 @@ font_data = ExtResource( 10 )
 [node name="Node2D" type="Node2D"]
 position = Vector2( 0, 230 )
 script = ExtResource( 5 )
-OBJPTS = 15000
 SPAWNY = 600
 SPAWNF = 100
 
@@ -52,7 +51,13 @@ direction = -1
 position = Vector2( 7930, 600 )
 
 [node name="Crab4" parent="Crabs" instance=ExtResource( 3 )]
-position = Vector2( 11155, 600 )
+position = Vector2( 12816, 442 )
+
+[node name="Crab5" parent="Crabs" instance=ExtResource( 3 )]
+position = Vector2( 11924, 439 )
+
+[node name="Crab6" parent="Crabs" instance=ExtResource( 3 )]
+position = Vector2( 9798, 286 )
 
 [node name="Slimes" type="Node2D" parent="."]
 
@@ -138,6 +143,8 @@ before  Finishing  the  Level!"
 [connection signal="dead" from="Crabs/Crab2" to="Score" method="_on_Crab_dead"]
 [connection signal="dead" from="Crabs/Crab3" to="Score" method="_on_Crab_dead"]
 [connection signal="dead" from="Crabs/Crab4" to="Score" method="_on_Crab_dead"]
+[connection signal="dead" from="Crabs/Crab5" to="Score" method="_on_Crab_dead"]
+[connection signal="dead" from="Crabs/Crab6" to="Score" method="_on_Crab_dead"]
 [connection signal="dead" from="Slimes/Green1" to="Score" method="_on_Slime_dead"]
 [connection signal="dead" from="Slimes/Green2" to="Score" method="_on_Slime_dead"]
 [connection signal="dead" from="Slimes/Green3" to="Score" method="_on_Slime_dead"]
