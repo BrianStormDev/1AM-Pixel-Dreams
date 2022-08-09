@@ -26,9 +26,10 @@ func _on_MultMan_dead(value):
 func _on_Golem_dead(value):
 	points += value
 	_ready()
-#func _on_Minotaur_dead(value):
-#	points += value
-#	_ready()
+func _on_Minotaur_dead(value):
+	points += value
+	_ready()
+
 #ArtMobs
 func _on_Statue_dead(value):
 	points += value

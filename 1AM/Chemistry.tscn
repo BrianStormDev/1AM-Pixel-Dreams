@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environments/Chemistry/Chemistry Game.tscn" type="PackedScene" id=2]
@@ -14,6 +14,9 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 7279.5, 289 )
 
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 130.5, 509.5 )
+
 [sub_resource type="DynamicFont" id=2]
 size = 40
 font_data = ExtResource( 10 )
@@ -23,6 +26,7 @@ position = Vector2( 0, 230 )
 script = ExtResource( 5 )
 OBJPTS = 15000
 SPAWNY = 600
+SPAWNF = 100
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 252, 302 )
@@ -82,7 +86,7 @@ position = Vector2( 5068, 271 )
 color_index = 2
 
 [node name="Red2" parent="Slimes" instance=ExtResource( 6 )]
-position = Vector2( 7761, 438 )
+position = Vector2( 7738, 443 )
 color_index = 2
 
 [node name="Red3" parent="Slimes" instance=ExtResource( 6 )]
@@ -101,6 +105,16 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 6102.5, 1302 )
 shape = SubResource( 1 )
+
+[node name="Finish" type="Area2D" parent="."]
+position = Vector2( 13379, 495 )
+collision_layer = 8
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Finish"]
+shape = SubResource( 3 )
 
 [node name="PauseMenu" parent="." instance=ExtResource( 7 )]
 
@@ -136,3 +150,4 @@ before  Finishing  the  Level!"
 [connection signal="dead" from="Slimes/Red3" to="Score" method="_on_Slime_dead"]
 [connection signal="dead" from="Slimes/Red4" to="Score" method="_on_Slime_dead"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Finish" to="." method="_on_Finish_body_entered"]
