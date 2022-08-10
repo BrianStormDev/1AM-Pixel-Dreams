@@ -30,7 +30,7 @@ export var left_limit = 0
 
 #audio variables
 onready var Music = $BGMusic
-export var bgmusic = preload("res://SFX_Imports/bensound-funkyelement.mp3")
+export var bgmusic = preload("res://SFX_Imports/1. Palm Tree Shade.mp3")
 
 #timer variables
 export var reload_time = 0.5

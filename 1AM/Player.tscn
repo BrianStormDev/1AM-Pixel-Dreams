@@ -11,7 +11,7 @@
 [ext_resource path="res://Animations/Falling/Falling.png" type="Texture" id=9]
 [ext_resource path="res://Image_Imports/Run and Throw.png" type="Texture" id=10]
 [ext_resource path="res://SFX_Imports/umbrella.mp3" type="AudioStream" id=11]
-[ext_resource path="res://SFX_Imports/bensound-funkyelement.mp3" type="AudioStream" id=12]
+[ext_resource path="res://SFX_Imports/1. Palm Tree Shade.mp3" type="AudioStream" id=12]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 10.4
@@ -39,16 +39,6 @@ region = Rect2( 96, 0, 32, 37 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 4 ) ],
-"loop": true,
-"name": "RUN",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 3 ) ],
-"loop": true,
-"name": "IDLE",
-"speed": 5.0
-}, {
 "frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
 "loop": true,
 "name": "RUN&THROW",
@@ -63,6 +53,16 @@ animations = [ {
 "loop": true,
 "name": "THROW",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "IDLE",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "RUN",
+"speed": 10.0
 } ]
 
 [node name="Player" type="KinematicBody2D"]
