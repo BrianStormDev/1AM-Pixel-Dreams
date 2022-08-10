@@ -18,7 +18,7 @@ shape = SubResource( 1 )
 texture = ExtResource( 1 )
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.3
+wait_time = 0.2
 one_shot = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
