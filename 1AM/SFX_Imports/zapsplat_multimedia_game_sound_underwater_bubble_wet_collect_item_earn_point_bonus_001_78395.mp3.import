@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapsplat_multimedia_game_sound_underwater_bubble_wet_collect_item_earn_point_bonus_001_78395.mp3-3eb57bf37b9a292de13be8a4ae0c4742.mp3str"
+
+[deps]
+
+source_file="res://SFX_Imports/zapsplat_multimedia_game_sound_underwater_bubble_wet_collect_item_earn_point_bonus_001_78395.mp3"
+dest_files=[ "res://.import/zapsplat_multimedia_game_sound_underwater_bubble_wet_collect_item_earn_point_bonus_001_78395.mp3-3eb57bf37b9a292de13be8a4ae0c4742.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
