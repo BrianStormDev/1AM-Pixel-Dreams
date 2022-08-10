@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Scripts/Levels.gd" type="Script" id=1]
 [ext_resource path="res://Fonts/SpaceMono-Bold.ttf" type="DynamicFontData" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Image_Imports/Screen Shot 2022-07-23 at 4.43.43 PM.png" type="Texture" id=6]
 [ext_resource path="res://Image_Imports/Screen Shot 2022-07-23 at 4.45.02 PM.png" type="Texture" id=7]
 [ext_resource path="res://Image_Imports/Screen Shot 2022-08-10 at 1.56.13 PM.png" type="Texture" id=8]
+[ext_resource path="res://SFX_Imports/6. Chilling Monkey.mp3" type="AudioStream" id=9]
 
 [sub_resource type="Theme" id=1]
 
@@ -165,6 +166,10 @@ margin_right = 933.0
 margin_bottom = 503.0
 texture = ExtResource( 7 )
 expand = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+autoplay = true
 
 [connection signal="pressed" from="Levels/Background/L0" to="Levels" method="_on_L0_pressed"]
 [connection signal="pressed" from="Levels/Background/L1" to="Levels" method="_on_L1_pressed"]
