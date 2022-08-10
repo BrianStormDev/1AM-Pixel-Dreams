@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environments/English/Game Eng.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://UI/Score.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Enemies/Golem.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Enemies/Minotaur.tscn" type="PackedScene" id=10]
+[ext_resource path="res://SFX_Imports/14. The Riff.mp3" type="AudioStream" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 6697, 122.5 )
@@ -33,9 +34,9 @@ scale = Vector2( 2, 2 )
 weapon = ExtResource( 3 )
 GRAVITY = 30
 MAXSPEED = 300
-JUMPFORCE = 750
+JUMPFORCE = 850
 top_limit = 235
-bgmusic = null
+bgmusic = ExtResource( 11 )
 
 [node name="Game Eng" parent="." instance=ExtResource( 2 )]
 z_index = -1

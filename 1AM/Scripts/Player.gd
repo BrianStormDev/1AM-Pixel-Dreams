@@ -10,7 +10,7 @@ export var weapon = preload("res://Weapons//Paper Shuriken.tscn")
 export var GRAVITY = 100
 export var MAXFALLSPEED = 400
 export var MAXSPEED = 250
-export var JUMPFORCE = 600
+export var JUMPFORCE = 800
 var ACCEL = 50
 var motion = Vector2()
 var facing_right = true
@@ -118,7 +118,7 @@ func _on_Rest_timeout():
 
 func die():
 	set_collision_layer_bit(1, true)
-	get_tree().change_scene("res://UI/GameOver.tscn")
+	var _gameover = get_tree().change_scene("res://UI/GameOver.tscn")
 
 func move_and_fall():
 	motion.y += GRAVITY

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environments/MathCity/MathLevel.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=8]
 [ext_resource path="res://UI/Score.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Fonts/ARCADECLASSIC.TTF" type="DynamicFontData" id=10]
+[ext_resource path="res://SFX_Imports/2. Bim Bom Bomp.mp3" type="AudioStream" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1758.5, 179 )
@@ -33,6 +34,7 @@ GRAVITY = 30
 JUMPFORCE = 700
 top_limit = 230
 right_limit = 3200
+bgmusic = ExtResource( 11 )
 
 [node name="EnvLevel" parent="." instance=ExtResource( 2 )]
 

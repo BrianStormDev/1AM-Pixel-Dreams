@@ -34,7 +34,6 @@ OBJPTS = 5000
 position = Vector2( 174, 189 )
 scale = Vector2( 2, 2 )
 GRAVITY = 30
-JUMPFORCE = 700
 top_limit = 230
 bgmusic = ExtResource( 10 )
 

@@ -21,7 +21,7 @@ func _ready(): #Responds to what direction the enemy is initialized to face
 	if direction == -1:
 		scale.x = -scale.x
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	#Flips enemy if it touches wall or reaches cliff
 	if is_on_wall() or not $floor_checker.is_colliding() and is_on_floor():
 		scale.x = -scale.x 

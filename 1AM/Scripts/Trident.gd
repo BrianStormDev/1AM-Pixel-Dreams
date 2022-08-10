@@ -12,7 +12,7 @@ func _ready():
 	var flip = false if direction==1 else true
 	$Sprite.flip_v = flip
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if is_on_wall():
 		queue_free()
 	velocity = move_and_slide(velocity, Vector2.UP)

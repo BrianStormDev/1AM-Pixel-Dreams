@@ -19,7 +19,7 @@ func _ready():
 	$Timer.start()
 
 func _physics_process(_delta):
-	move_and_slide(aim_direction * speed * direction)
+	var _move = move_and_slide(aim_direction * speed * direction)
 	if is_on_wall():
 		splat()
 

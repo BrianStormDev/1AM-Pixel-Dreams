@@ -29,7 +29,7 @@ func dead():
 	$movement/Area2D.set_monitoring(false) 
 	$attack/Area2D.set_monitoring(false)
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	#Flips enemy if it touches wall or reaches cliff
 	if is_on_wall() or not $floor_checker.is_colliding() and is_on_floor():
 		scale.x = -scale.x 

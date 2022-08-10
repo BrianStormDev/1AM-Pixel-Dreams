@@ -20,7 +20,7 @@ func _ready():
 	if direction == 1:
 		$Sprite.flip_h = !$Sprite.flip_h
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if health > 0:
 		velocity.x = speed * direction
 		velocity.y += GRAVITY

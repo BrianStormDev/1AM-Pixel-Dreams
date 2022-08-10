@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environments/Chemistry/Chemistry Game.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=8]
 [ext_resource path="res://UI/Score.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Fonts/ARCADECLASSIC.TTF" type="DynamicFontData" id=10]
+[ext_resource path="res://SFX_Imports/1. Palm Tree Shade.mp3" type="AudioStream" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 7279.5, 289 )
@@ -35,6 +36,7 @@ GRAVITY = 25
 JUMPFORCE = 750
 top_limit = 230
 right_limit = 13250
+bgmusic = ExtResource( 11 )
 
 [node name="Game" parent="." instance=ExtResource( 2 )]
 
@@ -51,7 +53,7 @@ direction = -1
 position = Vector2( 7930, 600 )
 
 [node name="Crab4" parent="Crabs" instance=ExtResource( 3 )]
-position = Vector2( 12816, 442 )
+position = Vector2( 11333, 590 )
 
 [node name="Crab5" parent="Crabs" instance=ExtResource( 3 )]
 position = Vector2( 11924, 439 )

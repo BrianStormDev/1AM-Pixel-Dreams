@@ -15,7 +15,7 @@ func _on_Area2D_body_entered(body):
 
 func _on_Finish_body_entered(body):
 	if int($Score/Points.text) >= OBJPTS:
-		get_tree().change_scene("res://UI//StageCleared.tscn")
+		var _clear = get_tree().change_scene("res://UI//StageCleared.tscn")
 	else:
 		body.position.x = SPAWNX
 		body.position.y = SPAWNY

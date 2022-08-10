@@ -7,7 +7,7 @@ const value = 500
 export var speed = 200
 export var direction = -1
 export var switch_time = 6
-const BOMB = preload("res://Enemies//Bomb.tscn")
+const BOMB = preload("res://Enemies/Bomb.tscn")
 signal dead
 
 func _ready():

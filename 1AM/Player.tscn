@@ -44,6 +44,11 @@ animations = [ {
 "name": "RUN",
 "speed": 10.0
 }, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "IDLE",
+"speed": 5.0
+}, {
 "frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
 "loop": true,
 "name": "RUN&THROW",
@@ -57,11 +62,6 @@ animations = [ {
 "frames": [ ExtResource( 1 ) ],
 "loop": true,
 "name": "THROW",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 3 ) ],
-"loop": true,
-"name": "IDLE",
 "speed": 5.0
 } ]
 
@@ -100,14 +100,15 @@ one_shot = true
 
 [node name="Hurt" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 11 )
+volume_db = 10.0
 
 [node name="BGMusic" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 12 )
-volume_db = -20.0
 autoplay = true
 area_mask = 0
 
 [node name="Jump" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 7 )
+volume_db = 20.0
 
 [connection signal="timeout" from="Rest" to="." method="_on_Rest_timeout"]
