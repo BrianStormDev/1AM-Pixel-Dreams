@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Scripts/Levels.gd" type="Script" id=1]
 [ext_resource path="res://Fonts/SpaceMono-Bold.ttf" type="DynamicFontData" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Image_Imports/Screen Shot 2022-07-23 at 4.41.16 PM.png" type="Texture" id=5]
 [ext_resource path="res://Image_Imports/Screen Shot 2022-07-23 at 4.43.43 PM.png" type="Texture" id=6]
 [ext_resource path="res://Image_Imports/Screen Shot 2022-07-23 at 4.45.02 PM.png" type="Texture" id=7]
+[ext_resource path="res://Image_Imports/Screen Shot 2022-08-10 at 1.56.13 PM.png" type="Texture" id=8]
 
 [sub_resource type="Theme" id=1]
 
@@ -134,11 +135,19 @@ texture = ExtResource( 4 )
 expand = true
 
 [node name="L1 Thumb" type="TextureRect" parent="Levels/Background"]
-margin_left = 345.0
+margin_left = 346.0
 margin_top = 129.0
-margin_right = 617.0
+margin_right = 618.0
 margin_bottom = 287.0
 texture = ExtResource( 5 )
+expand = true
+
+[node name="L2 Thumb" type="TextureRect" parent="Levels/Background"]
+margin_left = 650.0
+margin_top = 128.0
+margin_right = 1012.0
+margin_bottom = 286.0
+texture = ExtResource( 8 )
 expand = true
 
 [node name="L3 Thumb" type="TextureRect" parent="Levels/Background"]
