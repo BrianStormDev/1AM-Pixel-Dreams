@@ -5,7 +5,7 @@ const SPEED = 100
 const value = 1000
 const Spit = preload("res://Enemies//Spit.tscn")
 
-var damage = 10
+var damage = 20
 var velocity = Vector2()
 var health = 100
 var direction = -1

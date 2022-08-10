@@ -7,7 +7,7 @@ const Bullet = preload ("res://Enemies//Spit.tscn")
 var health = 100
 var velocity = Vector2()
 var direction = -1
-var damage = 10
+var damage = 20
 signal dead
 
 func _ready():
