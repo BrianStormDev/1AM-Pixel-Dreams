@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environments/ArtGallery/ArtLevel.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://UI/Score.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Fonts/ARCADECLASSIC.TTF" type="DynamicFontData" id=10]
 [ext_resource path="res://SFX_Imports/16. Comatose Dreams.mp3" type="AudioStream" id=11]
+[ext_resource path="res://Pickups/Fruit.tscn" type="PackedScene" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 130.5, 509.5 )
@@ -28,12 +29,28 @@ position = Vector2( 78, 826 )
 scale = Vector2( 2, 2 )
 weapon = ExtResource( 3 )
 GRAVITY = 30
-JUMPFORCE = 800
 top_limit = 230
 right_limit = 3200
 bgmusic = ExtResource( 11 )
 
-[node name="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Env" parent="." instance=ExtResource( 2 )]
+
+[node name="Fruits" type="Node2D" parent="."]
+
+[node name="Fruit" parent="Fruits" instance=ExtResource( 12 )]
+position = Vector2( 1583, 97 )
+
+[node name="Fruit2" parent="Fruits" instance=ExtResource( 12 )]
+position = Vector2( 68, 258 )
+
+[node name="Fruit3" parent="Fruits" instance=ExtResource( 12 )]
+position = Vector2( 877, 122 )
+
+[node name="Fruit4" parent="Fruits" instance=ExtResource( 12 )]
+position = Vector2( 2425, 186 )
+
+[node name="Fruit5" parent="Fruits" instance=ExtResource( 12 )]
+position = Vector2( 3068, 101 )
 
 [node name="Finish" type="Area2D" parent="."]
 position = Vector2( 3308, 393 )
