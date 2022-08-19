@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scripts/GameOver.gd" type="Script" id=1]
+[ext_resource path="res://SFX_Imports/esm_8_bit_game_over_1_arcade_80s_simple_alert_notification_game.mp3" type="AudioStream" id=2]
 [ext_resource path="res://UI/Game Over.png" type="Texture" id=3]
 [ext_resource path="res://Fonts/ARCADECLASSIC.TTF" type="DynamicFontData" id=4]
 
@@ -37,5 +38,10 @@ theme = SubResource( 4 )
 custom_colors/font_color_hover = Color( 1, 0, 0.188235, 1 )
 text = "Go  to  level  select"
 flat = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+volume_db = -10.0
+autoplay = true
 
 [connection signal="pressed" from="MainMenuButton" to="." method="_on_MainMenuButton_pressed"]

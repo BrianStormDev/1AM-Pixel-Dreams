@@ -19,8 +19,5 @@ func _on_Resume_pressed():
 	self.is_paused = false
 	get_tree().paused = false
 
-
 func _on_Quit_pressed():
 	var _levels = get_tree().change_scene("res://UI//levels.tscn")
-	#get_tree().quit
-

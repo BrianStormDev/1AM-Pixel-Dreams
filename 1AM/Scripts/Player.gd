@@ -133,9 +133,9 @@ func ouch(var enemyposx, var damage):
 	set_modulate(Color(1,0.3,0.3,0.3))
 	motion.y = -500
 	if position.x < enemyposx:
-		motion.x = -800
+		motion.x = -1000
 	elif position.x > enemyposx:
-		motion.x = 800
+		motion.x = 1000
 	Input.action_release("left")
 	Input.action_release("right")
 	set_collision_layer_bit(1, true)
