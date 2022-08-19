@@ -8,7 +8,7 @@ My name is Brian Leong and I am one of the Project Managers for one of the group
 This project was started sometime around February, and it initially started with 16 members.
 However, college and personal deals got in the way of many members from being able to contribute
 to the project, as a matter of fact, some members just dissappeared during our beginning phases without notification.
-For about 16 weeks, me and the other Project Manager, Angie L, were able to work with about 8 people (including us) 
+For about 16 weeks, me and the other Project Manager, Angie Le, were able to work with about 8 people (including us) 
 to get this project together.
 As of recently, many of our members have had summer classes, so progress is slowing further with only about
 4 people working on the project.
