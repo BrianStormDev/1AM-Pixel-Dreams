@@ -5,6 +5,10 @@ export var SPAWNX = 100
 export var SPAWNY = 800
 export var SPAWNF = 400
 
+func _ready():
+	for _fruit in $Fruits.get_children():
+		_fruit.connect("collected", $Score, "_on_Fruit_collected")
+
 func _on_Area2D_body_entered(body):
 	if body.get_collision_layer() == 1:
 		body.ouch(position.x, damage)
