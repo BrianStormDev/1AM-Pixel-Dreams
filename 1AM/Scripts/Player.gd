@@ -7,11 +7,11 @@ var state = States.AIR
 export var weapon = preload("res://Weapons//Paper Shuriken.tscn")
 
 #Movement variables
-export var GRAVITY = 20
-export var MAXFALLSPEED = 200
+export var GRAVITY = 100
+export var MAXFALLSPEED = 400
 export var MAXSPEED = 250
-export var JUMPFORCE = 650
-var ACCEL = 10
+export var JUMPFORCE = 800
+var ACCEL = 50
 var motion = Vector2()
 var facing_right = true
 var jump_count = 0
@@ -19,7 +19,7 @@ var on_ground = false
 
 #UI Variables
 var health = 100
-onready var health_bar = get_node("../HUD/HealthBar")
+onready var health_bar = get_node("../HealthBar/HealthBar")
 
 
 #camera Variables
@@ -30,7 +30,7 @@ export var left_limit = 0
 
 #audio variables
 onready var Music = $BGMusic
-export var bgmusic = preload("res://SFX_Imports/bensound-funkyelement.mp3")
+export var bgmusic = preload("res://SFX_Imports/1. Palm Tree Shade.mp3")
 
 #timer variables
 export var reload_time = 0.5
@@ -114,10 +114,11 @@ func _physics_process(_delta):
 
 func _on_Rest_timeout():
 	set_collision_layer_bit(1, false)
+	set_collision_mask_bit(3, false)
 
 func die():
 	set_collision_layer_bit(1, true)
-	get_tree().change_scene("res://UI/GameOver.tscn")
+	var _gameover = get_tree().change_scene("res://UI/GameOver.tscn")
 
 func move_and_fall():
 	motion.y += GRAVITY
@@ -138,6 +139,7 @@ func ouch(var enemyposx, var damage):
 	Input.action_release("left")
 	Input.action_release("right")
 	set_collision_layer_bit(1, true)
+	set_collision_mask_bit(3, true)
 	$Rest.start()
 	for i in 4:
 		set_modulate(Color(1,0.3,0.3,0.3))

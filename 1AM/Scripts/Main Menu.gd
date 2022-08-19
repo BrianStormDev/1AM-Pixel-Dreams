@@ -21,6 +21,6 @@ func _on_Resume_pressed():
 
 
 func _on_Quit_pressed():
-	get_tree().change_scene("res://UI//levels.tscn")
+	var _levels = get_tree().change_scene("res://UI//levels.tscn")
 	#get_tree().quit
 

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/16. Comatose Dreams.mp3-38de16402c16185651db0d433c2cdae6.mp3str"
+
+[deps]
+
+source_file="res://SFX_Imports/16. Comatose Dreams.mp3"
+dest_files=[ "res://.import/16. Comatose Dreams.mp3-38de16402c16185651db0d433c2cdae6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

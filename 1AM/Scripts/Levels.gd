@@ -14,25 +14,23 @@ func set_Paused(value):
 
 func _on_L0_pressed():
 	get_tree().paused = false
-	get_tree().change_scene("res://Tutorial.tscn")
+	var _tutorial = get_tree().change_scene("res://Tutorial.tscn")
 
 func _on_L1_pressed():
 	get_tree().paused = false
-	get_tree().change_scene("res://Math.tscn")
-
+	var _math = get_tree().change_scene("res://Math.tscn")
 
 func _on_L2_pressed():
 	get_tree().paused = false
-	get_tree().change_scene("res://English.tscn")
+	var _english = get_tree().change_scene("res://English.tscn")
 
 func _on_L3_pressed():
 	get_tree().paused = false
-	get_tree().change_scene("res://Art.tscn")
-
+	var _art = get_tree().change_scene("res://Art.tscn")
 
 func _on_L4_pressed():
 	get_tree().paused = false
-	get_tree().change_scene("res://Chemistry.tscn")
+	var _chemistry = get_tree().change_scene("res://Chemistry.tscn")
 
 func _on_Quit_pressed():
 	get_tree().quit()

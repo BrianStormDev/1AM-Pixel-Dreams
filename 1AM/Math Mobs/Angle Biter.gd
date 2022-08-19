@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 const GRAVITY = 110
 const SPEED = 100
+const value = 250
 export var damage = 30
 export var health = 100
 export var direction = 1
@@ -26,6 +27,7 @@ func _physics_process(_delta):
 	elif health <= 0:
 		velocity.x = 0
 		set_collision_layer_bit(4, true)
+		$Area2D/CollisionShape2D.disabled = true
 		$AnimationPlayer.play("dead")
 	
 func _on_Area2D_body_entered(body):
@@ -41,3 +43,4 @@ func _on_Area2D_body_entered(body):
 func _on_AnimationPlayer_animation_finished(_anim_name):
 	if _anim_name == "dead":
 		queue_free()
+	emit_signal("dead", value)

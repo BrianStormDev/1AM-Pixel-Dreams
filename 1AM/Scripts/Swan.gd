@@ -3,8 +3,10 @@ extends KinematicBody2D
 var velocity = Vector2()
 var health = 100
 var damage = 20
+const value = 250
 export var direction = 1
 export var speed = 50
+signal dead
 
 func _ready():
 	if direction == -1:
@@ -21,6 +23,7 @@ func _process(_delta):
 	velocity = move_and_slide(velocity, Vector2.UP)
 	
 	if health <= 0:
+		emit_signal("dead", value)
 		queue_free()
 
 func _on_Area2D_body_entered(body):

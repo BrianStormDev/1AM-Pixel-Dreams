@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environments/MathCity/MathLevel.tscn" type="PackedScene" id=2]
@@ -8,6 +8,9 @@
 [ext_resource path="res://Enemies/MultMan.tscn" type="PackedScene" id=6]
 [ext_resource path="res://UI/main menu.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=8]
+[ext_resource path="res://UI/Score.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Fonts/ARCADECLASSIC.TTF" type="DynamicFontData" id=10]
+[ext_resource path="res://SFX_Imports/2. Bim Bom Bomp.mp3" type="AudioStream" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1758.5, 179 )
@@ -15,9 +18,14 @@ extents = Vector2( 1758.5, 179 )
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 130.5, 486 )
 
+[sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 10 )
+
 [node name="Node2D" type="Node2D"]
 position = Vector2( 0, 230 )
 script = ExtResource( 5 )
+OBJPTS = 7500
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 27, 843 )
@@ -26,64 +34,65 @@ GRAVITY = 30
 JUMPFORCE = 700
 top_limit = 230
 right_limit = 3200
+bgmusic = ExtResource( 11 )
 
 [node name="EnvLevel" parent="." instance=ExtResource( 2 )]
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="Angle Biters" type="Node2D" parent="."]
 
-[node name="Angle Biter" parent="Node2D" instance=ExtResource( 3 )]
+[node name="Angle Biter" parent="Angle Biters" instance=ExtResource( 3 )]
 position = Vector2( 443, 719 )
 
-[node name="mafia1" parent="Node2D" instance=ExtResource( 4 )]
+[node name="Angle Biter2" parent="Angle Biters" instance=ExtResource( 3 )]
+position = Vector2( 389, 184 )
+direction = -1
+
+[node name="Angle Biter3" parent="Angle Biters" instance=ExtResource( 3 )]
+position = Vector2( 2976, 37 )
+
+[node name="Angle Biter4" parent="Angle Biters" instance=ExtResource( 3 )]
+position = Vector2( 2072, 345 )
+
+[node name="Angle Biter5" parent="Angle Biters" instance=ExtResource( 3 )]
+position = Vector2( 1920, 632 )
+direction = -1
+
+[node name="Angle Biter6" parent="Angle Biters" instance=ExtResource( 3 )]
+position = Vector2( 2592, 95 )
+
+[node name="Mafia" type="Node2D" parent="."]
+
+[node name="Mafia1" parent="Mafia" instance=ExtResource( 4 )]
 position = Vector2( 1030, 428 )
 
-[node name="MultMan" parent="Node2D" instance=ExtResource( 6 )]
+[node name="Mafia2" parent="Mafia" instance=ExtResource( 4 )]
+position = Vector2( 1490, 149 )
+
+[node name="Mafia3" parent="Mafia" instance=ExtResource( 4 )]
+position = Vector2( 2243, 656 )
+
+[node name="Mafia4" parent="Mafia" instance=ExtResource( 4 )]
+position = Vector2( 2470, 415 )
+
+[node name="MultMan" type="Node2D" parent="."]
+
+[node name="MultMan" parent="MultMan" instance=ExtResource( 6 )]
 position = Vector2( 2334, 578 )
 
-[node name="MultMan2" parent="Node2D" instance=ExtResource( 6 )]
-position = Vector2( 912, 602 )
+[node name="MultMan2" parent="MultMan" instance=ExtResource( 6 )]
+position = Vector2( 977, 670 )
 
-[node name="Angle Biter2" parent="Node2D" instance=ExtResource( 3 )]
-position = Vector2( 389, 192 )
-direction = -1
+[node name="MultMan3" parent="MultMan" instance=ExtResource( 6 )]
+position = Vector2( 3064, 383 )
 
-[node name="mafia2" parent="Node2D" instance=ExtResource( 4 )]
-position = Vector2( 1481, 152 )
+[node name="MultMan4" parent="MultMan" instance=ExtResource( 6 )]
+position = Vector2( 2000, 149 )
 
-[node name="Angle Biter3" parent="Node2D" instance=ExtResource( 3 )]
-position = Vector2( 2969, 42 )
-
-[node name="Angle Biter4" parent="Node2D" instance=ExtResource( 3 )]
-position = Vector2( 2099, 339 )
-
-[node name="Angle Biter5" parent="Node2D" instance=ExtResource( 3 )]
-position = Vector2( 1924, 642 )
-direction = -1
-
-[node name="mafia3" parent="Node2D" instance=ExtResource( 4 )]
-position = Vector2( 2219, 666 )
-
-[node name="MultMan3" parent="Node2D" instance=ExtResource( 6 )]
-position = Vector2( 1476, 548 )
-switch_time = 2
-
-[node name="Angle Biter6" parent="Node2D" instance=ExtResource( 3 )]
-position = Vector2( 2585, 102 )
-
-[node name="MultMan4" parent="Node2D" instance=ExtResource( 6 )]
-position = Vector2( 2828, 740 )
-switch_time = 1
-
-[node name="mafia4" parent="Node2D" instance=ExtResource( 4 )]
-position = Vector2( 2471, 424 )
-
-[node name="CanvasLayer" parent="." instance=ExtResource( 7 )]
-
-[node name="Area2D" type="Area2D" parent="."]
+[node name="FallZone" type="Area2D" parent="."]
 collision_layer = 8
 collision_mask = 3
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FallZone"]
 position = Vector2( 1750.5, 1116 )
 shape = SubResource( 1 )
 
@@ -94,7 +103,37 @@ collision_layer = 8
 position = Vector2( 3325.5, 410 )
 shape = SubResource( 2 )
 
-[node name="HUD" parent="." instance=ExtResource( 8 )]
+[node name="HealthBar" parent="." instance=ExtResource( 8 )]
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[node name="Score" parent="." instance=ExtResource( 9 )]
+
+[node name="PauseMenu" parent="." instance=ExtResource( 7 )]
+
+[node name="Label16" type="Label" parent="."]
+show_behind_parent = true
+margin_left = 35.0
+margin_top = 665.0
+margin_right = 656.0
+margin_bottom = 750.0
+rect_pivot_offset = Vector2( 981, -132 )
+custom_colors/font_color = Color( 1, 0.678431, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Score  7500 Points 
+before  Finishing  the  Level!"
+
+[connection signal="dead" from="Angle Biters/Angle Biter" to="Score" method="_on_Angle_Biter_dead"]
+[connection signal="dead" from="Angle Biters/Angle Biter2" to="Score" method="_on_Angle_Biter_dead"]
+[connection signal="dead" from="Angle Biters/Angle Biter3" to="Score" method="_on_Angle_Biter_dead"]
+[connection signal="dead" from="Angle Biters/Angle Biter4" to="Score" method="_on_Angle_Biter_dead"]
+[connection signal="dead" from="Angle Biters/Angle Biter5" to="Score" method="_on_Angle_Biter_dead"]
+[connection signal="dead" from="Angle Biters/Angle Biter6" to="Score" method="_on_Angle_Biter_dead"]
+[connection signal="dead" from="Mafia/Mafia1" to="Score" method="_on_Mafia_dead"]
+[connection signal="dead" from="Mafia/Mafia2" to="Score" method="_on_Mafia_dead"]
+[connection signal="dead" from="Mafia/Mafia3" to="Score" method="_on_Mafia_dead"]
+[connection signal="dead" from="Mafia/Mafia4" to="Score" method="_on_Mafia_dead"]
+[connection signal="dead" from="MultMan/MultMan" to="Score" method="_on_MultMan_dead"]
+[connection signal="dead" from="MultMan/MultMan2" to="Score" method="_on_MultMan_dead"]
+[connection signal="dead" from="MultMan/MultMan3" to="Score" method="_on_MultMan_dead"]
+[connection signal="dead" from="MultMan/MultMan4" to="Score" method="_on_MultMan_dead"]
+[connection signal="body_entered" from="FallZone" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Finish" to="." method="_on_Finish_body_entered"]

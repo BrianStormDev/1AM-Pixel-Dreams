@@ -3,7 +3,7 @@ extends KinematicBody2D
 var SPEED = 100
 var velocity = Vector2()
 var direction = -1
-var damage = 10
+var damage = 20
 var color = "ffffff"
 var wait_time = 3
 

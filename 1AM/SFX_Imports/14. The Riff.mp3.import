@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/14. The Riff.mp3-8146a6d316ca956ec5e3d63e1b3487ac.mp3str"
+
+[deps]
+
+source_file="res://SFX_Imports/14. The Riff.mp3"
+dest_files=[ "res://.import/14. The Riff.mp3-8146a6d316ca956ec5e3d63e1b3487ac.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

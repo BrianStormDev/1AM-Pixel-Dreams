@@ -6,6 +6,8 @@ var velocity = Vector2()
 export var direction = 1
 export var health = 150
 export var speed = 100
+const value = 500
+signal dead
 
 var animation = "Swalk"
 
@@ -19,7 +21,7 @@ func _ready(): #Responds to what direction the enemy is initialized to face
 	if direction == -1:
 		scale.x = -scale.x
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	#Flips enemy if it touches wall or reaches cliff
 	if is_on_wall() or not $floor_checker.is_colliding() and is_on_floor():
 		scale.x = -scale.x 
@@ -30,7 +32,7 @@ func _physics_process(delta):
 		velocity.y += GRAVITY
 		velocity = move_and_slide(velocity, Vector2.UP)
 	elif health<=0:
-		dead();
+		dead()
 	#Plays whatever animation is loaded
 	$AnimationPlayer.play(animation)
 
@@ -59,4 +61,5 @@ func _on_AnimationPlayer_animation_finished(anim_name):
 		animation = "Swalk" 
 		damage = 20
 	elif anim_name == "dead": #If enemy has finished death animation
+		emit_signal("dead", value) #Add appropriate points
 		queue_free() #Removes entire node from tree

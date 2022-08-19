@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environments/English/Game Eng.tscn" type="PackedScene" id=2]
@@ -6,6 +6,11 @@
 [ext_resource path="res://UI/main menu.tscn" type="PackedScene" id=4]
 [ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scripts/Tutorial.gd" type="Script" id=6]
+[ext_resource path="res://Fonts/ARCADECLASSIC.TTF" type="DynamicFontData" id=7]
+[ext_resource path="res://UI/Score.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Enemies/Golem.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Enemies/Minotaur.tscn" type="PackedScene" id=10]
+[ext_resource path="res://SFX_Imports/14. The Riff.mp3" type="AudioStream" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 6697, 122.5 )
@@ -13,9 +18,15 @@ extents = Vector2( 6697, 122.5 )
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 130.5, 509.5 )
 
+[sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 7 )
+
 [node name="Node2D" type="Node2D"]
 position = Vector2( 0, 230 )
 script = ExtResource( 6 )
+OBJPTS = 7500
+SPAWNF = 200
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 252, 302 )
@@ -23,14 +34,15 @@ scale = Vector2( 2, 2 )
 weapon = ExtResource( 3 )
 GRAVITY = 30
 MAXSPEED = 300
-JUMPFORCE = 750
+JUMPFORCE = 850
 top_limit = 235
-bgmusic = null
+bgmusic = ExtResource( 11 )
 
 [node name="Game Eng" parent="." instance=ExtResource( 2 )]
 z_index = -1
 
 [node name="Area2D" type="Area2D" parent="."]
+collision_layer = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 6694, 1117 )
@@ -46,9 +58,99 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Finish"]
 shape = SubResource( 2 )
 
-[node name="CanvasLayer2" parent="." instance=ExtResource( 4 )]
+[node name="PauseMenu" parent="." instance=ExtResource( 4 )]
 
-[node name="Control" parent="." instance=ExtResource( 5 )]
+[node name="HealthBar" parent="." instance=ExtResource( 5 )]
+
+[node name="Score" parent="." instance=ExtResource( 8 )]
+
+[node name="Label16" type="Label" parent="."]
+show_behind_parent = true
+margin_left = 350.0
+margin_top = 319.0
+margin_right = 971.0
+margin_bottom = 404.0
+rect_pivot_offset = Vector2( 981, -132 )
+custom_colors/font_color = Color( 1, 0.678431, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Score  7500  Points 
+before  Finishing  the  Level!"
+
+[node name="Golems" type="Node2D" parent="."]
+
+[node name="Golem1" parent="Golems" instance=ExtResource( 9 )]
+position = Vector2( 748, 397 )
+scale = Vector2( 2, 2 )
+
+[node name="Golem2" parent="Golems" instance=ExtResource( 9 )]
+position = Vector2( 2992, 409 )
+scale = Vector2( 2, 2 )
+direction = -1
+
+[node name="Golem3" parent="Golems" instance=ExtResource( 9 )]
+position = Vector2( 5823, 420 )
+scale = Vector2( 2, 2 )
+direction = -1
+
+[node name="Golem4" parent="Golems" instance=ExtResource( 9 )]
+position = Vector2( 10580, 249 )
+scale = Vector2( 2, 2 )
+direction = -1
+
+[node name="Golem5" parent="Golems" instance=ExtResource( 9 )]
+position = Vector2( 11182, 262 )
+scale = Vector2( 2, 2 )
+direction = -1
+
+[node name="Minotaurs" type="Node2D" parent="."]
+
+[node name="Minotaur1" parent="Minotaurs" instance=ExtResource( 10 )]
+position = Vector2( 1252, 282 )
+scale = Vector2( 2, 2 )
+
+[node name="Minotaur2" parent="Minotaurs" instance=ExtResource( 10 )]
+position = Vector2( 2588, 602 )
+scale = Vector2( 2, 2 )
+
+[node name="Minotaur3" parent="Minotaurs" instance=ExtResource( 10 )]
+position = Vector2( 3733, 438 )
+scale = Vector2( 2, 2 )
+
+[node name="Minotaur4" parent="Minotaurs" instance=ExtResource( 10 )]
+position = Vector2( 6560, 273 )
+scale = Vector2( 2, 2 )
+
+[node name="Minotaur5" parent="Minotaurs" instance=ExtResource( 10 )]
+position = Vector2( 8232, 281 )
+scale = Vector2( 2, 2 )
+
+[node name="Minotaur6" parent="Minotaurs" instance=ExtResource( 10 )]
+position = Vector2( 7792, 281 )
+scale = Vector2( 2, 2 )
+direction = -1
+
+[node name="Minotaur7" parent="Minotaurs" instance=ExtResource( 10 )]
+position = Vector2( 9448, 445 )
+scale = Vector2( 2, 2 )
+direction = -1
+
+[node name="Minotaur8" parent="Minotaurs" instance=ExtResource( 10 )]
+position = Vector2( 12678, 276 )
+scale = Vector2( 2, 2 )
+direction = -1
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Finish" to="." method="_on_Finish_body_entered"]
+[connection signal="dead" from="Golems/Golem1" to="Score" method="_on_Golem_dead"]
+[connection signal="dead" from="Golems/Golem2" to="Score" method="_on_Golem_dead"]
+[connection signal="dead" from="Golems/Golem3" to="Score" method="_on_Golem_dead"]
+[connection signal="dead" from="Golems/Golem4" to="Score" method="_on_Golem_dead"]
+[connection signal="dead" from="Golems/Golem5" to="Score" method="_on_Golem_dead"]
+[connection signal="dead" from="Minotaurs/Minotaur1" to="Score" method="_on_Minotaur_dead"]
+[connection signal="dead" from="Minotaurs/Minotaur2" to="Score" method="_on_Minotaur_dead"]
+[connection signal="dead" from="Minotaurs/Minotaur3" to="Score" method="_on_Minotaur_dead"]
+[connection signal="dead" from="Minotaurs/Minotaur4" to="Score" method="_on_Minotaur_dead"]
+[connection signal="dead" from="Minotaurs/Minotaur5" to="Score" method="_on_Minotaur_dead"]
+[connection signal="dead" from="Minotaurs/Minotaur6" to="Score" method="_on_Minotaur_dead"]
+[connection signal="dead" from="Minotaurs/Minotaur7" to="Score" method="_on_Minotaur_dead"]
+[connection signal="dead" from="Minotaurs/Minotaur8" to="Score" method="_on_Minotaur_dead"]
