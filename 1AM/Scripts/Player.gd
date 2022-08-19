@@ -138,8 +138,8 @@ func ouch(var enemyposx, var damage):
 		motion.x = 1000
 	Input.action_release("left")
 	Input.action_release("right")
-	set_collision_layer_bit(1, true)
-	set_collision_mask_bit(3, true)
+	set_collision_layer_bit(1, true) #adds two to the collision layer value
+	set_collision_mask_bit(3, true) 
 	$Rest.start()
 	for i in 4:
 		set_modulate(Color(1,0.3,0.3,0.3))

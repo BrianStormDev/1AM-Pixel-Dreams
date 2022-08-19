@@ -3,7 +3,7 @@
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environments/Homeroom/Homeroom Game.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Enemies/Swan.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Fonts/ARCADECLASSIC.TTF" type="DynamicFontData" id=4]
+[ext_resource path="res://UI/Broken Console Regular.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://Enemies/PaperPlane.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Image_Imports/right.png" type="Texture" id=6]
 [ext_resource path="res://Scripts/Tutorial.gd" type="Script" id=7]
@@ -138,14 +138,14 @@ margin_bottom = 40.0
 rect_pivot_offset = Vector2( 6261, 541 )
 
 [node name="Label6" type="Label" parent="Control"]
-margin_left = 3021.0
-margin_top = 569.0
-margin_right = 3310.0
-margin_bottom = 742.0
+margin_left = 2935.0
+margin_top = 572.0
+margin_right = 3315.0
+margin_bottom = 745.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "avoid  falling  
-off  the  edge
+text = "avoid falling  
+off the edge
 it hurts
 "
 
@@ -157,7 +157,7 @@ margin_bottom = 731.0
 rect_pivot_offset = Vector2( 981, -132 )
 custom_colors/font_color = Color( 0, 1, 0.882353, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "Press  the  spacebar  to  shoot  enemies
+text = "Press the spacebar to shoot enemies
 "
 
 [node name="Label8" type="Label" parent="Control"]
@@ -167,7 +167,7 @@ margin_right = 4831.0
 margin_bottom = 783.0
 custom_colors/font_color = Color( 1, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "but  be  careful  not  to  touch  them!!
+text = "but be careful not to  touch them!!
 "
 
 [node name="Label9" type="Label" parent="Control"]
@@ -178,20 +178,22 @@ margin_bottom = 882.0
 rect_pivot_offset = Vector2( 981, -132 )
 custom_colors/font_color = Color( 0.988235, 1, 0, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "Defeat  enemies to  earn  points!
+text = "Defeat enemies to earn points!
 "
 
 [node name="Label10" type="Label" parent="Control"]
-margin_left = 7432.0
-margin_top = 623.0
-margin_right = 7824.0
-margin_bottom = 796.0
+margin_left = 7336.0
+margin_top = 569.0
+margin_right = 7890.0
+margin_bottom = 824.0
 rect_pivot_offset = Vector2( 981, -132 )
 custom_colors/font_color = Color( 0.12549, 0, 1, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "Good  luck  with  
-this  next  part
-It's  only  a  tutorial...
+text = "Press q to pause!
+to restart the level,
+exit and then select 
+the level on the 
+main menu
 "
 
 [node name="Label11" type="Label" parent="Control"]
@@ -203,23 +205,19 @@ rect_pivot_offset = Vector2( 981, -132 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "Remember
-you  need points
-to  finish  the  level"
+you need points
+to finish the level"
 
 [node name="Label12" type="Label" parent="Control"]
-margin_left = 12273.0
-margin_top = 569.0
-margin_right = 12809.0
-margin_bottom = 874.0
+margin_left = 12101.0
+margin_top = 734.0
+margin_right = 13008.0
+margin_bottom = 863.0
 rect_pivot_offset = Vector2( 591, 95 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "congrats!
-You  have  reached the  end!
-jump  past  the  books  on  
-the  right  to  move on
-if  you  got  5000  points
-otherwise  go  back!
+text = "Hope you have enough points!
+The finish is right past these books
 "
 
 [node name="Box1" type="Control" parent="Control"]
@@ -232,7 +230,7 @@ margin_top = 634.0
 margin_right = 690.0
 margin_bottom = 763.0
 custom_fonts/font = SubResource( 1 )
-text = "Welcome   to  the    tutorial!
+text = "Welcome to the tutorial!
 
 "
 
@@ -254,10 +252,10 @@ expand = true
 flip_h = true
 
 [node name="Label2" type="Label" parent="Control/Box1"]
-margin_left = 180.0
-margin_top = 698.0
-margin_right = 308.0
-margin_bottom = 783.0
+margin_left = 156.0
+margin_top = 702.0
+margin_right = 300.0
+margin_bottom = 787.0
 custom_fonts/font = SubResource( 1 )
 text = "Press
 "
@@ -276,28 +274,28 @@ margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="Label5" type="Label" parent="Control/Box2"]
-margin_left = 1044.0
+margin_left = 1014.0
 margin_top = 852.0
-margin_right = 1186.0
+margin_right = 1158.0
 margin_bottom = 937.0
 custom_fonts/font = SubResource( 1 )
 text = "Press
 "
 
 [node name="Label4" type="Label" parent="Control/Box2"]
-margin_left = 1266.0
+margin_left = 1248.0
 margin_top = 852.0
-margin_right = 1408.0
+margin_right = 1453.0
 margin_bottom = 937.0
 custom_fonts/font = SubResource( 1 )
 text = "To  Jump
 "
 
 [node name="TextureRect4" type="TextureRect" parent="Control/Box2"]
-margin_left = 1248.0
-margin_top = 828.0
-margin_right = 1319.0
-margin_bottom = 901.0
+margin_left = 1242.0
+margin_top = 830.0
+margin_right = 1313.0
+margin_bottom = 903.0
 rect_rotation = 90.0
 texture = ExtResource( 6 )
 expand = true
@@ -310,10 +308,10 @@ margin_right = 4020.0
 margin_bottom = -4.0
 
 [node name="Label5" type="Label" parent="Control/Box3"]
-margin_left = 1020.0
-margin_top = 909.0
-margin_right = 1162.0
-margin_bottom = 994.0
+margin_left = 992.0
+margin_top = 913.0
+margin_right = 1136.0
+margin_bottom = 998.0
 custom_fonts/font = SubResource( 1 )
 text = "Press
 "
@@ -325,7 +323,7 @@ margin_right = 1421.0
 margin_bottom = 1023.0
 custom_fonts/font = SubResource( 1 )
 text = "Twice
-To  double
+To double
 Jump
 "
 
@@ -340,14 +338,14 @@ expand = true
 flip_h = true
 
 [node name="Label13" type="Label" parent="Control"]
-margin_left = 3544.0
-margin_top = 661.0
-margin_right = 3833.0
-margin_bottom = 878.0
+margin_left = 3454.0
+margin_top = 647.0
+margin_right = 3821.0
+margin_bottom = 864.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "If you  do  fall
-you  have  one
+text = "If you do fall
+you have one
 recovery
 jump
 "
@@ -361,7 +359,7 @@ rect_pivot_offset = Vector2( 981, -132 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "Fruit gives you 
-health  and  points
+health and points
 "
 
 [node name="Label15" type="Label" parent="Control"]
@@ -370,12 +368,36 @@ margin_top = 560.0
 margin_right = 7180.0
 margin_bottom = 733.0
 rect_pivot_offset = Vector2( 981, -132 )
+custom_colors/font_color = Color( 0.494118, 0.027451, 0.027451, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "But too much  
+fruit does not
+give health!
+"
+
+[node name="Label16" type="Label" parent="Control"]
+margin_left = 8689.0
+margin_top = 802.0
+margin_right = 9868.0
+margin_bottom = 1014.0
+rect_pivot_offset = Vector2( 981, -132 )
+custom_colors/font_color = Color( 0.686275, 0.203922, 0.992157, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Most levels have  a  
+unique  weapon.
+Learning how they  work 
+is key to  winning!
+"
+
+[node name="Label5" type="Label" parent="Control"]
+margin_left = 1718.0
+margin_top = 680.0
+margin_right = 1862.0
+margin_bottom = 765.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "But too  much fruit
-only  results in 
-points!
-"
+text = "W-A-S-D keys 
+also work"
 
 [node name="Game" parent="." instance=ExtResource( 2 )]
 scale = Vector2( 5, 5 )
