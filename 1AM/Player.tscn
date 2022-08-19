@@ -44,9 +44,14 @@ animations = [ {
 "name": "RUN&THROW",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 9 ) ],
+"frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 4 ) ],
 "loop": true,
-"name": "FALL",
+"name": "RUN",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "IDLE",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 1 ) ],
@@ -54,15 +59,10 @@ animations = [ {
 "name": "THROW",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 3 ) ],
+"frames": [ ExtResource( 9 ) ],
 "loop": true,
-"name": "IDLE",
+"name": "FALL",
 "speed": 5.0
-}, {
-"frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 4 ) ],
-"loop": true,
-"name": "RUN",
-"speed": 10.0
 } ]
 
 [node name="Player" type="KinematicBody2D"]

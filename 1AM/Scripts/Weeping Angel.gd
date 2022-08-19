@@ -39,7 +39,7 @@ func _physics_process(_delta):
 		$Sprite.set_frame(0)
 
 func _on_Area2D_body_entered(body): 
-	if body.get_collision_layer() == 1: 
+	if body.get_collision_layer() == 17: 
 		body.ouch(position.x, damage)
 	if body.get_collision_layer() == 2: 
 		health = health - body.damage 

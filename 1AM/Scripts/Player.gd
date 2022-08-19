@@ -133,13 +133,13 @@ func ouch(var enemyposx, var damage):
 	set_modulate(Color(1,0.3,0.3,0.3))
 	motion.y = -500
 	if position.x < enemyposx:
-		motion.x = -800
+		motion.x = -1000
 	elif position.x > enemyposx:
-		motion.x = 800
+		motion.x = 1000
 	Input.action_release("left")
 	Input.action_release("right")
-	set_collision_layer_bit(1, true)
-	set_collision_mask_bit(3, true)
+	set_collision_layer_bit(1, true) #adds two to the collision layer value
+	set_collision_mask_bit(3, true) 
 	$Rest.start()
 	for i in 4:
 		set_modulate(Color(1,0.3,0.3,0.3))
@@ -147,3 +147,9 @@ func ouch(var enemyposx, var damage):
 		set_modulate(Color("#65ffffff"))
 		yield(get_tree().create_timer(0.25), "timeout")
 	set_modulate(Color("ffffff"))
+
+func heal(var amount):
+	health += amount
+	if health > 100:
+		health = 100
+	health_bar.set_value(health)

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapsplat_multimedia_game_sound_positive_tone_ascending_musical_win_success_bonus_classic_arcade_style_001_86021.mp3-84c4b51c50d7041ffb8ff26822da02eb.mp3str"
+
+[deps]
+
+source_file="res://SFX_Imports/zapsplat_multimedia_game_sound_positive_tone_ascending_musical_win_success_bonus_classic_arcade_style_001_86021.mp3"
+dest_files=[ "res://.import/zapsplat_multimedia_game_sound_positive_tone_ascending_musical_win_success_bonus_classic_arcade_style_001_86021.mp3-84c4b51c50d7041ffb8ff26822da02eb.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

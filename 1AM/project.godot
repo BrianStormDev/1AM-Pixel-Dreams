@@ -25,6 +25,7 @@ scene=false
 screen=false
 size=false
 window=false
+main=false
 
 [input]
 
@@ -63,6 +64,7 @@ pause={
 2d_physics/layer_2="Weapon"
 2d_physics/layer_3="Enemy"
 2d_physics/layer_4="Platform"
+2d_physics/layer_5="Person"
 
 [physics]
 
