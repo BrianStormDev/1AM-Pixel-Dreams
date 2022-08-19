@@ -27,6 +27,7 @@ font_data = ExtResource( 7 )
 position = Vector2( 0, 230 )
 script = ExtResource( 6 )
 OBJPTS = 7500
+SPAWNY = 200
 SPAWNF = 200
 
 [node name="Player" parent="." instance=ExtResource( 1 )]

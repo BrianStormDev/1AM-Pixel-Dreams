@@ -44,13 +44,13 @@ position = Vector2( 1583, 97 )
 position = Vector2( 68, 258 )
 
 [node name="Fruit3" parent="Fruits" instance=ExtResource( 12 )]
-position = Vector2( 877, 122 )
+position = Vector2( 2914, 467 )
 
 [node name="Fruit4" parent="Fruits" instance=ExtResource( 12 )]
 position = Vector2( 2425, 186 )
 
 [node name="Fruit5" parent="Fruits" instance=ExtResource( 12 )]
-position = Vector2( 3068, 101 )
+position = Vector2( 1456, 785 )
 
 [node name="Finish" type="Area2D" parent="."]
 position = Vector2( 3308, 393 )
