@@ -25,6 +25,7 @@ scene=false
 screen=false
 size=false
 window=false
+main=false
 
 [input]
 

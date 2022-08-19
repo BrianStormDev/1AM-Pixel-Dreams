@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environments/English/Game Eng.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Enemies/Golem.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Enemies/Minotaur.tscn" type="PackedScene" id=10]
 [ext_resource path="res://SFX_Imports/14. The Riff.mp3" type="AudioStream" id=11]
+[ext_resource path="res://Pickups/Fruit.tscn" type="PackedScene" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 6697, 122.5 )
@@ -37,6 +38,27 @@ MAXSPEED = 300
 JUMPFORCE = 850
 top_limit = 235
 bgmusic = ExtResource( 11 )
+
+[node name="Fruits" type="Node2D" parent="."]
+position = Vector2( 8015, 265 )
+scale = Vector2( 2, 2 )
+
+[node name="Fruit" parent="Fruits" instance=ExtResource( 12 )]
+scale = Vector2( 1, 1 )
+
+[node name="Fruit2" parent="Fruits" instance=ExtResource( 12 )]
+position = Vector2( -3506, 11.5 )
+scale = Vector2( 1, 1 )
+
+[node name="Fruit3" parent="Fruits" instance=ExtResource( 12 )]
+position = Vector2( -2328.5, -5 )
+scale = Vector2( 1, 1 )
+
+[node name="Fruit4" parent="Fruits" instance=ExtResource( 12 )]
+position = Vector2( -1026.5, 94.5 )
+
+[node name="Fruit5" parent="Fruits" instance=ExtResource( 12 )]
+position = Vector2( 1433.5, 5 )
 
 [node name="Game Eng" parent="." instance=ExtResource( 2 )]
 z_index = -1

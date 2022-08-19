@@ -147,3 +147,9 @@ func ouch(var enemyposx, var damage):
 		set_modulate(Color("#65ffffff"))
 		yield(get_tree().create_timer(0.25), "timeout")
 	set_modulate(Color("ffffff"))
+
+func heal(var amount):
+	health += amount
+	if health > 100:
+		health = 100
+	health_bar.set_value(health)
