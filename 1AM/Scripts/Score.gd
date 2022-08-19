@@ -58,3 +58,10 @@ func _on_Slime_dead(value):
 	points += value
 	_ready()
 	$AudioStreamPlayer.play()
+	
+#Fruit Collection
+#func _on_Fruit_collected(value):
+	#points += value
+	#_ready()
+	#$AudioStreamPlayer.play()
+
