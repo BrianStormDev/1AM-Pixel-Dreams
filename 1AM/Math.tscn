@@ -57,6 +57,10 @@ scale = Vector2( 1, 1 )
 position = Vector2( 1088, 41.5 )
 scale = Vector2( 1, 1 )
 
+[node name="Fruit5" parent="Fruits" instance=ExtResource( 12 )]
+position = Vector2( 703.5, -94.5 )
+scale = Vector2( 1, 1 )
+
 [node name="EnvLevel" parent="." instance=ExtResource( 2 )]
 
 [node name="Angle Biters" type="Node2D" parent="."]
@@ -141,9 +145,6 @@ custom_colors/font_color = Color( 1, 0.678431, 0, 1 )
 custom_fonts/font = SubResource( 3 )
 text = "Score  7500 Points 
 before  Finishing  the  Level!"
-
-[node name="Fruit" parent="." instance=ExtResource( 12 )]
-position = Vector2( 2174, 114 )
 
 [connection signal="dead" from="Angle Biters/Angle Biter" to="Score" method="_on_Angle_Biter_dead"]
 [connection signal="dead" from="Angle Biters/Angle Biter2" to="Score" method="_on_Angle_Biter_dead"]
