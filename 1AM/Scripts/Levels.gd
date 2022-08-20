@@ -22,6 +22,3 @@ func _on_L3_pressed():
 func _on_L4_pressed():
 	get_tree().paused = false
 	var _chemistry = get_tree().change_scene("res://Chemistry.tscn")
-
-func _on_Quit_pressed():
-	get_tree().quit()
