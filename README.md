@@ -1,6 +1,8 @@
 # 1AM-Pixel-Dreams
 DVC Project for Spring 2022 @ Project Bracket (A CS club)
 
+Play this game on itch.io! @ https://brianstormyt.itch.io/pixel-dreams
+
 Intro:
 Hello everyone, 
 
@@ -33,4 +35,5 @@ various assets in the game.
 
 Game information:
 This game is coded using Godot Game Engine 3. All scripts are written in GDScript!
+
 
