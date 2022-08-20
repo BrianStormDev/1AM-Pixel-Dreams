@@ -27,9 +27,9 @@ but we'll do our best to work with what we have and will see where things go.
 -Brian L :)
 
 Information about this repository:
-You'll find two main folders. The first folder named 1AM, contains all of the project files. Midsemester contains all
+You'll find three main folders. The first folder named 1AM, contains all of the project files. Midsemester contains all
 the files that were gathered for a midsemester presentation we had. There you can find some of our early concepts
-as well as various documentation.
+as well as various documentation. Credits for assets and developers can be found inside the credits folder!
 NOTE: The pixelorama-master file is not technically part of the project. It was just a software used to develop
 various assets in the game.
 
