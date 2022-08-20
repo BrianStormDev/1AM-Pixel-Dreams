@@ -76,10 +76,10 @@ direction = -1
 position = Vector2( 2976, 37 )
 
 [node name="Angle Biter4" parent="Angle Biters" instance=ExtResource( 3 )]
-position = Vector2( 2072, 345 )
+position = Vector2( 2241, 98 )
 
 [node name="Angle Biter5" parent="Angle Biters" instance=ExtResource( 3 )]
-position = Vector2( 1920, 632 )
+position = Vector2( 1941, 632 )
 direction = -1
 
 [node name="Angle Biter6" parent="Angle Biters" instance=ExtResource( 3 )]
@@ -97,12 +97,12 @@ position = Vector2( 1490, 149 )
 position = Vector2( 2243, 656 )
 
 [node name="Mafia4" parent="Mafia" instance=ExtResource( 4 )]
-position = Vector2( 2470, 415 )
+position = Vector2( 2114, 330 )
 
 [node name="MultMan" type="Node2D" parent="."]
 
 [node name="MultMan" parent="MultMan" instance=ExtResource( 6 )]
-position = Vector2( 2334, 578 )
+position = Vector2( 2829, 702 )
 
 [node name="MultMan2" parent="MultMan" instance=ExtResource( 6 )]
 position = Vector2( 977, 670 )
