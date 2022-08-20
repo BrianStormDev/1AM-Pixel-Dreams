@@ -167,7 +167,7 @@ margin_right = 4831.0
 margin_bottom = 783.0
 custom_colors/font_color = Color( 1, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "but be careful not to  touch them!!
+text = "but be careful not to touch them!!
 "
 
 [node name="Label9" type="Label" parent="Control"]
