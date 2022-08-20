@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Image_Imports/paperShuriken.png" type="Texture" id=1]
-[ext_resource path="res://SFX_Imports/warfare_weapon_shuriken_flying_star_throw_kung_fu_001.mp3" type="AudioStream" id=2]
+[ext_resource path="res://SFX_Imports/shuriken.mp3" type="AudioStream" id=2]
 [ext_resource path="res://Scripts/Paper Shuriken.gd" type="Script" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
