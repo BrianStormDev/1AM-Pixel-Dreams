@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapsplat_fantasy_magic_mystery_glissando_bell_43990.mp3-e4f3d5af56738a1a1a718bc1909d2fc5.mp3str"
+
+[deps]
+
+source_file="res://SFX_Imports/zapsplat_fantasy_magic_mystery_glissando_bell_43990.mp3"
+dest_files=[ "res://.import/zapsplat_fantasy_magic_mystery_glissando_bell_43990.mp3-e4f3d5af56738a1a1a718bc1909d2fc5.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
