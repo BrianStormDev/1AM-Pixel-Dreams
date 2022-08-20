@@ -132,7 +132,7 @@ scale = Vector2( 2.5, 2.5 )
 direction = -1
 
 [node name="Angel6" parent="Angels" instance=ExtResource( 8 )]
-position = Vector2( 2645, -7.99994 )
+position = Vector2( 2895, 167 )
 scale = Vector2( 2.5, 2.5 )
 
 [node name="PauseMenu" parent="." instance=ExtResource( 4 )]

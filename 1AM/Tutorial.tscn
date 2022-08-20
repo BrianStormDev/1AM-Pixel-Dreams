@@ -383,9 +383,9 @@ margin_bottom = 1014.0
 rect_pivot_offset = Vector2( 981, -132 )
 custom_colors/font_color = Color( 0.686275, 0.203922, 0.992157, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "Most levels have  a  
+text = "Most levels have a  
 unique  weapon.
-Learning how they  work 
+Learning how they work 
 is key to  winning!
 "
 
