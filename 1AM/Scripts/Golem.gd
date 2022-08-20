@@ -37,6 +37,7 @@ func _physics_process(_delta):
 			speed = 0
 	elif health<=0:
 		dead()
+		$Timer.stop()
 	#Plays whatever animation is loaded
 	$AnimationPlayer.play(animation)
 
